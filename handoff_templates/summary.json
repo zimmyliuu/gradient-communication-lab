@@ -1,0 +1,50 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "template_only": true,
+  "run_id": null,
+  "stage": "G1",
+  "started_at": null,
+  "finished_at": null,
+  "timezone": "Asia/Shanghai",
+  "execution_status": "not_started",
+  "contract_sha256": null,
+  "benchmark_config_sha256": null,
+  "correctness_status": "not_run",
+  "benchmark_validity": "not_run",
+  "optimization_gain": "not_evaluated",
+  "g1_acceptance": "not_ready",
+  "coverage": {
+    "nominal_bits_completed": [],
+    "methods_completed": [],
+    "correctness_cases_passed": null,
+    "correctness_cases_failed": null,
+    "correctness_cases_skipped": null,
+    "real_gradient_inputs_completed": null,
+    "benchmark_cases_completed": null,
+    "missing_items": []
+  },
+  "claims": {
+    "local_codec_parity_validated": false,
+    "gpu_codec_performance_measured": false,
+    "full_dynamiq_gpu_validated": false,
+    "training_quality_newly_validated": false,
+    "multigpu_speedup_measured": false
+  },
+  "key_findings": [],
+  "open_issues": [],
+  "next_action": "review_required",
+  "artifacts": {
+    "report": "REPORT.md",
+    "environment": "environment.json",
+    "contract": "codec_contract.json",
+    "benchmark_config": "benchmark_config.json",
+    "inputs": "input_manifest.json",
+    "sources": "source_manifest.json",
+    "correctness": "correctness.jsonl",
+    "benchmark_raw": "benchmark_raw.jsonl",
+    "benchmark_summary": "benchmark_summary.jsonl",
+    "memory": "memory.jsonl",
+    "issues": "issues.jsonl",
+    "reproduce": "REPRODUCE.md"
+  }
+}

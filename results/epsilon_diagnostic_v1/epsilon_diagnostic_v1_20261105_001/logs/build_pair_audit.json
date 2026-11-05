@@ -1,0 +1,41 @@
+{
+  "schema_version": "epsilon_build_pair_audit_v1",
+  "status": "pass",
+  "recorded_at": "2026-11-05T20:00:26.745644+08:00",
+  "source_trees_identical": true,
+  "base_source_and_binary_unchanged": true,
+  "only_cuda_flag_difference": [
+    "-DDIAG_B8_SCALE_ADD=1e-7f",
+    "-DDIAG_B8_SCALE_ADD=0.0f"
+  ],
+  "source_diff_only_target_file": true,
+  "condition_builds": 2,
+  "actual_compiler_rebuild_repairs": 0,
+  "preflight_guard_repairs": 1,
+  "repair_rounds_conservative": 1,
+  "kernels_called": false,
+  "build_wall_seconds": 133.19539760000407,
+  "actual_loaded_module_processes": [
+    {
+      "condition": "control_add1e7",
+      "pid": 15136,
+      "module_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\eden_utils.pyd",
+      "module_sha256": "cbb1110aba29a8287acb7c2b592a2b1e4291970cb19e667aa62420487dc025a2",
+      "build_manifest": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\build_manifest.json",
+      "manifest_sha256": "a3443c4af5131bd97e0e01fe87d8bb12523e3e9bdf8670c4b3af090fb5fdb1f3"
+    },
+    {
+      "condition": "diagnostic_add0",
+      "pid": 18332,
+      "module_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\eden_utils.pyd",
+      "module_sha256": "d93218f344f823e3168cc79193461eef2299ef09d0fc5237e660d49a89994951",
+      "build_manifest": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\build_manifest.json",
+      "manifest_sha256": "2dd6d1912e0371eafc906f3dc20bd27a7aa7eab3aed54be5fdfcdbfd7958f2dc"
+    }
+  ],
+  "notes": [
+    "Control rebuild is derived and must pass exact 96-pair parity before causal interpretation.",
+    "Two encoders must execute separately; decoder must load sealed original module in its own process.",
+    "Different build-entry snapshots differ only in preflight manifest counting; CUDA source and flags unaffected."
+  ]
+}

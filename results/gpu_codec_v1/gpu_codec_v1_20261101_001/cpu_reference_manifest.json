@@ -1,0 +1,80 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "run_id": "gpu_codec_v1_20261101_001",
+  "upstream_commit": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+  "reference_files": [
+    {
+      "path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\dynamiq.py",
+      "sha256": "9296231d3a29d3fb4cfa1d12a2ffe5a1a4d2922e62c51003fb214c59303e8ea0",
+      "bytes": 28525,
+      "role": "cpu_reference"
+    },
+    {
+      "path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\packing.py",
+      "sha256": "33f7fb806edbcc28585347990703501dcd0f05c121b566baafe0041be830c4f4",
+      "bytes": 2312,
+      "role": "cpu_reference"
+    },
+    {
+      "path": "E:\\dacomp\\research\\spl_model_communication\\tests\\test_dynamiq.py",
+      "sha256": "7fcb14f82a9c95609e849c53b433b204bb7b121d8db9810ddf2766d7d2148c3e",
+      "bytes": 18532,
+      "role": "cpu_reference"
+    },
+    {
+      "path": "E:\\dacomp\\research\\spl_model_communication\\tests\\dynamiq_oracle.py",
+      "sha256": "43bbd1e1ae85bb71510b5a2f411ec87363a3ac63841e957b6ce0a832e979a67d",
+      "bytes": 10652,
+      "role": "cpu_reference"
+    },
+    {
+      "path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\p2_replay.py",
+      "sha256": "c56ba27ea9a64f7302f7d954709af6f27680b8e30131d0aaf089e5a642e91b0d",
+      "bytes": 19963,
+      "role": "cpu_reference"
+    },
+    {
+      "path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\core.py",
+      "sha256": "895abd30f614f37ce6b4dcaf317cb6b6161cb72489ff7ca352bab9ca082b4edf",
+      "bytes": 4601,
+      "role": "cpu_reference"
+    },
+    {
+      "path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\ring.py",
+      "sha256": "d84e1977b70db52b75e0e6f2bfac0157cda1a8a6ef73f5819ffe1de825d73815",
+      "bytes": 4989,
+      "role": "cpu_reference"
+    }
+  ],
+  "adapter": {
+    "path": "src/gradient_comm_lab/cpu_reference.py",
+    "sha256": "4ab03e0c8bed961ed3eaa8bec5a546bf74d76909437d6561032453e3cd59d36b",
+    "path_base": "project_root",
+    "project_root": "E:/dacomp/research/gradient_comm_lab",
+    "snapshot_path": "code/src/gradient_comm_lab/cpu_reference.py",
+    "snapshot_path_base": "run_directory"
+  },
+  "lookup_tables": {
+    "4": {
+      "sha256": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+      "shape": [
+        33
+      ],
+      "dtype": "torch.bfloat16",
+      "byte_order": "little",
+      "bytes": 66
+    },
+    "8": {
+      "sha256": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd",
+      "shape": [
+        513
+      ],
+      "dtype": "torch.bfloat16",
+      "byte_order": "little",
+      "bytes": 1026
+    }
+  },
+  "reference_modified": false,
+  "explicit_thresholds_do_not_advance_LCG": true,
+  "CPU_or_GPU_codec_parity_test_executed": false
+}

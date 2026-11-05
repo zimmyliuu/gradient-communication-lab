@@ -1,0 +1,333 @@
+{
+  "schema_version": "epsilon_sources_v1",
+  "files": [
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\code\\scripts\\epsilon_diagnostic\\analyze.py",
+      "bytes": 25774,
+      "sha256": "9bafa2dda9e6b29905191fb1bf01181b0a8e986aac312c9f44fcf65eac5ec60d",
+      "role": "frozen_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\analyze.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\analyze.py",
+      "bytes": 25774,
+      "sha256": "9bafa2dda9e6b29905191fb1bf01181b0a8e986aac312c9f44fcf65eac5ec60d",
+      "role": "workspace_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\analyze.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\code\\scripts\\epsilon_diagnostic\\build_conditions.py",
+      "bytes": 8397,
+      "sha256": "1c71b5e30577ae3027f1b3cfc28c8c3a8b54e68fd25354d5dbe7e9197e9f07d6",
+      "role": "frozen_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\build_conditions.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\build_conditions.py",
+      "bytes": 8397,
+      "sha256": "1c71b5e30577ae3027f1b3cfc28c8c3a8b54e68fd25354d5dbe7e9197e9f07d6",
+      "role": "workspace_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\build_conditions.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\code\\scripts\\epsilon_diagnostic\\execute.py",
+      "bytes": 12515,
+      "sha256": "59f5c771fee9a80c0c52e74a472f74b3bfd735779d1d11afced27a5b8e3e674d",
+      "role": "frozen_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\execute.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\execute.py",
+      "bytes": 12515,
+      "sha256": "59f5c771fee9a80c0c52e74a472f74b3bfd735779d1d11afced27a5b8e3e674d",
+      "role": "workspace_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\execute.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\code\\scripts\\epsilon_diagnostic\\freeze.py",
+      "bytes": 5395,
+      "sha256": "851a1c7d79be6d4fe338254387ad01c5b5ccb8120ae372456f3b9ba06c4ad8dc",
+      "role": "frozen_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\freeze.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\freeze.py",
+      "bytes": 5395,
+      "sha256": "851a1c7d79be6d4fe338254387ad01c5b5ccb8120ae372456f3b9ba06c4ad8dc",
+      "role": "workspace_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\freeze.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\code\\scripts\\epsilon_diagnostic\\precheck.py",
+      "bytes": 20424,
+      "sha256": "a4f4d17f9a42702a03143a6480c87d4992bf15d26c222a6747dee5aff2138a5a",
+      "role": "frozen_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\precheck.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\precheck.py",
+      "bytes": 20424,
+      "sha256": "a4f4d17f9a42702a03143a6480c87d4992bf15d26c222a6747dee5aff2138a5a",
+      "role": "workspace_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\precheck.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\code\\scripts\\epsilon_diagnostic\\run_stages.py",
+      "bytes": 2313,
+      "sha256": "3cf1c119910156c159f1e5efcc32c4ac21dff6697f714cd6736d1d6cbd05e7b3",
+      "role": "frozen_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\run_stages.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\run_stages.py",
+      "bytes": 2313,
+      "sha256": "3cf1c119910156c159f1e5efcc32c4ac21dff6697f714cd6736d1d6cbd05e7b3",
+      "role": "workspace_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\epsilon_diagnostic\\run_stages.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\code\\src\\gradient_comm_lab\\epsilon_diagnostic\\codec.py",
+      "bytes": 7883,
+      "sha256": "3a0c49f5a6c27c19dd74efdeb4a97af2ef9122f37eda750faa2935ac7915a633",
+      "role": "frozen_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\epsilon_diagnostic\\codec.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\epsilon_diagnostic\\codec.py",
+      "bytes": 7883,
+      "sha256": "3a0c49f5a6c27c19dd74efdeb4a97af2ef9122f37eda750faa2935ac7915a633",
+      "role": "workspace_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\epsilon_diagnostic\\codec.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\code\\src\\gradient_comm_lab\\epsilon_diagnostic\\packet.py",
+      "bytes": 2164,
+      "sha256": "474b8bda30163702d44192d2cd0ea3039472f54cf04de814ed300a99ffb9123b",
+      "role": "frozen_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\epsilon_diagnostic\\packet.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\epsilon_diagnostic\\packet.py",
+      "bytes": 2164,
+      "sha256": "474b8bda30163702d44192d2cd0ea3039472f54cf04de814ed300a99ffb9123b",
+      "role": "workspace_execution_source",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\epsilon_diagnostic\\packet.py"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\build_manifest.json",
+      "bytes": 6303,
+      "sha256": "a3443c4af5131bd97e0e01fe87d8bb12523e3e9bdf8670c4b3af090fb5fdb1f3",
+      "role": "encoder_build_manifest",
+      "origin": "control_add1e7"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\eden_utils.pyd",
+      "bytes": 4609024,
+      "sha256": "cbb1110aba29a8287acb7c2b592a2b1e4291970cb19e667aa62420487dc025a2",
+      "role": "derived_encoder_binary",
+      "origin": "control_add1e7"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\sources\\a.cpp",
+      "bytes": 25,
+      "sha256": "344d05b1a6117a61319c45a6a5c6be3180e692efe8a7fdae570950402823df7c",
+      "role": "derived_encoder_source",
+      "origin": "control_add1e7"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\sources\\eden_utils.cpp",
+      "bytes": 22733,
+      "sha256": "bf84955aa924fbc4e7b49ea94d003b0e45ad9f4e9b2b9caeabdf6dcc65255dd8",
+      "role": "derived_encoder_source",
+      "origin": "control_add1e7"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\sources\\.vscode\\c_cpp_properties.json",
+      "bytes": 423,
+      "sha256": "7715b59898d8fca32b59e2d553ac2a616d860aa02bba096dfeb86910b582acb3",
+      "role": "derived_encoder_source",
+      "origin": "control_add1e7"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\sources\\csrc\\cuda_hadamard.cu",
+      "bytes": 64384,
+      "sha256": "24c774e396babb03627c428f8ceab284423b1fd7d8d2fd35fa4ebe30959dafac",
+      "role": "derived_encoder_source",
+      "origin": "control_add1e7"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\sources\\csrc\\cuda_hadamard.h",
+      "bytes": 2128,
+      "sha256": "0691f1f7e6a25fc6ecff13b717d502330c1fab419309056de1b91a0394ea1db2",
+      "role": "derived_encoder_source",
+      "origin": "control_add1e7"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\sources\\csrc\\cuda_hierarchical_mee.cu",
+      "bytes": 65861,
+      "sha256": "5f301f85bf898d82a310959426536a8736fedc8d058ba9fdd7e26da3218d4644",
+      "role": "derived_encoder_source",
+      "origin": "control_add1e7"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\sources\\csrc\\cuda_hierarchical_mee.h",
+      "bytes": 3577,
+      "sha256": "38787be245c286b05eee2500555e46a495738304d5d69b8da2fc6f9773c341a8",
+      "role": "derived_encoder_source",
+      "origin": "control_add1e7"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\sources\\csrc\\cuda_packing.cu",
+      "bytes": 3229,
+      "sha256": "b57daafee5eb51a2152ae8892165e205da4451a4dbd61f8d002f4be3fd89d2ed",
+      "role": "derived_encoder_source",
+      "origin": "control_add1e7"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\sources\\csrc\\cuda_packing.h",
+      "bytes": 323,
+      "sha256": "791938fd31072b1ef5059f95e2aef55a1347df2a5f5199c24748dbc18ac8e977",
+      "role": "derived_encoder_source",
+      "origin": "control_add1e7"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\sources\\csrc\\defs.h",
+      "bytes": 1044,
+      "sha256": "eecfa2d21817cbbdf3fe94702c0b85ba5c94096753fd35015bdcaada7e5aa21a",
+      "role": "derived_encoder_source",
+      "origin": "control_add1e7"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\sources\\csrc\\logic.py",
+      "bytes": 15802,
+      "sha256": "df7a3fd481c8a5ba1cf9e7a0f0e0fd6a99fb939bd04fa17bb2964f3d9824ce37",
+      "role": "derived_encoder_source",
+      "origin": "control_add1e7"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\build_manifest.json",
+      "bytes": 6305,
+      "sha256": "2dd6d1912e0371eafc906f3dc20bd27a7aa7eab3aed54be5fdfcdbfd7958f2dc",
+      "role": "encoder_build_manifest",
+      "origin": "diagnostic_add0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\eden_utils.pyd",
+      "bytes": 4609024,
+      "sha256": "d93218f344f823e3168cc79193461eef2299ef09d0fc5237e660d49a89994951",
+      "role": "derived_encoder_binary",
+      "origin": "diagnostic_add0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\sources\\a.cpp",
+      "bytes": 25,
+      "sha256": "344d05b1a6117a61319c45a6a5c6be3180e692efe8a7fdae570950402823df7c",
+      "role": "derived_encoder_source",
+      "origin": "diagnostic_add0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\sources\\eden_utils.cpp",
+      "bytes": 22733,
+      "sha256": "bf84955aa924fbc4e7b49ea94d003b0e45ad9f4e9b2b9caeabdf6dcc65255dd8",
+      "role": "derived_encoder_source",
+      "origin": "diagnostic_add0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\sources\\.vscode\\c_cpp_properties.json",
+      "bytes": 423,
+      "sha256": "7715b59898d8fca32b59e2d553ac2a616d860aa02bba096dfeb86910b582acb3",
+      "role": "derived_encoder_source",
+      "origin": "diagnostic_add0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\sources\\csrc\\cuda_hadamard.cu",
+      "bytes": 64384,
+      "sha256": "24c774e396babb03627c428f8ceab284423b1fd7d8d2fd35fa4ebe30959dafac",
+      "role": "derived_encoder_source",
+      "origin": "diagnostic_add0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\sources\\csrc\\cuda_hadamard.h",
+      "bytes": 2128,
+      "sha256": "0691f1f7e6a25fc6ecff13b717d502330c1fab419309056de1b91a0394ea1db2",
+      "role": "derived_encoder_source",
+      "origin": "diagnostic_add0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\sources\\csrc\\cuda_hierarchical_mee.cu",
+      "bytes": 65861,
+      "sha256": "5f301f85bf898d82a310959426536a8736fedc8d058ba9fdd7e26da3218d4644",
+      "role": "derived_encoder_source",
+      "origin": "diagnostic_add0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\sources\\csrc\\cuda_hierarchical_mee.h",
+      "bytes": 3577,
+      "sha256": "38787be245c286b05eee2500555e46a495738304d5d69b8da2fc6f9773c341a8",
+      "role": "derived_encoder_source",
+      "origin": "diagnostic_add0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\sources\\csrc\\cuda_packing.cu",
+      "bytes": 3229,
+      "sha256": "b57daafee5eb51a2152ae8892165e205da4451a4dbd61f8d002f4be3fd89d2ed",
+      "role": "derived_encoder_source",
+      "origin": "diagnostic_add0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\sources\\csrc\\cuda_packing.h",
+      "bytes": 323,
+      "sha256": "791938fd31072b1ef5059f95e2aef55a1347df2a5f5199c24748dbc18ac8e977",
+      "role": "derived_encoder_source",
+      "origin": "diagnostic_add0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\sources\\csrc\\defs.h",
+      "bytes": 1044,
+      "sha256": "eecfa2d21817cbbdf3fe94702c0b85ba5c94096753fd35015bdcaada7e5aa21a",
+      "role": "derived_encoder_source",
+      "origin": "diagnostic_add0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\sources\\csrc\\logic.py",
+      "bytes": 15802,
+      "sha256": "df7a3fd481c8a5ba1cf9e7a0f0e0fd6a99fb939bd04fa17bb2964f3d9824ce37",
+      "role": "derived_encoder_source",
+      "origin": "diagnostic_add0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\bounded_discovery_v1\\bounded_discovery_v1_20261104_001\\build\\official_a03\\eden_utils.pyd",
+      "bytes": 4609024,
+      "sha256": "d4eaf1d9a23930d34a6edb5b54254913679ac854bd855124c13b40e2c5f38880",
+      "role": "original_sealed_decoder_binary",
+      "origin": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\bounded_discovery_v1\\bounded_discovery_v1_20261104_001\\logs\\official_build_a03.json",
+      "bytes": 3090,
+      "sha256": "7295a8086aba8679b3e90348cae4857ea4f5ba59ebd6560b57bcfe1f4fe97625",
+      "role": "original_decoder_build_manifest",
+      "origin": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\bounded_discovery_v1\\bounded_discovery_v1_20261104_001\\experiment_contract.json",
+      "bytes": 12666,
+      "sha256": "97e8595532125d1fed44956c6a70da959031581884e753b449b64c1b3b195f47",
+      "role": "base_contract",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\results\\bounded_discovery_v1\\bounded_discovery_v1_20261104_001"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\bounded_discovery_v1\\bounded_discovery_v1_20261104_001\\logs\\d0_execution.json",
+      "bytes": 37674,
+      "sha256": "f8a6895ea82d69050f881d007fb331042ff456dd2b66bdb893a0aa0561554b04",
+      "role": "qualification_reference_metadata",
+      "origin": "E:\\dacomp\\research\\gradient_comm_lab\\results\\bounded_discovery_v1\\bounded_discovery_v1_20261104_001"
+    }
+  ],
+  "base_commit": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+  "two_encoder_conditions": [
+    "control_add1e7",
+    "diagnostic_add0"
+  ],
+  "decoder_unchanged": true
+}

@@ -1,0 +1,1386 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "template_only": false,
+  "main_grid": {
+    "numel": [
+      256,
+      4096,
+      65536,
+      262144,
+      1048576,
+      4194304
+    ],
+    "nominal_bits": [
+      4,
+      8
+    ],
+    "distributions": [
+      "standard_normal",
+      "group_scaled_normal"
+    ],
+    "input_seed": 7301,
+    "methods": [
+      "torch_cuda_repaired",
+      "cuda_optimized_repaired"
+    ],
+    "operations": [
+      "encode",
+      "decode",
+      "roundtrip"
+    ],
+    "allocation_mode": "preallocated",
+    "validation_mode": "trusted_inputs"
+  },
+  "api_grid": {
+    "numel": [
+      65536,
+      1048576
+    ],
+    "nominal_bits": [
+      4,
+      8
+    ],
+    "distribution": "standard_normal",
+    "input_seed": 7301,
+    "methods": [
+      "torch_cuda_repaired",
+      "cuda_optimized_repaired"
+    ],
+    "operation": "roundtrip",
+    "allocation_mode": "api_allocating",
+    "validation_modes": [
+      "trusted_inputs",
+      "checked_api"
+    ]
+  },
+  "real_gradient_grid": {
+    "training_seed": 1101,
+    "updates": [
+      100,
+      500,
+      2500
+    ],
+    "ranks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "nominal_bits": [
+      4,
+      8
+    ],
+    "methods": [
+      "torch_cuda_repaired",
+      "cuda_optimized_repaired"
+    ],
+    "operation": "roundtrip",
+    "allocation_mode": "preallocated",
+    "validation_mode": "trusted_inputs"
+  },
+  "warmup_calls_min": 50,
+  "session_count_min": 5,
+  "blocks_per_session_min": 20,
+  "inner_repeats_min": 1,
+  "inner_repeats_max": 10000,
+  "target_block_ms": [
+    10,
+    50
+  ],
+  "repeat_selection_key": [
+    "case_id",
+    "method_id"
+  ],
+  "repeat_counts_frozen_across_sessions": true,
+  "repeat_counts": [
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 71,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 2,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 55,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 73,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 185,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b8__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 501,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b4__roundtrip__api_allocating__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 154,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 29,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 190,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 719,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 713,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 23,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 383,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 37,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 91,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 54,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 197,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 544,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 81,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 87,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 734,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b8__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1421,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 57,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 524,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 94,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 115,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b8__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1448,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 37,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 35,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 20,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 10,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 53,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 23,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 196,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 69,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 29,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 31,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 224,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 466,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b4__roundtrip__api_allocating__checked_api",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 23,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 800,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b4__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 151,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 29,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 82,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 81,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b4__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1680,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b8__roundtrip__api_allocating__checked_api",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 6,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 23,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 742,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 477,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b8__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1585,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 54,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b8__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1503,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b8__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 514,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 31,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 10,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 31,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 57,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b8__roundtrip__api_allocating__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 162,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 176,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 725,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b8__roundtrip__api_allocating__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 12,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 23,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 45,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 104,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b4__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1546,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b8__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1604,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b8__roundtrip__api_allocating__checked_api",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 18,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 407,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 517,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 181,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b4__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1703,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 722,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b4__roundtrip__api_allocating__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 12,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 543,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 23,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b8__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1530,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 559,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 31,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 90,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 6,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b4__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1605,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b4__roundtrip__api_allocating__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 159,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b8__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1619,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 84,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 4,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b4__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 593,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 59,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b8__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 132,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b8__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1149,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b4__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1838,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 514,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 444,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 5,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b8__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1545,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b4__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1448,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 71,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 477,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b8__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 425,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 63,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 85,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 18,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b8__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 426,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 514,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 38,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 514,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 22,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b4__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 399,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b8__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1617,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 18,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b4__roundtrip__api_allocating__checked_api",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 14,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 90,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 686,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 18,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 94,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b4__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1776,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 729,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 85,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 3,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 23,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 721,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 485,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b4__roundtrip__api_allocating__checked_api",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 8,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b4__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1634,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 23,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b8__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 132,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 543,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 236,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b8__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1581,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 112,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b4__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1441,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 186,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 455,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 193,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 70,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b4__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1546,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b4__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 592,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b8__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1603,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 75,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 9,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b8__roundtrip__api_allocating__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 165,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 21,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b4__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1611,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 193,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 257,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 477,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b8__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1503,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 22,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 9,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 17,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 190,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 30,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 478,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b8__roundtrip__api_allocating__checked_api",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 18,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 705,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 546,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 3,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 4,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b8__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1810,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 745,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 705,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b4__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1616,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 104,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 21,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b4__roundtrip__api_allocating__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 30,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b4__roundtrip__api_allocating__checked_api",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 5,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 755,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 477,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b4__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1591,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 31,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 745,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 73,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 23,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b8__roundtrip__api_allocating__checked_api",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 8,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 186,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b4__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1590,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 4,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 91,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 31,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b8__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1599,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 443,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 62,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 20,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b8__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1554,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 68,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 477,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 32,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 56,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 383,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 477,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 559,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b4__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1396,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b4__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 152,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b8__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1716,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b8__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1580,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 248,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 70,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 514,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 54,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 444,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 642,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 187,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b4__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1717,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b4__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1396,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b4__decode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 435,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 18,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b4__encode__preallocated__trusted_inputs",
+      "method_id": "cuda_optimized_repaired",
+      "inner_repeats": 1628,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b8__roundtrip__api_allocating__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 31,
+      "reason": "last_observed_K_from_registered_bounded_adjustment"
+    }
+  ],
+  "graph_mode": "off",
+  "compile_mode": "eager",
+  "cache_mode": "steady_state_reuse",
+  "rng_work_included": false,
+  "quantile_interpolation": "linear",
+  "method_order_seed": 7501,
+  "changes_from_plan": [],
+  "run_id": "gpu_codec_v1_20261104_001",
+  "scope": "G1b_paired_fixed_local_codec",
+  "method_comparison_performed": true,
+  "quantile_implementation": "numpy.quantile(method=linear)",
+  "wall_timing_boundary": "synchronize before timer; start-event record, K calls, end-event record/synchronization inside wall timer",
+  "K_selection": {
+    "single_call_observations": 3,
+    "initial_K": "ceil(20 / median_single_call_ms), clamp 1..10000",
+    "target_ms": 20,
+    "accept_interval_ms": [
+      15,
+      30
+    ],
+    "max_actual_block_observations": 4,
+    "update": "ceil(K * 20 / observed_block_ms), clamp 1..10000; stop within [15,30], unchanged K, or fourth observed block",
+    "selection": "K from final observed block; no fastest observation selection"
+  },
+  "pilot_protocol_sha256": "b26850da3ecf20eda5699648480c46a630e0b70f142dd6c6a8074e3e5fb8416c",
+  "design_registration_sha256": "c3ed512a4002f8c44b96b77ee2ef8fcd166c1016bac4cd6f5f061f608b02b7ce",
+  "outer_padding_included": true,
+  "api_allocation_boundary": "both methods construct complete plan/workspace plus roundtrip each call",
+  "deterministic_algorithms": true,
+  "fill_uninitialized_memory": false,
+  "gpu_timing_interpretation": "CUDA event interval includes eager launch gaps, checked synchronization and allocator gaps; not kernel duration sum",
+  "expected_cases": 104,
+  "expected_methods": 2,
+  "expected_raw_blocks": 20800,
+  "expected_summary_rows": 208,
+  "expected_memory_rows": 1040,
+  "baseline_source_sha256": "50bc272876be54db5d42327cce144022b7bf960d82073347479da2eb53f1d794",
+  "measurement_pairing": "Same case/session/block_id; each method normalized by its own frozen K",
+  "timing_residency": "Both implementations and their identical-input tensors resident during paired timing",
+  "K_frozen_at": "2026-11-04T17:42:53.853755+08:00",
+  "pilot_sha256": "7bb9b6b54aab00cfb70bc3f76d609226958b4af738e5e6b4acb1afb5ec7b16fb"
+}

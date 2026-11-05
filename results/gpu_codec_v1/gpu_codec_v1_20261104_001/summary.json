@@ -1,0 +1,134 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "template_only": false,
+  "run_id": "gpu_codec_v1_20261104_001",
+  "stage": "G1",
+  "started_at": "2026-11-04T17:39:57.612671+08:00",
+  "finished_at": "2026-11-04T18:04:08.899942+08:00",
+  "timezone": "Asia/Shanghai",
+  "execution_status": "complete",
+  "contract_sha256": "3ba9895a4a22ab8d6c11f2838e9490b20d58d4fd7c5d7536129a12d9d9d51186",
+  "benchmark_config_sha256": "4edb664e258bfa8d6389b0787d01ca34b4f9536d7a0c718775b03e45fb2778bf",
+  "correctness_status": "pass",
+  "benchmark_validity": "valid",
+  "optimization_gain": "observed",
+  "g1_acceptance": "pass",
+  "coverage": {
+    "nominal_bits_completed": [
+      4,
+      8
+    ],
+    "methods_completed": [
+      "torch_cuda_repaired",
+      "cuda_optimized_repaired"
+    ],
+    "correctness_cases_passed": 2098,
+    "correctness_cases_failed": 0,
+    "correctness_cases_skipped": 0,
+    "real_gradient_inputs_completed": 12,
+    "benchmark_cases_completed": 104,
+    "missing_items": [],
+    "benchmark_method_cases_completed": 208,
+    "raw_blocks": 20800,
+    "paired_blocks": 10400,
+    "memory_records": 1040,
+    "gpu_trace_configurations": 8
+  },
+  "claims": {
+    "local_codec_parity_validated": true,
+    "gpu_codec_performance_measured": true,
+    "full_dynamiq_gpu_validated": false,
+    "training_quality_newly_validated": false,
+    "multigpu_speedup_measured": false
+  },
+  "key_findings": [
+    "2098 correctness/reference records pass; counts {'torch_cuda_repaired': 953, 'cpu_ref_repaired': 164, 'cuda_optimized_repaired': 981}. These are not independent GPU experiments.",
+    "N=4194304、b4 roundtrip：PyTorch 7,304.440 us，自定义 CUDA 200.428 us；五个 session 的配对比值 34.99–37.03，中位数 36.44。",
+    "N=4194304、b8 roundtrip：PyTorch 9,251.784 us，自定义 CUDA 233.630 us；五个 session 的配对比值 38.53–41.17，中位数 39.41。",
+    "Paired descriptive gain classes: {'observed': 104}; noisy method-cases: {'torch_cuda_repaired': 76, 'cuda_optimized_repaired': 87}.",
+    "Custom CUDA eliminates O(N) global int64 packing indices and arithmetic intermediates; actual memory components and trace counts retained.",
+    "Full G1 local-codec deliverable complete; G2 has not been executed."
+  ],
+  "open_issues": [
+    "G1B_BENCHMARK_NOISE",
+    "G1B_EXTERNAL_DEPENDENCIES",
+    "G1B_BLOCK_DURATION_TARGET_MISS"
+  ],
+  "next_action": "review_required",
+  "artifacts": {
+    "report": "REPORT.md",
+    "environment": "environment.json",
+    "contract": "codec_contract.json",
+    "benchmark_config": "benchmark_config.json",
+    "inputs": "input_manifest.json",
+    "sources": "source_manifest.json",
+    "correctness": "correctness.jsonl",
+    "benchmark_raw": "benchmark_raw.jsonl",
+    "benchmark_summary": "benchmark_summary.jsonl",
+    "memory": "memory.jsonl",
+    "issues": "issues.jsonl",
+    "reproduce": "REPRODUCE.md",
+    "analysis": "analysis.json",
+    "figures": [
+      "figures/latency_vs_numel.png",
+      "figures/paired_speedup_vs_numel.png",
+      "figures/wire_effective_bits.png",
+      "figures/quantization_distortion.png",
+      "figures/memory_vs_numel.png"
+    ],
+    "correctness_case_manifest": "correctness_case_manifest.json",
+    "trace_index": "traces/g1b_trace_index.json",
+    "toolchain_summary": "logs/toolchain_summary.json",
+    "cuda_implementation_review": "logs/cuda_implementation_review.json",
+    "cuda_build_manifest": "logs/cuda_build_manifest.json"
+  },
+  "substage": "custom_cuda_paired",
+  "method_statuses": {
+    "torch_cuda_repaired": {
+      "correctness_status": "pass",
+      "counts": {
+        "pass": 953
+      }
+    },
+    "cpu_ref_repaired": {
+      "correctness_status": "pass",
+      "counts": {
+        "pass": 164
+      }
+    },
+    "cuda_optimized_repaired": {
+      "correctness_status": "pass",
+      "counts": {
+        "pass": 981
+      }
+    }
+  },
+  "report_generator": {
+    "path": "scripts/write_g1b_report.py",
+    "sha256": "696d9c4d84f2fcb234cca73c4c6483a1fec12cc82b3f83c3435d110ec7c0752c",
+    "source_sha256": {
+      "analysis.json": "65862fd84a00b20119c2bf0b581af7661e8281281428cedf7265b8521cf8778d",
+      "benchmark_summary.jsonl": "6ae215a42a8907b60d1b9b4c296ab4d036883411bbb903b8305f01421d121909",
+      "benchmark_raw.jsonl": "20600cf8b8e080d8577dc001e2c0d0da20b2fd91223c62a18e210419ad62870f",
+      "memory.jsonl": "972055cded58976a87962505f8859bf3de07df980ab5ae9b637ca9a76b8d7316",
+      "correctness.jsonl": "1d0565cf9f6440aacd84deedb955687dc30a63a07ba911113546f62386e1a2f8",
+      "correctness_acceptance.json": "1047eaff4b207a15e8ac93183b4f1f1f70aa52a7aab13d334160e658aeadf0cf",
+      "correctness_case_manifest.json": "7952efad57df8725d13d576909243217cfeb0f07c5d2181169278df5daf4afa7",
+      "environment.json": "3f4781c5c8b0e8c2533e7a3d5191182069ccd744e99ea8427198c3c587e298ce",
+      "codec_contract.json": "3ba9895a4a22ab8d6c11f2838e9490b20d58d4fd7c5d7536129a12d9d9d51186",
+      "benchmark_config.json": "4edb664e258bfa8d6389b0787d01ca34b4f9536d7a0c718775b03e45fb2778bf",
+      "pilot_protocol.json": "b26850da3ecf20eda5699648480c46a630e0b70f142dd6c6a8074e3e5fb8416c",
+      "input_manifest.json": "9e962d53cbe934fe9f4fd3c7b07c1160d7b3b8a6b4edd1139bfb92a3d4f2e261",
+      "execution_registration.json": "304eab7af5459b653b4fb54c17afb6ced0a49a19befc8cd3a124cf17ba9c0e82",
+      "logs/cuda_build_manifest.json": "d973431318e9724ed42f45447e9bdeeb022dbb3297daf0c9bb75a5999d1587fe",
+      "logs/correctness_development_attempts.json": "3960a6a3dcb4f517f0ea529c30aa0d6961d14f3f50b26089150c0d73a3452157",
+      "logs/execution_commands.json": "829509c184804fd4467d80bd1c8636f1361148f9ae61724756e7e2e64718f57b",
+      "traces/g1b_trace_index.json": "6f37bea91e10b0fb24e58c07d574af65aed854ce061a382e1d4488e6ef4de807",
+      "logs/pytest_cuda_codec_a01.xml": "61ffd35c653e2cfcd5d1fcbde38fde97b9019c18a22b4c1fba7c840c00e47d44",
+      "logs/cuda_implementation_review.json": "91e93f77a77bb06dc0b71677e2239aef8b4e3765f9dda2bab2b7fa8bcaadeebc",
+      "logs/cuda_build_a01.json": "dbd69254d87e3339e8ae37e1e445fa965ef3d52e55a240777890924349a4a3d0",
+      "logs/cuda_build_a02.json": "0a2f3dc7650e97ee6c0909103f87ed6370e36feabac5e6dbb5b062be68e1d491",
+      "logs/toolchain_summary.json": "75c99b3c99616f9bbf754404edcf6d7028357f6bbad1b296a38874dd6ce361fb"
+    }
+  }
+}

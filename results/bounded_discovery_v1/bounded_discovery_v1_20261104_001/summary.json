@@ -1,0 +1,105 @@
+{
+  "schema_version": "bounded_discovery_v1.0",
+  "template_only": false,
+  "run_id": "bounded_discovery_v1_20261104_001",
+  "created_at": "2026-11-04T21:09:20.965005+08:00",
+  "scope": "official_fixed_codec_development_diagnosis",
+  "execution_status": "complete",
+  "d0_status": "pass",
+  "d1_status": "complete",
+  "correctness_status": "pass",
+  "packet_accounting_status": "pass",
+  "local_comparison_status": "valid",
+  "aggregate_comparison_status": "valid",
+  "timing_status": "not_run",
+  "decision": "no_actionable_signal",
+  "decision_reason": "有效完成既定有限比较；低精度存在实际字节与误差取舍，高精度均匀参照只在update100占优、另两快照反转，尚无具体触发机制与可行动干预证据；本次有限诊断未找到可推进线索。",
+  "contract_sha256": "97e8595532125d1fed44956c6a70da959031581884e753b449b64c1b3b195f47",
+  "baseline": {
+    "repository": "https://github.com/CharlesHan24/DynamiQ",
+    "planned_commit": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+    "executed_commit": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+    "entrypoints": [
+      "eden_utils.scaling_compress",
+      "eden_utils.scaling_decompress"
+    ],
+    "arithmetic_modified": false,
+    "actual_module_sha256": "d4eaf1d9a23930d34a6edb5b54254913679ac854bd855124c13b40e2c5f38880",
+    "qualification_evidence": "baseline_qualification.json"
+  },
+  "coverage": {
+    "planned_snapshots": 3,
+    "planned_workers_per_snapshot": 4,
+    "planned_random_repeats": 8,
+    "completed_snapshots": 3,
+    "completed_worker_inputs": 12,
+    "method_configuration_count": 9,
+    "valid_local_records": 780,
+    "valid_aggregate_records": 195,
+    "failed_records": 0,
+    "missing_records": 0,
+    "missing_coverage": []
+  },
+  "data_usage": {
+    "partition": "development",
+    "old_holdout_opened": false,
+    "new_training_executed": false,
+    "independent_confirmation_executed": false
+  },
+  "claims": {
+    "official_local_codec_executed": true,
+    "official_full_dynamiq_validated": false,
+    "multihop_allreduce_newly_executed": false,
+    "training_quality_newly_validated": false,
+    "network_speedup_measured": false,
+    "independent_contribution_established": false
+  },
+  "finding": {
+    "candidate_count": 0,
+    "selected_finding_id": null,
+    "finding_path": null,
+    "nearest_work_check": "logs/nearest_work_source_review.json",
+    "confirmation_plan_path": null
+  },
+  "resource_usage": {
+    "d0_active_work_hours": 0.32927272333333335,
+    "d1_active_work_hours": 0.6667035330555556,
+    "gpu_execution_hours": 0.3311241833610902,
+    "build_repair_rounds": 2,
+    "measurement_note": "Conservative elapsed upper bounds, not exact active/kernel time or summed parallel labor. D1 charges the entire task window to include preparation overlapping D0. GPU upper bound charges entire D0 wall window plus synchronized D1 windows and freeze; includes both revisions.",
+    "d1_final_execution_wall_seconds": 178.60788390000016,
+    "d1_final_GPU_window_seconds": 3.0345527999561455,
+    "d1_prior_GPU_window_seconds": 3.4992740999696252
+  },
+  "not_produced": [
+    "findings/FINDING.md (no qualifying finding)",
+    "diagnostic_config.json / diagnostic_raw.jsonl (not_run)",
+    "benchmark_config.json / benchmark_raw.jsonl / benchmark_summary.jsonl (not_run)",
+    "D2 confirmation plan (not applicable to no_actionable_signal)"
+  ],
+  "evidence_paths": [
+    "REPORT.md",
+    "PER_INPUT_RESULTS.md",
+    "baseline_qualification.json",
+    "experiment_contract.json",
+    "source_manifest.json",
+    "input_manifest.json",
+    "environment.json",
+    "correctness.jsonl",
+    "packet_accounting.jsonl",
+    "metrics_raw.jsonl",
+    "metrics_summary.jsonl",
+    "summary_analysis.json",
+    "logs/revision_equivalence_audit.json",
+    "logs/decision_evidence.json",
+    "REPRODUCE.md",
+    "integrity_manifest.json"
+  ],
+  "next_action": "stop_after_report; review required for any new scope",
+  "completed_at": "2026-11-04T21:44:47.235881+08:00",
+  "contract_revision": 2,
+  "d2_status": "not_run",
+  "diagnostic_controls_status": "not_run",
+  "diagnostic_controls_count": 0,
+  "delivery_prepared_at": "2026-11-04T21:49:21.097724+08:00"
+}

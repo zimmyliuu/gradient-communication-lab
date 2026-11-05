@@ -1,0 +1,955 @@
+{
+  "schema_version": 1,
+  "source": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261101_002\\correctness.jsonl",
+  "source_sha256": "619f19ebacf75c1318f494de6d02d38fc75e1eb8be82a2897ad354eaca57a9e9",
+  "protocol_cases": [
+    {
+      "nominal_bits": 4,
+      "input_id": "epsilon_all_65280_finite_bf16",
+      "check_type": "encode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "normalized_lut_boundaries_threshold0",
+      "check_type": "roundtrip"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "normalized_lut_boundaries_threshold65536",
+      "check_type": "roundtrip"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "pack_all_legal_count0",
+      "check_type": "pack"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "pack_all_legal_count1",
+      "check_type": "pack"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "pack_all_legal_count3",
+      "check_type": "pack"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "pack_all_legal_count17",
+      "check_type": "pack"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "pack_all_legal_count513",
+      "check_type": "pack"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "pack_reject_negative",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "pack_reject_unused",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "pack_reject_float_dtype",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "unpack_reject_truncated",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "unpack_reject_overlong",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "unpack_reject_padding_high_bit",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_all_legal_scale0",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_all_legal_scale1",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_all_legal_scale255",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_minimum_subnormal_qscale0",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_minimum_subnormal_qscale1",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_minimum_subnormal_qscale127",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_minimum_subnormal_qscale255",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_minimum_normal_qscale0",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_minimum_normal_qscale1",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_minimum_normal_qscale127",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_minimum_normal_qscale255",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_epsilon_qscale0",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_epsilon_qscale1",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_epsilon_qscale127",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_epsilon_qscale255",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_large_finite_qscale0",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_large_finite_qscale1",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_large_finite_qscale127",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "decode_legal_top_large_finite_qscale255",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_nan",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_positive_inf",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_negative_inf",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_float32",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_rank2",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_noncontiguous",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_wrong_length",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "threshold_reject_nan",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "threshold_reject_too_large",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "threshold_reject_negative",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "threshold_reject_shape",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_top_reject_zero",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_top_reject_negative",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_top_reject_nan",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_top_reject_inf",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_top_reject_finite_intermediate_overflow",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_reject_truncated_payload",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_reject_truncated_scale",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_reject_unused_code",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "lut_reject_nan",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "lut_reject_unsorted",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "lut_reject_duplicate",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_owned_storage_alias",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "maxfinite_input_encode",
+      "check_type": "encode"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "maxfinite_input_decode_reject_reference_overflow",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "epsilon_all_65280_finite_bf16",
+      "check_type": "encode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "normalized_lut_boundaries_threshold0",
+      "check_type": "roundtrip"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "normalized_lut_boundaries_threshold65536",
+      "check_type": "roundtrip"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "pack_all_legal_count0",
+      "check_type": "pack"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "pack_all_legal_count1",
+      "check_type": "pack"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "pack_all_legal_count3",
+      "check_type": "pack"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "pack_all_legal_count257",
+      "check_type": "pack"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "pack_all_legal_count513",
+      "check_type": "pack"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "pack_reject_negative",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "pack_reject_unused",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "pack_reject_float_dtype",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "unpack_reject_truncated",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "unpack_reject_overlong",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "unpack_reject_padding_high_bit",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_all_legal_scale0",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_all_legal_scale1",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_all_legal_scale255",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_minimum_subnormal_qscale0",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_minimum_subnormal_qscale1",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_minimum_subnormal_qscale127",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_minimum_subnormal_qscale255",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_minimum_normal_qscale0",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_minimum_normal_qscale1",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_minimum_normal_qscale127",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_minimum_normal_qscale255",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_epsilon_qscale0",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_epsilon_qscale1",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_epsilon_qscale127",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_epsilon_qscale255",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_large_finite_qscale0",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_large_finite_qscale1",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_large_finite_qscale127",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "decode_legal_top_large_finite_qscale255",
+      "check_type": "decode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_reject_output_overflow_finite_decoded_scale",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_nan",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_positive_inf",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_negative_inf",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_float32",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_rank2",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_noncontiguous",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_wrong_length",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "threshold_reject_nan",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "threshold_reject_too_large",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "threshold_reject_negative",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "threshold_reject_shape",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_top_reject_zero",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_top_reject_negative",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_top_reject_nan",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_top_reject_inf",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_top_reject_finite_intermediate_overflow",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_reject_truncated_payload",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_reject_truncated_scale",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_reject_unused_code",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "lut_reject_nan",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "lut_reject_unsorted",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "lut_reject_duplicate",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_owned_storage_alias",
+      "check_type": "invalid_input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "maxfinite_input_encode",
+      "check_type": "encode"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "maxfinite_input_decode",
+      "check_type": "decode"
+    }
+  ],
+  "rejection_rules": [
+    {
+      "nominal_bits": 4,
+      "input_id": "pack_reject_negative",
+      "exception_type": "ValueError",
+      "message": "Code outside unsigned alphabet"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "pack_reject_unused",
+      "exception_type": "ValueError",
+      "message": "Code outside unsigned alphabet"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "pack_reject_float_dtype",
+      "exception_type": "ValueError",
+      "message": "Expected a contiguous one-dimensional integer tensor"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "unpack_reject_truncated",
+      "exception_type": "ValueError",
+      "message": "payload: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "unpack_reject_overlong",
+      "exception_type": "ValueError",
+      "message": "payload: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "unpack_reject_padding_high_bit",
+      "exception_type": "ValueError",
+      "message": "Nonzero trailing padding bits"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_nan",
+      "exception_type": "ValueError",
+      "message": "Nonfinite input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_positive_inf",
+      "exception_type": "ValueError",
+      "message": "Nonfinite input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_negative_inf",
+      "exception_type": "ValueError",
+      "message": "Nonfinite input"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_float32",
+      "exception_type": "ValueError",
+      "message": "input: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_rank2",
+      "exception_type": "ValueError",
+      "message": "input: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_noncontiguous",
+      "exception_type": "ValueError",
+      "message": "input: expected contiguous tensor on cuda:0"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_wrong_length",
+      "exception_type": "ValueError",
+      "message": "input: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "threshold_reject_nan",
+      "exception_type": "ValueError",
+      "message": "Invalid explicit thresholds"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "threshold_reject_too_large",
+      "exception_type": "ValueError",
+      "message": "Invalid explicit thresholds"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "threshold_reject_negative",
+      "exception_type": "ValueError",
+      "message": "Invalid explicit thresholds"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "threshold_reject_shape",
+      "exception_type": "ValueError",
+      "message": "main thresholds: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_top_reject_zero",
+      "exception_type": "ValueError",
+      "message": "Nonfinite or nonpositive top scale"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_top_reject_negative",
+      "exception_type": "ValueError",
+      "message": "Nonfinite or nonpositive top scale"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_top_reject_nan",
+      "exception_type": "ValueError",
+      "message": "Nonfinite or nonpositive top scale"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_top_reject_inf",
+      "exception_type": "ValueError",
+      "message": "Nonfinite or nonpositive top scale"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_top_reject_finite_intermediate_overflow",
+      "exception_type": "ValueError",
+      "message": "Nonfinite decoded scales"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_reject_truncated_payload",
+      "exception_type": "ValueError",
+      "message": "payload: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_reject_truncated_scale",
+      "exception_type": "ValueError",
+      "message": "scale codes: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "packet_reject_unused_code",
+      "exception_type": "ValueError",
+      "message": "Unused packed code"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "lut_reject_nan",
+      "exception_type": "ValueError",
+      "message": "LUT must be finite and strictly ascending"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "lut_reject_unsorted",
+      "exception_type": "ValueError",
+      "message": "LUT must be finite and strictly ascending"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "lut_reject_duplicate",
+      "exception_type": "ValueError",
+      "message": "LUT must be finite and strictly ascending"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "encode_reject_owned_storage_alias",
+      "exception_type": "ValueError",
+      "message": "input: aliases plan-owned storage"
+    },
+    {
+      "nominal_bits": 4,
+      "input_id": "maxfinite_input_decode_reject_reference_overflow",
+      "exception_type": "ValueError",
+      "message": "Nonfinite decoded scales"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "pack_reject_negative",
+      "exception_type": "ValueError",
+      "message": "Code outside unsigned alphabet"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "pack_reject_unused",
+      "exception_type": "ValueError",
+      "message": "Code outside unsigned alphabet"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "pack_reject_float_dtype",
+      "exception_type": "ValueError",
+      "message": "Expected a contiguous one-dimensional integer tensor"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "unpack_reject_truncated",
+      "exception_type": "ValueError",
+      "message": "payload: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "unpack_reject_overlong",
+      "exception_type": "ValueError",
+      "message": "payload: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "unpack_reject_padding_high_bit",
+      "exception_type": "ValueError",
+      "message": "Nonzero trailing padding bits"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_reject_output_overflow_finite_decoded_scale",
+      "exception_type": "ValueError",
+      "message": "Nonfinite decoded output"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_nan",
+      "exception_type": "ValueError",
+      "message": "Nonfinite input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_positive_inf",
+      "exception_type": "ValueError",
+      "message": "Nonfinite input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_negative_inf",
+      "exception_type": "ValueError",
+      "message": "Nonfinite input"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_float32",
+      "exception_type": "ValueError",
+      "message": "input: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_rank2",
+      "exception_type": "ValueError",
+      "message": "input: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_noncontiguous",
+      "exception_type": "ValueError",
+      "message": "input: expected contiguous tensor on cuda:0"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_wrong_length",
+      "exception_type": "ValueError",
+      "message": "input: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "threshold_reject_nan",
+      "exception_type": "ValueError",
+      "message": "Invalid explicit thresholds"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "threshold_reject_too_large",
+      "exception_type": "ValueError",
+      "message": "Invalid explicit thresholds"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "threshold_reject_negative",
+      "exception_type": "ValueError",
+      "message": "Invalid explicit thresholds"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "threshold_reject_shape",
+      "exception_type": "ValueError",
+      "message": "main thresholds: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_top_reject_zero",
+      "exception_type": "ValueError",
+      "message": "Nonfinite or nonpositive top scale"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_top_reject_negative",
+      "exception_type": "ValueError",
+      "message": "Nonfinite or nonpositive top scale"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_top_reject_nan",
+      "exception_type": "ValueError",
+      "message": "Nonfinite or nonpositive top scale"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_top_reject_inf",
+      "exception_type": "ValueError",
+      "message": "Nonfinite or nonpositive top scale"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_top_reject_finite_intermediate_overflow",
+      "exception_type": "ValueError",
+      "message": "Nonfinite decoded scales"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_reject_truncated_payload",
+      "exception_type": "ValueError",
+      "message": "payload: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_reject_truncated_scale",
+      "exception_type": "ValueError",
+      "message": "scale codes: unexpected tensor dtype or shape"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "packet_reject_unused_code",
+      "exception_type": "ValueError",
+      "message": "Unused packed code"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "lut_reject_nan",
+      "exception_type": "ValueError",
+      "message": "LUT must be finite and strictly ascending"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "lut_reject_unsorted",
+      "exception_type": "ValueError",
+      "message": "LUT must be finite and strictly ascending"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "lut_reject_duplicate",
+      "exception_type": "ValueError",
+      "message": "LUT must be finite and strictly ascending"
+    },
+    {
+      "nominal_bits": 8,
+      "input_id": "encode_reject_owned_storage_alias",
+      "exception_type": "ValueError",
+      "message": "input: aliases plan-owned storage"
+    }
+  ],
+  "rule": "Exact exception class and exact message; unexpected CUDA RuntimeError is failure"
+}

@@ -1,0 +1,22 @@
+--- sealed_actual/csrc/cuda_hierarchical_mee.cu
++++ derived/csrc/cuda_hierarchical_mee.cu
+@@ -268,6 +268,10 @@
+ 
+     scaling_hier_store_packed_code_16<NBITS>(dst, chunk_start_addr, inner_chunk_idx, code);
+ }
++
++#ifndef DIAG_B8_SCALE_ADD
++#define DIAG_B8_SCALE_ADD 1e-7f
++#endif
+ 
+ template<int NBITS>
+ __global__ void scaling_compress_kernel_mee_hierarchical_bf16_opt(
+@@ -300,7 +304,7 @@
+ 
+     float local_val = __bfloat162float(src[tid]);
+     float chunk_scale = scaling_hier_chunk_absmax_16(fabsf(local_val));
+-    chunk_scale = scaling_hier_positive_scale(chunk_scale / scaling_hier_positive_scale(chunk_max_mee) + 1e-7f);
++    chunk_scale = scaling_hier_positive_scale(chunk_scale / scaling_hier_positive_scale(chunk_max_mee) + (NBITS == 8 ? DIAG_B8_SCALE_ADD : 1e-7f));
+ 
+     unsigned int super_start_addr = blockIdx.x * SUPERCHUNK_BYTES;
+     unsigned int chunk_start_addr = super_start_addr + local_chunk_id * PER_CHUNK_BYTES;

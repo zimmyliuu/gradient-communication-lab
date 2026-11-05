@@ -1,0 +1,515 @@
+{
+  "schema_version": "bounded_discovery_v1.0",
+  "run_id": "bounded_discovery_v1_20261104_001",
+  "created_at": "2026-11-04T21:12:08.151589+08:00",
+  "source_manifest": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\input_manifest.json",
+  "source_manifest_sha256": "9e962d53cbe934fe9f4fd3c7b07c1160d7b3b8a6b4edd1139bfb92a3d4f2e261",
+  "inputs": [
+    {
+      "snapshot_id": "seed1101_update000100",
+      "worker_id": 0,
+      "input_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0",
+      "training_seed": 1101,
+      "update_step": 100,
+      "partition": "development",
+      "logical_numel": 818048,
+      "input_dtype": "torch.bfloat16",
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000100.pt",
+      "source_sha256": "3d29a1bd33f0f4a49d54275fb5225253a4084069f4e5d78a8d2487ccf520d780",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank0.pt",
+      "fixture_sha256": "49a8e215268cb848f5a651f651be1100f48610b488e37204342618181409ab0b",
+      "input_identity": {
+        "shape": [
+          818048
+        ],
+        "dtype": "torch.bfloat16",
+        "bytes": 1636096,
+        "sha256": "2833377c035290e664c0cb01dd9f3bf32a4ea5bc004bf2eaa412de584109d70a"
+      },
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "already_divided_by_world_size": true,
+      "world_size": 4,
+      "loader": "torch.load trusted accepted fixture, input_logical (no old padding, no second division)",
+      "padding_by_method": {
+        "official_dynamiq_fixed_codec_b4": 818176,
+        "official_dynamiq_fixed_codec_b8": 818176,
+        "uniform_g16_q2": 818048,
+        "uniform_g16_q3": 818048,
+        "uniform_g16_q6": 818048,
+        "uniform_g128_q4": 818048,
+        "uniform_g128_q5": 818048,
+        "uniform_g128_q8": 818048,
+        "bf16_identity": 818048
+      }
+    },
+    {
+      "snapshot_id": "seed1101_update000100",
+      "worker_id": 1,
+      "input_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1",
+      "training_seed": 1101,
+      "update_step": 100,
+      "partition": "development",
+      "logical_numel": 818048,
+      "input_dtype": "torch.bfloat16",
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000100.pt",
+      "source_sha256": "3d29a1bd33f0f4a49d54275fb5225253a4084069f4e5d78a8d2487ccf520d780",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank1.pt",
+      "fixture_sha256": "bf4025b4f58c262690ad5f77b9b0d365aaf5fb83d631548cb259324d2c5876e6",
+      "input_identity": {
+        "shape": [
+          818048
+        ],
+        "dtype": "torch.bfloat16",
+        "bytes": 1636096,
+        "sha256": "93cadea86c39d5c57592db73223a4552a3e7d29a08accbf94fd901b333a97aa7"
+      },
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "already_divided_by_world_size": true,
+      "world_size": 4,
+      "loader": "torch.load trusted accepted fixture, input_logical (no old padding, no second division)",
+      "padding_by_method": {
+        "official_dynamiq_fixed_codec_b4": 818176,
+        "official_dynamiq_fixed_codec_b8": 818176,
+        "uniform_g16_q2": 818048,
+        "uniform_g16_q3": 818048,
+        "uniform_g16_q6": 818048,
+        "uniform_g128_q4": 818048,
+        "uniform_g128_q5": 818048,
+        "uniform_g128_q8": 818048,
+        "bf16_identity": 818048
+      }
+    },
+    {
+      "snapshot_id": "seed1101_update000100",
+      "worker_id": 2,
+      "input_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2",
+      "training_seed": 1101,
+      "update_step": 100,
+      "partition": "development",
+      "logical_numel": 818048,
+      "input_dtype": "torch.bfloat16",
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000100.pt",
+      "source_sha256": "3d29a1bd33f0f4a49d54275fb5225253a4084069f4e5d78a8d2487ccf520d780",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank2.pt",
+      "fixture_sha256": "bc51435ab5e23318c92e9ca9bb645929ef72ab43638a0c80086497be4e3bee46",
+      "input_identity": {
+        "shape": [
+          818048
+        ],
+        "dtype": "torch.bfloat16",
+        "bytes": 1636096,
+        "sha256": "201f10b43b54b0abd77232e107cf254c35f0bead98209ef7e629ba80b00aaa1f"
+      },
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "already_divided_by_world_size": true,
+      "world_size": 4,
+      "loader": "torch.load trusted accepted fixture, input_logical (no old padding, no second division)",
+      "padding_by_method": {
+        "official_dynamiq_fixed_codec_b4": 818176,
+        "official_dynamiq_fixed_codec_b8": 818176,
+        "uniform_g16_q2": 818048,
+        "uniform_g16_q3": 818048,
+        "uniform_g16_q6": 818048,
+        "uniform_g128_q4": 818048,
+        "uniform_g128_q5": 818048,
+        "uniform_g128_q8": 818048,
+        "bf16_identity": 818048
+      }
+    },
+    {
+      "snapshot_id": "seed1101_update000100",
+      "worker_id": 3,
+      "input_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3",
+      "training_seed": 1101,
+      "update_step": 100,
+      "partition": "development",
+      "logical_numel": 818048,
+      "input_dtype": "torch.bfloat16",
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000100.pt",
+      "source_sha256": "3d29a1bd33f0f4a49d54275fb5225253a4084069f4e5d78a8d2487ccf520d780",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank3.pt",
+      "fixture_sha256": "5977ed6b94f98fac550fd9e2b4ffe9707b465e6eba3ecc133e29b58a265972d3",
+      "input_identity": {
+        "shape": [
+          818048
+        ],
+        "dtype": "torch.bfloat16",
+        "bytes": 1636096,
+        "sha256": "77971a69f2cf4856a788426ba5992f439324c614bb6477465ebb6916fea970e0"
+      },
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "already_divided_by_world_size": true,
+      "world_size": 4,
+      "loader": "torch.load trusted accepted fixture, input_logical (no old padding, no second division)",
+      "padding_by_method": {
+        "official_dynamiq_fixed_codec_b4": 818176,
+        "official_dynamiq_fixed_codec_b8": 818176,
+        "uniform_g16_q2": 818048,
+        "uniform_g16_q3": 818048,
+        "uniform_g16_q6": 818048,
+        "uniform_g128_q4": 818048,
+        "uniform_g128_q5": 818048,
+        "uniform_g128_q8": 818048,
+        "bf16_identity": 818048
+      }
+    },
+    {
+      "snapshot_id": "seed1101_update000500",
+      "worker_id": 0,
+      "input_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0",
+      "training_seed": 1101,
+      "update_step": 500,
+      "partition": "development",
+      "logical_numel": 818048,
+      "input_dtype": "torch.bfloat16",
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000500.pt",
+      "source_sha256": "8a736deac707f58f1e7f6e7193e0fd8f6ec85fd569acf159a1a5a34bd8e39d08",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank0.pt",
+      "fixture_sha256": "8ef078ad6ac324ff1d3b3aefab7a815bfd31a0a9276a2de7d2081fb18ea2d115",
+      "input_identity": {
+        "shape": [
+          818048
+        ],
+        "dtype": "torch.bfloat16",
+        "bytes": 1636096,
+        "sha256": "00b9bef7cfded43e9c613771530598f1fcf28014fc219a4328432e47e4710337"
+      },
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "already_divided_by_world_size": true,
+      "world_size": 4,
+      "loader": "torch.load trusted accepted fixture, input_logical (no old padding, no second division)",
+      "padding_by_method": {
+        "official_dynamiq_fixed_codec_b4": 818176,
+        "official_dynamiq_fixed_codec_b8": 818176,
+        "uniform_g16_q2": 818048,
+        "uniform_g16_q3": 818048,
+        "uniform_g16_q6": 818048,
+        "uniform_g128_q4": 818048,
+        "uniform_g128_q5": 818048,
+        "uniform_g128_q8": 818048,
+        "bf16_identity": 818048
+      }
+    },
+    {
+      "snapshot_id": "seed1101_update000500",
+      "worker_id": 1,
+      "input_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1",
+      "training_seed": 1101,
+      "update_step": 500,
+      "partition": "development",
+      "logical_numel": 818048,
+      "input_dtype": "torch.bfloat16",
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000500.pt",
+      "source_sha256": "8a736deac707f58f1e7f6e7193e0fd8f6ec85fd569acf159a1a5a34bd8e39d08",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank1.pt",
+      "fixture_sha256": "5e808db4c3b3a81f8c7f9f802c5420d43b198e016ee14d3060d5da398658993a",
+      "input_identity": {
+        "shape": [
+          818048
+        ],
+        "dtype": "torch.bfloat16",
+        "bytes": 1636096,
+        "sha256": "de20dbe98af056c7c4a333d1f14f412a735f2037b926dbe8d596d8622729e4ab"
+      },
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "already_divided_by_world_size": true,
+      "world_size": 4,
+      "loader": "torch.load trusted accepted fixture, input_logical (no old padding, no second division)",
+      "padding_by_method": {
+        "official_dynamiq_fixed_codec_b4": 818176,
+        "official_dynamiq_fixed_codec_b8": 818176,
+        "uniform_g16_q2": 818048,
+        "uniform_g16_q3": 818048,
+        "uniform_g16_q6": 818048,
+        "uniform_g128_q4": 818048,
+        "uniform_g128_q5": 818048,
+        "uniform_g128_q8": 818048,
+        "bf16_identity": 818048
+      }
+    },
+    {
+      "snapshot_id": "seed1101_update000500",
+      "worker_id": 2,
+      "input_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2",
+      "training_seed": 1101,
+      "update_step": 500,
+      "partition": "development",
+      "logical_numel": 818048,
+      "input_dtype": "torch.bfloat16",
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000500.pt",
+      "source_sha256": "8a736deac707f58f1e7f6e7193e0fd8f6ec85fd569acf159a1a5a34bd8e39d08",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank2.pt",
+      "fixture_sha256": "000a2e12f653ace0a80eaa64d54fbe7e99331bddeae50878628403c2c8942848",
+      "input_identity": {
+        "shape": [
+          818048
+        ],
+        "dtype": "torch.bfloat16",
+        "bytes": 1636096,
+        "sha256": "ed67b70e6fb3e1cc747f02a72c12372b5b767595d604e2d8ff5fa145ccc72acc"
+      },
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "already_divided_by_world_size": true,
+      "world_size": 4,
+      "loader": "torch.load trusted accepted fixture, input_logical (no old padding, no second division)",
+      "padding_by_method": {
+        "official_dynamiq_fixed_codec_b4": 818176,
+        "official_dynamiq_fixed_codec_b8": 818176,
+        "uniform_g16_q2": 818048,
+        "uniform_g16_q3": 818048,
+        "uniform_g16_q6": 818048,
+        "uniform_g128_q4": 818048,
+        "uniform_g128_q5": 818048,
+        "uniform_g128_q8": 818048,
+        "bf16_identity": 818048
+      }
+    },
+    {
+      "snapshot_id": "seed1101_update000500",
+      "worker_id": 3,
+      "input_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3",
+      "training_seed": 1101,
+      "update_step": 500,
+      "partition": "development",
+      "logical_numel": 818048,
+      "input_dtype": "torch.bfloat16",
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000500.pt",
+      "source_sha256": "8a736deac707f58f1e7f6e7193e0fd8f6ec85fd569acf159a1a5a34bd8e39d08",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank3.pt",
+      "fixture_sha256": "fe5452fd3c1ce690b2c662caded7e40b51ccf27e66c97f8a368b6d78b22e43f0",
+      "input_identity": {
+        "shape": [
+          818048
+        ],
+        "dtype": "torch.bfloat16",
+        "bytes": 1636096,
+        "sha256": "5a66e75fdef890802a9abd55c76f9b8df5bbec5978768c62923456b68c8b0dde"
+      },
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "already_divided_by_world_size": true,
+      "world_size": 4,
+      "loader": "torch.load trusted accepted fixture, input_logical (no old padding, no second division)",
+      "padding_by_method": {
+        "official_dynamiq_fixed_codec_b4": 818176,
+        "official_dynamiq_fixed_codec_b8": 818176,
+        "uniform_g16_q2": 818048,
+        "uniform_g16_q3": 818048,
+        "uniform_g16_q6": 818048,
+        "uniform_g128_q4": 818048,
+        "uniform_g128_q5": 818048,
+        "uniform_g128_q8": 818048,
+        "bf16_identity": 818048
+      }
+    },
+    {
+      "snapshot_id": "seed1101_update002500",
+      "worker_id": 0,
+      "input_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0",
+      "training_seed": 1101,
+      "update_step": 2500,
+      "partition": "development",
+      "logical_numel": 818048,
+      "input_dtype": "torch.bfloat16",
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_002500.pt",
+      "source_sha256": "55a3ecdb6f6e993b04990d9d81e567fc8b04b76769d6bab00f307904a36cc103",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0.pt",
+      "fixture_sha256": "035daffdcea1ef49aefb5fb6b38b8bada246ece7f76f15ee7c4bb263b89e0a2b",
+      "input_identity": {
+        "shape": [
+          818048
+        ],
+        "dtype": "torch.bfloat16",
+        "bytes": 1636096,
+        "sha256": "e5e89c067c982cc8ac48bf957903af873eec5624500f1b89a37b83a65eb40760"
+      },
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "already_divided_by_world_size": true,
+      "world_size": 4,
+      "loader": "torch.load trusted accepted fixture, input_logical (no old padding, no second division)",
+      "padding_by_method": {
+        "official_dynamiq_fixed_codec_b4": 818176,
+        "official_dynamiq_fixed_codec_b8": 818176,
+        "uniform_g16_q2": 818048,
+        "uniform_g16_q3": 818048,
+        "uniform_g16_q6": 818048,
+        "uniform_g128_q4": 818048,
+        "uniform_g128_q5": 818048,
+        "uniform_g128_q8": 818048,
+        "bf16_identity": 818048
+      }
+    },
+    {
+      "snapshot_id": "seed1101_update002500",
+      "worker_id": 1,
+      "input_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1",
+      "training_seed": 1101,
+      "update_step": 2500,
+      "partition": "development",
+      "logical_numel": 818048,
+      "input_dtype": "torch.bfloat16",
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_002500.pt",
+      "source_sha256": "55a3ecdb6f6e993b04990d9d81e567fc8b04b76769d6bab00f307904a36cc103",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1.pt",
+      "fixture_sha256": "04610b5fae4c8cc3f1243df1996e03eaf089bc4a932dfb0f113bbf922a096fc2",
+      "input_identity": {
+        "shape": [
+          818048
+        ],
+        "dtype": "torch.bfloat16",
+        "bytes": 1636096,
+        "sha256": "a53f56720fc89245ce932051e52e19e2f51d29bce22cd7383d76bc063d9abed1"
+      },
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "already_divided_by_world_size": true,
+      "world_size": 4,
+      "loader": "torch.load trusted accepted fixture, input_logical (no old padding, no second division)",
+      "padding_by_method": {
+        "official_dynamiq_fixed_codec_b4": 818176,
+        "official_dynamiq_fixed_codec_b8": 818176,
+        "uniform_g16_q2": 818048,
+        "uniform_g16_q3": 818048,
+        "uniform_g16_q6": 818048,
+        "uniform_g128_q4": 818048,
+        "uniform_g128_q5": 818048,
+        "uniform_g128_q8": 818048,
+        "bf16_identity": 818048
+      }
+    },
+    {
+      "snapshot_id": "seed1101_update002500",
+      "worker_id": 2,
+      "input_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2",
+      "training_seed": 1101,
+      "update_step": 2500,
+      "partition": "development",
+      "logical_numel": 818048,
+      "input_dtype": "torch.bfloat16",
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_002500.pt",
+      "source_sha256": "55a3ecdb6f6e993b04990d9d81e567fc8b04b76769d6bab00f307904a36cc103",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2.pt",
+      "fixture_sha256": "1e523fcc53b205cf5a0ea9d23a62989f9ca93ccf98a53d02ca06c211c7921fbb",
+      "input_identity": {
+        "shape": [
+          818048
+        ],
+        "dtype": "torch.bfloat16",
+        "bytes": 1636096,
+        "sha256": "d05af58cda51d75ceb2461d5e52310a8287bf2a7bc15994a79e7fad2c438e827"
+      },
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "already_divided_by_world_size": true,
+      "world_size": 4,
+      "loader": "torch.load trusted accepted fixture, input_logical (no old padding, no second division)",
+      "padding_by_method": {
+        "official_dynamiq_fixed_codec_b4": 818176,
+        "official_dynamiq_fixed_codec_b8": 818176,
+        "uniform_g16_q2": 818048,
+        "uniform_g16_q3": 818048,
+        "uniform_g16_q6": 818048,
+        "uniform_g128_q4": 818048,
+        "uniform_g128_q5": 818048,
+        "uniform_g128_q8": 818048,
+        "bf16_identity": 818048
+      }
+    },
+    {
+      "snapshot_id": "seed1101_update002500",
+      "worker_id": 3,
+      "input_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3",
+      "training_seed": 1101,
+      "update_step": 2500,
+      "partition": "development",
+      "logical_numel": 818048,
+      "input_dtype": "torch.bfloat16",
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_002500.pt",
+      "source_sha256": "55a3ecdb6f6e993b04990d9d81e567fc8b04b76769d6bab00f307904a36cc103",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3.pt",
+      "fixture_sha256": "1f2e0faf88c80d08579f8742bfd36fd4899b9a7e93db63f3c5880024dd4bf601",
+      "input_identity": {
+        "shape": [
+          818048
+        ],
+        "dtype": "torch.bfloat16",
+        "bytes": 1636096,
+        "sha256": "29774e8911b1e77cccf9fb69e3f4393d1694f23490a6f480f48caf4d60f487d2"
+      },
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "already_divided_by_world_size": true,
+      "world_size": 4,
+      "loader": "torch.load trusted accepted fixture, input_logical (no old padding, no second division)",
+      "padding_by_method": {
+        "official_dynamiq_fixed_codec_b4": 818176,
+        "official_dynamiq_fixed_codec_b8": 818176,
+        "uniform_g16_q2": 818048,
+        "uniform_g16_q3": 818048,
+        "uniform_g16_q6": 818048,
+        "uniform_g128_q4": 818048,
+        "uniform_g128_q5": 818048,
+        "uniform_g128_q8": 818048,
+        "bf16_identity": 818048
+      }
+    }
+  ],
+  "old_holdout_opened": false,
+  "preliminary_until_method_padding_frozen": false
+}

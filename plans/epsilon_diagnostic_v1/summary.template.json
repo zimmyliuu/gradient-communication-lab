@@ -1,0 +1,58 @@
+{
+  "schema_version": "epsilon_diagnostic_v1.0",
+  "template_only": true,
+  "run_id": null,
+  "created_at": null,
+  "scope": "single_additive_scale_constant_b8_matched_randomness",
+  "execution_status": "not_started",
+  "stages": {"E0": "not_run", "E1": "not_run", "E2": "not_run"},
+  "base_run_id": "bounded_discovery_v1_20261104_001",
+  "upstream_commit": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+  "base_contract_sha256": "97e8595532125d1fed44956c6a70da959031581884e753b449b64c1b3b195f47",
+  "contract_sha256": null,
+  "conditions": {"control_scale_add": 1e-7, "diagnostic_scale_add": 0.0, "mee_eps8_unchanged": 0.1},
+  "identity": {
+    "control_binary_sha256": null,
+    "diagnostic_binary_sha256": null,
+    "decoder_binary_sha256": null,
+    "control_parity_status": "not_run",
+    "matched_pool_status": "not_run",
+    "single_factor_source_status": "not_run"
+  },
+  "coverage": {
+    "planned_pairs": 96,
+    "planned_snapshots": 3,
+    "planned_workers_per_snapshot": 4,
+    "planned_repeats": 8,
+    "completed_control_pairs": null,
+    "completed_diagnostic_pairs": null,
+    "valid_diagnostic_pairs": null,
+    "failed_pairs": null,
+    "missing_pairs": null
+  },
+  "outcome": null,
+  "outcome_reason": null,
+  "update100": {"gap_closure": null, "gap_closure_H": null, "workers_improved": null, "paired_repeats_improved": null},
+  "other_snapshots_relative_sse_change": {"update500": null, "update2500": null},
+  "continuation_gate": "not_evaluated",
+  "continuation_checks": {
+    "gap_closure_at_least_half": null,
+    "gap_closure_H_at_least_half": null,
+    "at_least_three_workers_improve": null,
+    "at_least_seven_paired_repeats_improve": null,
+    "other_snapshots_regression_at_most_two_percent": null
+  },
+  "claims": {
+    "counterfactual_executed": false,
+    "independent_confirmation_executed": false,
+    "new_training_executed": false,
+    "multihop_allreduce_executed": false,
+    "performance_gain_measured": false,
+    "deployable_fix_validated": false,
+    "independent_contribution_established": false
+  },
+  "resource_usage": {"active_work_hours": null, "gpu_execution_minutes": null, "condition_builds": null, "repair_rounds": null},
+  "not_produced": [],
+  "evidence_paths": [],
+  "next_action": "review_required"
+}

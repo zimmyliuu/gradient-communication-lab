@@ -1,0 +1,56 @@
+{
+  "schema_version": "spl_positioning_sources.v1",
+  "created_at": "2026-11-04T18:44:07.7089491+08:00",
+  "evidence_status": "read_current_files_not_rerun_experiments",
+  "files": [
+    {
+      "path": "E:/dacomp/research/gradient_comm_lab/TECHNICAL_PLAN.md",
+      "bytes": 24832,
+      "sha256": "efc0debe7cb9cbbd37e68535a81685335c68a202e162812c9a7539b07c728bc3",
+      "role": "read_only_evidence"
+    },
+    {
+      "path": "E:/dacomp/research/gradient_comm_lab/reviews/gpu_codec_v1_20261104_001_review_and_g2a_plan.md",
+      "bytes": 15553,
+      "sha256": "c02aaee51854d4546f2c3283fa164b9e647480e63cdc42b36c78f92ec8561bd0",
+      "role": "read_only_evidence"
+    },
+    {
+      "path": "E:/dacomp/research/gradient_comm_lab/DELIVERY_FORMAT.md",
+      "bytes": 13684,
+      "sha256": "5f29ca95b943e271df514b23438f4a1cdbe43ff0a25e2d60f85cda1eee04c7ca",
+      "role": "read_only_evidence"
+    },
+    {
+      "path": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/summary.json",
+      "bytes": 6442,
+      "sha256": "8d371745ccc1eb4a69e8eb3bea5001a61395a75ce6f2b4ab2040a9e8d0000e2a",
+      "role": "read_only_evidence"
+    },
+    {
+      "path": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/codec_contract.json",
+      "bytes": 11378,
+      "sha256": "3ba9895a4a22ab8d6c11f2838e9490b20d58d4fd7c5d7536129a12d9d9d51186",
+      "role": "read_only_evidence"
+    },
+    {
+      "path": "E:/dacomp/research/spl_model_communication/reports/project_conclusion_report.md",
+      "bytes": 23000,
+      "sha256": "58d8787b5e2abab9e66bfd8258a0756a8da44f7d072fa454373deb8e69e951d3",
+      "role": "read_only_evidence"
+    },
+    {
+      "path": "E:/dacomp/research/spl_model_communication/reports/baseline_closed_loop_v1_completion.md",
+      "bytes": 15718,
+      "sha256": "9063d512d6cb64b8b61e739b61941344b33db3a40494bc85fcb5271c373d4344",
+      "role": "read_only_evidence"
+    },
+    {
+      "path": "E:/dacomp/research/spl_model_communication/src/splcomm/dynamiq.py",
+      "bytes": 28525,
+      "sha256": "9296231d3a29d3fb4cfa1d12a2ffe5a1a4d2922e62c51003fb214c59303e8ea0",
+      "role": "read_only_evidence"
+    }
+  ],
+  "online_source_access": "Links and section locators are recorded in EVIDENCE_AND_GATES.md. AQAT full text was unavailable; other cited paper texts or described sections were read. Search is not exhaustive."
+}

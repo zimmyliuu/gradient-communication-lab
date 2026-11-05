@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+.cache/
+.pytest_cache/
+.toolchains/
+*.pt
+*.npz
+*.pyd
+*.obj
+*.lib
+*.exp
+*.dll
+*.zip

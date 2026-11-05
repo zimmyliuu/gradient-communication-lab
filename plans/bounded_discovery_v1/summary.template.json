@@ -1,0 +1,70 @@
+{
+  "schema_version": "bounded_discovery_v1.0",
+  "template_only": true,
+  "run_id": null,
+  "created_at": null,
+  "scope": "official_fixed_codec_development_diagnosis",
+  "execution_status": "not_started",
+  "d0_status": "not_run",
+  "d1_status": "not_run",
+  "correctness_status": "not_run",
+  "packet_accounting_status": "not_run",
+  "local_comparison_status": "not_run",
+  "aggregate_comparison_status": "not_run",
+  "timing_status": "not_run",
+  "decision": null,
+  "decision_reason": null,
+  "contract_sha256": null,
+  "baseline": {
+    "repository": "https://github.com/CharlesHan24/DynamiQ",
+    "planned_commit": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+    "executed_commit": null,
+    "entrypoints": [],
+    "arithmetic_modified": null,
+    "actual_module_sha256": null,
+    "qualification_evidence": null
+  },
+  "coverage": {
+    "planned_snapshots": 3,
+    "planned_workers_per_snapshot": 4,
+    "planned_random_repeats": 8,
+    "completed_snapshots": null,
+    "completed_worker_inputs": null,
+    "method_configuration_count": null,
+    "valid_local_records": null,
+    "valid_aggregate_records": null,
+    "failed_records": null,
+    "missing_records": null,
+    "missing_coverage": []
+  },
+  "data_usage": {
+    "partition": "development",
+    "old_holdout_opened": false,
+    "new_training_executed": false,
+    "independent_confirmation_executed": false
+  },
+  "claims": {
+    "official_local_codec_executed": false,
+    "official_full_dynamiq_validated": false,
+    "multihop_allreduce_newly_executed": false,
+    "training_quality_newly_validated": false,
+    "network_speedup_measured": false,
+    "independent_contribution_established": false
+  },
+  "finding": {
+    "candidate_count": null,
+    "selected_finding_id": null,
+    "finding_path": null,
+    "nearest_work_check": null,
+    "confirmation_plan_path": null
+  },
+  "resource_usage": {
+    "d0_active_work_hours": null,
+    "d1_active_work_hours": null,
+    "gpu_execution_hours": null,
+    "build_repair_rounds": null
+  },
+  "not_produced": [],
+  "evidence_paths": [],
+  "next_action": "review_required"
+}

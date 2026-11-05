@@ -1,0 +1,49 @@
+{
+  "status": "pass",
+  "scope": "curated_archive_only",
+  "new_document_local_links_checked": 12,
+  "broken_new_document_links": 0,
+  "common_secret_patterns_found": 0,
+  "epsilon_record_verification": {
+    "status": "pass",
+    "scope": "recorded_scalar_metrics_only",
+    "run_id": "epsilon_diagnostic_v1_20261105_001",
+    "metrics_path": "E:\\dacomp\\deliverables\\gradient-communication-lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\metrics_raw.jsonl.gz",
+    "raw_records": 1080,
+    "local_pairs": 96,
+    "local_pairs_improved": 96,
+    "snapshot_full_results": {
+      "seed1101_update000100": {
+        "mean_control_sse": 1.7108705544629603e-05,
+        "mean_diagnostic_sse": 1.5046431577333056e-05,
+        "mean_uniform_sse": 1.3370431130704354e-05,
+        "relative_reduction_ratio_of_means": 0.12053945062745508,
+        "gap_closure": 0.55166468240386,
+        "paired_repeats_improved": 8
+      },
+      "seed1101_update000500": {
+        "mean_control_sse": 3.7745577899926316e-05,
+        "mean_diagnostic_sse": 3.215363908204293e-05,
+        "mean_uniform_sse": 4.4097640367208094e-05,
+        "relative_reduction_ratio_of_means": 0.14814818394645118,
+        "gap_closure": null,
+        "paired_repeats_improved": 8
+      },
+      "seed1101_update002500": {
+        "mean_control_sse": 0.0001288034305153959,
+        "mean_diagnostic_sse": 0.00011226676887332846,
+        "mean_uniform_sse": 0.00014029387028726578,
+        "relative_reduction_ratio_of_means": 0.12838681062994525,
+        "gap_closure": null,
+        "paired_repeats_improved": 8
+      }
+    },
+    "update100_H_gap_closure": 0.3410772644229425,
+    "outcome": "partially_closes_gap",
+    "continuation_gate": "not_met",
+    "tensor_or_kernel_verification": false
+  },
+  "cuda_executed": false,
+  "new_training_executed": false,
+  "historical_raw_links": "Some historical reports reference local-only artifacts; see DATA_INDEX.md and LOCAL_DATA_CATALOG.json."
+}

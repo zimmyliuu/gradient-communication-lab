@@ -1,0 +1,39 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "template_only": true,
+  "captured_at": null,
+  "timezone": "Asia/Shanghai",
+  "os": null,
+  "python_executable": null,
+  "python_version": null,
+  "pytorch_version": null,
+  "pytorch_cuda_runtime": null,
+  "driver_version": null,
+  "nccl_available": null,
+  "gpu": {
+    "name": null,
+    "memory_total_bytes": null,
+    "compute_capability": null,
+    "power_limit_watts": null,
+    "clock_settings": null,
+    "other_process_load": null
+  },
+  "compiler": {
+    "nvcc_path": null,
+    "nvcc_version": null,
+    "host_compiler_path": null,
+    "host_compiler_version": null,
+    "flags": [],
+    "minimal_cuda_extension_test": "not_run",
+    "build_log": null
+  },
+  "initialization_costs": {
+    "lut_prepare_ms": null,
+    "threshold_prepare_ms": null,
+    "fixture_h2d_ms": null,
+    "notes": null
+  },
+  "dependency_lock_path": null,
+  "missing_tools": [],
+  "notes": []
+}

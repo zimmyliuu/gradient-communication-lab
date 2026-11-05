@@ -1,0 +1,39 @@
+{
+  "schema_version": "spl_positioning_verification.v1",
+  "verified_at": "2026-11-04T18:45:58.0286867+08:00",
+  "status": "pass",
+  "scope": "document_delivery_only",
+  "evidence_hashes_unchanged": true,
+  "local_links_checked": 10,
+  "outline_page_budget": 4.0,
+  "physical_page_layout_verified": false,
+  "independent_review": "read-only reviews completed; scope, scientific claim status, profile differences and historical evidence checked; wording and independence assumptions corrected",
+  "g2a_directory_exists": false,
+  "files": [
+    {
+      "path": "CONTRIBUTION.md",
+      "bytes": 2825,
+      "sha256": "4eda6a65802daa6e08b2fb9666a7a355c9957ce1a11d2138cdf0bb29144fb2c9"
+    },
+    {
+      "path": "EVIDENCE_AND_GATES.md",
+      "bytes": 15585,
+      "sha256": "16d9f9c383f5ce508799fe34bee9ea4451f5b29941ce03a6eb4ddb89877744ef"
+    },
+    {
+      "path": "PAPER_OUTLINE.md",
+      "bytes": 5563,
+      "sha256": "a83836a1b695462ab034a3fb83382db0d49be10461dd480e8f37dd0ec70090ce"
+    },
+    {
+      "path": "source_manifest.json",
+      "bytes": 2462,
+      "sha256": "a3e3cfe01de889a5c3d16c43cf0d7ec3de81b1245e0cd0afeb57ae8d7224ca57"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 1215,
+      "sha256": "0bd74baaa214aed26af683f885927692dbd6ef4b12d5c49041e58ed1e804c977"
+    }
+  ]
+}

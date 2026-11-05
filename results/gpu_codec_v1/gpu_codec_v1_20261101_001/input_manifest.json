@@ -1,0 +1,1046 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "template_only": false,
+  "run_id": "gpu_codec_v1_20261101_001",
+  "created_at": "2026-11-01T20:04:46.144700+08:00",
+  "scope": "G0_real_input_availability_and_fixture_freeze_only",
+  "inputs": [
+    {
+      "input_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0",
+      "source_kind": "real_gradient",
+      "original_numel": 818048,
+      "padded_numel": 818176,
+      "dtype": "bfloat16",
+      "shape": [
+        818048
+      ],
+      "byte_order": "little",
+      "input_sha256": "2833377c035290e664c0cb01dd9f3bf32a4ea5bc004bf2eaa412de584109d70a",
+      "padded_input_sha256": "07495863acf48eb0b1e78db273851293487f53f0e2adec3ffa520fd511ce40a4",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank0.pt",
+      "fixture_sha256": "49a8e215268cb848f5a651f651be1100f48610b488e37204342618181409ab0b",
+      "fixture_bytes": 5016074,
+      "generator_or_loader": "splcomm.p2_replay.load_inputs(calibration_root, 'pilot')",
+      "generator_config": {
+        "calibration_root": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1",
+        "thresholds": {
+          "generator": "torch.Generator(device=cpu)",
+          "seed": 7932635042670034446,
+          "pytorch_version": "2.4.1+cu118",
+          "order": [
+            "main",
+            "scale"
+          ],
+          "generation": "FP32 rand -> BF16 -> multiply BF16(65535)",
+          "multiplier_bf16_value": 65536.0,
+          "main": {
+            "sha256": "4cae3c3eb24881bc951a13e2429b67cdea754ffa95fdf649f44fddfaf20c3eee",
+            "shape": [
+              51136,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 1636352
+          },
+          "scale": {
+            "sha256": "5de390d1f1954f033d46e8aca369028d2e01a0d1a5b74def585d82cc8e1a3b58",
+            "shape": [
+              3196,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 102272
+          }
+        }
+      },
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000100.pt",
+      "source_sha256": "3d29a1bd33f0f4a49d54275fb5225253a4084069f4e5d78a8d2487ccf520d780",
+      "source_manifest_sha256": "60669b18b9ea5ea407ba7743603005c5d77b1d0c9ff7b99eaa057c490ffe81f1",
+      "source_input_id": "p2_seed1101_update000100_ec5d09c749dbd364",
+      "source_gradient_sha256": "cb7c511c321c9cb599ec657f9ec7615f35a3473ca6d932a1870fea057015d893",
+      "partition": "development",
+      "index_semantics": "before_update_t_one_based",
+      "training_seed": 1101,
+      "update_step": 100,
+      "rank": 0,
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "main_thresholds_sha256": "4cae3c3eb24881bc951a13e2429b67cdea754ffa95fdf649f44fddfaf20c3eee",
+      "scale_thresholds_sha256": "5de390d1f1954f033d46e8aca369028d2e01a0d1a5b74def585d82cc8e1a3b58",
+      "lut_sha256_by_bits": {
+        "4": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+        "8": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd"
+      },
+      "expected_packet_bytes_by_bits": {
+        "4": {
+          "payload_bytes": 511360,
+          "scale_bytes": 57528,
+          "wire_bytes": 568888
+        },
+        "8": {
+          "payload_bytes": 920448,
+          "scale_bytes": 57528,
+          "wire_bytes": 977976
+        }
+      },
+      "GPU_codec_executed": false
+    },
+    {
+      "input_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1",
+      "source_kind": "real_gradient",
+      "original_numel": 818048,
+      "padded_numel": 818176,
+      "dtype": "bfloat16",
+      "shape": [
+        818048
+      ],
+      "byte_order": "little",
+      "input_sha256": "93cadea86c39d5c57592db73223a4552a3e7d29a08accbf94fd901b333a97aa7",
+      "padded_input_sha256": "3b3f38c9ec07fb7652dc5de107b0899c051075e7c7a7ff436ae3ecbbd8859c2b",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank1.pt",
+      "fixture_sha256": "bf4025b4f58c262690ad5f77b9b0d365aaf5fb83d631548cb259324d2c5876e6",
+      "fixture_bytes": 5016074,
+      "generator_or_loader": "splcomm.p2_replay.load_inputs(calibration_root, 'pilot')",
+      "generator_config": {
+        "calibration_root": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1",
+        "thresholds": {
+          "generator": "torch.Generator(device=cpu)",
+          "seed": 6718713390270126384,
+          "pytorch_version": "2.4.1+cu118",
+          "order": [
+            "main",
+            "scale"
+          ],
+          "generation": "FP32 rand -> BF16 -> multiply BF16(65535)",
+          "multiplier_bf16_value": 65536.0,
+          "main": {
+            "sha256": "88aff3573c5d426be8c04afbc7b7ad5c7fafedf89dd929555e665bcd81ab15df",
+            "shape": [
+              51136,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 1636352
+          },
+          "scale": {
+            "sha256": "32fa82831121f953cb21a14cf820cc1fee3baa46061c1e964f381601c9636f6b",
+            "shape": [
+              3196,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 102272
+          }
+        }
+      },
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000100.pt",
+      "source_sha256": "3d29a1bd33f0f4a49d54275fb5225253a4084069f4e5d78a8d2487ccf520d780",
+      "source_manifest_sha256": "60669b18b9ea5ea407ba7743603005c5d77b1d0c9ff7b99eaa057c490ffe81f1",
+      "source_input_id": "p2_seed1101_update000100_ec5d09c749dbd364",
+      "source_gradient_sha256": "6d11fff0d9537477f16c22562a0515b7c8278f5952a771799821842a02a82edf",
+      "partition": "development",
+      "index_semantics": "before_update_t_one_based",
+      "training_seed": 1101,
+      "update_step": 100,
+      "rank": 1,
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "main_thresholds_sha256": "88aff3573c5d426be8c04afbc7b7ad5c7fafedf89dd929555e665bcd81ab15df",
+      "scale_thresholds_sha256": "32fa82831121f953cb21a14cf820cc1fee3baa46061c1e964f381601c9636f6b",
+      "lut_sha256_by_bits": {
+        "4": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+        "8": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd"
+      },
+      "expected_packet_bytes_by_bits": {
+        "4": {
+          "payload_bytes": 511360,
+          "scale_bytes": 57528,
+          "wire_bytes": 568888
+        },
+        "8": {
+          "payload_bytes": 920448,
+          "scale_bytes": 57528,
+          "wire_bytes": 977976
+        }
+      },
+      "GPU_codec_executed": false
+    },
+    {
+      "input_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2",
+      "source_kind": "real_gradient",
+      "original_numel": 818048,
+      "padded_numel": 818176,
+      "dtype": "bfloat16",
+      "shape": [
+        818048
+      ],
+      "byte_order": "little",
+      "input_sha256": "201f10b43b54b0abd77232e107cf254c35f0bead98209ef7e629ba80b00aaa1f",
+      "padded_input_sha256": "2cc44acb07e99c14f1f756b643f4fb08015e0c0f54a0d4ea1441b9755735a8c2",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank2.pt",
+      "fixture_sha256": "bc51435ab5e23318c92e9ca9bb645929ef72ab43638a0c80086497be4e3bee46",
+      "fixture_bytes": 5016074,
+      "generator_or_loader": "splcomm.p2_replay.load_inputs(calibration_root, 'pilot')",
+      "generator_config": {
+        "calibration_root": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1",
+        "thresholds": {
+          "generator": "torch.Generator(device=cpu)",
+          "seed": 7299771853868816653,
+          "pytorch_version": "2.4.1+cu118",
+          "order": [
+            "main",
+            "scale"
+          ],
+          "generation": "FP32 rand -> BF16 -> multiply BF16(65535)",
+          "multiplier_bf16_value": 65536.0,
+          "main": {
+            "sha256": "35c5b8a406dbfd80700abc611c415d75e2a01adde88d60f7ff3170ec4e74eaae",
+            "shape": [
+              51136,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 1636352
+          },
+          "scale": {
+            "sha256": "8c86ff6d2998c60d92f684b02300fb12db073c5ef1fa7d52e07400d2318909dd",
+            "shape": [
+              3196,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 102272
+          }
+        }
+      },
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000100.pt",
+      "source_sha256": "3d29a1bd33f0f4a49d54275fb5225253a4084069f4e5d78a8d2487ccf520d780",
+      "source_manifest_sha256": "60669b18b9ea5ea407ba7743603005c5d77b1d0c9ff7b99eaa057c490ffe81f1",
+      "source_input_id": "p2_seed1101_update000100_ec5d09c749dbd364",
+      "source_gradient_sha256": "43ca1979c6f92f79d578edfb5f18ebd534c60bd606a5573e02bca874e4503bfb",
+      "partition": "development",
+      "index_semantics": "before_update_t_one_based",
+      "training_seed": 1101,
+      "update_step": 100,
+      "rank": 2,
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "main_thresholds_sha256": "35c5b8a406dbfd80700abc611c415d75e2a01adde88d60f7ff3170ec4e74eaae",
+      "scale_thresholds_sha256": "8c86ff6d2998c60d92f684b02300fb12db073c5ef1fa7d52e07400d2318909dd",
+      "lut_sha256_by_bits": {
+        "4": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+        "8": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd"
+      },
+      "expected_packet_bytes_by_bits": {
+        "4": {
+          "payload_bytes": 511360,
+          "scale_bytes": 57528,
+          "wire_bytes": 568888
+        },
+        "8": {
+          "payload_bytes": 920448,
+          "scale_bytes": 57528,
+          "wire_bytes": 977976
+        }
+      },
+      "GPU_codec_executed": false
+    },
+    {
+      "input_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3",
+      "source_kind": "real_gradient",
+      "original_numel": 818048,
+      "padded_numel": 818176,
+      "dtype": "bfloat16",
+      "shape": [
+        818048
+      ],
+      "byte_order": "little",
+      "input_sha256": "77971a69f2cf4856a788426ba5992f439324c614bb6477465ebb6916fea970e0",
+      "padded_input_sha256": "44a5f72e9df59c1dd622a3b30f4b76c74716630c00b4036cc9dc7db28a3a2eb7",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank3.pt",
+      "fixture_sha256": "5977ed6b94f98fac550fd9e2b4ffe9707b465e6eba3ecc133e29b58a265972d3",
+      "fixture_bytes": 5016074,
+      "generator_or_loader": "splcomm.p2_replay.load_inputs(calibration_root, 'pilot')",
+      "generator_config": {
+        "calibration_root": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1",
+        "thresholds": {
+          "generator": "torch.Generator(device=cpu)",
+          "seed": 5085780197098071278,
+          "pytorch_version": "2.4.1+cu118",
+          "order": [
+            "main",
+            "scale"
+          ],
+          "generation": "FP32 rand -> BF16 -> multiply BF16(65535)",
+          "multiplier_bf16_value": 65536.0,
+          "main": {
+            "sha256": "ce706ae3b7eb57a1dd81ab3e3071efe50c2b022588ea7fe5fb0211c60cb27290",
+            "shape": [
+              51136,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 1636352
+          },
+          "scale": {
+            "sha256": "f85fa81b247d4973a0054bc7bb556ca2af98c730ee0a98668591ed493ec7b8d9",
+            "shape": [
+              3196,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 102272
+          }
+        }
+      },
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000100.pt",
+      "source_sha256": "3d29a1bd33f0f4a49d54275fb5225253a4084069f4e5d78a8d2487ccf520d780",
+      "source_manifest_sha256": "60669b18b9ea5ea407ba7743603005c5d77b1d0c9ff7b99eaa057c490ffe81f1",
+      "source_input_id": "p2_seed1101_update000100_ec5d09c749dbd364",
+      "source_gradient_sha256": "fc345d4904f06bc5fd71db2eafe87cc94b8a989931c08dcc2e162e61d890346e",
+      "partition": "development",
+      "index_semantics": "before_update_t_one_based",
+      "training_seed": 1101,
+      "update_step": 100,
+      "rank": 3,
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "main_thresholds_sha256": "ce706ae3b7eb57a1dd81ab3e3071efe50c2b022588ea7fe5fb0211c60cb27290",
+      "scale_thresholds_sha256": "f85fa81b247d4973a0054bc7bb556ca2af98c730ee0a98668591ed493ec7b8d9",
+      "lut_sha256_by_bits": {
+        "4": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+        "8": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd"
+      },
+      "expected_packet_bytes_by_bits": {
+        "4": {
+          "payload_bytes": 511360,
+          "scale_bytes": 57528,
+          "wire_bytes": 568888
+        },
+        "8": {
+          "payload_bytes": 920448,
+          "scale_bytes": 57528,
+          "wire_bytes": 977976
+        }
+      },
+      "GPU_codec_executed": false
+    },
+    {
+      "input_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0",
+      "source_kind": "real_gradient",
+      "original_numel": 818048,
+      "padded_numel": 818176,
+      "dtype": "bfloat16",
+      "shape": [
+        818048
+      ],
+      "byte_order": "little",
+      "input_sha256": "00b9bef7cfded43e9c613771530598f1fcf28014fc219a4328432e47e4710337",
+      "padded_input_sha256": "a0ce22e8327ea1f4baf6c5f8a80c8788c6ac865e930f261ee6dee1dc0c669497",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank0.pt",
+      "fixture_sha256": "8ef078ad6ac324ff1d3b3aefab7a815bfd31a0a9276a2de7d2081fb18ea2d115",
+      "fixture_bytes": 5016074,
+      "generator_or_loader": "splcomm.p2_replay.load_inputs(calibration_root, 'pilot')",
+      "generator_config": {
+        "calibration_root": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1",
+        "thresholds": {
+          "generator": "torch.Generator(device=cpu)",
+          "seed": 3900849870465140595,
+          "pytorch_version": "2.4.1+cu118",
+          "order": [
+            "main",
+            "scale"
+          ],
+          "generation": "FP32 rand -> BF16 -> multiply BF16(65535)",
+          "multiplier_bf16_value": 65536.0,
+          "main": {
+            "sha256": "7cae863b225e36f1694e83aae441b81114fc0734586ec636407ad65f59d83f6b",
+            "shape": [
+              51136,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 1636352
+          },
+          "scale": {
+            "sha256": "8dc08259b6258164186a3f0e0c930eb420525751a6136e9517b1c5b0739b7dc9",
+            "shape": [
+              3196,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 102272
+          }
+        }
+      },
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000500.pt",
+      "source_sha256": "8a736deac707f58f1e7f6e7193e0fd8f6ec85fd569acf159a1a5a34bd8e39d08",
+      "source_manifest_sha256": "0599dfde4cd3218529cefb146124ad37143b1084ec61c7530933bf484ed2ab1f",
+      "source_input_id": "p2_seed1101_update000500_58577dfb59bd4d40",
+      "source_gradient_sha256": "8b6032df6e2275c714ec811b777f6e5be0f0a8c5c425e29f5a5c62b653c0d31f",
+      "partition": "development",
+      "index_semantics": "before_update_t_one_based",
+      "training_seed": 1101,
+      "update_step": 500,
+      "rank": 0,
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "main_thresholds_sha256": "7cae863b225e36f1694e83aae441b81114fc0734586ec636407ad65f59d83f6b",
+      "scale_thresholds_sha256": "8dc08259b6258164186a3f0e0c930eb420525751a6136e9517b1c5b0739b7dc9",
+      "lut_sha256_by_bits": {
+        "4": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+        "8": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd"
+      },
+      "expected_packet_bytes_by_bits": {
+        "4": {
+          "payload_bytes": 511360,
+          "scale_bytes": 57528,
+          "wire_bytes": 568888
+        },
+        "8": {
+          "payload_bytes": 920448,
+          "scale_bytes": 57528,
+          "wire_bytes": 977976
+        }
+      },
+      "GPU_codec_executed": false
+    },
+    {
+      "input_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1",
+      "source_kind": "real_gradient",
+      "original_numel": 818048,
+      "padded_numel": 818176,
+      "dtype": "bfloat16",
+      "shape": [
+        818048
+      ],
+      "byte_order": "little",
+      "input_sha256": "de20dbe98af056c7c4a333d1f14f412a735f2037b926dbe8d596d8622729e4ab",
+      "padded_input_sha256": "a11d01896f17c2cd7e0c52b57fec0cc416bfab14965f6b959c2fb257c4aed81e",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank1.pt",
+      "fixture_sha256": "5e808db4c3b3a81f8c7f9f802c5420d43b198e016ee14d3060d5da398658993a",
+      "fixture_bytes": 5016074,
+      "generator_or_loader": "splcomm.p2_replay.load_inputs(calibration_root, 'pilot')",
+      "generator_config": {
+        "calibration_root": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1",
+        "thresholds": {
+          "generator": "torch.Generator(device=cpu)",
+          "seed": 503561855886974016,
+          "pytorch_version": "2.4.1+cu118",
+          "order": [
+            "main",
+            "scale"
+          ],
+          "generation": "FP32 rand -> BF16 -> multiply BF16(65535)",
+          "multiplier_bf16_value": 65536.0,
+          "main": {
+            "sha256": "292a72089d4db1b11da992a39d0880cc05f60c8f9f36df992526f75fa32f298c",
+            "shape": [
+              51136,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 1636352
+          },
+          "scale": {
+            "sha256": "578aa666b49e4bd28cfabf39eccacfa1775b77e88439890c748f5f957f6d209e",
+            "shape": [
+              3196,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 102272
+          }
+        }
+      },
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000500.pt",
+      "source_sha256": "8a736deac707f58f1e7f6e7193e0fd8f6ec85fd569acf159a1a5a34bd8e39d08",
+      "source_manifest_sha256": "0599dfde4cd3218529cefb146124ad37143b1084ec61c7530933bf484ed2ab1f",
+      "source_input_id": "p2_seed1101_update000500_58577dfb59bd4d40",
+      "source_gradient_sha256": "38c5f51bfd606cfffeadcc8df5db1befd9b305b9cda255a9b76e7c5b1cb4601f",
+      "partition": "development",
+      "index_semantics": "before_update_t_one_based",
+      "training_seed": 1101,
+      "update_step": 500,
+      "rank": 1,
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "main_thresholds_sha256": "292a72089d4db1b11da992a39d0880cc05f60c8f9f36df992526f75fa32f298c",
+      "scale_thresholds_sha256": "578aa666b49e4bd28cfabf39eccacfa1775b77e88439890c748f5f957f6d209e",
+      "lut_sha256_by_bits": {
+        "4": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+        "8": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd"
+      },
+      "expected_packet_bytes_by_bits": {
+        "4": {
+          "payload_bytes": 511360,
+          "scale_bytes": 57528,
+          "wire_bytes": 568888
+        },
+        "8": {
+          "payload_bytes": 920448,
+          "scale_bytes": 57528,
+          "wire_bytes": 977976
+        }
+      },
+      "GPU_codec_executed": false
+    },
+    {
+      "input_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2",
+      "source_kind": "real_gradient",
+      "original_numel": 818048,
+      "padded_numel": 818176,
+      "dtype": "bfloat16",
+      "shape": [
+        818048
+      ],
+      "byte_order": "little",
+      "input_sha256": "ed67b70e6fb3e1cc747f02a72c12372b5b767595d604e2d8ff5fa145ccc72acc",
+      "padded_input_sha256": "73d3d9f07a02d179518908baf0104f717c315fe50ceb4815c4362c300750413b",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank2.pt",
+      "fixture_sha256": "000a2e12f653ace0a80eaa64d54fbe7e99331bddeae50878628403c2c8942848",
+      "fixture_bytes": 5016074,
+      "generator_or_loader": "splcomm.p2_replay.load_inputs(calibration_root, 'pilot')",
+      "generator_config": {
+        "calibration_root": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1",
+        "thresholds": {
+          "generator": "torch.Generator(device=cpu)",
+          "seed": 918035836987266483,
+          "pytorch_version": "2.4.1+cu118",
+          "order": [
+            "main",
+            "scale"
+          ],
+          "generation": "FP32 rand -> BF16 -> multiply BF16(65535)",
+          "multiplier_bf16_value": 65536.0,
+          "main": {
+            "sha256": "02aa05738b662b2c2e76bb3d18e4f2bcdaa85ea8b89742da8139683e654c81c7",
+            "shape": [
+              51136,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 1636352
+          },
+          "scale": {
+            "sha256": "d34454a8ee1c4c23f0a80a98914b63c222bb0ce1810f077394114bc40b86ff6f",
+            "shape": [
+              3196,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 102272
+          }
+        }
+      },
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000500.pt",
+      "source_sha256": "8a736deac707f58f1e7f6e7193e0fd8f6ec85fd569acf159a1a5a34bd8e39d08",
+      "source_manifest_sha256": "0599dfde4cd3218529cefb146124ad37143b1084ec61c7530933bf484ed2ab1f",
+      "source_input_id": "p2_seed1101_update000500_58577dfb59bd4d40",
+      "source_gradient_sha256": "92c1ae156f5d8b70a7b6ee45bec713b520b20205e18d499cfcc93b25657989cb",
+      "partition": "development",
+      "index_semantics": "before_update_t_one_based",
+      "training_seed": 1101,
+      "update_step": 500,
+      "rank": 2,
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "main_thresholds_sha256": "02aa05738b662b2c2e76bb3d18e4f2bcdaa85ea8b89742da8139683e654c81c7",
+      "scale_thresholds_sha256": "d34454a8ee1c4c23f0a80a98914b63c222bb0ce1810f077394114bc40b86ff6f",
+      "lut_sha256_by_bits": {
+        "4": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+        "8": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd"
+      },
+      "expected_packet_bytes_by_bits": {
+        "4": {
+          "payload_bytes": 511360,
+          "scale_bytes": 57528,
+          "wire_bytes": 568888
+        },
+        "8": {
+          "payload_bytes": 920448,
+          "scale_bytes": 57528,
+          "wire_bytes": 977976
+        }
+      },
+      "GPU_codec_executed": false
+    },
+    {
+      "input_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3",
+      "source_kind": "real_gradient",
+      "original_numel": 818048,
+      "padded_numel": 818176,
+      "dtype": "bfloat16",
+      "shape": [
+        818048
+      ],
+      "byte_order": "little",
+      "input_sha256": "5a66e75fdef890802a9abd55c76f9b8df5bbec5978768c62923456b68c8b0dde",
+      "padded_input_sha256": "863f1243c618cd2659896f495c71ed20e4db53b3987f39a01d99b983a251eeec",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank3.pt",
+      "fixture_sha256": "fe5452fd3c1ce690b2c662caded7e40b51ccf27e66c97f8a368b6d78b22e43f0",
+      "fixture_bytes": 5016074,
+      "generator_or_loader": "splcomm.p2_replay.load_inputs(calibration_root, 'pilot')",
+      "generator_config": {
+        "calibration_root": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1",
+        "thresholds": {
+          "generator": "torch.Generator(device=cpu)",
+          "seed": 539445016217969831,
+          "pytorch_version": "2.4.1+cu118",
+          "order": [
+            "main",
+            "scale"
+          ],
+          "generation": "FP32 rand -> BF16 -> multiply BF16(65535)",
+          "multiplier_bf16_value": 65536.0,
+          "main": {
+            "sha256": "31491c294c8e7a2405e22d66b30b5ff4f75a06261eb1e032791b5cf37618bbc9",
+            "shape": [
+              51136,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 1636352
+          },
+          "scale": {
+            "sha256": "72d7eb391647dc34739d115be2590dfd94cf481c0dfc476f5def4b1f31e9241b",
+            "shape": [
+              3196,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 102272
+          }
+        }
+      },
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_000500.pt",
+      "source_sha256": "8a736deac707f58f1e7f6e7193e0fd8f6ec85fd569acf159a1a5a34bd8e39d08",
+      "source_manifest_sha256": "0599dfde4cd3218529cefb146124ad37143b1084ec61c7530933bf484ed2ab1f",
+      "source_input_id": "p2_seed1101_update000500_58577dfb59bd4d40",
+      "source_gradient_sha256": "bb7f5260b2a79f67790a51ce313eb8ed1a976c8da982cb8ea90b96f36b7e4439",
+      "partition": "development",
+      "index_semantics": "before_update_t_one_based",
+      "training_seed": 1101,
+      "update_step": 500,
+      "rank": 3,
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "main_thresholds_sha256": "31491c294c8e7a2405e22d66b30b5ff4f75a06261eb1e032791b5cf37618bbc9",
+      "scale_thresholds_sha256": "72d7eb391647dc34739d115be2590dfd94cf481c0dfc476f5def4b1f31e9241b",
+      "lut_sha256_by_bits": {
+        "4": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+        "8": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd"
+      },
+      "expected_packet_bytes_by_bits": {
+        "4": {
+          "payload_bytes": 511360,
+          "scale_bytes": 57528,
+          "wire_bytes": 568888
+        },
+        "8": {
+          "payload_bytes": 920448,
+          "scale_bytes": 57528,
+          "wire_bytes": 977976
+        }
+      },
+      "GPU_codec_executed": false
+    },
+    {
+      "input_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0",
+      "source_kind": "real_gradient",
+      "original_numel": 818048,
+      "padded_numel": 818176,
+      "dtype": "bfloat16",
+      "shape": [
+        818048
+      ],
+      "byte_order": "little",
+      "input_sha256": "e5e89c067c982cc8ac48bf957903af873eec5624500f1b89a37b83a65eb40760",
+      "padded_input_sha256": "0cd5bd02141699bb3e131ac180c2c363b4b0f326b00907d73d942ee7a679bcf8",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0.pt",
+      "fixture_sha256": "035daffdcea1ef49aefb5fb6b38b8bada246ece7f76f15ee7c4bb263b89e0a2b",
+      "fixture_bytes": 5016074,
+      "generator_or_loader": "splcomm.p2_replay.load_inputs(calibration_root, 'pilot')",
+      "generator_config": {
+        "calibration_root": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1",
+        "thresholds": {
+          "generator": "torch.Generator(device=cpu)",
+          "seed": 7540868276076893772,
+          "pytorch_version": "2.4.1+cu118",
+          "order": [
+            "main",
+            "scale"
+          ],
+          "generation": "FP32 rand -> BF16 -> multiply BF16(65535)",
+          "multiplier_bf16_value": 65536.0,
+          "main": {
+            "sha256": "5eceb48fac5e77fd8169757a9c0417ce8710fb6ac6bc34e8af909c896213729e",
+            "shape": [
+              51136,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 1636352
+          },
+          "scale": {
+            "sha256": "c92546af312869d590987a11147ada1ac4e2e48c7de563b9422008141fbdbaff",
+            "shape": [
+              3196,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 102272
+          }
+        }
+      },
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_002500.pt",
+      "source_sha256": "55a3ecdb6f6e993b04990d9d81e567fc8b04b76769d6bab00f307904a36cc103",
+      "source_manifest_sha256": "c7c077dbbaaf6e4642193f1f7a6a0c645cb042545994d811b4a7c8af389c499e",
+      "source_input_id": "p2_seed1101_update002500_3bd7fa92c69bc1d6",
+      "source_gradient_sha256": "8ea86d1f630e115d6026d8b365fada521a380b9d93d1f511e67edbd528a927d5",
+      "partition": "development",
+      "index_semantics": "before_update_t_one_based",
+      "training_seed": 1101,
+      "update_step": 2500,
+      "rank": 0,
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "main_thresholds_sha256": "5eceb48fac5e77fd8169757a9c0417ce8710fb6ac6bc34e8af909c896213729e",
+      "scale_thresholds_sha256": "c92546af312869d590987a11147ada1ac4e2e48c7de563b9422008141fbdbaff",
+      "lut_sha256_by_bits": {
+        "4": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+        "8": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd"
+      },
+      "expected_packet_bytes_by_bits": {
+        "4": {
+          "payload_bytes": 511360,
+          "scale_bytes": 57528,
+          "wire_bytes": 568888
+        },
+        "8": {
+          "payload_bytes": 920448,
+          "scale_bytes": 57528,
+          "wire_bytes": 977976
+        }
+      },
+      "GPU_codec_executed": false
+    },
+    {
+      "input_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1",
+      "source_kind": "real_gradient",
+      "original_numel": 818048,
+      "padded_numel": 818176,
+      "dtype": "bfloat16",
+      "shape": [
+        818048
+      ],
+      "byte_order": "little",
+      "input_sha256": "a53f56720fc89245ce932051e52e19e2f51d29bce22cd7383d76bc063d9abed1",
+      "padded_input_sha256": "7771b4e9a451e117e4b79e609baf605661ffd1a660d1c49645370eec9f3ecd0a",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1.pt",
+      "fixture_sha256": "04610b5fae4c8cc3f1243df1996e03eaf089bc4a932dfb0f113bbf922a096fc2",
+      "fixture_bytes": 5016074,
+      "generator_or_loader": "splcomm.p2_replay.load_inputs(calibration_root, 'pilot')",
+      "generator_config": {
+        "calibration_root": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1",
+        "thresholds": {
+          "generator": "torch.Generator(device=cpu)",
+          "seed": 6358009069983276850,
+          "pytorch_version": "2.4.1+cu118",
+          "order": [
+            "main",
+            "scale"
+          ],
+          "generation": "FP32 rand -> BF16 -> multiply BF16(65535)",
+          "multiplier_bf16_value": 65536.0,
+          "main": {
+            "sha256": "1adf8868b0e1851ea3d77b939f9e88c22867b62b8c7645e29de6f32fdcea0061",
+            "shape": [
+              51136,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 1636352
+          },
+          "scale": {
+            "sha256": "49d36789a54e9591311fddfbf6def8d5c99cc9089a9131db0e984493e009f301",
+            "shape": [
+              3196,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 102272
+          }
+        }
+      },
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_002500.pt",
+      "source_sha256": "55a3ecdb6f6e993b04990d9d81e567fc8b04b76769d6bab00f307904a36cc103",
+      "source_manifest_sha256": "c7c077dbbaaf6e4642193f1f7a6a0c645cb042545994d811b4a7c8af389c499e",
+      "source_input_id": "p2_seed1101_update002500_3bd7fa92c69bc1d6",
+      "source_gradient_sha256": "0ca1e46961621fdc0f993242c610667cf579d947eb4f02222d90da036f31463e",
+      "partition": "development",
+      "index_semantics": "before_update_t_one_based",
+      "training_seed": 1101,
+      "update_step": 2500,
+      "rank": 1,
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "main_thresholds_sha256": "1adf8868b0e1851ea3d77b939f9e88c22867b62b8c7645e29de6f32fdcea0061",
+      "scale_thresholds_sha256": "49d36789a54e9591311fddfbf6def8d5c99cc9089a9131db0e984493e009f301",
+      "lut_sha256_by_bits": {
+        "4": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+        "8": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd"
+      },
+      "expected_packet_bytes_by_bits": {
+        "4": {
+          "payload_bytes": 511360,
+          "scale_bytes": 57528,
+          "wire_bytes": 568888
+        },
+        "8": {
+          "payload_bytes": 920448,
+          "scale_bytes": 57528,
+          "wire_bytes": 977976
+        }
+      },
+      "GPU_codec_executed": false
+    },
+    {
+      "input_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2",
+      "source_kind": "real_gradient",
+      "original_numel": 818048,
+      "padded_numel": 818176,
+      "dtype": "bfloat16",
+      "shape": [
+        818048
+      ],
+      "byte_order": "little",
+      "input_sha256": "d05af58cda51d75ceb2461d5e52310a8287bf2a7bc15994a79e7fad2c438e827",
+      "padded_input_sha256": "e82736b74a2e2d38d46294a3386cd2bf2ac82096df59c8f3a474ec568048c551",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2.pt",
+      "fixture_sha256": "1e523fcc53b205cf5a0ea9d23a62989f9ca93ccf98a53d02ca06c211c7921fbb",
+      "fixture_bytes": 5016074,
+      "generator_or_loader": "splcomm.p2_replay.load_inputs(calibration_root, 'pilot')",
+      "generator_config": {
+        "calibration_root": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1",
+        "thresholds": {
+          "generator": "torch.Generator(device=cpu)",
+          "seed": 2068356417882142581,
+          "pytorch_version": "2.4.1+cu118",
+          "order": [
+            "main",
+            "scale"
+          ],
+          "generation": "FP32 rand -> BF16 -> multiply BF16(65535)",
+          "multiplier_bf16_value": 65536.0,
+          "main": {
+            "sha256": "845c22809ca0257a07419f9071b14b06b1f1e83d55903305086c54f3d925f628",
+            "shape": [
+              51136,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 1636352
+          },
+          "scale": {
+            "sha256": "d1582cd2cdd9847d196645942bc02f7d1d24a275e5f7d38001013a195f368b5c",
+            "shape": [
+              3196,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 102272
+          }
+        }
+      },
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_002500.pt",
+      "source_sha256": "55a3ecdb6f6e993b04990d9d81e567fc8b04b76769d6bab00f307904a36cc103",
+      "source_manifest_sha256": "c7c077dbbaaf6e4642193f1f7a6a0c645cb042545994d811b4a7c8af389c499e",
+      "source_input_id": "p2_seed1101_update002500_3bd7fa92c69bc1d6",
+      "source_gradient_sha256": "60ab538a3d7f013123edb07875f5e406a89c5908448e920d52b3ffa73d62e9f4",
+      "partition": "development",
+      "index_semantics": "before_update_t_one_based",
+      "training_seed": 1101,
+      "update_step": 2500,
+      "rank": 2,
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "main_thresholds_sha256": "845c22809ca0257a07419f9071b14b06b1f1e83d55903305086c54f3d925f628",
+      "scale_thresholds_sha256": "d1582cd2cdd9847d196645942bc02f7d1d24a275e5f7d38001013a195f368b5c",
+      "lut_sha256_by_bits": {
+        "4": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+        "8": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd"
+      },
+      "expected_packet_bytes_by_bits": {
+        "4": {
+          "payload_bytes": 511360,
+          "scale_bytes": 57528,
+          "wire_bytes": 568888
+        },
+        "8": {
+          "payload_bytes": 920448,
+          "scale_bytes": 57528,
+          "wire_bytes": 977976
+        }
+      },
+      "GPU_codec_executed": false
+    },
+    {
+      "input_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3",
+      "source_kind": "real_gradient",
+      "original_numel": 818048,
+      "padded_numel": 818176,
+      "dtype": "bfloat16",
+      "shape": [
+        818048
+      ],
+      "byte_order": "little",
+      "input_sha256": "29774e8911b1e77cccf9fb69e3f4393d1694f23490a6f480f48caf4d60f487d2",
+      "padded_input_sha256": "ebf4c93bdf243a73ef84d3a58765e5b97d7c090f1990dbd48b25847dbecdc090",
+      "fixture_path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3.pt",
+      "fixture_sha256": "1f2e0faf88c80d08579f8742bfd36fd4899b9a7e93db63f3c5880024dd4bf601",
+      "fixture_bytes": 5016074,
+      "generator_or_loader": "splcomm.p2_replay.load_inputs(calibration_root, 'pilot')",
+      "generator_config": {
+        "calibration_root": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1",
+        "thresholds": {
+          "generator": "torch.Generator(device=cpu)",
+          "seed": 7548366681460788101,
+          "pytorch_version": "2.4.1+cu118",
+          "order": [
+            "main",
+            "scale"
+          ],
+          "generation": "FP32 rand -> BF16 -> multiply BF16(65535)",
+          "multiplier_bf16_value": 65536.0,
+          "main": {
+            "sha256": "0e3cfb2b47b55bc4bfcb4d8f21090ca394a007a04c489f83e82f308d3814e62d",
+            "shape": [
+              51136,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 1636352
+          },
+          "scale": {
+            "sha256": "395caee69cee763b16a6a8a32a1645a7ef4849b5cec87291e1a6f3edf21b7365",
+            "shape": [
+              3196,
+              16
+            ],
+            "dtype": "torch.bfloat16",
+            "byte_order": "little",
+            "bytes": 102272
+          }
+        }
+      },
+      "source_path": "E:\\dacomp\\research\\spl_model_communication\\results\\p2\\calibration_20261101_v1\\seed_1101\\snapshots\\update_002500.pt",
+      "source_sha256": "55a3ecdb6f6e993b04990d9d81e567fc8b04b76769d6bab00f307904a36cc103",
+      "source_manifest_sha256": "c7c077dbbaaf6e4642193f1f7a6a0c645cb042545994d811b4a7c8af389c499e",
+      "source_input_id": "p2_seed1101_update002500_3bd7fa92c69bc1d6",
+      "source_gradient_sha256": "c0869f7e8293e157ea0564d2d092bc5166875a9962cb86a6058ea6510aace9fe",
+      "partition": "development",
+      "index_semantics": "before_update_t_one_based",
+      "training_seed": 1101,
+      "update_step": 2500,
+      "rank": 3,
+      "transform_order": [
+        "FP32 saved worker gradient",
+        "to(BF16)",
+        "divide by 4 in BF16",
+        "pad zeros to 256"
+      ],
+      "main_thresholds_sha256": "0e3cfb2b47b55bc4bfcb4d8f21090ca394a007a04c489f83e82f308d3814e62d",
+      "scale_thresholds_sha256": "395caee69cee763b16a6a8a32a1645a7ef4849b5cec87291e1a6f3edf21b7365",
+      "lut_sha256_by_bits": {
+        "4": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+        "8": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd"
+      },
+      "expected_packet_bytes_by_bits": {
+        "4": {
+          "payload_bytes": 511360,
+          "scale_bytes": 57528,
+          "wire_bytes": 568888
+        },
+        "8": {
+          "payload_bytes": 920448,
+          "scale_bytes": 57528,
+          "wire_bytes": 977976
+        }
+      },
+      "GPU_codec_executed": false
+    }
+  ],
+  "missing_G1_fixture_categories": [
+    "edge",
+    "synthetic"
+  ],
+  "holdout_opened": false
+}

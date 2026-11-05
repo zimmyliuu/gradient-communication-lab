@@ -1,0 +1,181 @@
+{
+  "schema_version": "epsilon_diagnostic_environment_v1",
+  "run_id": "epsilon_diagnostic_v1_20261105_001",
+  "captured_at": "2026-11-05T19:59:04.971481+08:00",
+  "assembled_at": "2026-11-05T20:00:59.100712+08:00",
+  "capture_scope": "Fresh actual condition-build process environments, not reused baseline snapshot; no GPU kernels called by this metadata assembly",
+  "python_executable": "E:\\dacomp\\.venv\\Scripts\\python.exe",
+  "python_version": "3.10.3 (tags/v3.10.3:a342a49, Mar 16 2022, 13:07:40) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "pytorch_version": "2.4.1+cu118",
+  "pytorch_cuda_runtime": "11.8",
+  "nvidia_smi": {
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=name,driver_version,compute_cap,memory.total",
+      "--format=csv,noheader"
+    ],
+    "returncode": 0,
+    "stdout": "NVIDIA RTX 4000 Ada Generation, 596.72, 8.9, 20475 MiB\r\n",
+    "stderr": "",
+    "stdout_sha256": "8369b00bb6964cc836dac482928c51be91bb9baf6d369aa08e35ad7131274732",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "compiler_versions": {
+    "nvcc": {
+      "command": [
+        "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\cuda-11.8\\bin\\nvcc.EXE",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\r\nCopyright (c) 2005-2022 NVIDIA Corporation\r\nBuilt on Wed_Sep_21_10:41:10_Pacific_Daylight_Time_2022\r\nCuda compilation tools, release 11.8, V11.8.89\r\nBuild cuda_11.8.r11.8/compiler.31833905_0\r\n",
+      "stderr": "",
+      "stdout_sha256": "3730a0d596f84098fc4107391d64ac070c15a1a3a2c2306da75ae6d7a3e21fcc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cl": {
+      "command": [
+        "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.EXE"
+      ],
+      "returncode": 0,
+      "stdout": "usage: cl [ option... ] filename... [ /link linkoption... ]\r\n",
+      "stderr": "Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64\r\nCopyright (C) Microsoft Corporation.  All rights reserved.\r\n\r\n",
+      "stdout_sha256": "ed6ca56a976bc0dd695904a59a423f36064632694b947125ff73cb68f125f840",
+      "stderr_sha256": "617ef6245d74344962b21dbb9784ce37318472cad8e50a4799932f170bf7875c"
+    },
+    "ninja": {
+      "command": [
+        "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja\\ninja.EXE",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "1.13.2\r\n",
+      "stderr": "",
+      "stdout_sha256": "f7204ca4d4bbe623e6045a5088ac906c5e1966b4fd2a11af9d156bad3327526f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "configuration": {
+    "cuda_root": "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\cuda-11.8",
+    "msvc_root": "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130",
+    "sdk_root": "C:\\Program Files (x86)\\Windows Kits\\10",
+    "sdk_version": "10.0.26100.0",
+    "configured_environment": {
+      "CUDA_HOME": "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\cuda-11.8",
+      "CUDA_PATH": "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\cuda-11.8",
+      "CXX": "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+      "INCLUDE": "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\include;C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt;C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\shared;C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\um;C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\winrt;C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\cppwinrt",
+      "LIB": "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\lib\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.26100.0\\ucrt\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.26100.0\\um\\x64",
+      "LIBPATH": "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\lib\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.26100.0\\ucrt\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.26100.0\\um\\x64",
+      "VSLANG": "1033",
+      "VSCMD_ARG_TGT_ARCH": "x64",
+      "VSCMD_ARG_HOST_ARCH": "x64",
+      "DISTUTILS_USE_SDK": "1",
+      "MSSdk": "1",
+      "VCToolsInstallDir": "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\",
+      "VCINSTALLDIR": "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\",
+      "WindowsSdkDir": "C:\\Program Files (x86)\\Windows Kits\\10\\",
+      "WindowsSDKVersion": "10.0.26100.0\\",
+      "UCRTVersion": "10.0.26100.0",
+      "TORCH_CUDA_ARCH_LIST": "8.9",
+      "MAX_JOBS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PATH": "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64;E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\cuda-11.8\\bin;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64;C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja;C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell;C:\\Users\\admin\\.codex\\tmp\\arg0-windows\\codex-arg0WH6JFV;C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\libheif\\libheif\\bin;C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\jxrlib\\jxrlib\\bin;C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin;C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\bin\\override;A:\\py310\\Scripts\\;A:\\py310\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;A:\\devcpp\\Dev-Cpp\\MinGW64\\bin;A:\\matlab\\runtime\\win64;A:\\matlab\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;E:\\XSHELL\\;C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;A:\\PyCharm 2025.2.2\\bin;A:\\anaconda;A:\\anaconda\\Scripts;A:\\anaconda\\Library\\bin;C:\\Users\\admin\\.dotnet\\tools;C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\bin\\fallback;C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin;C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\git\\cmd;C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\85e840bd9ad04c3b;C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\a159911ff70742e9"
+    },
+    "removed_inherited_overrides": {},
+    "includes": [
+      "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\include",
+      "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt",
+      "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\shared",
+      "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\um",
+      "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\winrt",
+      "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\cppwinrt"
+    ],
+    "libraries": [
+      "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\lib\\x64",
+      "C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.26100.0\\ucrt\\x64",
+      "C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.26100.0\\um\\x64"
+    ],
+    "required_files": {
+      "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\cuda-11.8\\bin\\nvcc.exe": true,
+      "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\cuda-11.8\\include\\cuda_runtime.h": true,
+      "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\cuda-11.8\\lib\\x64\\cudart.lib": true,
+      "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe": true,
+      "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe": true,
+      "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector": true,
+      "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\lib\\x64\\msvcrt.lib": true,
+      "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\um\\Windows.h": true,
+      "C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.26100.0\\um\\x64\\kernel32.lib": true,
+      "C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.26100.0\\ucrt\\x64\\ucrt.lib": true,
+      "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja\\ninja.exe": true
+    },
+    "path_resolution": {
+      "cl": "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.EXE",
+      "link": "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.EXE",
+      "nvcc": "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\cuda-11.8\\bin\\nvcc.EXE",
+      "ninja": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja\\ninja.EXE"
+    },
+    "selection_note": "VSCMD_ARG_TGT_ARCH suppresses torch cpp_extension default VS activation; CXX and nvcc -ccbin pin project-local cl.",
+    "global_environment_modified": false,
+    "driver_changed": false,
+    "package_installation_performed": false
+  },
+  "build_processes": [
+    {
+      "condition": "control_add1e7",
+      "pid": 15136,
+      "module_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\eden_utils.pyd",
+      "module_sha256": "cbb1110aba29a8287acb7c2b592a2b1e4291970cb19e667aa62420487dc025a2",
+      "build_manifest": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\control_add1e7\\build_manifest.json",
+      "manifest_sha256": "a3443c4af5131bd97e0e01fe87d8bb12523e3e9bdf8670c4b3af090fb5fdb1f3"
+    },
+    {
+      "condition": "diagnostic_add0",
+      "pid": 18332,
+      "module_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\eden_utils.pyd",
+      "module_sha256": "d93218f344f823e3168cc79193461eef2299ef09d0fc5237e660d49a89994951",
+      "build_manifest": "E:\\dacomp\\research\\gradient_comm_lab\\results\\epsilon_diagnostic_v1\\epsilon_diagnostic_v1_20261105_001\\build\\diagnostic_add0\\build_manifest.json",
+      "manifest_sha256": "2dd6d1912e0371eafc906f3dc20bd27a7aa7eab3aed54be5fdfcdbfd7958f2dc"
+    }
+  ],
+  "cuda_math_flags": "Unchanged baseline --use_fast_math -O3 -lineinfo -std=c++17; exactly one added condition macro",
+  "source_defined_new_dependencies": false,
+  "new_package_installations": false,
+  "shared_environment_modified": false,
+  "driver_changed": false,
+  "baseline_toolchain_reused_read_only": true,
+  "baseline_results_modified": false,
+  "condition_builds": 2,
+  "repair_rounds_conservative": 1,
+  "repair_scope": "A preflight build-manifest counting guard only; no compiler repair or additional condition",
+  "conditions_executed_on_gpu": "not_run in build task; runtime qualification and formal execution recorded by the runner separately",
+  "snapshots": [
+    {
+      "path": "logs/build_environment_control_add1e7.json",
+      "sha256": "12e47e0c1d246aca12b9d92489bbd003fcf3c52e441d403a3ca5bcca6f0c0f8b"
+    },
+    {
+      "path": "logs/build_environment_diagnostic_add0.json",
+      "sha256": "c1a3f9e9a3b93d4d2616a6e979ab9c3c27f38d3521a0bad14b530c82c82f6d84"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "logs/build_pair_audit.json",
+      "sha256": "a9c834e1e9cea73822e438437e091148e079e3f47c0e5249e759588120e1d49e"
+    },
+    {
+      "path": "logs/build_preflight_guard_repair.json",
+      "sha256": "c2571db97ce4f7e913a0883398a9c10ec5613bf0b40c0234465607652270197c"
+    },
+    {
+      "path": "logs/source_path_qualification.json",
+      "sha256": "6aa87df59a1fc9341444cb1acc9543c32fb37406ce96cc824df8c35814a20f75"
+    }
+  ],
+  "resource_accounting": {
+    "build_wall_seconds": 133.19539760000407,
+    "actual_gpu_kernel_seconds": 0,
+    "note": "Build processes loaded CUDA modules but did not call kernels; full build wall may be charged as conservative GPU upper bound."
+  }
+}

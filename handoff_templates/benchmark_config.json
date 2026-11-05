@@ -1,0 +1,50 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "template_only": true,
+  "main_grid": {
+    "numel": [256, 4096, 65536, 262144, 1048576, 4194304],
+    "nominal_bits": [4, 8],
+    "distributions": ["standard_normal", "group_scaled_normal"],
+    "input_seed": 7301,
+    "methods": ["torch_cuda_repaired", "cuda_optimized_repaired"],
+    "operations": ["encode", "decode", "roundtrip"],
+    "allocation_mode": "preallocated",
+    "validation_mode": "trusted_inputs"
+  },
+  "api_grid": {
+    "numel": [65536, 1048576],
+    "nominal_bits": [4, 8],
+    "distribution": "standard_normal",
+    "input_seed": 7301,
+    "methods": ["torch_cuda_repaired", "cuda_optimized_repaired"],
+    "operation": "roundtrip",
+    "allocation_mode": "api_allocating",
+    "validation_modes": ["trusted_inputs", "checked_api"]
+  },
+  "real_gradient_grid": {
+    "training_seed": 1101,
+    "updates": [100, 500, 2500],
+    "ranks": [0, 1, 2, 3],
+    "nominal_bits": [4, 8],
+    "methods": ["torch_cuda_repaired", "cuda_optimized_repaired"],
+    "operation": "roundtrip",
+    "allocation_mode": "preallocated",
+    "validation_mode": "trusted_inputs"
+  },
+  "warmup_calls_min": 50,
+  "session_count_min": 5,
+  "blocks_per_session_min": 20,
+  "inner_repeats_min": 1,
+  "inner_repeats_max": 10000,
+  "target_block_ms": [10, 50],
+  "repeat_selection_key": ["case_id", "method_id"],
+  "repeat_counts_frozen_across_sessions": true,
+  "repeat_counts": [],
+  "graph_mode": "off",
+  "compile_mode": "eager",
+  "cache_mode": "steady_state_reuse",
+  "rng_work_included": false,
+  "quantile_interpolation": "linear",
+  "method_order_seed": 7501,
+  "changes_from_plan": []
+}

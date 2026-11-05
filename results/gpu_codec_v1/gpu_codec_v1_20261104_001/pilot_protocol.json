@@ -1,0 +1,38 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "run_id": "gpu_codec_v1_20261104_001",
+  "created_at": "2026-11-04T17:40:16.913912+08:00",
+  "methods": [
+    "torch_cuda_repaired",
+    "cuda_optimized_repaired"
+  ],
+  "case_count": 104,
+  "session_count": 5,
+  "blocks_per_session": 20,
+  "warmup_calls": 50,
+  "case_seed_base": 7501,
+  "pair_seed_base": 87501,
+  "pilot_seed": 97501,
+  "pilot_rule": {
+    "single_call_observations": 3,
+    "initial_K": "ceil(20 / median_single_call_ms), clamp 1..10000",
+    "target_ms": 20,
+    "accept_interval_ms": [
+      15,
+      30
+    ],
+    "max_actual_block_observations": 4,
+    "update": "ceil(K * 20 / observed_block_ms), clamp 1..10000; stop within [15,30], unchanged K, or fourth observed block",
+    "selection": "K from final observed block; no fastest observation selection"
+  },
+  "comparison": "Same case/session/block_id; each method normalized by its own frozen K",
+  "memory": "Separate single-method contexts measured after paired timing; not part of timed blocks",
+  "timing_context": "Both implementations and their identical-input tensors resident during paired timing",
+  "expected_raw_rows": 20800,
+  "expected_summary_rows": 208,
+  "expected_memory_rows": 1040,
+  "contract_sha256": "3ba9895a4a22ab8d6c11f2838e9490b20d58d4fd7c5d7536129a12d9d9d51186",
+  "input_manifest_sha256": "9e962d53cbe934fe9f4fd3c7b07c1160d7b3b8a6b4edd1139bfb92a3d4f2e261",
+  "baseline_source_sha256": "50bc272876be54db5d42327cce144022b7bf960d82073347479da2eb53f1d794",
+  "benchmark_source_sha256": "06d3314b058ea82f211bfc58e6ae8f83039045d36375872c5c5935e0de2160a5"
+}

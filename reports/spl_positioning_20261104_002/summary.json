@@ -1,0 +1,27 @@
+{
+  "schema_version": "spl_positioning.v2",
+  "report_id": "spl_positioning_20261104_002",
+  "date": "2026-11-04",
+  "timezone": "Asia/Shanghai",
+  "delivery_status": "complete",
+  "scope": "updated_one_page_contribution_and_four_page_paper_outline_after_g2a",
+  "physical_page_layout_verified": false,
+  "supersedes_for_current_planning": "spl_positioning_20261104_001",
+  "g1_acceptance": "pass_existing_review",
+  "g2a_acceptance": "pass_existing_review",
+  "candidate": "two_stage_hierarchical_quantization_distortion_prediction",
+  "research_claim_validated": false,
+  "novelty_confirmed": false,
+  "new_theorem_proved": false,
+  "new_experiments_run": false,
+  "new_training_run": false,
+  "g2b_g3_g4_started": false,
+  "next_action": "T0_theoretical_feasibility_only",
+  "phase_precision_allocation": "considered_not_selected",
+  "aqat_full_text_reviewed": false,
+  "artifacts": [
+    "CONTRIBUTION.md",
+    "PAPER_OUTLINE.md",
+    "EVIDENCE_AND_GATES.md"
+  ]
+}

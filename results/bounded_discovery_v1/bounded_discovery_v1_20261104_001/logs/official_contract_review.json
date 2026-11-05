@@ -1,0 +1,293 @@
+{
+  "schema_version": "bounded_discovery_d0_independent_source_review_v1",
+  "run_id": "bounded_discovery_v1_20261104_001",
+  "scope": "Read-only official fixed codec source, public revision history and RNG contract review; no GPU execution by reviewer.",
+  "upstream_repository": "https://github.com/CharlesHan24/DynamiQ",
+  "upstream_commit": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+  "plan_read_in_full": [
+    "plans/bounded_discovery_v1/PLAN.md",
+    "plans/bounded_discovery_v1/DELIVERY_FORMAT.md"
+  ],
+  "source_files": [
+    {
+      "path": "cuda_kernels/src/srrcomp/eden_utils/eden_utils.cpp",
+      "url": "https://github.com/CharlesHan24/DynamiQ/blob/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/eden_utils/eden_utils.cpp",
+      "line_ranges": [
+        [
+          33,
+          52
+        ],
+        [
+          133,
+          180
+        ],
+        [
+          425,
+          429
+        ]
+      ],
+      "expected_git_blob_sha1": "ef235ac226f4c003f3bda7a70c21ff6ce4e81da2",
+      "local_git_blob_sha1": "ef235ac226f4c003f3bda7a70c21ff6ce4e81da2",
+      "sha256": "bf84955aa924fbc4e7b49ea94d003b0e45ad9f4e9b2b9caeabdf6dcc65255dd8",
+      "bytes": 22733,
+      "identity_verified": true
+    },
+    {
+      "path": "cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hierarchical_mee.cu",
+      "url": "https://github.com/CharlesHan24/DynamiQ/blob/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hierarchical_mee.cu",
+      "line_ranges": [
+        [
+          18,
+          59
+        ],
+        [
+          117,
+          137
+        ],
+        [
+          273,
+          343
+        ],
+        [
+          424,
+          526
+        ],
+        [
+          1404,
+          1468
+        ]
+      ],
+      "expected_git_blob_sha1": "dc18d6f98dfdc39d6e5d69e35ad5de09e49e09aa",
+      "local_git_blob_sha1": "dc18d6f98dfdc39d6e5d69e35ad5de09e49e09aa",
+      "sha256": "0217fa4680a218633d22ff0a177c468e6b40da8f8274b8b92609dcb4419620a8",
+      "bytes": 65728,
+      "identity_verified": true
+    },
+    {
+      "path": "cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hadamard.cu",
+      "url": "https://github.com/CharlesHan24/DynamiQ/blob/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hadamard.cu",
+      "line_ranges": [
+        [
+          864,
+          930
+        ],
+        [
+          1564,
+          1632
+        ]
+      ],
+      "expected_git_blob_sha1": "0541fbeeb1e079d4c786d455a0020ec51508ab7c",
+      "local_git_blob_sha1": "0541fbeeb1e079d4c786d455a0020ec51508ab7c",
+      "sha256": "4f26fba59d03372501a39fd2e1c046d0774c1f3a722104697b8eee8b57e94055",
+      "bytes": 64352,
+      "identity_verified": true
+    },
+    {
+      "path": "cuda_kernels/tests/test_scaling_quantization_functional.py",
+      "url": "https://github.com/CharlesHan24/DynamiQ/blob/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/tests/test_scaling_quantization_functional.py",
+      "line_ranges": [
+        [
+          49,
+          75
+        ],
+        [
+          105,
+          111
+        ],
+        [
+          192,
+          260
+        ],
+        [
+          281,
+          290
+        ],
+        [
+          323,
+          348
+        ],
+        [
+          389,
+          396
+        ]
+      ],
+      "expected_git_blob_sha1": "764575ce53261702c490b1b824b600affd111ea7",
+      "local_git_blob_sha1": "764575ce53261702c490b1b824b600affd111ea7",
+      "sha256": "f57e40a11f1ca66b11d6cfcfb59e519860bf90e1abaec0bdefcce290e4fa1781",
+      "bytes": 15813,
+      "identity_verified": true
+    },
+    {
+      "path": "cuda_kernels/documentation/scaling_quantization_algorithm.md",
+      "url": "https://github.com/CharlesHan24/DynamiQ/blob/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/documentation/scaling_quantization_algorithm.md",
+      "line_ranges": [
+        [
+          69,
+          97
+        ],
+        [
+          281,
+          370
+        ],
+        [
+          398,
+          422
+        ]
+      ],
+      "expected_git_blob_sha1": "2b54fc62f6ec5cb83020443b41f60bb7fa9e55f9",
+      "local_git_blob_sha1": "2b54fc62f6ec5cb83020443b41f60bb7fa9e55f9",
+      "sha256": "0c7f1ef01061a9ebbebfb57cd11408d0d6cd227b5c77fce12097917262fd0dcd",
+      "bytes": 11516,
+      "identity_verified": true
+    }
+  ],
+  "public_history": {
+    "retrieval_date": "2026-11-04",
+    "api_records": [
+      {
+        "path": "logs/official_api_commit_history.json",
+        "url": "https://api.github.com/repos/CharlesHan24/DynamiQ/commits?per_page=20",
+        "sha256": "a7a97a757fe732759c5aa6ab6e4e69a1dd36030616c44768c0327a4ed59413d8",
+        "bytes": 8887,
+        "serialization": "Parsed official API response saved as UTF-8 pretty JSON; file hash identifies retained record."
+      },
+      {
+        "path": "logs/official_api_commit_head.json",
+        "url": "https://api.github.com/repos/CharlesHan24/DynamiQ/commits/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+        "sha256": "cf503ac69c3f5617914b76a11955df7d2ae5a3b99f914f082411e5bf1abe696e",
+        "bytes": 6779,
+        "serialization": "Parsed official API response saved as UTF-8 pretty JSON; file hash identifies retained record."
+      },
+      {
+        "path": "logs/official_api_issues.json",
+        "url": "https://api.github.com/repos/CharlesHan24/DynamiQ/issues?state=all&per_page=100",
+        "sha256": "5239a7754876b9a70871c45e41f1bd9abbd91ed2de67af926c1cfcc9c9377d51",
+        "bytes": 4,
+        "serialization": "Parsed official API response saved as UTF-8 pretty JSON; file hash identifies retained record."
+      },
+      {
+        "path": "logs/official_api_pulls.json",
+        "url": "https://api.github.com/repos/CharlesHan24/DynamiQ/pulls?state=all&per_page=100",
+        "sha256": "5239a7754876b9a70871c45e41f1bd9abbd91ed2de67af926c1cfcc9c9377d51",
+        "bytes": 4,
+        "serialization": "Parsed official API response saved as UTF-8 pretty JSON; file hash identifies retained record."
+      },
+      {
+        "path": "logs/official_api_branches.json",
+        "url": "https://api.github.com/repos/CharlesHan24/DynamiQ/branches?per_page=100",
+        "sha256": "0333ed4137d550a9b0ec36555c635a49960dfc6a07c5b812383c92669b02a006",
+        "bytes": 250,
+        "serialization": "Parsed official API response saved as UTF-8 pretty JSON; file hash identifies retained record."
+      }
+    ],
+    "observed_main_commit": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+    "observed_commit_count": 2,
+    "observed_issue_count": 0,
+    "observed_pull_count": 0,
+    "latest_change": "2026-09-29: only testbed_evaluation/train_llm_causal.py DDP bucket settings changed to 256 MB; no codec file changed.",
+    "preceding_commit": "7bb4ad89f4cd0df266e9881c69915f6c9a2ae026 (2026-08-06 initial artifact release)",
+    "conclusion": "No publicly listed post-freeze codec repair was found in the inspected official branch/history/issues/pulls. This is not a guarantee that no unpublished issue or repair exists.",
+    "version_decision": "Keep requested fixed commit. Never reuse old local CPU index repair as an official-code finding."
+  },
+  "statuses": {
+    "source_identity_status": "pass",
+    "local_codec_status": "unknown",
+    "packet_status": "unknown",
+    "rng_status": "unknown",
+    "aggregate_comparability_status": "unknown",
+    "gate_decision": "runtime_qualification_pending"
+  },
+  "admission_questions": [
+    {
+      "id": 1,
+      "status": "unknown",
+      "source_answer": "Public pybind eden_utils.scaling_compress(src,dst,rand_pool,n,nbits,chunk_size,stream_p,strategy) and scaling_decompress(src,dst,n,nbits,chunk_size,stream_p,strategy) expose single-GPU operations. Selected BF16, strategy=3, chunk_size=16, nbits=4/8 directly dispatch to official hierarchical MEE kernels; no NCCL, mean removal, energy synchronization, LCG or distributed controller is required. Native current stream pointer is supplied explicitly.",
+      "runtime_requirement": "Build official extension without arithmetic edits, bind loaded module/source hashes, and execute both selected fixed modes.",
+      "evidence": [
+        "eden_utils.cpp:133-180,425-429",
+        "cuda_hadamard.cu:1564-1632"
+      ]
+    },
+    {
+      "id": 2,
+      "status": "unknown",
+      "source_answer": "Contiguous CUDA BF16 input/rand_pool, CUDA uint8 packed buffer, BF16 output. Chosen mode requires positive n divisible by 256, so minimal n=256. Main signed lattice code range is [-((2^(b-1))-1),+((2^(b-1))-1)], unsigned stored codes 0..2^b-2 in exactly b bits; 2^b-1 is unused by encoder. Sixteen-value group scales are UINT8 ceil codes; native helper clamps them to [1,255]. A BF16 super-scale-unit covers 256 values. BF16 values/randomness are converted to float for arithmetic; MEE constants/table originate as FP16; final multiplication converts to BF16 round-to-nearest.",
+      "extreme_behavior": "Metadata/length validation is explicit, but source API does not promise rejection of every nonfinite value or cross-device argument. Numeric helpers floor positive scales at 1e-30, add 1e-7 to raw scales, replace selected nonfinite intermediates, and saturate signed codes. They do not establish finite outputs for the whole finite BF16 input domain. Preserve observed overflow/nonfinite behavior; do not silently clip or change dtype.",
+      "tail_policy": "Declared wrapper padding P=256*ceil(D/256), followed by trimming to D. Direct native n=257 is illegal; wrapper tail support is not a native arbitrary-length claim.",
+      "evidence": [
+        "eden_utils.cpp:42-52,133-180",
+        "cuda_hierarchical_mee.cu:18-59,88-96,117-137,273-343",
+        "cuda_hadamard.cu:873-898"
+      ]
+    },
+    {
+      "id": 3,
+      "status": "unknown",
+      "source_answer": "Each superchunk interleaves 16 groups of (16*b/8 payload bytes + 1 UINT8 scale byte), then 2 BF16 scale-unit bytes. Decoder consumes packed bytes and predeclared static n/nbits/chunk_size/strategy/dtype plus the fixed MEE table; it has no source-input, RNG-pool, raw-max or per-input hidden-scale argument.",
+      "expected_budget": {
+        "logical_numel": 818048,
+        "padded_numel": 818176,
+        "b4": {
+          "payload_bytes": 409088,
+          "scale_code_bytes": 51136,
+          "super_scale_bytes": 6392,
+          "total_bytes": 466616
+        },
+        "b8": {
+          "payload_bytes": 818176,
+          "scale_code_bytes": 51136,
+          "super_scale_bytes": 6392,
+          "total_bytes": 875704
+        }
+      },
+      "accounting_caveat": "These are source-derived expectations, not measured packet sizes. Use actual tight uint8 buffer byte counts and independent parsing. Fixed tensor shape/config and the MEE codebook are declared shared state; if variable per-input metadata is sent, charge it. RNG is encoder-local setup, not decoder side information.",
+      "runtime_requirement": "Copy serialized packet into a fresh buffer, remove/change original input/RNG and decode into distinct sentinel-filled output; compare with original decoding and independently parsed components.",
+      "evidence": [
+        "eden_utils.cpp:33-40,163-180",
+        "scaling_quantization_algorithm.md:330-370",
+        "cuda_hierarchical_mee.cu:424-526"
+      ]
+    },
+    {
+      "id": 4,
+      "status": "unknown",
+      "source_answer": "Official functional self-test make_rand creates a CPU torch.Generator, manual_seed(seed), torch.rand(n,dtype=float32), casts to input dtype, then uploads to CUDA. This direct caller-supplied rand_pool is an official legal state interface. Use that exact generation path, a bounded_discovery_v1 key containing input/worker/config/repeat, separate generators and buffers for workers, and preserve state/pool hashes.",
+      "independence_scope": "Separate keyed PRNG states and non-reused worker buffers give the declared operationally independent pseudorandom-stream design. Different integer seeds or unequal sample hashes alone are not a mathematical proof of statistical independence. The configuration is the fixed local codec with independent worker pools, not the full distributed DynamiQ correlated-pool protocol.",
+      "zero_endpoint_semantics": {
+        "fp32_interval_mapping_to_bf16_one": "[0.998046875,1)",
+        "native_formula": "floor(value)+ceil((value-floor(value))-rand_value), then signed-range clamp",
+        "integer_value_random_one": "At frac=0 and rand=1 the increment is -1, not 0. For a zero input this may yield a small nonzero output through the positive epsilon scale.",
+        "official_reference": "stochastic_code_float uses the same ceil formula.",
+        "interpretation": "A legal reachable finite-precision state to record, not an established bug or actionable scientific finding. Do not switch to torch.rand(dtype=BF16), clamp the random pool below 1, or modify native arithmetic to remove it."
+      },
+      "runtime_requirement": "Same seed/state -> identical pool and packet; independently keyed worker pools are not aliased/reused; log pool range/number of exact ones and hashes. Endpoints 0 and 1 may be deterministic interface probes, clearly separated from D1 random repetitions.",
+      "evidence": [
+        "test_scaling_quantization_functional.py:105-111,281-284",
+        "cuda_hierarchical_mee.cu:117-137"
+      ]
+    },
+    {
+      "id": 5,
+      "status": "unknown",
+      "source_answer": "Official self-tests exist but this independent review has not run them. Relevant selected BF16/strategy3 reference agreement uses atol=0.08 and rtol=0.08, unchanged. Official reference is not a bitwise oracle for the encoder's float arithmetic.",
+      "runtime_requirement": "Run original relevant self-test entrypoints with untouched tolerance rules; record selected/full test scope and every failed/skipped combination. Small checks include zero, constant/mixed sign, sparse large value, seeded random, one real input, n=256 and logical tail257->512, input/RNG immutability, tight bytes, independent decode and repeatability.",
+      "interpretation": "BF16 identity has zero codec error in D1; official quantized zero-case is measured behavior, not an a-priori zero-error pass criterion. Native repeated decode of the identical packet may still be tested bitwise; do not force original CPU-reference/GPU bitwise equality beyond its contract.",
+      "evidence": [
+        "test_scaling_quantization_functional.py:281-290,297-320,323-348,389-396"
+      ]
+    }
+  ],
+  "no_gpu_experiments_run_by_reviewer": true,
+  "no_old_candidate_resumed": true,
+  "tests_suggested_not_executed_by_reviewer": [
+    "Selected official roundtrip/reference tests b4/b8 BF16 strategy3 chunk16, unchanged original tolerances.",
+    "Minimum n256; direct native illegal n0/n257 rejection; wrapper logical257 padded512 exact trimming/accounting.",
+    "Zero, nonzero constant, signed mixed, sparse large, random, real input; distinguish finite legal-domain output from overflow cases.",
+    "Fresh-packet-only decode after source/RNG overwrite or release, output initialized to unrelated sentinel.",
+    "Actual packet parsing counts and reserved-code checks, uint8 scale lower bound and BF16 scale-unit format.",
+    "Same seed exact repeat; per-worker keyed generator state/pool identity and no shared storage.",
+    "Record zero endpoint behavior under official cast-generated pools; deterministic 0/1 endpoint probes separately labelled.",
+    "Input, random-pool and packet immutability across repeated decode."
+  ],
+  "recorded_utc": "2026-11-04T13:17:55.750306+00:00"
+}

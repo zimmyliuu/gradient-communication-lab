@@ -1,0 +1,223 @@
+{
+  "schema_version": "logical_ring_v1.0",
+  "run_id": "logical_ring_v1_20261104_001",
+  "files": [
+    {
+      "path": "code/src/gradient_comm_lab/__init__.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\__init__.py",
+      "sha256": "10bfe6b4e29e8138576b15f2ce87736e5db130a384eb327bc1db24e7385c55af",
+      "bytes": 80,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/src/gradient_comm_lab/cpu_reference.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\cpu_reference.py",
+      "sha256": "4ab03e0c8bed961ed3eaa8bec5a546bf74d76909437d6561032453e3cd59d36b",
+      "bytes": 4749,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/src/gradient_comm_lab/torch_codec.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\torch_codec.py",
+      "sha256": "50bc272876be54db5d42327cce144022b7bf960d82073347479da2eb53f1d794",
+      "bytes": 19635,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/src/gradient_comm_lab/cuda_codec.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\cuda_codec.py",
+      "sha256": "801b588a2d249e3a754c0d90d4c1bab123976f92153863c486685dbabef3bef4",
+      "bytes": 8622,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/src/gradient_comm_lab/logical_ring.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\logical_ring.py",
+      "sha256": "6477062c4e658e71b5f0c2ef1dfb7bbaf43543a7fc7f462b7a33a52cc3786660",
+      "bytes": 19388,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/src/gradient_comm_lab/ring_reference.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\ring_reference.py",
+      "sha256": "07d18be871d32ad1331f8df9ed157d0310847a023dbbbec79ca53835d184c4bb",
+      "bytes": 8087,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/src/gradient_comm_lab/ring_fixtures.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\ring_fixtures.py",
+      "sha256": "ff73433a9a8129d5ba43d1eddd123c97af10857043914bce4fc26622ee6aaed4",
+      "bytes": 3100,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/scripts/prepare_logical_ring.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\prepare_logical_ring.py",
+      "sha256": "dc18aec07af6df4e806cb8514b76fab0172c6ca40b34594e99e8b838475b6205",
+      "bytes": 8398,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/scripts/check_logical_ring.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\check_logical_ring.py",
+      "sha256": "283804fd7d875f206695ffc71193ae1fd3b9e55132e3a85ac677306325963d57",
+      "bytes": 35386,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/scripts/audit_logical_ring.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\audit_logical_ring.py",
+      "sha256": "7e270227817156ae9498a5f0644a8ca59fb83ac6da68987379a91b4de95d8e43",
+      "bytes": 59172,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/scripts/register_logical_ring.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\register_logical_ring.py",
+      "sha256": "fbe9643cef8a3d671e33100ba8ff148ef0af2fb16a37f85b4184910ef3e0ba41",
+      "bytes": 3244,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/scripts/check_original_ring_parity.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\check_original_ring_parity.py",
+      "sha256": "4cdaa615610f1d3ea439b138f638eaa7d01734fa838960df74c496291e861a66",
+      "bytes": 3618,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/scripts/finalize_logical_ring.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\finalize_logical_ring.py",
+      "sha256": "99fb7ce8b5e999449c470c7d05bbc0b8e46cf8afebbc544e222e7e5326b5534d",
+      "bytes": 13451,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/scripts/python.ps1",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\python.ps1",
+      "sha256": "4ac1698a5a575f82c656afd60680928c159815d8bf959e75577e8329ddb21ac7",
+      "bytes": 1427,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/src/gradient_comm_lab/csrc/codec.cpp",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\csrc\\codec.cpp",
+      "sha256": "8180319b05e23162e2a5ab60c82f7d6f46b33ba1568d939e98ceb57046539924",
+      "bytes": 4808,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/src/gradient_comm_lab/csrc/codec.cu",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\csrc\\codec.cu",
+      "sha256": "186ddfc271cfea6246441f24974e63aad0a6724953a49580aebb4b5f2c18421a",
+      "bytes": 7292,
+      "role": "execution_source"
+    },
+    {
+      "path": "code/reference/src/splcomm/__init__.py",
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\__init__.py",
+      "sha256": "c3aa184f6d002ea21c84e9963273a6d48f5114e69159e8f8cc132deb348fe1c0",
+      "bytes": 232,
+      "role": "cpu_reference_dependency"
+    },
+    {
+      "path": "code/reference/src/splcomm/baseline_analysis.py",
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\baseline_analysis.py",
+      "sha256": "8cd7ab4aa8a777cc0a1728405953edf0be41cd82c11d257f2b5afe5e381967b8",
+      "bytes": 11144,
+      "role": "cpu_reference_dependency"
+    },
+    {
+      "path": "code/reference/src/splcomm/baseline_training.py",
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\baseline_training.py",
+      "sha256": "1ed6c36fdcccd57627e460e4a657fcf735c8503ed4a3322a9130c7c357102395",
+      "bytes": 16066,
+      "role": "cpu_reference_dependency"
+    },
+    {
+      "path": "code/reference/src/splcomm/core.py",
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\core.py",
+      "sha256": "895abd30f614f37ce6b4dcaf317cb6b6161cb72489ff7ca352bab9ca082b4edf",
+      "bytes": 4601,
+      "role": "cpu_reference_dependency"
+    },
+    {
+      "path": "code/reference/src/splcomm/dynamiq.py",
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\dynamiq.py",
+      "sha256": "9296231d3a29d3fb4cfa1d12a2ffe5a1a4d2922e62c51003fb214c59303e8ea0",
+      "bytes": 28525,
+      "role": "cpu_reference_dependency"
+    },
+    {
+      "path": "code/reference/src/splcomm/global_qsgd.py",
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\global_qsgd.py",
+      "sha256": "8d9c6a4365197e7880450cc5b30cf35ef5de6dbf13654000d245d20c03ebe823",
+      "bytes": 14724,
+      "role": "cpu_reference_dependency"
+    },
+    {
+      "path": "code/reference/src/splcomm/p2_replay.py",
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\p2_replay.py",
+      "sha256": "c56ba27ea9a64f7302f7d954709af6f27680b8e30131d0aaf089e5a642e91b0d",
+      "bytes": 19963,
+      "role": "cpu_reference_dependency"
+    },
+    {
+      "path": "code/reference/src/splcomm/p2_shadow.py",
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\p2_shadow.py",
+      "sha256": "4c79ec7a5f1714880a23bbbb204f65611b70135e9101df5582cc44b7de405916",
+      "bytes": 10398,
+      "role": "cpu_reference_dependency"
+    },
+    {
+      "path": "code/reference/src/splcomm/p2_stats.py",
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\p2_stats.py",
+      "sha256": "15222f1ec383a70fb1d7c3c2207da7ed035175ab2fbd91a012b2715fd9f981eb",
+      "bytes": 20581,
+      "role": "cpu_reference_dependency"
+    },
+    {
+      "path": "code/reference/src/splcomm/p2_training.py",
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\p2_training.py",
+      "sha256": "17dba49d4451bbf564ba0f22f7b9a4b023429592b3a6cabd4770969bbc17986d",
+      "bytes": 9635,
+      "role": "cpu_reference_dependency"
+    },
+    {
+      "path": "code/reference/src/splcomm/packing.py",
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\packing.py",
+      "sha256": "33f7fb806edbcc28585347990703501dcd0f05c121b566baafe0041be830c4f4",
+      "bytes": 2312,
+      "role": "cpu_reference_dependency"
+    },
+    {
+      "path": "code/reference/src/splcomm/registry.py",
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\registry.py",
+      "sha256": "04bddcb09e738cf403d07ac2013c04bbe55dec5cb0f69edb3a94c8b3f6618798",
+      "bytes": 5728,
+      "role": "cpu_reference_dependency"
+    },
+    {
+      "path": "code/reference/src/splcomm/ring.py",
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\ring.py",
+      "sha256": "d84e1977b70db52b75e0e6f2bfac0157cda1a8a6ef73f5819ffe1de825d73815",
+      "bytes": 4989,
+      "role": "cpu_reference_dependency"
+    },
+    {
+      "path": "code/reference/src/splcomm/training.py",
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\training.py",
+      "sha256": "3f52910bcbd8c6d6a738f25a0b36be49c8ac7c488f88834c43fe20485d15cfe4",
+      "bytes": 20509,
+      "role": "cpu_reference_dependency"
+    },
+    {
+      "path": "code/build/gradient_comm_lab_cuda_a02.pyd",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\build\\cuda_a02\\gradient_comm_lab_cuda_a02.pyd",
+      "sha256": "c4e37ff9394580bb15fe5d277115f616a439f2741528dff6826bc77e85f06b58",
+      "bytes": 340992,
+      "role": "accepted_binary_copy"
+    }
+  ]
+}

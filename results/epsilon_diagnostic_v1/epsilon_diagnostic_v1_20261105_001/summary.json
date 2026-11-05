@@ -1,0 +1,136 @@
+{
+  "schema_version": "epsilon_diagnostic_v1.0",
+  "template_only": false,
+  "run_id": "epsilon_diagnostic_v1_20261105_001",
+  "created_at": "2026-11-05T19:53:34.884236+08:00",
+  "scope": "single_additive_scale_constant_b8_matched_randomness",
+  "execution_status": "complete",
+  "stages": {
+    "E0": "pass",
+    "E1": "pass",
+    "E2": "pass"
+  },
+  "base_run_id": "bounded_discovery_v1_20261104_001",
+  "upstream_commit": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+  "base_contract_sha256": "97e8595532125d1fed44956c6a70da959031581884e753b449b64c1b3b195f47",
+  "contract_sha256": "605fc2ec0fa14cea1f051199c46442bc84342b90bc2de31182b772197e53c4e1",
+  "conditions": {
+    "control_scale_add": 1e-07,
+    "diagnostic_scale_add": 0.0,
+    "mee_eps8_unchanged": 0.1
+  },
+  "identity": {
+    "control_binary_sha256": "cbb1110aba29a8287acb7c2b592a2b1e4291970cb19e667aa62420487dc025a2",
+    "diagnostic_binary_sha256": "d93218f344f823e3168cc79193461eef2299ef09d0fc5237e660d49a89994951",
+    "decoder_binary_sha256": "d4eaf1d9a23930d34a6edb5b54254913679ac854bd855124c13b40e2c5f38880",
+    "control_parity_status": "pass",
+    "matched_pool_status": "pass",
+    "single_factor_source_status": "pass"
+  },
+  "coverage": {
+    "planned_pairs": 96,
+    "planned_snapshots": 3,
+    "planned_workers_per_snapshot": 4,
+    "planned_repeats": 8,
+    "completed_control_pairs": 96,
+    "completed_diagnostic_pairs": 96,
+    "valid_diagnostic_pairs": 96,
+    "failed_pairs": 0,
+    "missing_pairs": 0
+  },
+  "outcome": "partially_closes_gap",
+  "outcome_reason": "去掉固定加数部分降低误差；update100整体闭合55.17%，固定H仅34.11%，未满足H至少50%的投入门槛。按预设规则结束当前假说，不追加条件。",
+  "update100": {
+    "gap_closure": 0.55166468240386,
+    "gap_closure_H": 0.3410772644229425,
+    "workers_improved": 4,
+    "paired_repeats_improved": 8
+  },
+  "other_snapshots_relative_sse_change": {
+    "update500": -0.14814818394645118,
+    "update2500": -0.12838681062994525
+  },
+  "continuation_gate": "not_met",
+  "continuation_checks": {
+    "gap_closure_at_least_half": true,
+    "gap_closure_H_at_least_half": false,
+    "at_least_three_workers_improve": true,
+    "at_least_seven_paired_repeats_improve": true,
+    "other_snapshots_regression_at_most_two_percent": true
+  },
+  "claims": {
+    "counterfactual_executed": true,
+    "independent_confirmation_executed": false,
+    "new_training_executed": false,
+    "multihop_allreduce_executed": false,
+    "performance_gain_measured": false,
+    "deployable_fix_validated": false,
+    "independent_contribution_established": false
+  },
+  "resource_usage": {
+    "active_work_hours": 0.25243956944444446,
+    "gpu_execution_minutes": 2.8101897266667346,
+    "condition_builds": 2,
+    "repair_rounds": 1,
+    "measurement": "Elapsed upper bounds, not sum of parallel labor or kernel performance. GPU bound charges both complete build wall windows plus entire freeze-to-last-execution window.",
+    "synchronized_GPU_windows_seconds": 2.994012999959523,
+    "build_wall_seconds": 133.19539760000407,
+    "precheck_elapsed_upper_bound_minutes": 4.7901098499999994
+  },
+  "not_produced": [
+    "performance measurements (not_run)",
+    "D2 and new training (not_run)",
+    "causal evidence card for continuation (gate not_met; not required)"
+  ],
+  "evidence_paths": [
+    "REPORT.md",
+    "paired_summary.json",
+    "metrics_raw.jsonl",
+    "packet_changes.jsonl",
+    "control_parity.jsonl",
+    "correctness.jsonl",
+    "experiment_contract.json",
+    "source_manifest.json",
+    "environment.json",
+    "input_randomness_manifest.json",
+    "scale_precheck.json",
+    "region_manifest.json",
+    "logs/independent_effect_audit.json",
+    "logs/recompute_verification.json",
+    "REPRODUCE.md",
+    "integrity_manifest.json"
+  ],
+  "next_action": "stop_current_hypothesis; review required for any new scope",
+  "completed_at": "2026-11-05T20:08:43.666686+08:00",
+  "continuation_measurements": {
+    "gap_closure_at_least_half": {
+      "value": 0.55166468240386,
+      "threshold": 0.5,
+      "passed": true
+    },
+    "gap_closure_H_at_least_half": {
+      "value": 0.3410772644229425,
+      "threshold": 0.5,
+      "passed": false
+    },
+    "at_least_three_workers_improve": {
+      "value": 4,
+      "threshold": 3,
+      "passed": true
+    },
+    "at_least_seven_paired_repeats_improve": {
+      "value": 8,
+      "threshold": 7,
+      "passed": true
+    },
+    "other_snapshots_regression_at_most_two_percent": {
+      "values": {
+        "seed1101_update000500": -0.14814818394645118,
+        "seed1101_update002500": -0.12838681062994525
+      },
+      "threshold": 0.02,
+      "passed": true
+    }
+  },
+  "D2": "not_run"
+}

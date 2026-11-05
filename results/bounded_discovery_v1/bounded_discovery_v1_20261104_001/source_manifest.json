@@ -1,0 +1,372 @@
+{
+  "schema_version": "bounded_discovery_v1.0",
+  "run_id": "bounded_discovery_v1_20261104_001",
+  "files": [
+    {
+      "path": "code/src/gradient_comm_lab/bounded_discovery/common.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\bounded_discovery\\common.py",
+      "bytes": 3300,
+      "sha256": "eb97093c5a1865c3e9d1de2888a7aca38ffa05b204e7b8eff3ebe4df16d44b04",
+      "role": "execution_or_analysis_source"
+    },
+    {
+      "path": "code/src/gradient_comm_lab/bounded_discovery/official_codec.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\bounded_discovery\\official_codec.py",
+      "bytes": 7883,
+      "sha256": "3a0c49f5a6c27c19dd74efdeb4a97af2ef9122f37eda750faa2935ac7915a633",
+      "role": "execution_or_analysis_source"
+    },
+    {
+      "path": "code/src/gradient_comm_lab/bounded_discovery/uniform_codec.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\bounded_discovery\\uniform_codec.py",
+      "bytes": 12878,
+      "sha256": "4184ee798c3ddc63940f59b252d985f84d91e148d67071284da9e1e3de55410f",
+      "role": "execution_or_analysis_source"
+    },
+    {
+      "path": "code/scripts/bounded_discovery/audit_d0_packets.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\bounded_discovery\\audit_d0_packets.py",
+      "bytes": 7193,
+      "sha256": "59df82422f1266eac20132d19fe9250a8fa03a155069eb95ae254aaac5e9c163",
+      "role": "execution_or_analysis_source"
+    },
+    {
+      "path": "code/scripts/bounded_discovery/build_official.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\bounded_discovery\\build_official.py",
+      "bytes": 5667,
+      "sha256": "547c4ae7ae2e28403cc52c10b42d75899b833d4a287d1089449ecda918631e67",
+      "role": "execution_or_analysis_source"
+    },
+    {
+      "path": "code/scripts/bounded_discovery/check_uniform.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\bounded_discovery\\check_uniform.py",
+      "bytes": 14559,
+      "sha256": "ea9588ffabced2f8f73a361457d6cbed45bd68d6123ac1e5f98d6969a3b10f5f",
+      "role": "execution_or_analysis_source"
+    },
+    {
+      "path": "code/scripts/bounded_discovery/fetch_curand_headers.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\bounded_discovery\\fetch_curand_headers.py",
+      "bytes": 2357,
+      "sha256": "4a20a708c6d9c0f8dac29285b2f6418180d8d9fc1076be83819a1e7702f176a5",
+      "role": "execution_or_analysis_source"
+    },
+    {
+      "path": "code/scripts/bounded_discovery/fetch_official.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\bounded_discovery\\fetch_official.py",
+      "bytes": 2699,
+      "sha256": "d7e5ca5b51f3a3a8fbda034efe7c20b537c43057e4334ed86465b0cf63a7f8ec",
+      "role": "execution_or_analysis_source"
+    },
+    {
+      "path": "code/scripts/bounded_discovery/finalize_qualification.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\bounded_discovery\\finalize_qualification.py",
+      "bytes": 11316,
+      "sha256": "b63ef72a96983d3982aba556a74ab43244d955cff9cb17d97c1773693a9064eb",
+      "role": "execution_or_analysis_source"
+    },
+    {
+      "path": "code/scripts/bounded_discovery/freeze_comparison.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\bounded_discovery\\freeze_comparison.py",
+      "bytes": 9293,
+      "sha256": "965b6ba854fb609d071571670211bd3e2fb0788cce52864cfedbd82c433e639a",
+      "role": "execution_or_analysis_source"
+    },
+    {
+      "path": "code/scripts/bounded_discovery/prepare_inputs.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\bounded_discovery\\prepare_inputs.py",
+      "bytes": 2234,
+      "sha256": "c5601981a77ecfba243edee58d3598e6cab81faf928c101a1a4726025371ddfa",
+      "role": "execution_or_analysis_source"
+    },
+    {
+      "path": "code/scripts/bounded_discovery/probe_official_boundaries.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\bounded_discovery\\probe_official_boundaries.py",
+      "bytes": 2623,
+      "sha256": "67030d4e675b14f68fea5bb9398064889e5de89685148bcde84f1adccee08712",
+      "role": "execution_or_analysis_source"
+    },
+    {
+      "path": "code/scripts/bounded_discovery/qualify_official.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\bounded_discovery\\qualify_official.py",
+      "bytes": 9964,
+      "sha256": "f557b7c8a4c72c69f94046d7e988b9932f4c55967b8101dfab9da8d40bc66237",
+      "role": "execution_or_analysis_source"
+    },
+    {
+      "path": "code/scripts/bounded_discovery/revise_execution.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\bounded_discovery\\revise_execution.py",
+      "bytes": 3700,
+      "sha256": "32053c79b01d0213701155907bec9d157dcb283d86edf3df715419d4157f33e9",
+      "role": "execution_or_analysis_source"
+    },
+    {
+      "path": "code/scripts/bounded_discovery/run_comparison.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\bounded_discovery\\run_comparison.py",
+      "bytes": 16014,
+      "sha256": "7a8c27b91d0798869a22dda0db6c9f7d0901443b417d86d52460a6f048518080",
+      "role": "execution_or_analysis_source"
+    },
+    {
+      "path": "code/scripts/bounded_discovery/summarize.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\bounded_discovery\\summarize.py",
+      "bytes": 44631,
+      "sha256": "0332102a79a0809fbedece896366492275510bd0d5dc2f6a82ccf966db51980b",
+      "role": "execution_or_analysis_source"
+    }
+  ],
+  "original_official_sources": [
+    {
+      "path": "code/upstream/ENVIRONMENT_REQUIREMENTS.md",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\ENVIRONMENT_REQUIREMENTS.md",
+      "bytes": 2700,
+      "sha256": "85a03588d156b2ce7c1599fdded9d2f319dbdabd6c36f7db9dfd6bec46acebf7",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/ENVIRONMENT_REQUIREMENTS.md",
+      "github_blob_sha1": "afe15254d26b1cc7eedc64ba45cf85305266fb32"
+    },
+    {
+      "path": "code/upstream/LICENSE",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/LICENSE",
+      "github_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "path": "code/upstream/README.md",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\README.md",
+      "bytes": 16751,
+      "sha256": "2b92e749f09c68885a49f84b8eed73bcc2cb62bb50bd2a3c19c423a794d4a8a9",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/README.md",
+      "github_blob_sha1": "e450963f379663921519c63d5daf0c6e133ca720"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/README.md",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\README.md",
+      "bytes": 264,
+      "sha256": "8d01247121c1316d7abbafff30fa08910b3fd1249386739b78b358883bc81601",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/README.md",
+      "github_blob_sha1": "678c0659aa2cb8f1c1a0bd3322030968e5aded7a"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/documentation/environments.md",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\documentation\\environments.md",
+      "bytes": 566,
+      "sha256": "f676a91c08a5f461400bf762d854392c4889fe5e74da0c5b6a5402c391c823ea",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/documentation/environments.md",
+      "github_blob_sha1": "78b24b09e009ca9fc41f48873d65725e45477868"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/documentation/scaling_quantization_algorithm.md",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\documentation\\scaling_quantization_algorithm.md",
+      "bytes": 11516,
+      "sha256": "0c7f1ef01061a9ebbebfb57cd11408d0d6cd227b5c77fce12097917262fd0dcd",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/documentation/scaling_quantization_algorithm.md",
+      "github_blob_sha1": "2b54fc62f6ec5cb83020443b41f60bb7fa9e55f9"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/scripts/build_scaling_extension.sh",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\scripts\\build_scaling_extension.sh",
+      "bytes": 642,
+      "sha256": "a6767fbbdf2b54b323327860c605fdb3e05565347f34b6d4cffbf1abf85ab00c",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/scripts/build_scaling_extension.sh",
+      "github_blob_sha1": "a10ed834126e38836ca87f1a064569f83503aa59"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/scripts/run_scaling_benchmark.sh",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\scripts\\run_scaling_benchmark.sh",
+      "bytes": 613,
+      "sha256": "ee03cfaa8f549b6443a2a20d01862d5b4b50c9fe715c49e1c01ba62621c0f200",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/scripts/run_scaling_benchmark.sh",
+      "github_blob_sha1": "ab650a3e402d22d9bfcfb870071216728fbf5122"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/setup.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\setup.py",
+      "bytes": 1786,
+      "sha256": "d4917dc314725065fa5c74e9f1255c6fab8572cc0cf03bca63315ffb51c64615",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/setup.py",
+      "github_blob_sha1": "0a44e0ab41dac2fc0506f69fb09ea0610091a4ae"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/src/srrcomp/__init__.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\src\\srrcomp\\__init__.py",
+      "bytes": 96,
+      "sha256": "31c11edd6fe494d7b20c2d5ba4b494a10629e9fdb9fbf3561bc49da7cf8a4b98",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/__init__.py",
+      "github_blob_sha1": "4713f0e74e59928442057a7f418998623ecf7ea4"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/src/srrcomp/eden_utils/.vscode/c_cpp_properties.json",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\src\\srrcomp\\eden_utils\\.vscode\\c_cpp_properties.json",
+      "bytes": 423,
+      "sha256": "7715b59898d8fca32b59e2d553ac2a616d860aa02bba096dfeb86910b582acb3",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/eden_utils/.vscode/c_cpp_properties.json",
+      "github_blob_sha1": "a5730a521cbaee56faa7d91041299492f906307d"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/src/srrcomp/eden_utils/a.cpp",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\src\\srrcomp\\eden_utils\\a.cpp",
+      "bytes": 25,
+      "sha256": "344d05b1a6117a61319c45a6a5c6be3180e692efe8a7fdae570950402823df7c",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/eden_utils/a.cpp",
+      "github_blob_sha1": "2709ed196ee3c41f989b160592b16cd6770fd7f4"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hadamard.cu",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\src\\srrcomp\\eden_utils\\csrc\\cuda_hadamard.cu",
+      "bytes": 64352,
+      "sha256": "4f26fba59d03372501a39fd2e1c046d0774c1f3a722104697b8eee8b57e94055",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hadamard.cu",
+      "github_blob_sha1": "0541fbeeb1e079d4c786d455a0020ec51508ab7c"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hadamard.h",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\src\\srrcomp\\eden_utils\\csrc\\cuda_hadamard.h",
+      "bytes": 2128,
+      "sha256": "0691f1f7e6a25fc6ecff13b717d502330c1fab419309056de1b91a0394ea1db2",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hadamard.h",
+      "github_blob_sha1": "d8ed399864c83feb67a6da04eba29dc7a9d4567d"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hierarchical_mee.cu",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\src\\srrcomp\\eden_utils\\csrc\\cuda_hierarchical_mee.cu",
+      "bytes": 65728,
+      "sha256": "0217fa4680a218633d22ff0a177c468e6b40da8f8274b8b92609dcb4419620a8",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hierarchical_mee.cu",
+      "github_blob_sha1": "dc18d6f98dfdc39d6e5d69e35ad5de09e49e09aa"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hierarchical_mee.h",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\src\\srrcomp\\eden_utils\\csrc\\cuda_hierarchical_mee.h",
+      "bytes": 3577,
+      "sha256": "38787be245c286b05eee2500555e46a495738304d5d69b8da2fc6f9773c341a8",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hierarchical_mee.h",
+      "github_blob_sha1": "36b6875b3c521e2725deec665e7c68d2630ba501"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_packing.cu",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\src\\srrcomp\\eden_utils\\csrc\\cuda_packing.cu",
+      "bytes": 3229,
+      "sha256": "b57daafee5eb51a2152ae8892165e205da4451a4dbd61f8d002f4be3fd89d2ed",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_packing.cu",
+      "github_blob_sha1": "42fe9cc6a5e4ea58b5876657dcc7db5f7ac78c51"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_packing.h",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\src\\srrcomp\\eden_utils\\csrc\\cuda_packing.h",
+      "bytes": 323,
+      "sha256": "791938fd31072b1ef5059f95e2aef55a1347df2a5f5199c24748dbc18ac8e977",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_packing.h",
+      "github_blob_sha1": "1defbab4a4354747126cc99f979d247ea44aa3d8"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/src/srrcomp/eden_utils/csrc/defs.h",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\src\\srrcomp\\eden_utils\\csrc\\defs.h",
+      "bytes": 1044,
+      "sha256": "eecfa2d21817cbbdf3fe94702c0b85ba5c94096753fd35015bdcaada7e5aa21a",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/eden_utils/csrc/defs.h",
+      "github_blob_sha1": "64b39510176c530d0ec60f52ecc9c243a4c213c1"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/src/srrcomp/eden_utils/csrc/logic.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\src\\srrcomp\\eden_utils\\csrc\\logic.py",
+      "bytes": 15802,
+      "sha256": "df7a3fd481c8a5ba1cf9e7a0f0e0fd6a99fb939bd04fa17bb2964f3d9824ce37",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/eden_utils/csrc/logic.py",
+      "github_blob_sha1": "de0a17f524b9fe3369923328f10153cbffc77743"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/src/srrcomp/eden_utils/eden_utils.cpp",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\src\\srrcomp\\eden_utils\\eden_utils.cpp",
+      "bytes": 22733,
+      "sha256": "bf84955aa924fbc4e7b49ea94d003b0e45ad9f4e9b2b9caeabdf6dcc65255dd8",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/eden_utils/eden_utils.cpp",
+      "github_blob_sha1": "ef235ac226f4c003f3bda7a70c21ff6ce4e81da2"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/src/srrcomp/srrcomp.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\src\\srrcomp\\srrcomp.py",
+      "bytes": 19638,
+      "sha256": "d353e5a1dbe12abc31d3729ed4be477d8ddf62086c62dd358eef8ae9577e69a6",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/src/srrcomp/srrcomp.py",
+      "github_blob_sha1": "0a5b50ee786f38a8bb2869d67566353f6a8f216a"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/test.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\test.py",
+      "bytes": 580,
+      "sha256": "d7c275e515812ddb689261f4081bff8c2c0a94977f71f553454f75f3852e358b",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/test.py",
+      "github_blob_sha1": "5cf4dbfab33ce68c13837543443a2e00fb00a45a"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/tests/basic_test.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\tests\\basic_test.py",
+      "bytes": 1125,
+      "sha256": "12218c7ae4a2b45bfb6fb034bba089af52c680a220c8a9971b89348029bab27d",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/tests/basic_test.py",
+      "github_blob_sha1": "6496c3db18cd796200860588c105034459a8b0a1"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/tests/benchmark_scaling_quantization.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\tests\\benchmark_scaling_quantization.py",
+      "bytes": 4405,
+      "sha256": "71e3bac28b65cdd515c3ccb6495e266a74908de2a663b5660f7e21ec51597ade",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/tests/benchmark_scaling_quantization.py",
+      "github_blob_sha1": "1578050944acf5ff96b840b476c304edaed3e825"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/tests/dme_test.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\tests\\dme_test.py",
+      "bytes": 5955,
+      "sha256": "a6d67bc41fbaab663321b11d6518a8d1d8f3ff5a3064140be5defccc7043c17c",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/tests/dme_test.py",
+      "github_blob_sha1": "7ad64be0aa3bdb82a0c3d0f02c3c61d715f3aaab"
+    },
+    {
+      "path": "code/upstream/cuda_kernels/tests/test_scaling_quantization_functional.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\tests\\test_scaling_quantization_functional.py",
+      "bytes": 15813,
+      "sha256": "f57e40a11f1ca66b11d6cfcfb59e519860bf90e1abaec0bdefcce290e4fa1781",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/cuda_kernels/tests/test_scaling_quantization_functional.py",
+      "github_blob_sha1": "764575ce53261702c490b1b824b600affd111ea7"
+    },
+    {
+      "path": "code/upstream/requirements.txt",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\requirements.txt",
+      "bytes": 788,
+      "sha256": "7645b0fcf71542caa08721d5f7b896bad6d832d4601d989c1ba5f80c50dfe5ab",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/requirements.txt",
+      "github_blob_sha1": "15e4e347580b72c77644489d4dc83d60ff727128"
+    },
+    {
+      "path": "code/upstream/testbed_evaluation/build_eden_utils_llm.zsh",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\testbed_evaluation\\build_eden_utils_llm.zsh",
+      "bytes": 2391,
+      "sha256": "2e3fd5392e486640a345362f952386f3723a4fb9159f005b18b1ec04aa7d7bb4",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/testbed_evaluation/build_eden_utils_llm.zsh",
+      "github_blob_sha1": "030ea0d56529fd021a10dc96a46c50b124a91cbd"
+    },
+    {
+      "path": "code/upstream/testbed_evaluation/new_comm_hooks/comm_hooks.py",
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\testbed_evaluation\\new_comm_hooks\\comm_hooks.py",
+      "bytes": 43981,
+      "sha256": "5ac812c9ecd84d8d3af64ca4fb87f111bc12ad244cfc94a7b4daeaebc6cf1c80",
+      "url": "https://raw.githubusercontent.com/CharlesHan24/DynamiQ/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8/testbed_evaluation/new_comm_hooks/comm_hooks.py",
+      "github_blob_sha1": "4d2fc95d976f70482a307a316df463cae95f3314"
+    }
+  ],
+  "upstream_manifest": "logs/official_source_manifest.json",
+  "upstream_manifest_sha256": "f2e43f430c3d85f5c11c12581ddade797f0d6543d572075071943b2a834f58c9",
+  "binary": {
+    "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\bounded_discovery_v1\\bounded_discovery_v1_20261104_001\\build\\official_a03\\eden_utils.pyd",
+    "sha256": "d4eaf1d9a23930d34a6edb5b54254913679ac854bd855124c13b40e2c5f38880",
+    "bytes": 4609024
+  },
+  "source_glue_diff": "15e4fc4239d8da198a176646bc7374286a852d8a017cca233d610d12db199a90",
+  "build_manifest_sha256": "7295a8086aba8679b3e90348cae4857ea4f5ba59ebd6560b57bcfe1f4fe97625",
+  "frozen_at": "2026-11-04T21:36:33.359923+08:00",
+  "revision": 2,
+  "previous_manifest_sha256": "62ee8aabf13dbbb3c5437ba70dd7618b73434353eae70a288fe333692a7797a0"
+}

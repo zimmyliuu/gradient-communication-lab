@@ -1,0 +1,743 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "template_only": false,
+  "main_grid": {
+    "numel": [
+      256,
+      4096,
+      65536,
+      262144,
+      1048576,
+      4194304
+    ],
+    "nominal_bits": [
+      4,
+      8
+    ],
+    "distributions": [
+      "standard_normal",
+      "group_scaled_normal"
+    ],
+    "input_seed": 7301,
+    "methods": [
+      "torch_cuda_repaired"
+    ],
+    "operations": [
+      "encode",
+      "decode",
+      "roundtrip"
+    ],
+    "allocation_mode": "preallocated",
+    "validation_mode": "trusted_inputs"
+  },
+  "api_grid": {
+    "numel": [
+      65536,
+      1048576
+    ],
+    "nominal_bits": [
+      4,
+      8
+    ],
+    "distribution": "standard_normal",
+    "input_seed": 7301,
+    "methods": [
+      "torch_cuda_repaired"
+    ],
+    "operation": "roundtrip",
+    "allocation_mode": "api_allocating",
+    "validation_modes": [
+      "trusted_inputs",
+      "checked_api"
+    ]
+  },
+  "real_gradient_grid": {
+    "training_seed": 1101,
+    "updates": [
+      100,
+      500,
+      2500
+    ],
+    "ranks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "nominal_bits": [
+      4,
+      8
+    ],
+    "methods": [
+      "torch_cuda_repaired"
+    ],
+    "operation": "roundtrip",
+    "allocation_mode": "preallocated",
+    "validation_mode": "trusted_inputs"
+  },
+  "warmup_calls_min": 50,
+  "session_count_min": 5,
+  "blocks_per_session_min": 20,
+  "inner_repeats_min": 1,
+  "inner_repeats_max": 10000,
+  "target_block_ms": [
+    10,
+    50
+  ],
+  "repeat_selection_key": [
+    "case_id",
+    "method_id"
+  ],
+  "repeat_counts_frozen_across_sessions": true,
+  "repeat_counts": [
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 106,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 488,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 60,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 101,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 115,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n256__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 73,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 92,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 489,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 77,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 104,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 490,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n256__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 56,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 91,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 475,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 58,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 89,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 476,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4096__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 58,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 88,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 102,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 57,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 88,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 475,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4096__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 72,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 86,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 337,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 59,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b4__roundtrip__api_allocating__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 34,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b4__roundtrip__api_allocating__checked_api",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 7,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 78,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 407,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 59,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b8__roundtrip__api_allocating__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 28,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n65536__b8__roundtrip__api_allocating__checked_api",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 7,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 87,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 415,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 74,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 85,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 407,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n65536__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 43,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 79,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 247,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 53,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 33,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 247,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n262144__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 48,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 60,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 248,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 58,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 69,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 242,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n262144__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 47,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 37,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 73,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 24,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b4__roundtrip__api_allocating__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 16,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b4__roundtrip__api_allocating__checked_api",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 6,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 24,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 68,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 15,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b8__roundtrip__api_allocating__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 11,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n1048576__b8__roundtrip__api_allocating__checked_api",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 5,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 39,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 71,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 26,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 24,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 52,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n1048576__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 18,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 6,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 8,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 3,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 4,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 9,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_standard_normal_seed7301_n4194304__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 3,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b4__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 5,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b4__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 9,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 3,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b8__encode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 4,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b8__decode__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 7,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "synthetic_group_scaled_normal_seed7301_n4194304__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 3,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 31,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 19,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 31,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 20,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 31,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 20,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 20,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 20,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 24,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 16,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 26,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 22,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 30,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 23,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 31,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 21,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 25,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 23,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 30,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 22,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 28,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 23,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3__b4__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 22,
+      "reason": "target_20ms_from_median_single_call"
+    },
+    {
+      "case_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3__b8__roundtrip__preallocated__trusted_inputs",
+      "method_id": "torch_cuda_repaired",
+      "inner_repeats": 14,
+      "reason": "target_20ms_from_median_single_call"
+    }
+  ],
+  "graph_mode": "off",
+  "compile_mode": "eager",
+  "cache_mode": "steady_state_reuse",
+  "rng_work_included": false,
+  "quantile_interpolation": "linear",
+  "method_order_seed": 7501,
+  "changes_from_plan": [],
+  "run_id": "gpu_codec_v1_20261101_002",
+  "scope": "G1a_torch_cuda_baseline_only",
+  "required_but_missing_methods": [
+    "cuda_optimized_repaired"
+  ],
+  "method_comparison_performed": false,
+  "quantile_implementation": "numpy.quantile(method=linear)",
+  "wall_timing_boundary": "synchronize before timer; events and K calls and end-event synchronization inside wall timer",
+  "K_selection": "median of 3 single-call pilot intervals, ceil(20ms/median), clamp1..10000; one selected-K observation; no best-run selection",
+  "outer_padding_included": true,
+  "api_allocation_boundary": "construct full plan/workspace and roundtrip per call",
+  "deterministic_algorithms": true,
+  "fill_uninitialized_memory": false,
+  "gpu_timing_interpretation": "CUDA event stream interval including eager launch gaps, checked synchronization and allocation-path gaps; not summed kernel-active time",
+  "expected_torch_cases": 104,
+  "expected_torch_blocks": 10400,
+  "K_frozen_at": "2026-11-01T22:32:18.511931+08:00",
+  "pilot_sha256": "ee91aa20206b75030c4b1264a19442603b35ccd29ca585b61ee6d774b9ca4623"
+}

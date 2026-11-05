@@ -1,0 +1,153 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "run_id": "gpu_codec_v1_20261101_001",
+  "git_commit": null,
+  "git_note": "File manifests used; no repository commit asserted.",
+  "files": [
+    {
+      "path": "code/scripts/finalize_g0_delivery.py",
+      "role": "report_generator",
+      "sha256": "3da6421894f9192c87def97e709548b315540d79dd7bbf72b210fb3c1025d4f8",
+      "bytes": 23313,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\finalize_g0_delivery.py"
+    },
+    {
+      "path": "code/scripts/freeze_g0_inputs.py",
+      "role": "build_script",
+      "sha256": "02072d48874900452cf0694c21bb3ab36f87a6e6e9aa74dbb8c184b505d760c9",
+      "bytes": 6417,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\freeze_g0_inputs.py"
+    },
+    {
+      "path": "code/scripts/minimal_cuda_probe.py",
+      "role": "build_script",
+      "sha256": "4cdf80c624aecc4d7c3442a4267bdee42b3436fb4b102bc9d8396e8a83e9902c",
+      "bytes": 4544,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\minimal_cuda_probe.py"
+    },
+    {
+      "path": "code/scripts/probe_environment.py",
+      "role": "build_script",
+      "sha256": "409bf74dae07dc5b2c7f04c4f15fa344241e33cbe582b2b2558380f0aa90eb22",
+      "bytes": 10181,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\probe_environment.py"
+    },
+    {
+      "path": "code/scripts/probe_reference_semantics.py",
+      "role": "test",
+      "sha256": "a90ad0cf08d33f82330e3b6bf5820d8d125e8e2934b90f4d4ea21744b98ecf80",
+      "bytes": 10821,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\probe_reference_semantics.py"
+    },
+    {
+      "path": "code/scripts/python.ps1",
+      "role": "build_script",
+      "sha256": "4ac1698a5a575f82c656afd60680928c159815d8bf959e75577e8329ddb21ac7",
+      "bytes": 1427,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\python.ps1"
+    },
+    {
+      "path": "code/src/g0_probe.cpp",
+      "role": "build_script",
+      "sha256": "b220063572ef82169e996504b7665989cfacb0957c42473113c29a5cc062adeb",
+      "bytes": 158,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\g0_probe.cpp"
+    },
+    {
+      "path": "code/src/g0_probe.cu",
+      "role": "build_script",
+      "sha256": "e39cfa78f9959f3d8f917695bdeef40a423c7459fe9e0a040c8127c4cd9338ae",
+      "bytes": 692,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\g0_probe.cu"
+    },
+    {
+      "path": "code/src/gradient_comm_lab/__init__.py",
+      "role": "cpu_reference",
+      "sha256": "10bfe6b4e29e8138576b15f2ce87736e5db130a384eb327bc1db24e7385c55af",
+      "bytes": 80,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\__init__.py"
+    },
+    {
+      "path": "code/src/gradient_comm_lab/cpu_reference.py",
+      "role": "cpu_reference",
+      "sha256": "4ab03e0c8bed961ed3eaa8bec5a546bf74d76909437d6561032453e3cd59d36b",
+      "bytes": 4749,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\cpu_reference.py"
+    },
+    {
+      "path": "code/reference/src/splcomm/dynamiq.py",
+      "role": "cpu_reference",
+      "sha256": "9296231d3a29d3fb4cfa1d12a2ffe5a1a4d2922e62c51003fb214c59303e8ea0",
+      "bytes": 28525,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\dynamiq.py"
+    },
+    {
+      "path": "code/reference/src/splcomm/packing.py",
+      "role": "cpu_reference",
+      "sha256": "33f7fb806edbcc28585347990703501dcd0f05c121b566baafe0041be830c4f4",
+      "bytes": 2312,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\packing.py"
+    },
+    {
+      "path": "code/reference/tests/test_dynamiq.py",
+      "role": "cpu_reference",
+      "sha256": "7fcb14f82a9c95609e849c53b433b204bb7b121d8db9810ddf2766d7d2148c3e",
+      "bytes": 18532,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\tests\\test_dynamiq.py"
+    },
+    {
+      "path": "code/reference/tests/dynamiq_oracle.py",
+      "role": "cpu_reference",
+      "sha256": "43bbd1e1ae85bb71510b5a2f411ec87363a3ac63841e957b6ce0a832e979a67d",
+      "bytes": 10652,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\tests\\dynamiq_oracle.py"
+    },
+    {
+      "path": "code/reference/src/splcomm/p2_replay.py",
+      "role": "cpu_reference",
+      "sha256": "c56ba27ea9a64f7302f7d954709af6f27680b8e30131d0aaf089e5a642e91b0d",
+      "bytes": 19963,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\p2_replay.py"
+    },
+    {
+      "path": "code/reference/src/splcomm/core.py",
+      "role": "cpu_reference",
+      "sha256": "895abd30f614f37ce6b4dcaf317cb6b6161cb72489ff7ca352bab9ca082b4edf",
+      "bytes": 4601,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\core.py"
+    },
+    {
+      "path": "code/reference/src/splcomm/ring.py",
+      "role": "cpu_reference",
+      "sha256": "d84e1977b70db52b75e0e6f2bfac0157cda1a8a6ef73f5819ffe1de825d73815",
+      "bytes": 4989,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\ring.py"
+    },
+    {
+      "path": "codec_contract.json",
+      "role": "config",
+      "sha256": "e71f17d5c989bcb94422964c34c53497e14fc4ddfe10a9d64895f409d6d4546a",
+      "bytes": 6799
+    },
+    {
+      "path": "benchmark_config.json",
+      "role": "config",
+      "sha256": "93a6194dbd7d9b7e2275a11d8bfc0e8ef3d8f937aedbe9c6d2f41ea7c028c73a",
+      "bytes": 2232
+    },
+    {
+      "path": "requirements.txt",
+      "role": "config",
+      "sha256": "ec728829541792e734ec3c1f8c49cf73cb26f10747846ede1d4cde6a5b34be4e",
+      "bytes": 1047
+    },
+    {
+      "path": "code/scripts/review_g0_delivery.py",
+      "role": "report_generator",
+      "sha256": "fe2255cd3d8bda32e2d6884cabecb23fe9e0dda2266e2b430cf98eb492dfae0a",
+      "bytes": 4118,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\review_g0_delivery.py"
+    }
+  ],
+  "probe_is_not_GPU_codec": true
+}

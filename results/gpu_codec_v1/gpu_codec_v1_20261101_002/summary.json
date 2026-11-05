@@ -1,0 +1,139 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "template_only": false,
+  "run_id": "gpu_codec_v1_20261101_002",
+  "stage": "G1",
+  "started_at": "2026-11-01T22:30:24.804240+08:00",
+  "finished_at": "2026-11-01T23:10:22.162217+08:00",
+  "timezone": "Asia/Shanghai",
+  "execution_status": "incomplete",
+  "contract_sha256": "068400a4067849390aec27a01d9f46811e395f0765f63ccb67fdeda82e470e7d",
+  "benchmark_config_sha256": "eaff856cfc09da42b1d32cb89c022886e41c24f8e6d16e683cad29c8195456e5",
+  "correctness_status": "incomplete",
+  "benchmark_validity": "incomplete",
+  "optimization_gain": "not_evaluated",
+  "g1_acceptance": "incomplete",
+  "coverage": {
+    "nominal_bits_completed": [
+      4,
+      8
+    ],
+    "methods_completed": [
+      "torch_cuda_repaired"
+    ],
+    "correctness_cases_passed": 1101,
+    "correctness_cases_failed": 0,
+    "correctness_cases_skipped": 0,
+    "real_gradient_inputs_completed": 12,
+    "benchmark_cases_completed": 104,
+    "raw_timing_blocks": 10400,
+    "memory_records": 520,
+    "fixture_inputs": 82,
+    "protocol_checks": 117,
+    "missing_items": [
+      "cuda_optimized_repaired",
+      "two_GPU_implementation_paired_comparison"
+    ]
+  },
+  "claims": {
+    "local_codec_parity_validated": true,
+    "gpu_codec_performance_measured": true,
+    "full_dynamiq_gpu_validated": false,
+    "training_quality_newly_validated": false,
+    "multigpu_speedup_measured": false
+  },
+  "key_findings": [
+    "正式局部codec正确性1101项通过，五类码/尺度/完整包/输出差异均为0；82输入、164 input-bit 对。",
+    "PyTorch基线104case×5session×20block=10400块有效，520份独立显存记录；完整G1仍缺优化GPU实现。",
+    "标准正态seed7301直接roundtrip：N=256 b4中位 463.155 us；N=4194304 b4/b8中位 10147.397/12868.778 us。",
+    "独立trace中3次roundtrip共156个GPU kernel，平均52.0个/次；融合与缩小workspace需要新实现验证。",
+    "噪声标记67case，目标块时长偏离771块；全部保留，无优化版加速比。"
+  ],
+  "open_issues": [
+    "G1A-MISSING-OPTIMIZED",
+    "G1A-BENCH-NOISE",
+    "G1A-BLOCK-DURATION"
+  ],
+  "next_action": "optimize_codec",
+  "artifacts": {
+    "report": "REPORT.md",
+    "environment": "environment.json",
+    "contract": "codec_contract.json",
+    "benchmark_config": "benchmark_config.json",
+    "inputs": "input_manifest.json",
+    "sources": "source_manifest.json",
+    "correctness": "correctness.jsonl",
+    "benchmark_raw": "benchmark_raw.jsonl",
+    "benchmark_summary": "benchmark_summary.jsonl",
+    "memory": "memory.jsonl",
+    "issues": "issues.jsonl",
+    "reproduce": "REPRODUCE.md",
+    "analysis": "analysis.json",
+    "correctness_acceptance": "correctness_acceptance.json",
+    "trace_manifest": "traces/gpu_activity_manifest.json",
+    "gpu_activity_manifest": "traces/gpu_activity_manifest.json",
+    "retained_cpu_only_trace_manifest": "traces/manifest.json",
+    "fixtures": "fixtures_manifest.json",
+    "requirements": "requirements.txt",
+    "toolchain_summary": "logs/toolchain_summary.json",
+    "figures": [
+      "figures/latency_vs_numel.png",
+      "figures/wire_effective_bits.png",
+      "figures/quantization_distortion.png",
+      "figures/memory_vs_numel.png"
+    ]
+  },
+  "substage": "torch_cuda_baseline",
+  "method_statuses": {
+    "torch_cuda_repaired": {
+      "execution_status": "complete",
+      "correctness_status": "pass",
+      "benchmark_validity": "valid",
+      "correctness_rows": 937,
+      "benchmark_cases": 104,
+      "raw_blocks": 10400
+    },
+    "cpu_ref_repaired": {
+      "correctness_status": "pass",
+      "qualification": "actual_CPU_reference_execution_not_independent_GPU_parity",
+      "roundtrip_rows": 164,
+      "benchmark_validity": "not_run"
+    },
+    "cuda_optimized_repaired": {
+      "execution_status": "not_started",
+      "correctness_status": "not_run",
+      "benchmark_validity": "not_run"
+    }
+  },
+  "noise_case_count": 67,
+  "outside_target_duration_block_count": 771,
+  "toolchain_status": "pass",
+  "toolchain_compile_status": "pass",
+  "toolchain_gpu_call_status": "pass",
+  "paired_speedup": null,
+  "report_generator": {
+    "path": "scripts/write_g1a_report.py",
+    "sha256": "bcdd67156535efd9d73bf98835a823c3d0b5f6fc5476fe5f72df16670e0c4ecb",
+    "source_sha256": {
+      "analysis.json": "60bba92133167bac77bcfe4353bceec30c5cd32fc85980b7796f68edfa983f18",
+      "benchmark_summary.jsonl": "fe0d5dd5be7a165286a4e9338bf68a8f5fd3e4c7cf29d1ad3addb82437683309",
+      "correctness.jsonl": "619f19ebacf75c1318f494de6d02d38fc75e1eb8be82a2897ad354eaca57a9e9",
+      "correctness_acceptance.json": "b914018da40d7d28c89685820560d4efa674ca80aae73c952273aa3d1a761d37",
+      "logs/correctness_analysis.json": "11d397f1c286d660253528ee884d68d3f966538ebe2d5e5824dba42223aafb93",
+      "logs/correctness_commands.json": "02e722595ddd75ff0077c9e2775f45fdb5a80ca576660a81ae3eabbabf528bc4",
+      "logs/benchmark_execution.json": "d7cad0b595445ad8a18beaae2bff8bd2d4d5a8c06d0826e9e4e431fb3cd97fd6",
+      "logs/toolchain_summary.json": "81ef8b2d996f767a8d20c554251bcfda8f60b270e8424029e162e87ef83466df",
+      "environment.json": "4081c4a6d26983e2c5a58811be129cbe9c78d793bae2b08a7abdb1661d910f22",
+      "codec_contract.json": "068400a4067849390aec27a01d9f46811e395f0765f63ccb67fdeda82e470e7d",
+      "benchmark_config.json": "eaff856cfc09da42b1d32cb89c022886e41c24f8e6d16e683cad29c8195456e5",
+      "input_manifest.json": "075c12889f00bf5f3b86b4522e76cf13bfc778e6a9db94f96d06e875accedab1",
+      "execution_registration.json": "e4fdeb3523c313798f07c0149ea11097e11ed025678612845bd1e9731dbcfaf2",
+      "requirements.txt": "ec728829541792e734ec3c1f8c49cf73cb26f10747846ede1d4cde6a5b34be4e",
+      "traces/manifest.json": "64576954aa2bd366e372f2fb1823480a366096f84f07dad0e7311ab323672f6e",
+      "logs/pytest_torch_codec_attempt01_failure_analysis.json": "159919a8d2b31ca5efd87d26d6cef55ed8456ed843f42531460465d99d0440b6",
+      "logs/pytest_torch_codec_attempt02.xml": "021302240cb86cf7f528a2996eaf73201780dffcf48e94fb5f7ccb521d9a3953",
+      "traces/gpu_activity_manifest.json": "111363dc35099e2132effebd4a3e547ef90c6d87399447c65434a655cbb25ed4",
+      "logs/cupti_trace_audit_a03.json": "4379de63befe2388223a20d56a19a9c3efe2e87cc5db9eac15a570ba4876ddd5"
+    }
+  }
+}

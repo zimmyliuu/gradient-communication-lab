@@ -1,0 +1,41 @@
+{
+  "schema_version": "spl_topic_screen.v1",
+  "report_id": "topic_screen_20261104_001",
+  "date": "2026-11-04",
+  "status": "complete",
+  "scope": "evidence_driven_low_bit_model_communication_topic_screening",
+  "target_venue": "IEEE Signal Processing Letters",
+  "hardware_scope": "single_RTX_4000_Ada",
+  "detailed_candidate_count": 2,
+  "recommended_candidate_count": 0,
+  "decision": "no_candidate_ready_for_research_experiments",
+  "candidates": [
+    {
+      "id": "integer_aggregation_overflow_control",
+      "problem_evidence": "established_in_primary_sources",
+      "concrete_distinct_method_established": false,
+      "recommend_start": false
+    },
+    {
+      "id": "gradient_rotation_selection",
+      "problem_evidence": "established_with_scope_limits",
+      "concrete_distinct_method_established": false,
+      "recommend_start": false
+    }
+  ],
+  "new_experiments_run": false,
+  "new_training_run": false,
+  "new_codec_execution": false,
+  "g2b_g3_g4_started": false,
+  "old_candidates_restarted": false,
+  "sealed_results_modified": false,
+  "readme_status_updated": true,
+  "portable_reproduction_completed": false,
+  "artifacts": ["REPORT.md", "CANDIDATE_REVIEWS.md"],
+  "limitations": [
+    "targeted_screening_not_exhaustive_novelty_proof",
+    "no_claim_all_problems_in_the_field_are_solved",
+    "recent_preprints_are_comparison_sources_not_consensus",
+    "author_reported_results_not_independently_reproduced"
+  ]
+}

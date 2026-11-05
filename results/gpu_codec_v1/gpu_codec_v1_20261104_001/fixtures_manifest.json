@@ -1,0 +1,506 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "run_id": "gpu_codec_v1_20261104_001",
+  "files": [
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7301_n256.pt",
+      "sha256": "11a20745dbb43319e474969c5c82e111c4b61542c7b8f8ea913f573fcd0f540d",
+      "bytes": 6280,
+      "input_id": "synthetic_standard_normal_seed7301_n256"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7302_n256.pt",
+      "sha256": "8dce46c311b0e136ebb2409ee2755c001ed2fcee263ad5815c868a151875814f",
+      "bytes": 6280,
+      "input_id": "synthetic_standard_normal_seed7302_n256"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7303_n256.pt",
+      "sha256": "5058fe52a757359ae82ba9835a5a7f17e2e1d224a33832ded50f83b39a8795a5",
+      "bytes": 6280,
+      "input_id": "synthetic_standard_normal_seed7303_n256"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7301_n256.pt",
+      "sha256": "674b3b76546844c518a9c246c7c516b7bb88a1d7e71dc5c188610715beda850a",
+      "bytes": 6384,
+      "input_id": "synthetic_group_scaled_normal_seed7301_n256"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7302_n256.pt",
+      "sha256": "840d471912686bad5f70f97dffeba8f12aee6cc867694a43f9440855664ef0b0",
+      "bytes": 6384,
+      "input_id": "synthetic_group_scaled_normal_seed7302_n256"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7303_n256.pt",
+      "sha256": "a19f2cfa1838004c8e75aefd3e42f00271fc72bac2164a268703cd42ac642466",
+      "bytes": 6384,
+      "input_id": "synthetic_group_scaled_normal_seed7303_n256"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7301_n4096.pt",
+      "sha256": "636ec4d76902cae4f6d66126ffcbc68b864a9ba8eee2f5901ecde9b96f7af6f0",
+      "bytes": 29842,
+      "input_id": "synthetic_standard_normal_seed7301_n4096"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7302_n4096.pt",
+      "sha256": "efc83facc3e83d86144b072b37a4a0738d6ae511fb74c8c56690e60e5d155a87",
+      "bytes": 29842,
+      "input_id": "synthetic_standard_normal_seed7302_n4096"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7303_n4096.pt",
+      "sha256": "aafdd4dfb9761d78eb98f3b887d777b05798397f437ce037e4e552a3f2a3fe1f",
+      "bytes": 29842,
+      "input_id": "synthetic_standard_normal_seed7303_n4096"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7301_n4096.pt",
+      "sha256": "3b9ad3f624856b490a6f133b8629398ba01219a8122090c71d0f919a0bc347cc",
+      "bytes": 29946,
+      "input_id": "synthetic_group_scaled_normal_seed7301_n4096"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7302_n4096.pt",
+      "sha256": "ffeee3538f01a8a9b9bd2d4363485f3ce266515c2420061c991cf6584e7cf179",
+      "bytes": 29946,
+      "input_id": "synthetic_group_scaled_normal_seed7302_n4096"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7303_n4096.pt",
+      "sha256": "5465c1dbab7aa00612231afb6aec7948a0dd1c7acd3273a5d2f2b927d314b746",
+      "bytes": 29946,
+      "input_id": "synthetic_group_scaled_normal_seed7303_n4096"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7301_n65536.pt",
+      "sha256": "b047a66aa86e57e7854c6e8301e7189002b3a8b3572c6a28544bd205674c3723",
+      "bytes": 406236,
+      "input_id": "synthetic_standard_normal_seed7301_n65536"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7302_n65536.pt",
+      "sha256": "544c191cb13eff6e5cce6f0a9e36b78dbc8bdea44084e5a51545e363270fcc4f",
+      "bytes": 406236,
+      "input_id": "synthetic_standard_normal_seed7302_n65536"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7303_n65536.pt",
+      "sha256": "071b2289b2e0fb4900af7bd7ac3d895b4382906f400e76d33c396984f56b46f6",
+      "bytes": 406236,
+      "input_id": "synthetic_standard_normal_seed7303_n65536"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7301_n65536.pt",
+      "sha256": "a36d8b33f7abca51c327df66e752630acfdf61950ca1164818a8f254499384fb",
+      "bytes": 406276,
+      "input_id": "synthetic_group_scaled_normal_seed7301_n65536"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7302_n65536.pt",
+      "sha256": "bbee021af043b506f555ebf23863a7734a10497c71632f1b496f99ffbf2af621",
+      "bytes": 406276,
+      "input_id": "synthetic_group_scaled_normal_seed7302_n65536"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7303_n65536.pt",
+      "sha256": "6d2390c5523520bf2edc047a7c0975ba541f0053f3b7c741d8f13ff9ee5963b1",
+      "bytes": 406276,
+      "input_id": "synthetic_group_scaled_normal_seed7303_n65536"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7301_n262144.pt",
+      "sha256": "e122d9df3aa3491d48173b887a6d78d2ca76a86732cbde7f5aa701c6d60b617b",
+      "bytes": 1610470,
+      "input_id": "synthetic_standard_normal_seed7301_n262144"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7302_n262144.pt",
+      "sha256": "9a892d5974e2df36739b0d72c50b4dee99452eb32b889525c547abe10bcd238b",
+      "bytes": 1610470,
+      "input_id": "synthetic_standard_normal_seed7302_n262144"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7303_n262144.pt",
+      "sha256": "72382faa0c2588bf0e54e959f6a4b68dd0816ac8f5ff4cb81c5e89a813453cda",
+      "bytes": 1610470,
+      "input_id": "synthetic_standard_normal_seed7303_n262144"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7301_n262144.pt",
+      "sha256": "d93a5f715cfbf6ca1f132ea04e7588494866da176e947f7ea53d4c4c2429f7b7",
+      "bytes": 1610510,
+      "input_id": "synthetic_group_scaled_normal_seed7301_n262144"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7302_n262144.pt",
+      "sha256": "5457d12b94e07624799e193edcb01e128b85891f3ed2f64f5dfe2982a0116ebf",
+      "bytes": 1610510,
+      "input_id": "synthetic_group_scaled_normal_seed7302_n262144"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7303_n262144.pt",
+      "sha256": "2d5e1f4b7f7cad5afc2790a87bee961ca3388545c9b772c97b0bb19a2a9727fb",
+      "bytes": 1610510,
+      "input_id": "synthetic_group_scaled_normal_seed7303_n262144"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7301_n1048576.pt",
+      "sha256": "20cfa083cfb4c0a457702528a81105e2aeb9388faa8dbda0332ade046f67fc63",
+      "bytes": 6427376,
+      "input_id": "synthetic_standard_normal_seed7301_n1048576"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7302_n1048576.pt",
+      "sha256": "aea383037e95ed18b353d398ff4880dff155765fcd5dab4f7de4dddb50ce7136",
+      "bytes": 6427376,
+      "input_id": "synthetic_standard_normal_seed7302_n1048576"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7303_n1048576.pt",
+      "sha256": "5455338c6ff3160c8aed45b3a9fcd669c53d5ff8e2fd7fd9677cd0fcdc807f40",
+      "bytes": 6427376,
+      "input_id": "synthetic_standard_normal_seed7303_n1048576"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7301_n1048576.pt",
+      "sha256": "3de8bdb5a3879894dec79409778c4afe787b7d9738be0c3fd15b928895815785",
+      "bytes": 6427416,
+      "input_id": "synthetic_group_scaled_normal_seed7301_n1048576"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7302_n1048576.pt",
+      "sha256": "01a2049f7f5a1dc646ada914323e638ef9af79605981c3cd8b2a4f3f26bdcd51",
+      "bytes": 6427416,
+      "input_id": "synthetic_group_scaled_normal_seed7302_n1048576"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7303_n1048576.pt",
+      "sha256": "5197afd48660e54fca0958fd178be0d8c0ffc852f056db84a9972c8256ea89a7",
+      "bytes": 6427416,
+      "input_id": "synthetic_group_scaled_normal_seed7303_n1048576"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7301_n4194304.pt",
+      "sha256": "93c3c95575dafdf83ddbc0734be5327edbb8d70c45e6c03698a7fc1d4d50237e",
+      "bytes": 25694960,
+      "input_id": "synthetic_standard_normal_seed7301_n4194304"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7302_n4194304.pt",
+      "sha256": "64d85f6d97e86cb2ef5e86e8495e60233dd3c98869d53f546b56e7783464bff0",
+      "bytes": 25694960,
+      "input_id": "synthetic_standard_normal_seed7302_n4194304"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_standard_normal_seed7303_n4194304.pt",
+      "sha256": "8f7aeb42e2eaa64131e0e0dc48c4c55ec766b51cb1906ce15abbf33d4af58f25",
+      "bytes": 25694960,
+      "input_id": "synthetic_standard_normal_seed7303_n4194304"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7301_n4194304.pt",
+      "sha256": "e5b8218b62162baac9b2da939b52216b8fe316f661a83550147eca5bf04b6661",
+      "bytes": 25695000,
+      "input_id": "synthetic_group_scaled_normal_seed7301_n4194304"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7302_n4194304.pt",
+      "sha256": "a136c5661fb72406e9d0fa077cda3b096ba5967f5fb02f00255e1fe8f3a73679",
+      "bytes": 25695000,
+      "input_id": "synthetic_group_scaled_normal_seed7302_n4194304"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\synthetic_group_scaled_normal_seed7303_n4194304.pt",
+      "sha256": "39921a2a33e980e5fa6d5b8d84013b4c199a9d1aa7d15e6f94a029fce8b3d84d",
+      "bytes": 25695000,
+      "input_id": "synthetic_group_scaled_normal_seed7303_n4194304"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_length_0_generated.pt",
+      "sha256": "a09915a36608eda2d47bba555b713a389aa484948c274c5576c0a5999621dfc3",
+      "bytes": 4328,
+      "input_id": "edge_length_0_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_length_1_generated.pt",
+      "sha256": "59d5e9b16d0c0cda833406e5b87e499c14a9c21489a123ba3b71a6656c7b826a",
+      "bytes": 5608,
+      "input_id": "edge_length_1_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_length_15_generated.pt",
+      "sha256": "252d5ffed8a76deed7bfe9f56cb8bca6a4758dcdcc72296cb236f17d9aaf6e02",
+      "bytes": 5618,
+      "input_id": "edge_length_15_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_length_16_generated.pt",
+      "sha256": "b1c3ca5311d7e8924404ad69807d3fa5ed7767df75bf3103172d96ca860ec633",
+      "bytes": 5618,
+      "input_id": "edge_length_16_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_length_255_generated.pt",
+      "sha256": "a0a2e8fbd7879bd527f158c56ac463daddc81a20d48b8fc91df313724c088c7c",
+      "bytes": 6140,
+      "input_id": "edge_length_255_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_length_256_generated.pt",
+      "sha256": "b1456b913681d6d33c4078469e14c53ab03fe6a49b2dd09d806f1c586e44d7a3",
+      "bytes": 6140,
+      "input_id": "edge_length_256_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_length_257_generated.pt",
+      "sha256": "6cabc7745721d666ac8da0a6979ac2e10470a44c73541ba9995c6c9ed2939c0e",
+      "bytes": 7228,
+      "input_id": "edge_length_257_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_length_1023_generated.pt",
+      "sha256": "5ab7975a37ec9ebd4cdb2a7dbe230dbf73305f13de5be8b4deb264821b761207",
+      "bytes": 10886,
+      "input_id": "edge_length_1023_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_length_1024_generated.pt",
+      "sha256": "ec4551009cceae9010adf8fe2e6ddf4112e760caf2366b1de491e59fd553087c",
+      "bytes": 10886,
+      "input_id": "edge_length_1024_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_length_1025_generated.pt",
+      "sha256": "5b237c9ad2f7ebd1e2ad3b6a59797ef11762af20815d7772988092b7ff66b889",
+      "bytes": 11910,
+      "input_id": "edge_length_1025_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_zero_generated.pt",
+      "sha256": "bdf35323e8bd3caa68de7456553082c7e5b0151d209a0f94f6ae802a1dfd4a44",
+      "bytes": 6016,
+      "input_id": "edge_zero_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_zero_zero.pt",
+      "sha256": "e9a9fa11beba6fb68a58e56ca9af15b54286646dff498ba4fcaf7b29cc99c856",
+      "bytes": 5966,
+      "input_id": "edge_zero_zero"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_zero_maximum.pt",
+      "sha256": "2afc14412e4ed8b79afbaa7259a0b13505c8593553d65b971826a86984d28724",
+      "bytes": 5996,
+      "input_id": "edge_zero_maximum"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_positive_constant_generated.pt",
+      "sha256": "7ed62e405212d8b2e73cd433a6f684d984d510f33b83345fd955492c27044810",
+      "bytes": 6210,
+      "input_id": "edge_positive_constant_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_positive_constant_zero.pt",
+      "sha256": "7859cabe2964b894dee80e2899057118bff17ee936e835e7b959738893cc555e",
+      "bytes": 6160,
+      "input_id": "edge_positive_constant_zero"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_positive_constant_maximum.pt",
+      "sha256": "a5d8fad994fa7c304d4dd5fef9cb50728a9843cf153c7d78b780b8745b72bd8f",
+      "bytes": 6254,
+      "input_id": "edge_positive_constant_maximum"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_negative_constant_generated.pt",
+      "sha256": "d38bc9b5db84812668926195aaabb0645a1b688f8db2e8cb42c6d4e682cc8379",
+      "bytes": 6210,
+      "input_id": "edge_negative_constant_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_negative_constant_zero.pt",
+      "sha256": "c5e299a7de72549906e6581a9634368d87715d9e2b144721e68fe6705eb233df",
+      "bytes": 6160,
+      "input_id": "edge_negative_constant_zero"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_negative_constant_maximum.pt",
+      "sha256": "0631e5f72d421209ef7666084a6fb89209c3fce60bd82b1325c28fc7a94618b5",
+      "bytes": 6254,
+      "input_id": "edge_negative_constant_maximum"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_signed_zero_generated.pt",
+      "sha256": "f7f9ab7d64371d1ec49b5b254f372b56a3555a276455f26d97b6f498d4e1d96f",
+      "bytes": 6150,
+      "input_id": "edge_signed_zero_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_signed_zero_zero.pt",
+      "sha256": "1f32ad4152718fac09f2d42d9d2c33fd7cf36cead6cdea2cbd0b8b56c316ca18",
+      "bytes": 6036,
+      "input_id": "edge_signed_zero_zero"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_signed_zero_maximum.pt",
+      "sha256": "2757ca5beb40850185c21a7fbab89178d3248e4376a350cdd2da9ddd6342e07d",
+      "bytes": 6130,
+      "input_id": "edge_signed_zero_maximum"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_subnormal_generated.pt",
+      "sha256": "b268fc5733da8f8d600a944dd40691615612553e1dbb8aecf79deb1beb356315",
+      "bytes": 6130,
+      "input_id": "edge_subnormal_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_subnormal_zero.pt",
+      "sha256": "70eb2d07e4f6c29874153dd8729c5bfab6162ee4036d188a557cb396843082f7",
+      "bytes": 6016,
+      "input_id": "edge_subnormal_zero"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_subnormal_maximum.pt",
+      "sha256": "4d50fec0cd23d9147e6eb18cd9b0fcd62c7c98d76ba85eb5ab624a870ad9aaa3",
+      "bytes": 6110,
+      "input_id": "edge_subnormal_maximum"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_group_scale_disparity_generated.pt",
+      "sha256": "8c43f4d60856423cdb824b0ffb29c7d09ca0ee77b7bd799d38ca4ce88383a811",
+      "bytes": 7850,
+      "input_id": "edge_group_scale_disparity_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_group_scale_disparity_zero.pt",
+      "sha256": "fc8b905347e7d56b7242e1bb845a1407c08e5a0b7ac303ad0e7f65e5f0432118",
+      "bytes": 7864,
+      "input_id": "edge_group_scale_disparity_zero"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_group_scale_disparity_maximum.pt",
+      "sha256": "eb7929c37c384c2f650fa10b3b3e44e362667cc1b8f24334c272068edb2de3bc",
+      "bytes": 7894,
+      "input_id": "edge_group_scale_disparity_maximum"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_lut4_endpoints_midpoints_neighbors_generated.pt",
+      "sha256": "94372d8c8038e4058b61814fde9f183ef0ab2f82db9df160a82255b9b06cb767",
+      "bytes": 7532,
+      "input_id": "edge_lut4_endpoints_midpoints_neighbors_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_lut4_endpoints_midpoints_neighbors_zero.pt",
+      "sha256": "132e379ca45e9875c9ed6dcece313442d806b5aac722f477832e95f927d58978",
+      "bytes": 7482,
+      "input_id": "edge_lut4_endpoints_midpoints_neighbors_zero"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_lut4_endpoints_midpoints_neighbors_maximum.pt",
+      "sha256": "3946f465debd3f5d301919cc0e0b6e65cde1e24d6827a5d86e9d4afaea9534b6",
+      "bytes": 7512,
+      "input_id": "edge_lut4_endpoints_midpoints_neighbors_maximum"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_lut8_endpoints_midpoints_neighbors_generated.pt",
+      "sha256": "dc44424fe67e5bb3afc7f028df9404970ba6e52172be9584a65be2d7fe15f563",
+      "bytes": 12268,
+      "input_id": "edge_lut8_endpoints_midpoints_neighbors_generated"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_lut8_endpoints_midpoints_neighbors_zero.pt",
+      "sha256": "8485823eab0b4d70fac140baab9757a7fc8194df27c538d9568db004fd775107",
+      "bytes": 12218,
+      "input_id": "edge_lut8_endpoints_midpoints_neighbors_zero"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_002\\edge_lut8_endpoints_midpoints_neighbors_maximum.pt",
+      "sha256": "51b289dce0d39aefe74ded40e13a23ff704d62dd5bb6d35e18c589202ac47f4e",
+      "bytes": 12248,
+      "input_id": "edge_lut8_endpoints_midpoints_neighbors_maximum"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank0.pt",
+      "sha256": "49a8e215268cb848f5a651f651be1100f48610b488e37204342618181409ab0b",
+      "bytes": 5016074,
+      "input_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank1.pt",
+      "sha256": "bf4025b4f58c262690ad5f77b9b0d365aaf5fb83d631548cb259324d2c5876e6",
+      "bytes": 5016074,
+      "input_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank2.pt",
+      "sha256": "bc51435ab5e23318c92e9ca9bb645929ef72ab43638a0c80086497be4e3bee46",
+      "bytes": 5016074,
+      "input_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank3.pt",
+      "sha256": "5977ed6b94f98fac550fd9e2b4ffe9707b465e6eba3ecc133e29b58a265972d3",
+      "bytes": 5016074,
+      "input_id": "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank0.pt",
+      "sha256": "8ef078ad6ac324ff1d3b3aefab7a815bfd31a0a9276a2de7d2081fb18ea2d115",
+      "bytes": 5016074,
+      "input_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank1.pt",
+      "sha256": "5e808db4c3b3a81f8c7f9f802c5420d43b198e016ee14d3060d5da398658993a",
+      "bytes": 5016074,
+      "input_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank2.pt",
+      "sha256": "000a2e12f653ace0a80eaa64d54fbe7e99331bddeae50878628403c2c8942848",
+      "bytes": 5016074,
+      "input_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank3.pt",
+      "sha256": "fe5452fd3c1ce690b2c662caded7e40b51ccf27e66c97f8a368b6d78b22e43f0",
+      "bytes": 5016074,
+      "input_id": "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0.pt",
+      "sha256": "035daffdcea1ef49aefb5fb6b38b8bada246ece7f76f15ee7c4bb263b89e0a2b",
+      "bytes": 5016074,
+      "input_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1.pt",
+      "sha256": "04610b5fae4c8cc3f1243df1996e03eaf089bc4a932dfb0f113bbf922a096fc2",
+      "bytes": 5016074,
+      "input_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2.pt",
+      "sha256": "1e523fcc53b205cf5a0ea9d23a62989f9ca93ccf98a53d02ca06c211c7921fbb",
+      "bytes": 5016074,
+      "input_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2"
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3.pt",
+      "sha256": "1f2e0faf88c80d08579f8742bfd36fd4899b9a7e93db63f3c5880024dd4bf601",
+      "bytes": 5016074,
+      "input_id": "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3"
+    }
+  ],
+  "source_G0_run": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261101_001",
+  "rebuild": "scripts/python.ps1 scripts/check_torch_codec.py --run-dir <fresh-run> --prepare-only",
+  "reconstruction": "Identical input, LUT, threshold tensor hashes; archive file hashes depend on filename and serialization version.",
+  "inherited_from": {
+    "run_id": "gpu_codec_v1_20261101_002",
+    "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261101_002\\fixtures_manifest.json",
+    "sha256": "c95e4775d00fd1418836b5d6a0acdf2ba887a855f1245dbda6935a0322b200ab"
+  }
+}

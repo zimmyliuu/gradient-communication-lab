@@ -1,0 +1,95 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "run_id": "gpu_codec_v1_20261101_001",
+  "local_root": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001",
+  "large_files_retained_locally": true,
+  "reconstruction_command": "scripts/python.ps1 scripts/freeze_g0_inputs.py --run-dir <fresh-run-directory>",
+  "reconstruction_note": "fresh output path; source identities and tensor hashes are deterministic, torch archive file bytes may vary with basename",
+  "lookup_tables": {
+    "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\lookup_tables.pt",
+    "sha256": "9ebcff2a9b9007efe7454567e8c73595e0439c94a3062258b0dee3bcd75af2cc",
+    "bytes": 2556,
+    "by_bits": {
+      "4": {
+        "sha256": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+        "shape": [
+          33
+        ],
+        "dtype": "torch.bfloat16",
+        "byte_order": "little",
+        "bytes": 66
+      },
+      "8": {
+        "sha256": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd",
+        "shape": [
+          513
+        ],
+        "dtype": "torch.bfloat16",
+        "byte_order": "little",
+        "bytes": 1026
+      }
+    }
+  },
+  "files": [
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank0.pt",
+      "sha256": "49a8e215268cb848f5a651f651be1100f48610b488e37204342618181409ab0b",
+      "bytes": 5016074
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank1.pt",
+      "sha256": "bf4025b4f58c262690ad5f77b9b0d365aaf5fb83d631548cb259324d2c5876e6",
+      "bytes": 5016074
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank2.pt",
+      "sha256": "bc51435ab5e23318c92e9ca9bb645929ef72ab43638a0c80086497be4e3bee46",
+      "bytes": 5016074
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000100_ec5d09c749dbd364_rank3.pt",
+      "sha256": "5977ed6b94f98fac550fd9e2b4ffe9707b465e6eba3ecc133e29b58a265972d3",
+      "bytes": 5016074
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank0.pt",
+      "sha256": "8ef078ad6ac324ff1d3b3aefab7a815bfd31a0a9276a2de7d2081fb18ea2d115",
+      "bytes": 5016074
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank1.pt",
+      "sha256": "5e808db4c3b3a81f8c7f9f802c5420d43b198e016ee14d3060d5da398658993a",
+      "bytes": 5016074
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank2.pt",
+      "sha256": "000a2e12f653ace0a80eaa64d54fbe7e99331bddeae50878628403c2c8942848",
+      "bytes": 5016074
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update000500_58577dfb59bd4d40_rank3.pt",
+      "sha256": "fe5452fd3c1ce690b2c662caded7e40b51ccf27e66c97f8a368b6d78b22e43f0",
+      "bytes": 5016074
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0.pt",
+      "sha256": "035daffdcea1ef49aefb5fb6b38b8bada246ece7f76f15ee7c4bb263b89e0a2b",
+      "bytes": 5016074
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1.pt",
+      "sha256": "04610b5fae4c8cc3f1243df1996e03eaf089bc4a932dfb0f113bbf922a096fc2",
+      "bytes": 5016074
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2.pt",
+      "sha256": "1e523fcc53b205cf5a0ea9d23a62989f9ca93ccf98a53d02ca06c211c7921fbb",
+      "bytes": 5016074
+    },
+    {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\fixtures\\gpu_codec_v1_20261101_001\\real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3.pt",
+      "sha256": "1f2e0faf88c80d08579f8742bfd36fd4899b9a7e93db63f3c5880024dd4bf601",
+      "bytes": 5016074
+    }
+  ]
+}

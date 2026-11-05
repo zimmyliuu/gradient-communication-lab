@@ -1,0 +1,238 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "template_only": false,
+  "contract_id": "dynamiq_local_repaired_explicit_thresholds_cuda_pair_v1",
+  "scope": "局部 codec 固定配置 / local_codec_only",
+  "upstream_repository": "https://github.com/CharlesHan24/DynamiQ",
+  "upstream_commit": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+  "cpu_reference_files": [
+    {
+      "path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\dynamiq.py",
+      "sha256": "9296231d3a29d3fb4cfa1d12a2ffe5a1a4d2922e62c51003fb214c59303e8ea0",
+      "bytes": 28525,
+      "role": "cpu_reference"
+    },
+    {
+      "path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\packing.py",
+      "sha256": "33f7fb806edbcc28585347990703501dcd0f05c121b566baafe0041be830c4f4",
+      "bytes": 2312,
+      "role": "cpu_reference"
+    },
+    {
+      "path": "E:\\dacomp\\research\\spl_model_communication\\tests\\test_dynamiq.py",
+      "sha256": "7fcb14f82a9c95609e849c53b433b204bb7b121d8db9810ddf2766d7d2148c3e",
+      "bytes": 18532,
+      "role": "cpu_reference"
+    },
+    {
+      "path": "E:\\dacomp\\research\\spl_model_communication\\tests\\dynamiq_oracle.py",
+      "sha256": "43bbd1e1ae85bb71510b5a2f411ec87363a3ac63841e957b6ce0a832e979a67d",
+      "bytes": 10652,
+      "role": "cpu_reference"
+    },
+    {
+      "path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\p2_replay.py",
+      "sha256": "c56ba27ea9a64f7302f7d954709af6f27680b8e30131d0aaf089e5a642e91b0d",
+      "bytes": 19963,
+      "role": "cpu_reference"
+    },
+    {
+      "path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\core.py",
+      "sha256": "895abd30f614f37ce6b4dcaf317cb6b6161cb72489ff7ca352bab9ca082b4edf",
+      "bytes": 4601,
+      "role": "cpu_reference"
+    },
+    {
+      "path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\ring.py",
+      "sha256": "d84e1977b70db52b75e0e6f2bfac0157cda1a8a6ef73f5819ffe1de825d73815",
+      "bytes": 4989,
+      "role": "cpu_reference"
+    }
+  ],
+  "profile": "index_repaired_bf16",
+  "nominal_bits": [
+    4,
+    8
+  ],
+  "stored_bits_rule": "b+1",
+  "input_dtype": "bfloat16",
+  "output_dtype": "bfloat16",
+  "input_layout": "contiguous_1d",
+  "native_alignment_elements": 256,
+  "outer_padding_value": 0,
+  "empty_input_policy": "skip_without_quantization",
+  "data_scale_group_elements": 16,
+  "top_scale_group_elements": 256,
+  "scale_code_dtype": "uint8",
+  "top_scale_dtype": "bfloat16",
+  "signed_code_range": "[-2^(b-1),+2^(b-1)]",
+  "unsigned_code_rule": "q+2^(b-1)",
+  "code_bit_order": "least_significant_bit_first",
+  "byte_order": "little",
+  "packet_order": "payload_then_all_uint8_scale_codes_then_all_bf16_top_scales",
+  "unused_high_bits": "zero",
+  "wire_formula": "ceil(L*(b+1)/8)+L/16+2*L/256",
+  "extra_header_bytes": 0,
+  "lut_source": "cpu_reference_lookup_table_bfloat16",
+  "threshold_source": "explicit_cpu_fixture_bfloat16",
+  "main_threshold_shape": "[L/16,16]",
+  "scale_threshold_shape": "[L/256,16]",
+  "threshold_generation": "CPU FP32 rand -> BF16 -> multiply BF16 65535; main before scale; seed derived from SHA256(gpu_codec_v1:+input_id)",
+  "rng_generation_inside_codec": false,
+  "random_comparison": "strict_less_than",
+  "lookup_search_right": true,
+  "zero_scale_code_allowed": true,
+  "top_scale_must_be_finite_and_positive": true,
+  "max_unsigned_code": "2^b",
+  "lcg_state_advance": false,
+  "error_feedback": false,
+  "dynamic_bitrate_controller": false,
+  "mean_energy_collectives": false,
+  "bf16_rounding_semantics": {
+    "R": "each individual BF16 operation rounds before the following operation; no fused arithmetic substitution",
+    "epsilon_scalar": "BF16(1e-23) = 9.977866138920896e-24",
+    "random_multiplier": "BF16(65535) = 65536",
+    "scale": "R(R(maxabs16 / LUT[3*2^(b-1)]) + BF16(1e-23))",
+    "normalization": "R(x / scale)",
+    "probability": "R(R(work-left) / R(right-left))",
+    "stochastic_comparison": "threshold < R(probability * BF16(65535)); strict <; upper_bound/right=True",
+    "top": "R(max16(scales) + BF16(1e-23))",
+    "scale_levels": "R(R(scales/top) * BF16(255))",
+    "scale_probability": "R(levels - floor(levels)); then threshold < R(probability * BF16(65535))",
+    "decoded_scale": "R(R(BF16(qscale) * top) / BF16(255))",
+    "index": "int32(signed_code) + 2^b; do not add offset in BF16",
+    "decoded_value": "R(LUT[index] * decoded_scale); preserve signed zero",
+    "finite_guard": "reject nonfinite normalized input, probability, received scales and output as the CPU reference does",
+    "CPU_probe": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261101_001\\logs\\cpu_reference_semantics.json",
+    "CPU_probe_sha256": "f28b13104c16cc0077e549ea1310f73a01277ef4f2d0c3523f0c416352d2aafa"
+  },
+  "nonfinite_and_invalid_packet_policy": "reject_in_checked_api",
+  "checked_api_implementation": "Each method implements checked=True separately; metadata rejection and checked device error states are validated by exact expected exception type and message.",
+  "trusted_input_core_preconditions": [
+    "contiguous one-dimensional BF16",
+    "positive native L divisible by 256",
+    "CPU reference successfully encodes and decodes this actual input with the identical explicit thresholds",
+    "threshold dtype/shape/range verified; LUT copied bitwise from CPU",
+    "finite input and positive finite top alone do not imply finite BF16 intermediates"
+  ],
+  "gpu_implementations": [
+    {
+      "method_id": "torch_cuda_repaired",
+      "source": "src/gradient_comm_lab/torch_codec.py",
+      "source_sha256": "50bc272876be54db5d42327cce144022b7bf960d82073347479da2eb53f1d794",
+      "runtime": "PyTorch 2.4.1+cu118 CUDA eager",
+      "compiled_extension": false,
+      "graph_mode": "off",
+      "compile_mode": "eager",
+      "native_kernels": "Existing PyTorch binary CUDA kernels; no user nvcc invocation",
+      "packet_storage": "Three independent tight GPU buffers; serialization order unchanged; validation concatenation excluded from timing",
+      "workspace": "Full plan preallocation including integer packing indices, arithmetic arrays and scalar constants",
+      "empty_input": "No arithmetic quantization; zero-byte packet and zero-length BF16 view"
+    },
+    {
+      "method_id": "cuda_optimized_repaired",
+      "source": "src/gradient_comm_lab/cuda_codec.py",
+      "source_sha256": "801b588a2d249e3a754c0d90d4c1bab123976f92153863c486685dbabef3bef4",
+      "native_sources": {
+        "src/gradient_comm_lab/csrc/codec.cpp": "8180319b05e23162e2a5ab60c82f7d6f46b33ba1568d939e98ceb57046539924",
+        "src/gradient_comm_lab/csrc/codec.cu": "186ddfc271cfea6246441f24974e63aad0a6724953a49580aebb4b5f2c18421a"
+      },
+      "compiled_extension": true,
+      "graph_mode": "off",
+      "compile_mode": "eager",
+      "build_manifest": "logs/cuda_build_manifest.json",
+      "packet_storage": "Three independent tight GPU buffers in identical payload/uint8-scale/BF16-top order",
+      "stream": "Calling PyTorch current CUDA stream on tensor device; independently tested with stream events",
+      "rounding": "Round float arithmetic to BF16 at each frozen CPU operation boundary; explicit BF16 constants; no fast math or FMA substitution",
+      "empty_input": "Outer adapter skips native arithmetic, empty packet and output"
+    }
+  ],
+  "compiler_flags": [
+    "-O3",
+    "--fmad=false",
+    "--ftz=false",
+    "--prec-div=true",
+    "--prec-sqrt=true",
+    "--use-local-env",
+    "-lineinfo",
+    "-Xptxas=-v",
+    "-ccbin",
+    "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64"
+  ],
+  "changes_from_plan": [],
+  "run_id": "gpu_codec_v1_20261104_001",
+  "freeze_status": "frozen_actual_dual_GPU_implementation",
+  "cpu_adapter": {
+    "path": "src/gradient_comm_lab/cpu_reference.py",
+    "sha256": "4ab03e0c8bed961ed3eaa8bec5a546bf74d76909437d6561032453e3cd59d36b",
+    "path_base": "project_root",
+    "project_root": "E:/dacomp/research/gradient_comm_lab",
+    "snapshot_path": "code/src/gradient_comm_lab/cpu_reference.py",
+    "snapshot_path_base": "run_directory"
+  },
+  "lookup_tables": {
+    "4": {
+      "sha256": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+      "shape": [
+        33
+      ],
+      "dtype": "torch.bfloat16",
+      "byte_order": "little",
+      "bytes": 66
+    },
+    "8": {
+      "sha256": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd",
+      "shape": [
+        513
+      ],
+      "dtype": "torch.bfloat16",
+      "byte_order": "little",
+      "bytes": 1026
+    }
+  },
+  "planned_GPU_compiler_policy": {
+    "fast_math": false,
+    "fmad": false,
+    "ftz": false,
+    "precise_division": true,
+    "actual_codec_compiler_flags": [
+      "-O3",
+      "--fmad=false",
+      "--ftz=false",
+      "--prec-div=true",
+      "--prec-sqrt=true",
+      "--use-local-env",
+      "-lineinfo",
+      "-Xptxas=-v",
+      "-ccbin",
+      "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64"
+    ],
+    "note": "Actual flags and binary identity are bound in optimized_build_manifest."
+  },
+  "future_contract_policy": "Adding or changing a GPU method requires a new run and frozen source binding; retain this attempt unchanged",
+  "stage": "G1",
+  "substage": "G1b_cuda_optimized_paired",
+  "inherited_format_contract": {
+    "run_id": "gpu_codec_v1_20261101_002",
+    "path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261101_002\\codec_contract.json",
+    "sha256": "068400a4067849390aec27a01d9f46811e395f0765f63ccb67fdeda82e470e7d"
+  },
+  "execution_dependency_amendment": {
+    "path": "reviews/gpu_codec_v1_20261101_002_review_and_g1b_plan.md",
+    "sha256": "3f9a0caa47c195b34c4049a63ec9cd19c63f5d3cb6537c819dcdb2219e8e7741"
+  },
+  "input_validation_boundary": {
+    "trusted_inputs": "Host tensor metadata checks retained, no device-value inspection; prior CPU and checked GPU parity required",
+    "checked_api": "Includes finite/range/layout/alias/LUT checks, BF16 intermediate guards and packet alphabet checks",
+    "api_allocating": "Both methods create complete per-call plan including output, packet and owned workspace; constructor and checked validation costs included by the selected mode.",
+    "alias_precondition": "External input/threshold/LUT tensors must not alias plan-owned storage; checked API rejects storage aliasing",
+    "LUT_identity": "Prepared fixed CPU-reference LUT; checked API checks metadata/finite/ordering, fixture identity is verified by harness"
+  },
+  "missing_full_G1_methods": [],
+  "fixture_manifest_sha256": "9e962d53cbe934fe9f4fd3c7b07c1160d7b3b8a6b4edd1139bfb92a3d4f2e261",
+  "optimized_build_manifest": {
+    "path": "logs/cuda_build_manifest.json",
+    "sha256": "d973431318e9724ed42f45447e9bdeeb022dbb3297daf0c9bb75a5999d1587fe"
+  },
+  "optimized_implementation_note": "Native direct 5/9-bit payload ownership and local BF16 encode/decode; stream and ABI behavior qualified separately. All exact source hashes bound before formal execution."
+}

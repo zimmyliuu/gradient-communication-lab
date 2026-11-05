@@ -1,0 +1,1047 @@
+{
+  "schema_version": "epsilon_diagnostic_v1.0",
+  "run_id": "epsilon_diagnostic_v1_20261105_001",
+  "revision": 1,
+  "frozen_at": "2026-11-05T20:01:42.599529+08:00",
+  "base_run": "E:\\dacomp\\research\\gradient_comm_lab\\results\\bounded_discovery_v1\\bounded_discovery_v1_20261104_001",
+  "base_contract_sha256": "97e8595532125d1fed44956c6a70da959031581884e753b449b64c1b3b195f47",
+  "upstream_commit": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+  "source_manifest_sha256": "6c396a9ce00ff7737450f074c45143cd4631aa6c7ae8ab9c5cbfe19c9a421d09",
+  "decoder_binary_sha256": "d4eaf1d9a23930d34a6edb5b54254913679ac854bd855124c13b40e2c5f38880",
+  "encoder_binary_sha256": {
+    "control_add1e7": "cbb1110aba29a8287acb7c2b592a2b1e4291970cb19e667aa62420487dc025a2",
+    "diagnostic_add0": "d93218f344f823e3168cc79193461eef2299ef09d0fc5237e660d49a89994951"
+  },
+  "input_randomness_manifest_sha256": "4821879d00ad028db68dea2e181e8d232cca55001e715bd32c97939796c51be5",
+  "region_manifest_sha256": "26ba63c21d1676c73b77684b6021cba178c7a72669c8915ca543579531acbe64",
+  "pair_ids": [
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0__r00",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0__r01",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0__r02",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0__r03",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0__r04",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0__r05",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0__r06",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank0__r07",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1__r00",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1__r01",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1__r02",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1__r03",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1__r04",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1__r05",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1__r06",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank1__r07",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2__r00",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2__r01",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2__r02",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2__r03",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2__r04",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2__r05",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2__r06",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank2__r07",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3__r00",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3__r01",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3__r02",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3__r03",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3__r04",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3__r05",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3__r06",
+    "real_p2_seed1101_update000100_ec5d09c749dbd364_rank3__r07",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0__r00",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0__r01",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0__r02",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0__r03",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0__r04",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0__r05",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0__r06",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank0__r07",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1__r00",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1__r01",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1__r02",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1__r03",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1__r04",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1__r05",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1__r06",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank1__r07",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2__r00",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2__r01",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2__r02",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2__r03",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2__r04",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2__r05",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2__r06",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank2__r07",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3__r00",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3__r01",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3__r02",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3__r03",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3__r04",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3__r05",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3__r06",
+    "real_p2_seed1101_update000500_58577dfb59bd4d40_rank3__r07",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0__r00",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0__r01",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0__r02",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0__r03",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0__r04",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0__r05",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0__r06",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank0__r07",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1__r00",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1__r01",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1__r02",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1__r03",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1__r04",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1__r05",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1__r06",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank1__r07",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2__r00",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2__r01",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2__r02",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2__r03",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2__r04",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2__r05",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2__r06",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank2__r07",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3__r00",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3__r01",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3__r02",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3__r03",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3__r04",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3__r05",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3__r06",
+    "real_p2_seed1101_update002500_3bd7fa92c69bc1d6_rank3__r07"
+  ],
+  "H": {
+    "schema_version": "epsilon_regions_v1",
+    "run_id": "epsilon_diagnostic_v1_20261105_001",
+    "frozen_at": "2026-11-05T19:58:22.188574+08:00",
+    "status": "pass",
+    "region_selection": "Sum four workers FP64 input energy at shared 256-coordinate blocks; take top32 by descending energy and ascending block_id for ties; selection independent of errors/intervention",
+    "audit_source": {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\reviews\\bounded_discovery_v1_20261104_001_audit\\saved_block_analysis.json",
+      "sha256": "6a4104fb256d20920af6b3c3864a975d46d4f8c4c86b26f3163a05841882bcda",
+      "bytes": 31795
+    },
+    "audit_program": {
+      "path": "E:\\dacomp\\research\\gradient_comm_lab\\reviews\\bounded_discovery_v1_20261104_001_audit\\analyze_saved_blocks.py",
+      "sha256": "57c0595c9ba7931166cbb84407f2d65c1114341f3987e7d079702a1eba4546e8",
+      "bytes": 6037
+    },
+    "input_manifest_sha256": "ce1ce96a30322b366f8e5bf584c9e1a04bb88bf1b4019eb8b7ff889076aa24cb",
+    "regions": [
+      {
+        "snapshot_id": "seed1101_update000100",
+        "block_ids": [
+          0,
+          21,
+          355,
+          26,
+          29,
+          28,
+          870,
+          23,
+          19,
+          25,
+          1129,
+          10,
+          12,
+          31,
+          22,
+          3194,
+          8,
+          13,
+          7,
+          16,
+          20,
+          15,
+          1645,
+          1904,
+          3,
+          30,
+          9,
+          6,
+          32,
+          5,
+          18,
+          11
+        ],
+        "blocks": [
+          {
+            "block_id": 0,
+            "start": 0,
+            "end": 256,
+            "energy": 0.03658536326086992,
+            "input_energy": 0.03658536326086992
+          },
+          {
+            "block_id": 21,
+            "start": 5376,
+            "end": 5632,
+            "energy": 0.021130148386352687,
+            "input_energy": 0.021130148386352687
+          },
+          {
+            "block_id": 355,
+            "start": 90880,
+            "end": 91136,
+            "energy": 0.01993865576855275,
+            "input_energy": 0.01993865576855275
+          },
+          {
+            "block_id": 26,
+            "start": 6656,
+            "end": 6912,
+            "energy": 0.006254429520204052,
+            "input_energy": 0.006254429520204052
+          },
+          {
+            "block_id": 29,
+            "start": 7424,
+            "end": 7680,
+            "energy": 0.005734030068719476,
+            "input_energy": 0.005734030068719476
+          },
+          {
+            "block_id": 28,
+            "start": 7168,
+            "end": 7424,
+            "energy": 0.005254174373124698,
+            "input_energy": 0.005254174373124698
+          },
+          {
+            "block_id": 870,
+            "start": 222720,
+            "end": 222976,
+            "energy": 0.0035850164124993306,
+            "input_energy": 0.0035850164124993306
+          },
+          {
+            "block_id": 23,
+            "start": 5888,
+            "end": 6144,
+            "energy": 0.0035830397070757414,
+            "input_energy": 0.0035830397070757414
+          },
+          {
+            "block_id": 19,
+            "start": 4864,
+            "end": 5120,
+            "energy": 0.00263645724692374,
+            "input_energy": 0.00263645724692374
+          },
+          {
+            "block_id": 25,
+            "start": 6400,
+            "end": 6656,
+            "energy": 0.0022680605743952698,
+            "input_energy": 0.0022680605743952698
+          },
+          {
+            "block_id": 1129,
+            "start": 289024,
+            "end": 289280,
+            "energy": 0.0022314450200587033,
+            "input_energy": 0.0022314450200587033
+          },
+          {
+            "block_id": 10,
+            "start": 2560,
+            "end": 2816,
+            "energy": 0.0017195558924332777,
+            "input_energy": 0.0017195558924332777
+          },
+          {
+            "block_id": 12,
+            "start": 3072,
+            "end": 3328,
+            "energy": 0.0011163836331693489,
+            "input_energy": 0.0011163836331693489
+          },
+          {
+            "block_id": 31,
+            "start": 7936,
+            "end": 8192,
+            "energy": 0.0009433289784103183,
+            "input_energy": 0.0009433289784103183
+          },
+          {
+            "block_id": 22,
+            "start": 5632,
+            "end": 5888,
+            "energy": 0.0008828817258420135,
+            "input_energy": 0.0008828817258420135
+          },
+          {
+            "block_id": 3194,
+            "start": 817664,
+            "end": 817920,
+            "energy": 0.0008648722020943578,
+            "input_energy": 0.0008648722020943578
+          },
+          {
+            "block_id": 8,
+            "start": 2048,
+            "end": 2304,
+            "energy": 0.0008110545124344615,
+            "input_energy": 0.0008110545124344615
+          },
+          {
+            "block_id": 13,
+            "start": 3328,
+            "end": 3584,
+            "energy": 0.0007711488820371787,
+            "input_energy": 0.0007711488820371787
+          },
+          {
+            "block_id": 7,
+            "start": 1792,
+            "end": 2048,
+            "energy": 0.0007664704022696811,
+            "input_energy": 0.0007664704022696811
+          },
+          {
+            "block_id": 16,
+            "start": 4096,
+            "end": 4352,
+            "energy": 0.000762702420903958,
+            "input_energy": 0.000762702420903958
+          },
+          {
+            "block_id": 20,
+            "start": 5120,
+            "end": 5376,
+            "energy": 0.0007599173373408208,
+            "input_energy": 0.0007599173373408208
+          },
+          {
+            "block_id": 15,
+            "start": 3840,
+            "end": 4096,
+            "energy": 0.0007088460123791523,
+            "input_energy": 0.0007088460123791523
+          },
+          {
+            "block_id": 1645,
+            "start": 421120,
+            "end": 421376,
+            "energy": 0.0006355486866246161,
+            "input_energy": 0.0006355486866246161
+          },
+          {
+            "block_id": 1904,
+            "start": 487424,
+            "end": 487680,
+            "energy": 0.0006322063170989321,
+            "input_energy": 0.0006322063170989321
+          },
+          {
+            "block_id": 3,
+            "start": 768,
+            "end": 1024,
+            "energy": 0.0005816523712420807,
+            "input_energy": 0.0005816523712420807
+          },
+          {
+            "block_id": 30,
+            "start": 7680,
+            "end": 7936,
+            "energy": 0.0005651591035598647,
+            "input_energy": 0.0005651591035598647
+          },
+          {
+            "block_id": 9,
+            "start": 2304,
+            "end": 2560,
+            "energy": 0.0005580120439930914,
+            "input_energy": 0.0005580120439930914
+          },
+          {
+            "block_id": 6,
+            "start": 1536,
+            "end": 1792,
+            "energy": 0.0005300414162763278,
+            "input_energy": 0.0005300414162763278
+          },
+          {
+            "block_id": 32,
+            "start": 8192,
+            "end": 8448,
+            "energy": 0.0004827544876031681,
+            "input_energy": 0.0004827544876031681
+          },
+          {
+            "block_id": 5,
+            "start": 1280,
+            "end": 1536,
+            "energy": 0.00048150606981475167,
+            "input_energy": 0.00048150606981475167
+          },
+          {
+            "block_id": 18,
+            "start": 4608,
+            "end": 4864,
+            "energy": 0.0004507459552223203,
+            "input_energy": 0.0004507459552223203
+          },
+          {
+            "block_id": 11,
+            "start": 2816,
+            "end": 3072,
+            "energy": 0.0004199580510698825,
+            "input_energy": 0.0004199580510698825
+          }
+        ],
+        "coordinate_interval_convention": "half-open [start,end); crop to D",
+        "logical_coordinate_count": 8192,
+        "logical_numel": 818048,
+        "worker_count": 4,
+        "block_size": 256,
+        "block_count": 3196,
+        "region_energy": 0.12464556684059597,
+        "source_energy": 0.1878639450943238,
+        "input_energy_share": 0.6634884984344027,
+        "old_audit_energy_share": 0.6634884984344027,
+        "old_audit_agreement": true,
+        "old_audit_ids_available": false,
+        "old_audit_note": "Prior audit stored top32 count/energy share, not all IDs. IDs are independently recomputed with identical energy-only stable tie rule and frozen before intervention."
+      },
+      {
+        "snapshot_id": "seed1101_update000500",
+        "block_ids": [
+          355,
+          0,
+          870,
+          1129,
+          1645,
+          1904,
+          29,
+          2419,
+          28,
+          26,
+          21,
+          2678,
+          23,
+          19,
+          831,
+          3194,
+          25,
+          665,
+          832,
+          830,
+          31,
+          819,
+          615,
+          666,
+          664,
+          20,
+          3,
+          733,
+          787,
+          616,
+          747,
+          651
+        ],
+        "blocks": [
+          {
+            "block_id": 355,
+            "start": 90880,
+            "end": 91136,
+            "energy": 0.01665063748452282,
+            "input_energy": 0.01665063748452282
+          },
+          {
+            "block_id": 0,
+            "start": 0,
+            "end": 256,
+            "energy": 0.010769712718419255,
+            "input_energy": 0.010769712718419255
+          },
+          {
+            "block_id": 870,
+            "start": 222720,
+            "end": 222976,
+            "energy": 0.009659486947081908,
+            "input_energy": 0.009659486947081908
+          },
+          {
+            "block_id": 1129,
+            "start": 289024,
+            "end": 289280,
+            "energy": 0.00745504975142957,
+            "input_energy": 0.00745504975142957
+          },
+          {
+            "block_id": 1645,
+            "start": 421120,
+            "end": 421376,
+            "energy": 0.005872100368528532,
+            "input_energy": 0.005872100368528532
+          },
+          {
+            "block_id": 1904,
+            "start": 487424,
+            "end": 487680,
+            "energy": 0.005664628113892081,
+            "input_energy": 0.005664628113892081
+          },
+          {
+            "block_id": 29,
+            "start": 7424,
+            "end": 7680,
+            "energy": 0.004729718101740055,
+            "input_energy": 0.004729718101740055
+          },
+          {
+            "block_id": 2419,
+            "start": 619264,
+            "end": 619520,
+            "energy": 0.004428180778516699,
+            "input_energy": 0.004428180778516699
+          },
+          {
+            "block_id": 28,
+            "start": 7168,
+            "end": 7424,
+            "energy": 0.003927766542786371,
+            "input_energy": 0.003927766542786371
+          },
+          {
+            "block_id": 26,
+            "start": 6656,
+            "end": 6912,
+            "energy": 0.0038483283515300393,
+            "input_energy": 0.0038483283515300393
+          },
+          {
+            "block_id": 21,
+            "start": 5376,
+            "end": 5632,
+            "energy": 0.0029123632009622202,
+            "input_energy": 0.0029123632009622202
+          },
+          {
+            "block_id": 2678,
+            "start": 685568,
+            "end": 685824,
+            "energy": 0.0027524358147265407,
+            "input_energy": 0.0027524358147265407
+          },
+          {
+            "block_id": 23,
+            "start": 5888,
+            "end": 6144,
+            "energy": 0.002389865234138977,
+            "input_energy": 0.002389865234138977
+          },
+          {
+            "block_id": 19,
+            "start": 4864,
+            "end": 5120,
+            "energy": 0.0019313926695845559,
+            "input_energy": 0.0019313926695845559
+          },
+          {
+            "block_id": 831,
+            "start": 212736,
+            "end": 212992,
+            "energy": 0.0017196329119427284,
+            "input_energy": 0.0017196329119427284
+          },
+          {
+            "block_id": 3194,
+            "start": 817664,
+            "end": 817920,
+            "energy": 0.0015387137927051,
+            "input_energy": 0.0015387137927051
+          },
+          {
+            "block_id": 25,
+            "start": 6400,
+            "end": 6656,
+            "energy": 0.001429937296557826,
+            "input_energy": 0.001429937296557826
+          },
+          {
+            "block_id": 665,
+            "start": 170240,
+            "end": 170496,
+            "energy": 0.0013016070498149271,
+            "input_energy": 0.0013016070498149271
+          },
+          {
+            "block_id": 832,
+            "start": 212992,
+            "end": 213248,
+            "energy": 0.001146837885508789,
+            "input_energy": 0.001146837885508789
+          },
+          {
+            "block_id": 830,
+            "start": 212480,
+            "end": 212736,
+            "energy": 0.001122255343100429,
+            "input_energy": 0.001122255343100429
+          },
+          {
+            "block_id": 31,
+            "start": 7936,
+            "end": 8192,
+            "energy": 0.0009887053453577904,
+            "input_energy": 0.0009887053453577904
+          },
+          {
+            "block_id": 819,
+            "start": 209664,
+            "end": 209920,
+            "energy": 0.000985372121581729,
+            "input_energy": 0.000985372121581729
+          },
+          {
+            "block_id": 615,
+            "start": 157440,
+            "end": 157696,
+            "energy": 0.0009580181455834075,
+            "input_energy": 0.0009580181455834075
+          },
+          {
+            "block_id": 666,
+            "start": 170496,
+            "end": 170752,
+            "energy": 0.0009336536663931971,
+            "input_energy": 0.0009336536663931971
+          },
+          {
+            "block_id": 664,
+            "start": 169984,
+            "end": 170240,
+            "energy": 0.0008858809510578491,
+            "input_energy": 0.0008858809510578491
+          },
+          {
+            "block_id": 20,
+            "start": 5120,
+            "end": 5376,
+            "energy": 0.0008676317756037832,
+            "input_energy": 0.0008676317756037832
+          },
+          {
+            "block_id": 3,
+            "start": 768,
+            "end": 1024,
+            "energy": 0.000842547166140073,
+            "input_energy": 0.000842547166140073
+          },
+          {
+            "block_id": 733,
+            "start": 187648,
+            "end": 187904,
+            "energy": 0.000809941370653381,
+            "input_energy": 0.000809941370653381
+          },
+          {
+            "block_id": 787,
+            "start": 201472,
+            "end": 201728,
+            "energy": 0.0007876940101457924,
+            "input_energy": 0.0007876940101457924
+          },
+          {
+            "block_id": 616,
+            "start": 157696,
+            "end": 157952,
+            "energy": 0.0007810380451586081,
+            "input_energy": 0.0007810380451586081
+          },
+          {
+            "block_id": 747,
+            "start": 191232,
+            "end": 191488,
+            "energy": 0.000761880852733432,
+            "input_energy": 0.000761880852733432
+          },
+          {
+            "block_id": 651,
+            "start": 166656,
+            "end": 166912,
+            "energy": 0.0007487009124045874,
+            "input_energy": 0.0007487009124045874
+          }
+        ],
+        "coordinate_interval_convention": "half-open [start,end); crop to D",
+        "logical_coordinate_count": 8192,
+        "logical_numel": 818048,
+        "worker_count": 4,
+        "block_size": 256,
+        "block_count": 3196,
+        "region_energy": 0.10160171472030305,
+        "source_energy": 0.40293978377488016,
+        "input_energy_share": 0.25215111242792365,
+        "old_audit_energy_share": 0.25215111242792365,
+        "old_audit_agreement": true,
+        "old_audit_ids_available": false,
+        "old_audit_note": "Prior audit stored top32 count/energy share, not all IDs. IDs are independently recomputed with identical energy-only stable tie rule and frozen before intervention."
+      },
+      {
+        "snapshot_id": "seed1101_update002500",
+        "block_ids": [
+          870,
+          1645,
+          355,
+          1129,
+          2419,
+          1904,
+          2678,
+          1606,
+          1605,
+          0,
+          1522,
+          1521,
+          831,
+          3194,
+          1622,
+          1621,
+          23,
+          1474,
+          1473,
+          28,
+          21,
+          26,
+          665,
+          733,
+          830,
+          617,
+          616,
+          615,
+          832,
+          1507,
+          1455,
+          1508
+        ],
+        "blocks": [
+          {
+            "block_id": 870,
+            "start": 222720,
+            "end": 222976,
+            "energy": 0.024715858945259073,
+            "input_energy": 0.024715858945259073
+          },
+          {
+            "block_id": 1645,
+            "start": 421120,
+            "end": 421376,
+            "energy": 0.019885511702324277,
+            "input_energy": 0.019885511702324277
+          },
+          {
+            "block_id": 355,
+            "start": 90880,
+            "end": 91136,
+            "energy": 0.019451380179333233,
+            "input_energy": 0.019451380179333233
+          },
+          {
+            "block_id": 1129,
+            "start": 289024,
+            "end": 289280,
+            "energy": 0.014159588108525679,
+            "input_energy": 0.014159588108525679
+          },
+          {
+            "block_id": 2419,
+            "start": 619264,
+            "end": 619520,
+            "energy": 0.012102506881636721,
+            "input_energy": 0.012102506881636721
+          },
+          {
+            "block_id": 1904,
+            "start": 487424,
+            "end": 487680,
+            "energy": 0.011092736112857993,
+            "input_energy": 0.011092736112857993
+          },
+          {
+            "block_id": 2678,
+            "start": 685568,
+            "end": 685824,
+            "energy": 0.009684289797974203,
+            "input_energy": 0.009684289797974203
+          },
+          {
+            "block_id": 1606,
+            "start": 411136,
+            "end": 411392,
+            "energy": 0.006586820406751806,
+            "input_energy": 0.006586820406751806
+          },
+          {
+            "block_id": 1605,
+            "start": 410880,
+            "end": 411136,
+            "energy": 0.006550736378905242,
+            "input_energy": 0.006550736378905242
+          },
+          {
+            "block_id": 0,
+            "start": 0,
+            "end": 256,
+            "energy": 0.006252410549575149,
+            "input_energy": 0.006252410549575149
+          },
+          {
+            "block_id": 1522,
+            "start": 389632,
+            "end": 389888,
+            "energy": 0.006209019348397682,
+            "input_energy": 0.006209019348397682
+          },
+          {
+            "block_id": 1521,
+            "start": 389376,
+            "end": 389632,
+            "energy": 0.005931932103964102,
+            "input_energy": 0.005931932103964102
+          },
+          {
+            "block_id": 831,
+            "start": 212736,
+            "end": 212992,
+            "energy": 0.005666565360514575,
+            "input_energy": 0.005666565360514575
+          },
+          {
+            "block_id": 3194,
+            "start": 817664,
+            "end": 817920,
+            "energy": 0.004609228536327781,
+            "input_energy": 0.004609228536327781
+          },
+          {
+            "block_id": 1622,
+            "start": 415232,
+            "end": 415488,
+            "energy": 0.004527235165323662,
+            "input_energy": 0.004527235165323662
+          },
+          {
+            "block_id": 1621,
+            "start": 414976,
+            "end": 415232,
+            "energy": 0.004478395898456,
+            "input_energy": 0.004478395898456
+          },
+          {
+            "block_id": 23,
+            "start": 5888,
+            "end": 6144,
+            "energy": 0.0041469928990579,
+            "input_energy": 0.0041469928990579
+          },
+          {
+            "block_id": 1474,
+            "start": 377344,
+            "end": 377600,
+            "energy": 0.0039522751393887,
+            "input_energy": 0.0039522751393887
+          },
+          {
+            "block_id": 1473,
+            "start": 377088,
+            "end": 377344,
+            "energy": 0.003877854592169605,
+            "input_energy": 0.003877854592169605
+          },
+          {
+            "block_id": 28,
+            "start": 7168,
+            "end": 7424,
+            "energy": 0.0037548022239443793,
+            "input_energy": 0.0037548022239443793
+          },
+          {
+            "block_id": 21,
+            "start": 5376,
+            "end": 5632,
+            "energy": 0.0034738807062153487,
+            "input_energy": 0.0034738807062153487
+          },
+          {
+            "block_id": 26,
+            "start": 6656,
+            "end": 6912,
+            "energy": 0.0033636455327387266,
+            "input_energy": 0.0033636455327387266
+          },
+          {
+            "block_id": 665,
+            "start": 170240,
+            "end": 170496,
+            "energy": 0.003276029933600766,
+            "input_energy": 0.003276029933600766
+          },
+          {
+            "block_id": 733,
+            "start": 187648,
+            "end": 187904,
+            "energy": 0.0032440902173456188,
+            "input_energy": 0.0032440902173456188
+          },
+          {
+            "block_id": 830,
+            "start": 212480,
+            "end": 212736,
+            "energy": 0.0031671095181206033,
+            "input_energy": 0.0031671095181206033
+          },
+          {
+            "block_id": 617,
+            "start": 157952,
+            "end": 158208,
+            "energy": 0.003054065245859272,
+            "input_energy": 0.003054065245859272
+          },
+          {
+            "block_id": 616,
+            "start": 157696,
+            "end": 157952,
+            "energy": 0.0028522388093463746,
+            "input_energy": 0.0028522388093463746
+          },
+          {
+            "block_id": 615,
+            "start": 157440,
+            "end": 157696,
+            "energy": 0.0028188289363786506,
+            "input_energy": 0.0028188289363786506
+          },
+          {
+            "block_id": 832,
+            "start": 212992,
+            "end": 213248,
+            "energy": 0.002761416815908982,
+            "input_energy": 0.002761416815908982
+          },
+          {
+            "block_id": 1507,
+            "start": 385792,
+            "end": 386048,
+            "energy": 0.0027485936575224468,
+            "input_energy": 0.0027485936575224468
+          },
+          {
+            "block_id": 1455,
+            "start": 372480,
+            "end": 372736,
+            "energy": 0.002675580866761806,
+            "input_energy": 0.002675580866761806
+          },
+          {
+            "block_id": 1508,
+            "start": 386048,
+            "end": 386304,
+            "energy": 0.0026657873131301635,
+            "input_energy": 0.0026657873131301635
+          }
+        ],
+        "coordinate_interval_convention": "half-open [start,end); crop to D",
+        "logical_coordinate_count": 8192,
+        "logical_numel": 818048,
+        "worker_count": 4,
+        "block_size": 256,
+        "block_count": 3196,
+        "region_energy": 0.2137374078836165,
+        "source_energy": 1.4007527163431837,
+        "input_energy_share": 0.15258753767874256,
+        "old_audit_energy_share": 0.15258753767874256,
+        "old_audit_agreement": true,
+        "old_audit_ids_available": false,
+        "old_audit_note": "Prior audit stored top32 count/energy share, not all IDs. IDs are independently recomputed with identical energy-only stable tie rule and frozen before intervention."
+      }
+    ]
+  },
+  "actual_kernel": "scaling_compress_kernel_mee_hierarchical_bf16_opt<8>",
+  "conditions": {
+    "control_add1e7": 1e-07,
+    "diagnostic_add0": 0.0
+  },
+  "mee_eps8": 0.1,
+  "patch": "Only optimized BF16 MEE raw_scale additive term selected via DIAG_B8_SCALE_ADD for NBITS==8; all other widths use original 1e-7f",
+  "flags": {
+    "control_add1e7": {
+      "extra_cflags": [
+        "/O2",
+        "/std:c++17",
+        "/utf-8"
+      ],
+      "extra_cuda_cflags": [
+        "-std=c++17",
+        "-O3",
+        "--use_fast_math",
+        "-lineinfo",
+        "--use-local-env",
+        "-ccbin",
+        "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64",
+        "-Xcompiler",
+        "/utf-8",
+        "-DDIAG_B8_SCALE_ADD=1e-7f"
+      ]
+    },
+    "diagnostic_add0": {
+      "extra_cflags": [
+        "/O2",
+        "/std:c++17",
+        "/utf-8"
+      ],
+      "extra_cuda_cflags": [
+        "-std=c++17",
+        "-O3",
+        "--use_fast_math",
+        "-lineinfo",
+        "--use-local-env",
+        "-ccbin",
+        "E:\\dacomp\\research\\gradient_comm_lab\\.toolchains\\msvc-14.38\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64",
+        "-Xcompiler",
+        "/utf-8",
+        "-DDIAG_B8_SCALE_ADD=0.0f"
+      ]
+    }
+  },
+  "random_reuse": "Read original 96 official b8 seeds; CPU FP32 torch.rand->BF16; exact full-P pool SHA must match. Never derive from new condition_id. A and B matched, uniform separate old streams.",
+  "decoder_process": "Only original sealed module; never load encoder condition modules in decoder process",
+  "metric_definitions": {
+    "local": "FP64 SSE/MSE/maxabs over logical full/H/rest; source_energy; paired delta=A-B before summarizing",
+    "one_shot": "FP64 sum same four output vectors, original FP64 sum inputs, cross_term=aggregateSSE-sumlocalSSE",
+    "gap_closure": "Only update100 positive mean(A-U): mean(A-B)/mean(A-U); H separately; no clipping",
+    "outcome_order": [
+      "qualification_failure=inconclusive",
+      "domain_failure=diagnostic_domain_failure",
+      "all decoded equal=no_effect_observed",
+      "gap_closure<=0=changes_without_closing_gap",
+      "0<gap_closure<1=partially_closes_gap",
+      "gap_closure>=1=closes_or_reverses_gap"
+    ]
+  },
+  "continuation_gate": {
+    "gap_closure_min": 0.5,
+    "gap_closure_H_min": 0.5,
+    "improved_workers_min": 3,
+    "improved_snapshot_repeats_min": 7,
+    "other_snapshot_relative_SSE_increase_max": 0.02
+  },
+  "budgets": {
+    "precheck_minutes": 30,
+    "active_hours": 4,
+    "gpu_minutes": 30,
+    "condition_builds": 2,
+    "repair_rounds": 1
+  },
+  "build_wall_seconds_upper_bound": 133.19539760000407,
+  "stop_rules": [
+    "No third constant or scale grid",
+    "Control 96 exact packet/decoded parity required before intervention",
+    "Domain failures retained and exclude causal partial-subset summaries",
+    "No D2 or new training",
+    "No changes to old runs"
+  ]
+}

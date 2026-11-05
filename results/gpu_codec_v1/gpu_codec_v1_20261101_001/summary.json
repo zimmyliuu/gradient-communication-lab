@@ -1,0 +1,86 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "template_only": false,
+  "run_id": "gpu_codec_v1_20261101_001",
+  "stage": "G0",
+  "started_at": "2026-11-01T20:00:45.394540+08:00",
+  "finished_at": "2026-11-01T20:12:50.679074+08:00",
+  "timezone": "Asia/Shanghai",
+  "execution_status": "blocked",
+  "contract_sha256": "e71f17d5c989bcb94422964c34c53497e14fc4ddfe10a9d64895f409d6d4546a",
+  "benchmark_config_sha256": "93a6194dbd7d9b7e2275a11d8bfc0e8ef3d8f937aedbe9c6d2f41ea7c028c73a",
+  "correctness_status": "not_run",
+  "benchmark_validity": "not_run",
+  "optimization_gain": "not_evaluated",
+  "g1_acceptance": "not_ready",
+  "coverage": {
+    "nominal_bits_completed": [],
+    "methods_completed": [],
+    "correctness_cases_passed": null,
+    "correctness_cases_failed": null,
+    "correctness_cases_skipped": null,
+    "real_gradient_inputs_completed": null,
+    "benchmark_cases_completed": null,
+    "missing_items": [
+      "G0 minimal CUDA extension compile and GPU call",
+      "PyTorch CUDA and optimized CUDA/C++ local codec b4/b8",
+      "edge and synthetic fixtures",
+      "complete CPU/GPU bytewise and BF16 parity coverage",
+      "12 real-gradient GPU roundtrip cases per method/bit",
+      "five-session performance matrix with frozen K and raw blocks",
+      "independent memory measurements and representative profiler trace",
+      "three figure groups"
+    ]
+  },
+  "claims": {
+    "local_codec_parity_validated": false,
+    "gpu_codec_performance_measured": false,
+    "full_dynamiq_gpu_validated": false,
+    "training_quality_newly_validated": false,
+    "multigpu_speedup_measured": false
+  },
+  "key_findings": [
+    "GPU CUDA runtime and BF16 are usable; MSVC, Ninja and CMake exist.",
+    "CUDA Toolkit/nvcc not discovered in checked accessible locations; actual minimal extension build blocked before compilation.",
+    "12 authorized development gradient inputs, CPU LUTs and explicit thresholds are frozen; no holdout read.",
+    "BF16 operation ordering, scalar rounding, internal nonfinite rejection and signed zero must be preserved; G1 remains untested."
+  ],
+  "open_issues": [
+    "G0-ENV-001",
+    "G0-ENV-002",
+    "G0-ENV-003",
+    "G1-NOT-RUN"
+  ],
+  "next_action": "fix_environment",
+  "artifacts": {
+    "report": "REPORT.md",
+    "environment": "environment.json",
+    "contract": "codec_contract.json",
+    "benchmark_config": "benchmark_config.json",
+    "inputs": "input_manifest.json",
+    "sources": "source_manifest.json",
+    "correctness": null,
+    "benchmark_raw": null,
+    "benchmark_summary": null,
+    "memory": null,
+    "issues": "issues.jsonl",
+    "reproduce": "REPRODUCE.md",
+    "fixtures": "fixtures_manifest.json",
+    "cpu_reference": "cpu_reference_manifest.json",
+    "cpu_semantics": "logs/cpu_reference_semantics.json",
+    "requirements": "requirements.txt"
+  },
+  "stage_name": "局部 codec 固定配置：环境、CPU 参考与输入契约准备",
+  "g0_gate": "blocked_at_minimal_CUDA_extension_build",
+  "cpu_semantic_probe_status": "passed_CPU_only_not_GPU_parity",
+  "prepared_real_gradient_inputs": 12,
+  "missing_artifacts": {
+    "correctness.jsonl": "Not generated: G0 CUDA extension compilation blocked; G1 not started.",
+    "benchmark_raw.jsonl": "Not generated: G0 CUDA extension compilation blocked; G1 not started.",
+    "benchmark_summary.jsonl": "Not generated: G0 CUDA extension compilation blocked; G1 not started.",
+    "memory.jsonl": "Not generated: G0 CUDA extension compilation blocked; G1 not started.",
+    "traces/": "Not generated: G0 CUDA extension compilation blocked; G1 not started.",
+    "figures/": "Not generated: G0 CUDA extension compilation blocked; G1 not started."
+  },
+  "reviewed_at": "2026-11-01T20:16:39.639480+08:00"
+}

@@ -1,0 +1,560 @@
+{
+  "schema_version": "gpu_codec_v1.0",
+  "run_id": "gpu_codec_v1_20261104_001",
+  "collected_at": "2026-11-04T18:04:35.312951+08:00",
+  "git": {
+    "repository_root": null,
+    "commit": null,
+    "status_porcelain": null,
+    "discovery_stderr": "fatal: not a git repository (or any of the parent directories): .git"
+  },
+  "git_commit": null,
+  "git_note": "Actual discovery only; source identity is the recorded SHA256, including execution registration before measurements.",
+  "files": [
+    {
+      "path": "code/src/gradient_comm_lab/torch_codec.py",
+      "role": "gpu_source",
+      "sha256": "50bc272876be54db5d42327cce144022b7bf960d82073347479da2eb53f1d794",
+      "bytes": 19635,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\torch_codec.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/src/gradient_comm_lab/cuda_codec.py",
+      "role": "gpu_source",
+      "sha256": "801b588a2d249e3a754c0d90d4c1bab123976f92153863c486685dbabef3bef4",
+      "bytes": 8622,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\cuda_codec.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/src/gradient_comm_lab/cpu_reference.py",
+      "role": "cpu_reference",
+      "sha256": "4ab03e0c8bed961ed3eaa8bec5a546bf74d76909437d6561032453e3cd59d36b",
+      "bytes": 4749,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\cpu_reference.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/src/gradient_comm_lab/fixtures_v2.py",
+      "role": "config",
+      "sha256": "cd678feacc24605eaf2ac7d9f5d87f43748fbda4eff995e61ff82e30de454701",
+      "bytes": 8874,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\fixtures_v2.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/scripts/check_torch_codec.py",
+      "role": "test",
+      "sha256": "5404677b4cfa1291bad64ba5623e97b30860ac5f3cdd3f4e27b26d226d81ad41",
+      "bytes": 25916,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\check_torch_codec.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/scripts/check_cuda_codec.py",
+      "role": "test",
+      "sha256": "d6366a5853cf19d61419286c7b8e92007184ff41d1e6394ff5994e6e4d58773c",
+      "bytes": 44563,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\check_cuda_codec.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/tests/test_cuda_codec.py",
+      "role": "test",
+      "sha256": "26698f4d1e05a5c044e9f2f3286d41fb72fd77f65b5f9bfdec35600dc584ed51",
+      "bytes": 7078,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\tests\\test_cuda_codec.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/configs/g1b_correctness_cases.json",
+      "role": "config",
+      "sha256": "44801f8265ee01d63e265426868ec7f6dbe0cbb859bdb72fcbc1846abbcdc76d",
+      "bytes": 26103,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\configs\\g1b_correctness_cases.json",
+      "execution_bound": true
+    },
+    {
+      "path": "code/scripts/build_cuda_codec.py",
+      "role": "build_script",
+      "sha256": "5246d1c2fd8f0c2e380596f3f5e9c078cef6d181d17f2eb29074f5632a0187e5",
+      "bytes": 3994,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\build_cuda_codec.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/scripts/probe_toolchain_v2.py",
+      "role": "build_script",
+      "sha256": "5fc585be3f912acb225b694cbd1487118353903a16165efde13428c81b8b1b91",
+      "bytes": 13327,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\probe_toolchain_v2.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/scripts/benchmark_torch_codec.py",
+      "role": "build_script",
+      "sha256": "764e3864d64d8edd297ed47abb7e2fd694866b6b121457f5818bf656472ab82a",
+      "bytes": 17961,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\benchmark_torch_codec.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/scripts/benchmark_cuda_pair.py",
+      "role": "build_script",
+      "sha256": "06d3314b058ea82f211bfc58e6ae8f83039045d36375872c5c5935e0de2160a5",
+      "bytes": 23264,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\benchmark_cuda_pair.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/scripts/register_g1b.py",
+      "role": "build_script",
+      "sha256": "3a62effbd1b146f5db57ba2d170f099d6dfbf0e9de3877644a3e588a35008cde",
+      "bytes": 7103,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\register_g1b.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/scripts/python.ps1",
+      "role": "build_script",
+      "sha256": "4ac1698a5a575f82c656afd60680928c159815d8bf959e75577e8329ddb21ac7",
+      "bytes": 1427,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\python.ps1",
+      "execution_bound": true
+    },
+    {
+      "path": "code/src/gradient_comm_lab/csrc/codec.cpp",
+      "role": "gpu_source",
+      "sha256": "8180319b05e23162e2a5ab60c82f7d6f46b33ba1568d939e98ceb57046539924",
+      "bytes": 4808,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\csrc\\codec.cpp",
+      "execution_bound": true
+    },
+    {
+      "path": "code/src/gradient_comm_lab/csrc/codec.cu",
+      "role": "gpu_source",
+      "sha256": "186ddfc271cfea6246441f24974e63aad0a6724953a49580aebb4b5f2c18421a",
+      "bytes": 7292,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\csrc\\codec.cu",
+      "execution_bound": true
+    },
+    {
+      "path": "code/src/gradient_comm_lab/__init__.py",
+      "role": "gpu_source",
+      "sha256": "10bfe6b4e29e8138576b15f2ce87736e5db130a384eb327bc1db24e7385c55af",
+      "bytes": 80,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\src\\gradient_comm_lab\\__init__.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/summarize_g1b.py",
+      "role": "report_generator",
+      "sha256": "e1a185c75b36987a83e0597d84b8b6e466346ffbac0e74d9c3d601f3bd1fcd17",
+      "bytes": 47647,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\summarize_g1b.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/write_g1b_report.py",
+      "role": "report_generator",
+      "sha256": "696d9c4d84f2fcb234cca73c4c6483a1fec12cc82b3f83c3435d110ec7c0752c",
+      "bytes": 33245,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\write_g1b_report.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/collect_g1b_sources.py",
+      "role": "report_generator",
+      "sha256": "47439723976e26ab2cbc69af1365d6034880e6deb7306790ef3e8081238b92a6",
+      "bytes": 5664,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\collect_g1b_sources.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/seal_g1b_delivery.py",
+      "role": "test",
+      "sha256": "032d4de5ddcbb95b4b58926d1eaf963f7500a62beac9fe383e00af1a6a5cd6c4",
+      "bytes": 23080,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\seal_g1b_delivery.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/package_g1b_delivery.py",
+      "role": "report_generator",
+      "sha256": "a208833efdff778830d4e60a1ecf64bd137b98b11b180354738e000fe0af612b",
+      "bytes": 2812,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\package_g1b_delivery.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/profile_cuda_pair.py",
+      "role": "build_script",
+      "sha256": "d573b75f1bdc2b7bb56481ac68d18f238cb31e7200fe08bd5bbb0e82397addcc",
+      "bytes": 14073,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\profile_cuda_pair.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/audit_cuda_pair_trace.py",
+      "role": "test",
+      "sha256": "5e40b01f08e3d8bb5f28f73a78e0c9b98cec975d78d11e8909119337e3e7adae",
+      "bytes": 9025,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\audit_cuda_pair_trace.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/cupti_trace_collector_v2.cpp",
+      "role": "gpu_source",
+      "sha256": "b24b871b1a54b883e4f79188ec62c19598e6da6b635b2004cbb5c0c8e97f3e08",
+      "bytes": 7827,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\cupti_trace_collector_v2.cpp",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/freeze_g0_inputs.py",
+      "role": "build_script",
+      "sha256": "02072d48874900452cf0694c21bb3ab36f87a6e6e9aa74dbb8c184b505d760c9",
+      "bytes": 6417,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\freeze_g0_inputs.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/provision_toolchain_v2.py",
+      "role": "build_script",
+      "sha256": "72fdbfc9d680a39cf280b6bfc4a3a6dbf193286dc7d3f72cf4cba613aac98403",
+      "bytes": 10578,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\provision_toolchain_v2.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/TECHNICAL_PLAN.md",
+      "role": "config",
+      "sha256": "fd2f129143bb99063b13c138faeb24a7396ffd9065fb36edd05e9d26976117b2",
+      "bytes": 23535,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\TECHNICAL_PLAN.md",
+      "execution_bound": false
+    },
+    {
+      "path": "code/DELIVERY_FORMAT.md",
+      "role": "config",
+      "sha256": "5f29ca95b943e271df514b23438f4a1cdbe43ff0a25e2d60f85cda1eee04c7ca",
+      "bytes": 13684,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\DELIVERY_FORMAT.md",
+      "execution_bound": false
+    },
+    {
+      "path": "code/reviews/gpu_codec_v1_20261101_002_review_and_g1b_plan.md",
+      "role": "config",
+      "sha256": "3f9a0caa47c195b34c4049a63ec9cd19c63f5d3cb6537c819dcdb2219e8e7741",
+      "bytes": 11122,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\reviews\\gpu_codec_v1_20261101_002_review_and_g1b_plan.md",
+      "execution_bound": false
+    },
+    {
+      "path": "code/handoff_templates/REPORT.md",
+      "role": "config",
+      "sha256": "dd5147702c01f8e0a322770adbaf886541417fb61aff4c9e80d34219cd3f85ef",
+      "bytes": 3761,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\handoff_templates\\REPORT.md",
+      "execution_bound": false
+    },
+    {
+      "path": "code/handoff_templates/summary.json",
+      "role": "config",
+      "sha256": "cf6cb3149201a29af56fa4171f0121ab1043a108400938fbd88581a5890ac1bd",
+      "bytes": 1517,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\handoff_templates\\summary.json",
+      "execution_bound": false
+    },
+    {
+      "path": "code/handoff_templates/codec_contract.json",
+      "role": "config",
+      "sha256": "2563cd4a6ac52e358e3ff69bafded516ec7f2b5c81890ae5ba3fb773e6f757de",
+      "bytes": 2265,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\handoff_templates\\codec_contract.json",
+      "execution_bound": false
+    },
+    {
+      "path": "code/handoff_templates/environment.json",
+      "role": "config",
+      "sha256": "c4eefef08de84cdd721ef7c6e30523f7574c5f6048d8af97715865576d2395c7",
+      "bytes": 921,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\handoff_templates\\environment.json",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/audit_cuda_trace_v2.py",
+      "role": "build_script",
+      "sha256": "3f0c4736708992b1b53262337db7f5d799623d1ca5b1ff061550f9eefae4b14d",
+      "bytes": 7605,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\audit_cuda_trace_v2.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/check_cuda_codec_replay.py",
+      "role": "build_script",
+      "sha256": "e2cbc344a38d36a0575b8f6c411483200c13ec36430df08dd6ec56a04b42551d",
+      "bytes": 1049,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\check_cuda_codec_replay.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/dev_cuda_codec.py",
+      "role": "build_script",
+      "sha256": "c7d5f35bc17e7ca71e4e4dce5fdd68eabbe645b35610f67fe5510d8ed14d0ed9",
+      "bytes": 3871,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\dev_cuda_codec.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/minimal_cuda_probe.py",
+      "role": "build_script",
+      "sha256": "4cdf80c624aecc4d7c3442a4267bdee42b3436fb4b102bc9d8396e8a83e9902c",
+      "bytes": 4544,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\minimal_cuda_probe.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/profile_cuda_trace_v2.py",
+      "role": "build_script",
+      "sha256": "ae9a57d4b0cbe71b5ef0f47616c54165103e9ab371fdaeed097cfe00b4d6237f",
+      "bytes": 11725,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\profile_cuda_trace_v2.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/collect_g1b_traces.py",
+      "role": "build_script",
+      "sha256": "336ecac377e9704a332fffd82192db7438b2cacc541b0180106ee58a43374dcc",
+      "bytes": 4055,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\collect_g1b_traces.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/record_g1b_commands.py",
+      "role": "build_script",
+      "sha256": "f7f964d7608d2fce13d07a96e80378fe36cefd0bc62e03b2b8510a3d6b565773",
+      "bytes": 3074,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\record_g1b_commands.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/scripts/summarize_toolchain_v2.py",
+      "role": "build_script",
+      "sha256": "9d5c4f80a8d7baead0d067a1a16f47c4fee06f720507405b92ef34c6775826ad",
+      "bytes": 9198,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\scripts\\summarize_toolchain_v2.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/reference/src/splcomm/dynamiq.py",
+      "role": "cpu_reference",
+      "sha256": "9296231d3a29d3fb4cfa1d12a2ffe5a1a4d2922e62c51003fb214c59303e8ea0",
+      "bytes": 28525,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\dynamiq.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/reference/src/splcomm/packing.py",
+      "role": "cpu_reference",
+      "sha256": "33f7fb806edbcc28585347990703501dcd0f05c121b566baafe0041be830c4f4",
+      "bytes": 2312,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\packing.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/reference/tests/test_dynamiq.py",
+      "role": "cpu_reference",
+      "sha256": "7fcb14f82a9c95609e849c53b433b204bb7b121d8db9810ddf2766d7d2148c3e",
+      "bytes": 18532,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\tests\\test_dynamiq.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/reference/tests/dynamiq_oracle.py",
+      "role": "cpu_reference",
+      "sha256": "43bbd1e1ae85bb71510b5a2f411ec87363a3ac63841e957b6ce0a832e979a67d",
+      "bytes": 10652,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\tests\\dynamiq_oracle.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/reference/src/splcomm/p2_replay.py",
+      "role": "cpu_reference",
+      "sha256": "c56ba27ea9a64f7302f7d954709af6f27680b8e30131d0aaf089e5a642e91b0d",
+      "bytes": 19963,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\p2_replay.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/reference/src/splcomm/core.py",
+      "role": "cpu_reference",
+      "sha256": "895abd30f614f37ce6b4dcaf317cb6b6161cb72489ff7ca352bab9ca082b4edf",
+      "bytes": 4601,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\core.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/reference/src/splcomm/ring.py",
+      "role": "cpu_reference",
+      "sha256": "d84e1977b70db52b75e0e6f2bfac0157cda1a8a6ef73f5819ffe1de825d73815",
+      "bytes": 4989,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\ring.py",
+      "execution_bound": true
+    },
+    {
+      "path": "code/reference/src/splcomm/__init__.py",
+      "role": "cpu_reference",
+      "sha256": "c3aa184f6d002ea21c84e9963273a6d48f5114e69159e8f8cc132deb348fe1c0",
+      "bytes": 232,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\__init__.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/reference/src/splcomm/registry.py",
+      "role": "cpu_reference",
+      "sha256": "04bddcb09e738cf403d07ac2013c04bbe55dec5cb0f69edb3a94c8b3f6618798",
+      "bytes": 5728,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\registry.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/reference/src/splcomm/training.py",
+      "role": "cpu_reference",
+      "sha256": "3f52910bcbd8c6d6a738f25a0b36be49c8ac7c488f88834c43fe20485d15cfe4",
+      "bytes": 20509,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\training.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/reference/src/splcomm/global_qsgd.py",
+      "role": "cpu_reference",
+      "sha256": "8d9c6a4365197e7880450cc5b30cf35ef5de6dbf13654000d245d20c03ebe823",
+      "bytes": 14724,
+      "original_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\global_qsgd.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/build/cuda_a01/build.ninja",
+      "role": "build_script",
+      "sha256": "d121920ee813745fad6af53fff57aaa2936737a89411449e49f9049be2f58a2b",
+      "bytes": 3355,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\build\\cuda_a01\\build.ninja",
+      "execution_bound": false
+    },
+    {
+      "path": "code/build/cuda_a01/sources/build_cuda_codec.py",
+      "role": "build_script",
+      "sha256": "5246d1c2fd8f0c2e380596f3f5e9c078cef6d181d17f2eb29074f5632a0187e5",
+      "bytes": 3994,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\build\\cuda_a01\\sources\\build_cuda_codec.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/build/cuda_a01/sources/codec.cpp",
+      "role": "gpu_source",
+      "sha256": "cac930c94cdf9de9bbdd24e94f06c2c1a9c2f4d1b5ddc2084108d39d2da5d556",
+      "bytes": 4109,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\build\\cuda_a01\\sources\\codec.cpp",
+      "execution_bound": false
+    },
+    {
+      "path": "code/build/cuda_a01/sources/codec.cu",
+      "role": "gpu_source",
+      "sha256": "186ddfc271cfea6246441f24974e63aad0a6724953a49580aebb4b5f2c18421a",
+      "bytes": 7292,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\build\\cuda_a01\\sources\\codec.cu",
+      "execution_bound": false
+    },
+    {
+      "path": "code/build/cuda_a01/sources/cuda_codec.py",
+      "role": "gpu_source",
+      "sha256": "801b588a2d249e3a754c0d90d4c1bab123976f92153863c486685dbabef3bef4",
+      "bytes": 8622,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\build\\cuda_a01\\sources\\cuda_codec.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/build/cuda_a02/build.ninja",
+      "role": "build_script",
+      "sha256": "3b655cb10325050a792553279764719a0a7da2dff9cb9f5d622378a4152a9b2a",
+      "bytes": 3355,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\build\\cuda_a02\\build.ninja",
+      "execution_bound": false
+    },
+    {
+      "path": "code/build/cuda_a02/sources/build_cuda_codec.py",
+      "role": "build_script",
+      "sha256": "5246d1c2fd8f0c2e380596f3f5e9c078cef6d181d17f2eb29074f5632a0187e5",
+      "bytes": 3994,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\build\\cuda_a02\\sources\\build_cuda_codec.py",
+      "execution_bound": false
+    },
+    {
+      "path": "code/build/cuda_a02/sources/codec.cpp",
+      "role": "gpu_source",
+      "sha256": "8180319b05e23162e2a5ab60c82f7d6f46b33ba1568d939e98ceb57046539924",
+      "bytes": 4808,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\build\\cuda_a02\\sources\\codec.cpp",
+      "execution_bound": false
+    },
+    {
+      "path": "code/build/cuda_a02/sources/codec.cu",
+      "role": "gpu_source",
+      "sha256": "186ddfc271cfea6246441f24974e63aad0a6724953a49580aebb4b5f2c18421a",
+      "bytes": 7292,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\build\\cuda_a02\\sources\\codec.cu",
+      "execution_bound": false
+    },
+    {
+      "path": "code/build/cuda_a02/sources/cuda_codec.py",
+      "role": "gpu_source",
+      "sha256": "801b588a2d249e3a754c0d90d4c1bab123976f92153863c486685dbabef3bef4",
+      "bytes": 8622,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\build\\cuda_a02\\sources\\cuda_codec.py",
+      "execution_bound": false
+    },
+    {
+      "path": "codec_contract.json",
+      "role": "config",
+      "sha256": "3ba9895a4a22ab8d6c11f2838e9490b20d58d4fd7c5d7536129a12d9d9d51186",
+      "bytes": 11378,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\codec_contract.json",
+      "execution_bound": false
+    },
+    {
+      "path": "benchmark_config.json",
+      "role": "config",
+      "sha256": "4edb664e258bfa8d6389b0787d01ca34b4f9536d7a0c718775b03e45fb2778bf",
+      "bytes": 60058,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\benchmark_config.json",
+      "execution_bound": false
+    },
+    {
+      "path": "execution_registration.json",
+      "role": "config",
+      "sha256": "304eab7af5459b653b4fb54c17afb6ced0a49a19befc8cd3a124cf17ba9c0e82",
+      "bytes": 3465,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\execution_registration.json",
+      "execution_bound": false
+    },
+    {
+      "path": "requirements.txt",
+      "role": "config",
+      "sha256": "ec728829541792e734ec3c1f8c49cf73cb26f10747846ede1d4cde6a5b34be4e",
+      "bytes": 1047,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\requirements.txt",
+      "execution_bound": false
+    },
+    {
+      "path": "pilot_protocol.json",
+      "role": "config",
+      "sha256": "b26850da3ecf20eda5699648480c46a630e0b70f142dd6c6a8074e3e5fb8416c",
+      "bytes": 1636,
+      "original_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\pilot_protocol.json",
+      "execution_bound": false
+    }
+  ],
+  "external_toolchain_note": "Compiler packages and official URLs/hashes are in logs/toolchain_*.json; project-local binary tools are excluded from source archive."
+}

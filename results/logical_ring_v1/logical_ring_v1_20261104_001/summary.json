@@ -1,0 +1,142 @@
+{
+  "schema_version": "logical_ring_v1.0",
+  "template_only": false,
+  "run_id": "logical_ring_v1_20261104_001",
+  "stage": "G2a",
+  "scope": "fixed_b4_b8_explicit_thresholds_single_gpu_logical_ring",
+  "execution_status": "complete",
+  "correctness_status": "pass",
+  "message_ledger_status": "pass",
+  "buffer_lifetime_status": "pass",
+  "g2a_acceptance": "pass",
+  "full_g2_acceptance": "incomplete",
+  "claims": {
+    "logical_ring_parity_validated": true,
+    "full_dynamiq_gpu_validated": false,
+    "training_quality_newly_validated": false,
+    "multigpu_speedup_measured": false
+  },
+  "next_action": "review_required",
+  "generated_at": "2026-11-04T19:09:04.689553+08:00",
+  "contract_sha256": "e2c398d409d2a67fbd9e3d7074085e344d0c61d1193fb404800b588827defede",
+  "source_manifest_sha256": "b8770e36815ed819c5d0648b515f2f8c1bc98e4cbb4d761e108d4c0d0faca3d8",
+  "audit_proof": "logs/audit_initial.json",
+  "coverage": {
+    "collective_cases": 174,
+    "real_collective_cases": 6,
+    "real_snapshots": 3,
+    "correctness_records": 4741,
+    "correctness_status_counts": {
+      "pass": 4741
+    },
+    "message_ledger_records": 6848,
+    "quantization_event_records": 4864,
+    "intermediate_records": 13152,
+    "buffer_lifetime_records": 6,
+    "frozen_threshold_events": 1216,
+    "gpu_baseline_sends": 1712,
+    "gpu_baseline_sent_wire_bytes": 31378688
+  },
+  "real_replays": [
+    {
+      "case_id": "real_update000100_n4_b4",
+      "logical_numel": 818048,
+      "padded_numel": 819200,
+      "chunk_numel": 204800,
+      "nominal_bits": 4,
+      "message_count": 24,
+      "sent_wire_bytes": 3417600,
+      "diagnostic": {
+        "max_abs_error": 0.0101318359375,
+        "mse": 9.053592612396693e-09,
+        "reference": "predivided_bf16_fp64_sum",
+        "squared_error": 0.007406273329385891
+      }
+    },
+    {
+      "case_id": "real_update000100_n4_b8",
+      "logical_numel": 818048,
+      "padded_numel": 819200,
+      "chunk_numel": 204800,
+      "nominal_bits": 8,
+      "message_count": 24,
+      "sent_wire_bytes": 5875200,
+      "diagnostic": {
+        "max_abs_error": 0.00115966796875,
+        "mse": 7.094037083679063e-11,
+        "reference": "predivided_bf16_fp64_sum",
+        "squared_error": 5.8032628482294896e-05
+      }
+    },
+    {
+      "case_id": "real_update000500_n4_b4",
+      "logical_numel": 818048,
+      "padded_numel": 819200,
+      "chunk_numel": 204800,
+      "nominal_bits": 4,
+      "message_count": 24,
+      "sent_wire_bytes": 3417600,
+      "diagnostic": {
+        "max_abs_error": 0.006230354309082031,
+        "mse": 2.0606021047974635e-08,
+        "reference": "predivided_bf16_fp64_sum",
+        "squared_error": 0.016856714306253556
+      }
+    },
+    {
+      "case_id": "real_update000500_n4_b8",
+      "logical_numel": 818048,
+      "padded_numel": 819200,
+      "chunk_numel": 204800,
+      "nominal_bits": 8,
+      "message_count": 24,
+      "sent_wire_bytes": 5875200,
+      "diagnostic": {
+        "max_abs_error": 0.0006866455078125,
+        "mse": 1.2161198280122829e-10,
+        "reference": "predivided_bf16_fp64_sum",
+        "squared_error": 9.94844393065792e-05
+      }
+    },
+    {
+      "case_id": "real_update002500_n4_b4",
+      "logical_numel": 818048,
+      "padded_numel": 819200,
+      "chunk_numel": 204800,
+      "nominal_bits": 4,
+      "message_count": 24,
+      "sent_wire_bytes": 3417600,
+      "diagnostic": {
+        "max_abs_error": 0.0108795166015625,
+        "mse": 4.684446875249553e-08,
+        "reference": "predivided_bf16_fp64_sum",
+        "squared_error": 0.03832102397404146
+      }
+    },
+    {
+      "case_id": "real_update002500_n4_b8",
+      "logical_numel": 818048,
+      "padded_numel": 819200,
+      "chunk_numel": 204800,
+      "nominal_bits": 8,
+      "message_count": 24,
+      "sent_wire_bytes": 5875200,
+      "diagnostic": {
+        "max_abs_error": 0.0009918212890625,
+        "mse": 2.7013008034899497e-10,
+        "reference": "predivided_bf16_fp64_sum",
+        "squared_error": 0.00022097937196933465
+      }
+    }
+  ],
+  "measurement_note": "CPU baseline plus GPU baseline/repeat/reverse. Record counts are not independent experiments. No network timing or training run.",
+  "artifacts": {
+    "report": "REPORT.md",
+    "reproduce": "REPRODUCE.md",
+    "correctness": "correctness.jsonl",
+    "ledger": "message_ledger.jsonl",
+    "events": "quantization_events.jsonl",
+    "intermediate": "intermediate_checks.jsonl",
+    "buffers": "buffer_lifetime_checks.jsonl"
+  }
+}

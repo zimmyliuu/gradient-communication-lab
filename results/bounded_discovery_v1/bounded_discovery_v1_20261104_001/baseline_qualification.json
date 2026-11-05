@@ -1,0 +1,341 @@
+{
+  "schema_version": "bounded_discovery_baseline_qualification_v1",
+  "run_id": "bounded_discovery_v1_20261104_001",
+  "recorded_at": "2026-11-04T21:29:06.346809+08:00",
+  "baseline_name": "official_dynamiq_fixed_codec",
+  "upstream_repository": "https://github.com/CharlesHan24/DynamiQ",
+  "upstream_commit": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+  "source_identity_status": "pass",
+  "local_codec_status": "pass",
+  "packet_status": "pass",
+  "rng_status": "pass",
+  "aggregate_comparability_status": "pass",
+  "gate_decision": "pass",
+  "gate_scope": "D1 fixed local codec and one-shot FP64 sum with separately keyed worker RNG pools only",
+  "full_dynamiq_system_qualified": false,
+  "multi_gpu_communication_qualified": false,
+  "allreduce_performance_qualified": false,
+  "loaded_module": {
+    "commit": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+    "module_path": "E:\\dacomp\\research\\gradient_comm_lab\\results\\bounded_discovery_v1\\bounded_discovery_v1_20261104_001\\build\\official_a03\\eden_utils.pyd",
+    "module_sha256": "d4eaf1d9a23930d34a6edb5b54254913679ac854bd855124c13b40e2c5f38880",
+    "build_manifest": "E:\\dacomp\\research\\gradient_comm_lab\\results\\bounded_discovery_v1\\bounded_discovery_v1_20261104_001\\logs\\official_build_a03.json",
+    "build_manifest_sha256": "7295a8086aba8679b3e90348cae4857ea4f5ba59ebd6560b57bcfe1f4fe97625"
+  },
+  "admission_questions": [
+    {
+      "id": 1,
+      "status": "pass",
+      "source_answer": "Public pybind eden_utils.scaling_compress(src,dst,rand_pool,n,nbits,chunk_size,stream_p,strategy) and scaling_decompress(src,dst,n,nbits,chunk_size,stream_p,strategy) expose single-GPU operations. Selected BF16, strategy=3, chunk_size=16, nbits=4/8 directly dispatch to official hierarchical MEE kernels; no NCCL, mean removal, energy synchronization, LCG or distributed controller is required. Native current stream pointer is supplied explicitly.",
+      "runtime_requirement": "Build official extension without arithmetic edits, bind loaded module/source hashes, and execute both selected fixed modes.",
+      "evidence": [
+        "eden_utils.cpp:133-180,425-429",
+        "cuda_hadamard.cu:1564-1632"
+      ],
+      "scope": "Selected finite contiguous single-device BF16 inputs; fixed stored b4/b8, chunk16, strategy3; no full distributed-system claim",
+      "runtime_evidence": [
+        "logs/d0_execution.json",
+        "logs/d0_fresh_process_decode.json",
+        "logs/d0_packet_parse_review.json",
+        "logs/d0_boundary_probes.json"
+      ]
+    },
+    {
+      "id": 2,
+      "status": "pass",
+      "source_answer": "Contiguous CUDA BF16 input/rand_pool, CUDA uint8 packed buffer, BF16 output. Chosen mode requires positive n divisible by 256, so minimal n=256. Main signed lattice code range is [-((2^(b-1))-1),+((2^(b-1))-1)], unsigned stored codes 0..2^b-2 in exactly b bits; 2^b-1 is unused by encoder. Sixteen-value group scales are UINT8 ceil codes; native helper clamps them to [1,255]. A BF16 super-scale-unit covers 256 values. BF16 values/randomness are converted to float for arithmetic; MEE constants/table originate as FP16; final multiplication converts to BF16 round-to-nearest.",
+      "extreme_behavior": "Metadata/length validation is explicit, but source API does not promise rejection of every nonfinite value or cross-device argument. Numeric helpers floor positive scales at 1e-30, add 1e-7 to raw scales, replace selected nonfinite intermediates, and saturate signed codes. They do not establish finite outputs for the whole finite BF16 input domain. Preserve observed overflow/nonfinite behavior; do not silently clip or change dtype.",
+      "tail_policy": "Declared wrapper padding P=256*ceil(D/256), followed by trimming to D. Direct native n=257 is illegal; wrapper tail support is not a native arbitrary-length claim.",
+      "evidence": [
+        "eden_utils.cpp:42-52,133-180",
+        "cuda_hierarchical_mee.cu:18-59,88-96,117-137,273-343",
+        "cuda_hadamard.cu:873-898"
+      ],
+      "scope": "Selected finite contiguous single-device BF16 inputs; fixed stored b4/b8, chunk16, strategy3; no full distributed-system claim",
+      "runtime_evidence": [
+        "logs/d0_execution.json",
+        "logs/d0_fresh_process_decode.json",
+        "logs/d0_packet_parse_review.json",
+        "logs/d0_boundary_probes.json"
+      ]
+    },
+    {
+      "id": 3,
+      "status": "pass",
+      "source_answer": "Each superchunk interleaves 16 groups of (16*b/8 payload bytes + 1 UINT8 scale byte), then 2 BF16 scale-unit bytes. Decoder consumes packed bytes and predeclared static n/nbits/chunk_size/strategy/dtype plus the fixed MEE table; it has no source-input, RNG-pool, raw-max or per-input hidden-scale argument.",
+      "expected_budget": {
+        "logical_numel": 818048,
+        "padded_numel": 818176,
+        "b4": {
+          "payload_bytes": 409088,
+          "scale_code_bytes": 51136,
+          "super_scale_bytes": 6392,
+          "total_bytes": 466616
+        },
+        "b8": {
+          "payload_bytes": 818176,
+          "scale_code_bytes": 51136,
+          "super_scale_bytes": 6392,
+          "total_bytes": 875704
+        }
+      },
+      "accounting_caveat": "These are source-derived expectations, not measured packet sizes. Use actual tight uint8 buffer byte counts and independent parsing. Fixed tensor shape/config and the MEE codebook are declared shared state; if variable per-input metadata is sent, charge it. RNG is encoder-local setup, not decoder side information.",
+      "runtime_requirement": "Copy serialized packet into a fresh buffer, remove/change original input/RNG and decode into distinct sentinel-filled output; compare with original decoding and independently parsed components.",
+      "evidence": [
+        "eden_utils.cpp:33-40,163-180",
+        "scaling_quantization_algorithm.md:330-370",
+        "cuda_hierarchical_mee.cu:424-526"
+      ],
+      "scope": "Selected finite contiguous single-device BF16 inputs; fixed stored b4/b8, chunk16, strategy3; no full distributed-system claim",
+      "runtime_evidence": [
+        "logs/d0_execution.json",
+        "logs/d0_fresh_process_decode.json",
+        "logs/d0_packet_parse_review.json",
+        "logs/d0_boundary_probes.json"
+      ]
+    },
+    {
+      "id": 4,
+      "status": "pass",
+      "source_answer": "Official functional self-test make_rand creates a CPU torch.Generator, manual_seed(seed), torch.rand(n,dtype=float32), casts to input dtype, then uploads to CUDA. This direct caller-supplied rand_pool is an official legal state interface. Use that exact generation path, a bounded_discovery_v1 key containing input/worker/config/repeat, separate generators and buffers for workers, and preserve state/pool hashes.",
+      "independence_scope": "Separate keyed PRNG states and non-reused worker buffers give the declared operationally independent pseudorandom-stream design. Different integer seeds or unequal sample hashes alone are not a mathematical proof of statistical independence. The configuration is the fixed local codec with independent worker pools, not the full distributed DynamiQ correlated-pool protocol.",
+      "zero_endpoint_semantics": {
+        "fp32_interval_mapping_to_bf16_one": "[0.998046875,1)",
+        "native_formula": "floor(value)+ceil((value-floor(value))-rand_value), then signed-range clamp",
+        "integer_value_random_one": "At frac=0 and rand=1 the increment is -1, not 0. For a zero input this may yield a small nonzero output through the positive epsilon scale.",
+        "official_reference": "stochastic_code_float uses the same ceil formula.",
+        "interpretation": "A legal reachable finite-precision state to record, not an established bug or actionable scientific finding. Do not switch to torch.rand(dtype=BF16), clamp the random pool below 1, or modify native arithmetic to remove it."
+      },
+      "runtime_requirement": "Same seed/state -> identical pool and packet; independently keyed worker pools are not aliased/reused; log pool range/number of exact ones and hashes. Endpoints 0 and 1 may be deterministic interface probes, clearly separated from D1 random repetitions.",
+      "evidence": [
+        "test_scaling_quantization_functional.py:105-111,281-284",
+        "cuda_hierarchical_mee.cu:117-137"
+      ],
+      "scope": "Selected finite contiguous single-device BF16 inputs; fixed stored b4/b8, chunk16, strategy3; no full distributed-system claim",
+      "runtime_evidence": [
+        "logs/d0_execution.json",
+        "logs/d0_fresh_process_decode.json",
+        "logs/d0_packet_parse_review.json",
+        "logs/d0_boundary_probes.json"
+      ]
+    },
+    {
+      "id": 5,
+      "status": "pass",
+      "source_answer": "Official self-tests exist but this independent review has not run them. Relevant selected BF16/strategy3 reference agreement uses atol=0.08 and rtol=0.08, unchanged. Official reference is not a bitwise oracle for the encoder's float arithmetic.",
+      "runtime_requirement": "Run original relevant self-test entrypoints with untouched tolerance rules; record selected/full test scope and every failed/skipped combination. Small checks include zero, constant/mixed sign, sparse large value, seeded random, one real input, n=256 and logical tail257->512, input/RNG immutability, tight bytes, independent decode and repeatability.",
+      "interpretation": "BF16 identity has zero codec error in D1; official quantized zero-case is measured behavior, not an a-priori zero-error pass criterion. Native repeated decode of the identical packet may still be tested bitwise; do not force original CPU-reference/GPU bitwise equality beyond its contract.",
+      "evidence": [
+        "test_scaling_quantization_functional.py:281-290,297-320,323-348,389-396"
+      ],
+      "scope": "Selected finite contiguous single-device BF16 inputs; fixed stored b4/b8, chunk16, strategy3; no full distributed-system claim",
+      "runtime_evidence": [
+        "logs/d0_execution.json",
+        "logs/d0_fresh_process_decode.json",
+        "logs/d0_packet_parse_review.json",
+        "logs/d0_boundary_probes.json"
+      ]
+    }
+  ],
+  "public_history": {
+    "retrieval_date": "2026-11-04",
+    "api_records": [
+      {
+        "path": "logs/official_api_commit_history.json",
+        "url": "https://api.github.com/repos/CharlesHan24/DynamiQ/commits?per_page=20",
+        "sha256": "a7a97a757fe732759c5aa6ab6e4e69a1dd36030616c44768c0327a4ed59413d8",
+        "bytes": 8887,
+        "serialization": "Parsed official API response saved as UTF-8 pretty JSON; file hash identifies retained record."
+      },
+      {
+        "path": "logs/official_api_commit_head.json",
+        "url": "https://api.github.com/repos/CharlesHan24/DynamiQ/commits/96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+        "sha256": "cf503ac69c3f5617914b76a11955df7d2ae5a3b99f914f082411e5bf1abe696e",
+        "bytes": 6779,
+        "serialization": "Parsed official API response saved as UTF-8 pretty JSON; file hash identifies retained record."
+      },
+      {
+        "path": "logs/official_api_issues.json",
+        "url": "https://api.github.com/repos/CharlesHan24/DynamiQ/issues?state=all&per_page=100",
+        "sha256": "5239a7754876b9a70871c45e41f1bd9abbd91ed2de67af926c1cfcc9c9377d51",
+        "bytes": 4,
+        "serialization": "Parsed official API response saved as UTF-8 pretty JSON; file hash identifies retained record."
+      },
+      {
+        "path": "logs/official_api_pulls.json",
+        "url": "https://api.github.com/repos/CharlesHan24/DynamiQ/pulls?state=all&per_page=100",
+        "sha256": "5239a7754876b9a70871c45e41f1bd9abbd91ed2de67af926c1cfcc9c9377d51",
+        "bytes": 4,
+        "serialization": "Parsed official API response saved as UTF-8 pretty JSON; file hash identifies retained record."
+      },
+      {
+        "path": "logs/official_api_branches.json",
+        "url": "https://api.github.com/repos/CharlesHan24/DynamiQ/branches?per_page=100",
+        "sha256": "0333ed4137d550a9b0ec36555c635a49960dfc6a07c5b812383c92669b02a006",
+        "bytes": 250,
+        "serialization": "Parsed official API response saved as UTF-8 pretty JSON; file hash identifies retained record."
+      }
+    ],
+    "observed_main_commit": "96da2ee480bbfd8e2049de3fbd8595cc9d7a30b8",
+    "observed_commit_count": 2,
+    "observed_issue_count": 0,
+    "observed_pull_count": 0,
+    "latest_change": "2026-09-29: only testbed_evaluation/train_llm_causal.py DDP bucket settings changed to 256 MB; no codec file changed.",
+    "preceding_commit": "7bb4ad89f4cd0df266e9881c69915f6c9a2ae026 (2026-08-06 initial artifact release)",
+    "conclusion": "No publicly listed post-freeze codec repair was found in the inspected official branch/history/issues/pulls. This is not a guarantee that no unpublished issue or repair exists.",
+    "version_decision": "Keep requested fixed commit. Never reuse old local CPU index repair as an official-code finding."
+  },
+  "official_entrypoints": [
+    "eden_utils.scaling_compress(src,dst,rand_pool,n,nbits,chunk_size,stream_p,strategy)",
+    "eden_utils.scaling_decompress(src,dst,n,nbits,chunk_size,stream_p,strategy)"
+  ],
+  "selected_configuration": {
+    "input_dtype": "bfloat16",
+    "output_dtype": "bfloat16",
+    "stored_code_bits": [
+      4,
+      8
+    ],
+    "chunk_size": 16,
+    "strategy": 3,
+    "strategy_name": "hierarchical MEE",
+    "native_min_numel": 256,
+    "native_numel_multiple": 256,
+    "tail_glue": "Zero-pad to 256*ceil(D/256); crop to logical D; do not divide predivided fixture again",
+    "arithmetic_profile": "Official --use_fast_math CUDA code; BF16 inputs/pools promoted to float, FP16-derived constants and LUT, BF16 final output; unchanged official arithmetic",
+    "scale_format": "Per16-values UINT8 ceil scale code [1,255]; per256-values BF16 scale unit",
+    "code_range": "Unsigned [0,2^b-2] packed in exactly b bits; all-ones code unused by encoder"
+  },
+  "build_attempts": [
+    {
+      "attempt": "a01",
+      "status": "build_failed",
+      "elapsed_seconds": 5.613334199999372,
+      "repair": null,
+      "manifest": "logs/official_build_a01.json",
+      "console": "logs/official_build_a01_console.log"
+    },
+    {
+      "attempt": "a02",
+      "status": "build_failed",
+      "elapsed_seconds": 52.19045720000213,
+      "repair": "Python -X utf8 and host UTF-8 encoding; remove two unused POSIX includes",
+      "manifest": "logs/official_build_a02.json",
+      "console": "logs/official_build_a02_console.log"
+    },
+    {
+      "attempt": "a03",
+      "status": "compiled_and_loaded",
+      "elapsed_seconds": 56.63587479999842,
+      "repair": "Python -X utf8 and host UTF-8 encoding; remove two unused POSIX includes; isolated official CUDA 11.8 cuRAND headers added to include search path",
+      "manifest": "logs/official_build_a03.json",
+      "console": "logs/official_build_a03_console.log"
+    }
+  ],
+  "build_repair_rounds": 2,
+  "arithmetic_changes": false,
+  "wrapper_changes": [
+    "MSVC /O2 and /std:c++17 map official GCC host flags; keep official CUDA -O3 --use_fast_math -lineinfo -std=c++17",
+    "Python -X utf8 and MSVC UTF-8 source character set overcome GBK default",
+    "Omit two unused unistd.h includes in compiled copies only; original official blobs remain unchanged",
+    "Add verified NVIDIA CUDA11.8 cuRAND10.3.0.86 headers through isolated include path",
+    "Python wrapper adds selected legal-domain guards, owned buffers, zero padding/crop, explicit current stream and artifact SHA256 verification"
+  ],
+  "source_diff": {
+    "path": "build/official_a03/source_glue.diff",
+    "sha256": "15e4fc4239d8da198a176646bc7374286a852d8a017cca233d610d12db199a90"
+  },
+  "official_selftest": {
+    "status": "pass",
+    "configurations": 48,
+    "operations_per_configuration": [
+      "run_roundtrip (also decompress_add)",
+      "run_dec_comp"
+    ],
+    "test_path": "E:\\dacomp\\research\\gradient_comm_lab\\upstream\\bounded_discovery_v1\\dynamiq\\cuda_kernels\\tests\\test_scaling_quantization_functional.py",
+    "test_sha256": "f57e40a11f1ca66b11d6cfcfb59e519860bf90e1abaec0bdefcce290e4fa1781",
+    "tolerances": "Official unchanged per dtype and strategy"
+  },
+  "small_input_case_count": 14,
+  "independent_decode": {
+    "status": "pass",
+    "packet_count": 14,
+    "fresh_process": true,
+    "input_or_random_pool_supplied": false,
+    "static_inputs": "Fixed dtype, length, bitwidth, chunk size and strategy; code-generated input-independent LUT"
+  },
+  "rng": {
+    "generation": "CPU torch.Generator.manual_seed(seed); torch.rand FP32 -> BF16 -> CUDA, matching official functional test",
+    "local_marginal": "BF16 rounding of FP32 uniform PRNG samples, including reachable exact 1.0; not an ideal continuous distribution",
+    "across_worker_relation": "Use separately keyed PRNG states and separately allocated pools; no claim of mathematically proven independence or original full-system correlation",
+    "repeatability": "Same pool yields byte-identical packet; same seed creates identical pool",
+    "exact_one_behavior": "frac=0, rand=1 gives increment -1 under official ceil rule; endpoint zero probes yield about 1e-7 and match official reference"
+  },
+  "invalid_input_scope": "Wrapper rejects nonfinite inputs and illegal metadata. Native host n=0/257 rejection was checked. No claim that native itself validates every nonfinite or cross-device input.",
+  "overflow_scope": "Sampled +/-1e30 and +/-BF16max produced finite outputs; tiny +/-1e-35 samples collapsed to zero. This is observed boundary behavior, not a proof over the finite BF16 domain; D1 checks every result for nonfinites.",
+  "persistent_state": {
+    "source_defined_device_static_data_bytes": 9288,
+    "allocated_lut_bytes": 4608,
+    "device_symbol_bytes": 4680,
+    "measurement": "Source-defined array sizes (9*256 half plus 9*(4+256) half); not measured allocator footprint or total module/GPU memory",
+    "per_input_auxiliary_bytes": 0
+  },
+  "aggregate_comparability": {
+    "status": "pass",
+    "definition": "One-shot sum of independently decoded local packets using FP64 accumulation versus FP64 sum of original predivided BF16 inputs",
+    "constraints": "Freeze input/worker/config/repeat seeds before D1; complete worker coverage, no duplicated pools, no ring reinterpretation"
+  },
+  "resource_usage": {
+    "wall_window_seconds": 1185.381804,
+    "conservative_active_upper_bound_hours": 0.32927272333333335,
+    "cap_hours": 4,
+    "build_repair_rounds": 2,
+    "cap_build_repair_rounds": 2
+  },
+  "evidence": [
+    {
+      "path": "logs/official_source_manifest.json",
+      "sha256": "f2e43f430c3d85f5c11c12581ddade797f0d6543d572075071943b2a834f58c9"
+    },
+    {
+      "path": "logs/official_contract_review.json",
+      "sha256": "de8c97a04e7a9f28813e2bb05dc55129f0a38ec84f2b5492268d3f85a2eca0f5"
+    },
+    {
+      "path": "logs/official_build_a01.json",
+      "sha256": "8b21c58f1e974f2bd9e4b8f27e6b7cf4f812007414ed367c46e575c55fc95b29"
+    },
+    {
+      "path": "logs/official_build_a02.json",
+      "sha256": "63701260bd278a36e7f99347f205ee13be318fe15ae3ad417cfa10b72a3c993f"
+    },
+    {
+      "path": "logs/official_build_a03.json",
+      "sha256": "7295a8086aba8679b3e90348cae4857ea4f5ba59ebd6560b57bcfe1f4fe97625"
+    },
+    {
+      "path": "logs/official_curand_dependency.json",
+      "sha256": "67e7970960021fd8a9cadee19700aab0ffc7b4510ef0eaf3b55ec9ef94c87399"
+    },
+    {
+      "path": "logs/d0_execution.json",
+      "sha256": "f8a6895ea82d69050f881d007fb331042ff456dd2b66bdb893a0aa0561554b04"
+    },
+    {
+      "path": "logs/d0_fresh_process_decode.json",
+      "sha256": "ae59713a635a08182f88722551964dd9ce99572f22ed3b434456cca46fbbb610"
+    },
+    {
+      "path": "logs/d0_packet_parse_review.json",
+      "sha256": "f0de6711dc48a31f1e7f3ea883ca6fa12a27735a01b49d6a8e0b9302870637ae"
+    },
+    {
+      "path": "logs/d0_boundary_probes.json",
+      "sha256": "fa9fbf691ff9801dbc65a69b531ddefacf920059f7472437347bfb7b7c8b92cb"
+    },
+    {
+      "path": "logs/d0_rng_state_checks.json",
+      "sha256": "ae82bc2472e9323fe6bc78e41854718add0d12d4bb4db4488adea4f6316f660d"
+    }
+  ]
+}

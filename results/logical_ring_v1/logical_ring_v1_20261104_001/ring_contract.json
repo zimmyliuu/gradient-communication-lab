@@ -1,0 +1,52 @@
+{
+  "schema_version": "logical_ring_v1.0",
+  "run_id": "logical_ring_v1_20261104_001",
+  "stage": "G2a",
+  "scope": "fixed_b4_b8_explicit_thresholds_single_gpu_logical_ring",
+  "world_sizes": [
+    1,
+    2,
+    4
+  ],
+  "bits": [
+    4,
+    8
+  ],
+  "raw_fp32": "FP32 -> BF16 -> BF16 divide N -> pad -> ring -> trim -> FP32; N1 identity",
+  "predivided_bf16": "no division; BF16 ring sum -> trim; N1 identity",
+  "padding": "P=N*1024*ceil(D/(N*1024)); L=P/N for N>1,D>0",
+  "bypass": "N1 or D0: original entry dtype, zero messages and codec/threshold events",
+  "route": "right neighbor; RS h0..N-2 chunk(r-h)%N; sink chunk(r+1)%N encode+selfdecode; AG h0..N-2 sends(r+1-h)%N receives(r-h)%N",
+  "ownership": "Owned three-buffer clone after encode, owned decoded clone before reuse, round barriers; AG forwards owned immutable sink packet; one current CUDA stream",
+  "ledger": "Actual tensor numel*element_size for payload,scale_codes,top_scales; audit metadata is not transmitted header",
+  "expected": "B=L*(b+1)/8+L/16+2*L/256; sends2*N*(N-1); encodesN*N; AG no encode",
+  "cpu_reference_path": "E:\\dacomp\\research\\spl_model_communication\\src\\splcomm\\dynamiq.py",
+  "cpu_reference_sha256": "9296231d3a29d3fb4cfa1d12a2ffe5a1a4d2922e62c51003fb214c59303e8ea0",
+  "inherited_codec_contract_sha256": "3ba9895a4a22ab8d6c11f2838e9490b20d58d4fd7c5d7536129a12d9d9d51186",
+  "build_manifest": "logs/cuda_build_manifest.json",
+  "build_manifest_sha256": "d973431318e9724ed42f45447e9bdeeb022dbb3297daf0c9bb75a5999d1587fe",
+  "module_sha256": "c4e37ff9394580bb15fe5d277115f616a439f2741528dff6826bc77e85f06b58",
+  "input_manifest_sha256": "d84bc4288debcf71634b037d1f9128672bcd39e578372cbc9b0137fb165463dc",
+  "threshold_manifest_sha256": "727cb083de7e7e624a1bafa3882c7bdb4e059cf1c2056035e8fb871d80e5f17d",
+  "luts": {
+    "4": {
+      "sha256": "45f16f9dbf9b0dae8beaec6718dacb4041ede86fe6c4271ff63653c2318e6e14",
+      "shape": [
+        33
+      ],
+      "dtype": "torch.bfloat16",
+      "byte_order": "little",
+      "bytes": 66
+    },
+    "8": {
+      "sha256": "523529db76c936d928cad6fd23afb362874aa7182d374ba1b8ddb10cce3715cd",
+      "shape": [
+        513
+      ],
+      "dtype": "torch.bfloat16",
+      "byte_order": "little",
+      "bytes": 1026
+    }
+  },
+  "formal_execution_not_started": true
+}

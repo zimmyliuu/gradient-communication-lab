@@ -1,0 +1,14 @@
+{
+  "captured_at": "2026-11-04T18:54:05.286594+08:00",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.10.3 (tags/v3.10.3:a342a49, Mar 16 2022, 13:07:40) [MSC v.1929 64 bit (AMD64)]",
+  "torch": "2.4.1+cu118",
+  "cuda_runtime": "11.8",
+  "cuda_available": true,
+  "device": "NVIDIA RTX 4000 Ada Generation",
+  "prior_toolchain": "E:\\dacomp\\research\\gradient_comm_lab\\results\\gpu_codec_v1\\gpu_codec_v1_20261104_001\\environment.json",
+  "prior_environment_sha256": "3f4781c5c8b0e8c2533e7a3d5191182069ccd744e99ea8427198c3c587e298ce",
+  "binary_reused": true,
+  "no_install_or_build": true,
+  "execution": "single GPU sequential logical workers; not a network benchmark"
+}

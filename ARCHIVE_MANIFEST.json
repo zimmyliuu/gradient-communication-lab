@@ -1,0 +1,2044 @@
+{
+  "schema_version": "gradient_comm_project_archive_v1",
+  "as_of": "2026-11-05",
+  "source_root": "E:/dacomp/research/gradient_comm_lab",
+  "files": [
+    {
+      "path": "PROJECT_SUMMARY.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/PROJECT_SUMMARY.md",
+      "transform": "exact_copy",
+      "source_sha256": "6bfa77c387833b40cca419eb122ac64234917d030f458332c69812a9a88c5e74",
+      "bytes": 8942,
+      "sha256": "6bfa77c387833b40cca419eb122ac64234917d030f458332c69812a9a88c5e74"
+    },
+    {
+      "path": "DATA_INDEX.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/DATA_INDEX.md",
+      "transform": "exact_copy",
+      "source_sha256": "46a13f0fdaea1c0b4691ec3657926135de5d56288e7c7e039826ba8afeb36089",
+      "bytes": 14902,
+      "sha256": "46a13f0fdaea1c0b4691ec3657926135de5d56288e7c7e039826ba8afeb36089"
+    },
+    {
+      "path": "README.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/README.md",
+      "transform": "exact_copy",
+      "source_sha256": "cb037439adad95d8ac9313f1e9187a1907d01d0134b3f432c85c61cb940c7ded",
+      "bytes": 4052,
+      "sha256": "cb037439adad95d8ac9313f1e9187a1907d01d0134b3f432c85c61cb940c7ded"
+    },
+    {
+      "path": "TECHNICAL_PLAN.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/TECHNICAL_PLAN.md",
+      "transform": "exact_copy",
+      "source_sha256": "380304b6c78d845146ae59e5d656473390028ba6a0410c5cc1957be6ceea1bc0",
+      "bytes": 29002,
+      "sha256": "380304b6c78d845146ae59e5d656473390028ba6a0410c5cc1957be6ceea1bc0"
+    },
+    {
+      "path": "DELIVERY_FORMAT.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/DELIVERY_FORMAT.md",
+      "transform": "exact_copy",
+      "source_sha256": "5f29ca95b943e271df514b23438f4a1cdbe43ff0a25e2d60f85cda1eee04c7ca",
+      "bytes": 13684,
+      "sha256": "5f29ca95b943e271df514b23438f4a1cdbe43ff0a25e2d60f85cda1eee04c7ca"
+    },
+    {
+      "path": "src/g0_probe.cpp",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/g0_probe.cpp",
+      "transform": "exact_copy",
+      "source_sha256": "b220063572ef82169e996504b7665989cfacb0957c42473113c29a5cc062adeb",
+      "bytes": 158,
+      "sha256": "b220063572ef82169e996504b7665989cfacb0957c42473113c29a5cc062adeb"
+    },
+    {
+      "path": "src/g0_probe.cu",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/g0_probe.cu",
+      "transform": "exact_copy",
+      "source_sha256": "e39cfa78f9959f3d8f917695bdeef40a423c7459fe9e0a040c8127c4cd9338ae",
+      "bytes": 692,
+      "sha256": "e39cfa78f9959f3d8f917695bdeef40a423c7459fe9e0a040c8127c4cd9338ae"
+    },
+    {
+      "path": "src/gradient_comm_lab/__init__.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/gradient_comm_lab/__init__.py",
+      "transform": "exact_copy",
+      "source_sha256": "10bfe6b4e29e8138576b15f2ce87736e5db130a384eb327bc1db24e7385c55af",
+      "bytes": 80,
+      "sha256": "10bfe6b4e29e8138576b15f2ce87736e5db130a384eb327bc1db24e7385c55af"
+    },
+    {
+      "path": "src/gradient_comm_lab/bounded_discovery/common.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/gradient_comm_lab/bounded_discovery/common.py",
+      "transform": "exact_copy",
+      "source_sha256": "eb97093c5a1865c3e9d1de2888a7aca38ffa05b204e7b8eff3ebe4df16d44b04",
+      "bytes": 3300,
+      "sha256": "eb97093c5a1865c3e9d1de2888a7aca38ffa05b204e7b8eff3ebe4df16d44b04"
+    },
+    {
+      "path": "src/gradient_comm_lab/bounded_discovery/official_codec.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/gradient_comm_lab/bounded_discovery/official_codec.py",
+      "transform": "exact_copy",
+      "source_sha256": "3a0c49f5a6c27c19dd74efdeb4a97af2ef9122f37eda750faa2935ac7915a633",
+      "bytes": 7883,
+      "sha256": "3a0c49f5a6c27c19dd74efdeb4a97af2ef9122f37eda750faa2935ac7915a633"
+    },
+    {
+      "path": "src/gradient_comm_lab/bounded_discovery/uniform_codec.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/gradient_comm_lab/bounded_discovery/uniform_codec.py",
+      "transform": "exact_copy",
+      "source_sha256": "4184ee798c3ddc63940f59b252d985f84d91e148d67071284da9e1e3de55410f",
+      "bytes": 12878,
+      "sha256": "4184ee798c3ddc63940f59b252d985f84d91e148d67071284da9e1e3de55410f"
+    },
+    {
+      "path": "src/gradient_comm_lab/cpu_reference.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/gradient_comm_lab/cpu_reference.py",
+      "transform": "exact_copy",
+      "source_sha256": "4ab03e0c8bed961ed3eaa8bec5a546bf74d76909437d6561032453e3cd59d36b",
+      "bytes": 4749,
+      "sha256": "4ab03e0c8bed961ed3eaa8bec5a546bf74d76909437d6561032453e3cd59d36b"
+    },
+    {
+      "path": "src/gradient_comm_lab/csrc/codec.cpp",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/gradient_comm_lab/csrc/codec.cpp",
+      "transform": "exact_copy",
+      "source_sha256": "8180319b05e23162e2a5ab60c82f7d6f46b33ba1568d939e98ceb57046539924",
+      "bytes": 4808,
+      "sha256": "8180319b05e23162e2a5ab60c82f7d6f46b33ba1568d939e98ceb57046539924"
+    },
+    {
+      "path": "src/gradient_comm_lab/csrc/codec.cu",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/gradient_comm_lab/csrc/codec.cu",
+      "transform": "exact_copy",
+      "source_sha256": "186ddfc271cfea6246441f24974e63aad0a6724953a49580aebb4b5f2c18421a",
+      "bytes": 7292,
+      "sha256": "186ddfc271cfea6246441f24974e63aad0a6724953a49580aebb4b5f2c18421a"
+    },
+    {
+      "path": "src/gradient_comm_lab/cuda_codec.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/gradient_comm_lab/cuda_codec.py",
+      "transform": "exact_copy",
+      "source_sha256": "801b588a2d249e3a754c0d90d4c1bab123976f92153863c486685dbabef3bef4",
+      "bytes": 8622,
+      "sha256": "801b588a2d249e3a754c0d90d4c1bab123976f92153863c486685dbabef3bef4"
+    },
+    {
+      "path": "src/gradient_comm_lab/epsilon_diagnostic/codec.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/gradient_comm_lab/epsilon_diagnostic/codec.py",
+      "transform": "exact_copy",
+      "source_sha256": "3a0c49f5a6c27c19dd74efdeb4a97af2ef9122f37eda750faa2935ac7915a633",
+      "bytes": 7883,
+      "sha256": "3a0c49f5a6c27c19dd74efdeb4a97af2ef9122f37eda750faa2935ac7915a633"
+    },
+    {
+      "path": "src/gradient_comm_lab/epsilon_diagnostic/packet.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/gradient_comm_lab/epsilon_diagnostic/packet.py",
+      "transform": "exact_copy",
+      "source_sha256": "474b8bda30163702d44192d2cd0ea3039472f54cf04de814ed300a99ffb9123b",
+      "bytes": 2164,
+      "sha256": "474b8bda30163702d44192d2cd0ea3039472f54cf04de814ed300a99ffb9123b"
+    },
+    {
+      "path": "src/gradient_comm_lab/fixtures_v2.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/gradient_comm_lab/fixtures_v2.py",
+      "transform": "exact_copy",
+      "source_sha256": "cd678feacc24605eaf2ac7d9f5d87f43748fbda4eff995e61ff82e30de454701",
+      "bytes": 8874,
+      "sha256": "cd678feacc24605eaf2ac7d9f5d87f43748fbda4eff995e61ff82e30de454701"
+    },
+    {
+      "path": "src/gradient_comm_lab/logical_ring.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/gradient_comm_lab/logical_ring.py",
+      "transform": "exact_copy",
+      "source_sha256": "6477062c4e658e71b5f0c2ef1dfb7bbaf43543a7fc7f462b7a33a52cc3786660",
+      "bytes": 19388,
+      "sha256": "6477062c4e658e71b5f0c2ef1dfb7bbaf43543a7fc7f462b7a33a52cc3786660"
+    },
+    {
+      "path": "src/gradient_comm_lab/ring_fixtures.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/gradient_comm_lab/ring_fixtures.py",
+      "transform": "exact_copy",
+      "source_sha256": "ff73433a9a8129d5ba43d1eddd123c97af10857043914bce4fc26622ee6aaed4",
+      "bytes": 3100,
+      "sha256": "ff73433a9a8129d5ba43d1eddd123c97af10857043914bce4fc26622ee6aaed4"
+    },
+    {
+      "path": "src/gradient_comm_lab/ring_reference.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/gradient_comm_lab/ring_reference.py",
+      "transform": "exact_copy",
+      "source_sha256": "07d18be871d32ad1331f8df9ed157d0310847a023dbbbec79ca53835d184c4bb",
+      "bytes": 8087,
+      "sha256": "07d18be871d32ad1331f8df9ed157d0310847a023dbbbec79ca53835d184c4bb"
+    },
+    {
+      "path": "src/gradient_comm_lab/torch_codec.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/src/gradient_comm_lab/torch_codec.py",
+      "transform": "exact_copy",
+      "source_sha256": "50bc272876be54db5d42327cce144022b7bf960d82073347479da2eb53f1d794",
+      "bytes": 19635,
+      "sha256": "50bc272876be54db5d42327cce144022b7bf960d82073347479da2eb53f1d794"
+    },
+    {
+      "path": "scripts/audit_cuda_pair_trace.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/audit_cuda_pair_trace.py",
+      "transform": "exact_copy",
+      "source_sha256": "5e40b01f08e3d8bb5f28f73a78e0c9b98cec975d78d11e8909119337e3e7adae",
+      "bytes": 9025,
+      "sha256": "5e40b01f08e3d8bb5f28f73a78e0c9b98cec975d78d11e8909119337e3e7adae"
+    },
+    {
+      "path": "scripts/audit_cuda_trace_v2.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/audit_cuda_trace_v2.py",
+      "transform": "exact_copy",
+      "source_sha256": "3f0c4736708992b1b53262337db7f5d799623d1ca5b1ff061550f9eefae4b14d",
+      "bytes": 7605,
+      "sha256": "3f0c4736708992b1b53262337db7f5d799623d1ca5b1ff061550f9eefae4b14d"
+    },
+    {
+      "path": "scripts/audit_logical_ring.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/audit_logical_ring.py",
+      "transform": "exact_copy",
+      "source_sha256": "7e270227817156ae9498a5f0644a8ca59fb83ac6da68987379a91b4de95d8e43",
+      "bytes": 59172,
+      "sha256": "7e270227817156ae9498a5f0644a8ca59fb83ac6da68987379a91b4de95d8e43"
+    },
+    {
+      "path": "scripts/benchmark_cuda_pair.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/benchmark_cuda_pair.py",
+      "transform": "exact_copy",
+      "source_sha256": "06d3314b058ea82f211bfc58e6ae8f83039045d36375872c5c5935e0de2160a5",
+      "bytes": 23264,
+      "sha256": "06d3314b058ea82f211bfc58e6ae8f83039045d36375872c5c5935e0de2160a5"
+    },
+    {
+      "path": "scripts/benchmark_torch_codec.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/benchmark_torch_codec.py",
+      "transform": "exact_copy",
+      "source_sha256": "764e3864d64d8edd297ed47abb7e2fd694866b6b121457f5818bf656472ab82a",
+      "bytes": 17961,
+      "sha256": "764e3864d64d8edd297ed47abb7e2fd694866b6b121457f5818bf656472ab82a"
+    },
+    {
+      "path": "scripts/bounded_discovery/audit_d0_packets.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/bounded_discovery/audit_d0_packets.py",
+      "transform": "exact_copy",
+      "source_sha256": "59df82422f1266eac20132d19fe9250a8fa03a155069eb95ae254aaac5e9c163",
+      "bytes": 7193,
+      "sha256": "59df82422f1266eac20132d19fe9250a8fa03a155069eb95ae254aaac5e9c163"
+    },
+    {
+      "path": "scripts/bounded_discovery/build_official.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/bounded_discovery/build_official.py",
+      "transform": "exact_copy",
+      "source_sha256": "547c4ae7ae2e28403cc52c10b42d75899b833d4a287d1089449ecda918631e67",
+      "bytes": 5667,
+      "sha256": "547c4ae7ae2e28403cc52c10b42d75899b833d4a287d1089449ecda918631e67"
+    },
+    {
+      "path": "scripts/bounded_discovery/check_uniform.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/bounded_discovery/check_uniform.py",
+      "transform": "exact_copy",
+      "source_sha256": "ea9588ffabced2f8f73a361457d6cbed45bd68d6123ac1e5f98d6969a3b10f5f",
+      "bytes": 14559,
+      "sha256": "ea9588ffabced2f8f73a361457d6cbed45bd68d6123ac1e5f98d6969a3b10f5f"
+    },
+    {
+      "path": "scripts/bounded_discovery/fetch_curand_headers.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/bounded_discovery/fetch_curand_headers.py",
+      "transform": "exact_copy",
+      "source_sha256": "4a20a708c6d9c0f8dac29285b2f6418180d8d9fc1076be83819a1e7702f176a5",
+      "bytes": 2357,
+      "sha256": "4a20a708c6d9c0f8dac29285b2f6418180d8d9fc1076be83819a1e7702f176a5"
+    },
+    {
+      "path": "scripts/bounded_discovery/fetch_official.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/bounded_discovery/fetch_official.py",
+      "transform": "exact_copy",
+      "source_sha256": "d7e5ca5b51f3a3a8fbda034efe7c20b537c43057e4334ed86465b0cf63a7f8ec",
+      "bytes": 2699,
+      "sha256": "d7e5ca5b51f3a3a8fbda034efe7c20b537c43057e4334ed86465b0cf63a7f8ec"
+    },
+    {
+      "path": "scripts/bounded_discovery/finalize_qualification.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/bounded_discovery/finalize_qualification.py",
+      "transform": "exact_copy",
+      "source_sha256": "b63ef72a96983d3982aba556a74ab43244d955cff9cb17d97c1773693a9064eb",
+      "bytes": 11316,
+      "sha256": "b63ef72a96983d3982aba556a74ab43244d955cff9cb17d97c1773693a9064eb"
+    },
+    {
+      "path": "scripts/bounded_discovery/freeze_comparison.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/bounded_discovery/freeze_comparison.py",
+      "transform": "exact_copy",
+      "source_sha256": "965b6ba854fb609d071571670211bd3e2fb0788cce52864cfedbd82c433e639a",
+      "bytes": 9293,
+      "sha256": "965b6ba854fb609d071571670211bd3e2fb0788cce52864cfedbd82c433e639a"
+    },
+    {
+      "path": "scripts/bounded_discovery/prepare_inputs.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/bounded_discovery/prepare_inputs.py",
+      "transform": "exact_copy",
+      "source_sha256": "c5601981a77ecfba243edee58d3598e6cab81faf928c101a1a4726025371ddfa",
+      "bytes": 2234,
+      "sha256": "c5601981a77ecfba243edee58d3598e6cab81faf928c101a1a4726025371ddfa"
+    },
+    {
+      "path": "scripts/bounded_discovery/probe_official_boundaries.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/bounded_discovery/probe_official_boundaries.py",
+      "transform": "exact_copy",
+      "source_sha256": "67030d4e675b14f68fea5bb9398064889e5de89685148bcde84f1adccee08712",
+      "bytes": 2623,
+      "sha256": "67030d4e675b14f68fea5bb9398064889e5de89685148bcde84f1adccee08712"
+    },
+    {
+      "path": "scripts/bounded_discovery/qualify_official.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/bounded_discovery/qualify_official.py",
+      "transform": "exact_copy",
+      "source_sha256": "f557b7c8a4c72c69f94046d7e988b9932f4c55967b8101dfab9da8d40bc66237",
+      "bytes": 9964,
+      "sha256": "f557b7c8a4c72c69f94046d7e988b9932f4c55967b8101dfab9da8d40bc66237"
+    },
+    {
+      "path": "scripts/bounded_discovery/revise_execution.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/bounded_discovery/revise_execution.py",
+      "transform": "exact_copy",
+      "source_sha256": "32053c79b01d0213701155907bec9d157dcb283d86edf3df715419d4157f33e9",
+      "bytes": 3700,
+      "sha256": "32053c79b01d0213701155907bec9d157dcb283d86edf3df715419d4157f33e9"
+    },
+    {
+      "path": "scripts/bounded_discovery/run_comparison.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/bounded_discovery/run_comparison.py",
+      "transform": "exact_copy",
+      "source_sha256": "7a8c27b91d0798869a22dda0db6c9f7d0901443b417d86d52460a6f048518080",
+      "bytes": 16014,
+      "sha256": "7a8c27b91d0798869a22dda0db6c9f7d0901443b417d86d52460a6f048518080"
+    },
+    {
+      "path": "scripts/bounded_discovery/summarize.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/bounded_discovery/summarize.py",
+      "transform": "exact_copy",
+      "source_sha256": "0332102a79a0809fbedece896366492275510bd0d5dc2f6a82ccf966db51980b",
+      "bytes": 44631,
+      "sha256": "0332102a79a0809fbedece896366492275510bd0d5dc2f6a82ccf966db51980b"
+    },
+    {
+      "path": "scripts/bounded_discovery/write_delivery.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/bounded_discovery/write_delivery.py",
+      "transform": "exact_copy",
+      "source_sha256": "cf7aed2ade843f9f53e4a0337185d43c94cda2dee383d2a2c5fd6a09bcbb75e0",
+      "bytes": 23766,
+      "sha256": "cf7aed2ade843f9f53e4a0337185d43c94cda2dee383d2a2c5fd6a09bcbb75e0"
+    },
+    {
+      "path": "scripts/build_cuda_codec.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/build_cuda_codec.py",
+      "transform": "exact_copy",
+      "source_sha256": "5246d1c2fd8f0c2e380596f3f5e9c078cef6d181d17f2eb29074f5632a0187e5",
+      "bytes": 3994,
+      "sha256": "5246d1c2fd8f0c2e380596f3f5e9c078cef6d181d17f2eb29074f5632a0187e5"
+    },
+    {
+      "path": "scripts/check_cuda_codec.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/check_cuda_codec.py",
+      "transform": "exact_copy",
+      "source_sha256": "d6366a5853cf19d61419286c7b8e92007184ff41d1e6394ff5994e6e4d58773c",
+      "bytes": 44563,
+      "sha256": "d6366a5853cf19d61419286c7b8e92007184ff41d1e6394ff5994e6e4d58773c"
+    },
+    {
+      "path": "scripts/check_cuda_codec_replay.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/check_cuda_codec_replay.py",
+      "transform": "exact_copy",
+      "source_sha256": "e2cbc344a38d36a0575b8f6c411483200c13ec36430df08dd6ec56a04b42551d",
+      "bytes": 1049,
+      "sha256": "e2cbc344a38d36a0575b8f6c411483200c13ec36430df08dd6ec56a04b42551d"
+    },
+    {
+      "path": "scripts/check_logical_ring.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/check_logical_ring.py",
+      "transform": "exact_copy",
+      "source_sha256": "283804fd7d875f206695ffc71193ae1fd3b9e55132e3a85ac677306325963d57",
+      "bytes": 35386,
+      "sha256": "283804fd7d875f206695ffc71193ae1fd3b9e55132e3a85ac677306325963d57"
+    },
+    {
+      "path": "scripts/check_original_ring_parity.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/check_original_ring_parity.py",
+      "transform": "exact_copy",
+      "source_sha256": "4cdaa615610f1d3ea439b138f638eaa7d01734fa838960df74c496291e861a66",
+      "bytes": 3618,
+      "sha256": "4cdaa615610f1d3ea439b138f638eaa7d01734fa838960df74c496291e861a66"
+    },
+    {
+      "path": "scripts/check_torch_codec.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/check_torch_codec.py",
+      "transform": "exact_copy",
+      "source_sha256": "5404677b4cfa1291bad64ba5623e97b30860ac5f3cdd3f4e27b26d226d81ad41",
+      "bytes": 25916,
+      "sha256": "5404677b4cfa1291bad64ba5623e97b30860ac5f3cdd3f4e27b26d226d81ad41"
+    },
+    {
+      "path": "scripts/collect_g1a_sources.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/collect_g1a_sources.py",
+      "transform": "exact_copy",
+      "source_sha256": "4ffaff16e5201bc396955e551190aad2421f44955561dbb865eedd7189cf7de2",
+      "bytes": 5310,
+      "sha256": "4ffaff16e5201bc396955e551190aad2421f44955561dbb865eedd7189cf7de2"
+    },
+    {
+      "path": "scripts/collect_g1b_sources.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/collect_g1b_sources.py",
+      "transform": "exact_copy",
+      "source_sha256": "47439723976e26ab2cbc69af1365d6034880e6deb7306790ef3e8081238b92a6",
+      "bytes": 5664,
+      "sha256": "47439723976e26ab2cbc69af1365d6034880e6deb7306790ef3e8081238b92a6"
+    },
+    {
+      "path": "scripts/collect_g1b_traces.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/collect_g1b_traces.py",
+      "transform": "exact_copy",
+      "source_sha256": "336ecac377e9704a332fffd82192db7438b2cacc541b0180106ee58a43374dcc",
+      "bytes": 4055,
+      "sha256": "336ecac377e9704a332fffd82192db7438b2cacc541b0180106ee58a43374dcc"
+    },
+    {
+      "path": "scripts/cupti_trace_collector_v2.cpp",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/cupti_trace_collector_v2.cpp",
+      "transform": "exact_copy",
+      "source_sha256": "b24b871b1a54b883e4f79188ec62c19598e6da6b635b2004cbb5c0c8e97f3e08",
+      "bytes": 7827,
+      "sha256": "b24b871b1a54b883e4f79188ec62c19598e6da6b635b2004cbb5c0c8e97f3e08"
+    },
+    {
+      "path": "scripts/dev_cuda_codec.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/dev_cuda_codec.py",
+      "transform": "exact_copy",
+      "source_sha256": "c7d5f35bc17e7ca71e4e4dce5fdd68eabbe645b35610f67fe5510d8ed14d0ed9",
+      "bytes": 3871,
+      "sha256": "c7d5f35bc17e7ca71e4e4dce5fdd68eabbe645b35610f67fe5510d8ed14d0ed9"
+    },
+    {
+      "path": "scripts/epsilon_diagnostic/analyze.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/epsilon_diagnostic/analyze.py",
+      "transform": "exact_copy",
+      "source_sha256": "9bafa2dda9e6b29905191fb1bf01181b0a8e986aac312c9f44fcf65eac5ec60d",
+      "bytes": 25774,
+      "sha256": "9bafa2dda9e6b29905191fb1bf01181b0a8e986aac312c9f44fcf65eac5ec60d"
+    },
+    {
+      "path": "scripts/epsilon_diagnostic/build_conditions.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/epsilon_diagnostic/build_conditions.py",
+      "transform": "exact_copy",
+      "source_sha256": "1c71b5e30577ae3027f1b3cfc28c8c3a8b54e68fd25354d5dbe7e9197e9f07d6",
+      "bytes": 8397,
+      "sha256": "1c71b5e30577ae3027f1b3cfc28c8c3a8b54e68fd25354d5dbe7e9197e9f07d6"
+    },
+    {
+      "path": "scripts/epsilon_diagnostic/deliver.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/epsilon_diagnostic/deliver.py",
+      "transform": "exact_copy",
+      "source_sha256": "92151c54949ffde7eca86809e8e8aac6ac0b238c9714bfc48fe73d56b8b5d51d",
+      "bytes": 17741,
+      "sha256": "92151c54949ffde7eca86809e8e8aac6ac0b238c9714bfc48fe73d56b8b5d51d"
+    },
+    {
+      "path": "scripts/epsilon_diagnostic/execute.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/epsilon_diagnostic/execute.py",
+      "transform": "exact_copy",
+      "source_sha256": "59f5c771fee9a80c0c52e74a472f74b3bfd735779d1d11afced27a5b8e3e674d",
+      "bytes": 12515,
+      "sha256": "59f5c771fee9a80c0c52e74a472f74b3bfd735779d1d11afced27a5b8e3e674d"
+    },
+    {
+      "path": "scripts/epsilon_diagnostic/freeze.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/epsilon_diagnostic/freeze.py",
+      "transform": "exact_copy",
+      "source_sha256": "851a1c7d79be6d4fe338254387ad01c5b5ccb8120ae372456f3b9ba06c4ad8dc",
+      "bytes": 5395,
+      "sha256": "851a1c7d79be6d4fe338254387ad01c5b5ccb8120ae372456f3b9ba06c4ad8dc"
+    },
+    {
+      "path": "scripts/epsilon_diagnostic/precheck.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/epsilon_diagnostic/precheck.py",
+      "transform": "exact_copy",
+      "source_sha256": "a4f4d17f9a42702a03143a6480c87d4992bf15d26c222a6747dee5aff2138a5a",
+      "bytes": 20424,
+      "sha256": "a4f4d17f9a42702a03143a6480c87d4992bf15d26c222a6747dee5aff2138a5a"
+    },
+    {
+      "path": "scripts/epsilon_diagnostic/run_stages.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/epsilon_diagnostic/run_stages.py",
+      "transform": "exact_copy",
+      "source_sha256": "3cf1c119910156c159f1e5efcc32c4ac21dff6697f714cd6736d1d6cbd05e7b3",
+      "bytes": 2313,
+      "sha256": "3cf1c119910156c159f1e5efcc32c4ac21dff6697f714cd6736d1d6cbd05e7b3"
+    },
+    {
+      "path": "scripts/finalize_g0_delivery.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/finalize_g0_delivery.py",
+      "transform": "exact_copy",
+      "source_sha256": "3da6421894f9192c87def97e709548b315540d79dd7bbf72b210fb3c1025d4f8",
+      "bytes": 23313,
+      "sha256": "3da6421894f9192c87def97e709548b315540d79dd7bbf72b210fb3c1025d4f8"
+    },
+    {
+      "path": "scripts/finalize_logical_ring.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/finalize_logical_ring.py",
+      "transform": "exact_copy",
+      "source_sha256": "99fb7ce8b5e999449c470c7d05bbc0b8e46cf8afebbc544e222e7e5326b5534d",
+      "bytes": 13451,
+      "sha256": "99fb7ce8b5e999449c470c7d05bbc0b8e46cf8afebbc544e222e7e5326b5534d"
+    },
+    {
+      "path": "scripts/freeze_g0_inputs.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/freeze_g0_inputs.py",
+      "transform": "exact_copy",
+      "source_sha256": "02072d48874900452cf0694c21bb3ab36f87a6e6e9aa74dbb8c184b505d760c9",
+      "bytes": 6417,
+      "sha256": "02072d48874900452cf0694c21bb3ab36f87a6e6e9aa74dbb8c184b505d760c9"
+    },
+    {
+      "path": "scripts/minimal_cuda_probe.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/minimal_cuda_probe.py",
+      "transform": "exact_copy",
+      "source_sha256": "4cdf80c624aecc4d7c3442a4267bdee42b3436fb4b102bc9d8396e8a83e9902c",
+      "bytes": 4544,
+      "sha256": "4cdf80c624aecc4d7c3442a4267bdee42b3436fb4b102bc9d8396e8a83e9902c"
+    },
+    {
+      "path": "scripts/package_g1a_delivery.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/package_g1a_delivery.py",
+      "transform": "exact_copy",
+      "source_sha256": "63d3ea1a46316502a5793705e9e91dc4c79c7120f59d0263bc0c96ba6a63d3f3",
+      "bytes": 2306,
+      "sha256": "63d3ea1a46316502a5793705e9e91dc4c79c7120f59d0263bc0c96ba6a63d3f3"
+    },
+    {
+      "path": "scripts/package_g1b_delivery.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/package_g1b_delivery.py",
+      "transform": "exact_copy",
+      "source_sha256": "a208833efdff778830d4e60a1ecf64bd137b98b11b180354738e000fe0af612b",
+      "bytes": 2812,
+      "sha256": "a208833efdff778830d4e60a1ecf64bd137b98b11b180354738e000fe0af612b"
+    },
+    {
+      "path": "scripts/prepare_logical_ring.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/prepare_logical_ring.py",
+      "transform": "exact_copy",
+      "source_sha256": "dc18aec07af6df4e806cb8514b76fab0172c6ca40b34594e99e8b838475b6205",
+      "bytes": 8398,
+      "sha256": "dc18aec07af6df4e806cb8514b76fab0172c6ca40b34594e99e8b838475b6205"
+    },
+    {
+      "path": "scripts/probe_environment.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/probe_environment.py",
+      "transform": "exact_copy",
+      "source_sha256": "409bf74dae07dc5b2c7f04c4f15fa344241e33cbe582b2b2558380f0aa90eb22",
+      "bytes": 10181,
+      "sha256": "409bf74dae07dc5b2c7f04c4f15fa344241e33cbe582b2b2558380f0aa90eb22"
+    },
+    {
+      "path": "scripts/probe_reference_semantics.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/probe_reference_semantics.py",
+      "transform": "exact_copy",
+      "source_sha256": "a90ad0cf08d33f82330e3b6bf5820d8d125e8e2934b90f4d4ea21744b98ecf80",
+      "bytes": 10821,
+      "sha256": "a90ad0cf08d33f82330e3b6bf5820d8d125e8e2934b90f4d4ea21744b98ecf80"
+    },
+    {
+      "path": "scripts/probe_toolchain_v2.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/probe_toolchain_v2.py",
+      "transform": "exact_copy",
+      "source_sha256": "5fc585be3f912acb225b694cbd1487118353903a16165efde13428c81b8b1b91",
+      "bytes": 13327,
+      "sha256": "5fc585be3f912acb225b694cbd1487118353903a16165efde13428c81b8b1b91"
+    },
+    {
+      "path": "scripts/profile_cuda_pair.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/profile_cuda_pair.py",
+      "transform": "exact_copy",
+      "source_sha256": "d573b75f1bdc2b7bb56481ac68d18f238cb31e7200fe08bd5bbb0e82397addcc",
+      "bytes": 14073,
+      "sha256": "d573b75f1bdc2b7bb56481ac68d18f238cb31e7200fe08bd5bbb0e82397addcc"
+    },
+    {
+      "path": "scripts/profile_cuda_trace_v2.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/profile_cuda_trace_v2.py",
+      "transform": "exact_copy",
+      "source_sha256": "ae9a57d4b0cbe71b5ef0f47616c54165103e9ab371fdaeed097cfe00b4d6237f",
+      "bytes": 11725,
+      "sha256": "ae9a57d4b0cbe71b5ef0f47616c54165103e9ab371fdaeed097cfe00b4d6237f"
+    },
+    {
+      "path": "scripts/provision_toolchain_v2.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/provision_toolchain_v2.py",
+      "transform": "exact_copy",
+      "source_sha256": "72fdbfc9d680a39cf280b6bfc4a3a6dbf193286dc7d3f72cf4cba613aac98403",
+      "bytes": 10578,
+      "sha256": "72fdbfc9d680a39cf280b6bfc4a3a6dbf193286dc7d3f72cf4cba613aac98403"
+    },
+    {
+      "path": "scripts/python.ps1",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/python.ps1",
+      "transform": "exact_copy",
+      "source_sha256": "4ac1698a5a575f82c656afd60680928c159815d8bf959e75577e8329ddb21ac7",
+      "bytes": 1427,
+      "sha256": "4ac1698a5a575f82c656afd60680928c159815d8bf959e75577e8329ddb21ac7"
+    },
+    {
+      "path": "scripts/record_g1b_commands.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/record_g1b_commands.py",
+      "transform": "exact_copy",
+      "source_sha256": "f7f964d7608d2fce13d07a96e80378fe36cefd0bc62e03b2b8510a3d6b565773",
+      "bytes": 3074,
+      "sha256": "f7f964d7608d2fce13d07a96e80378fe36cefd0bc62e03b2b8510a3d6b565773"
+    },
+    {
+      "path": "scripts/register_g1a.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/register_g1a.py",
+      "transform": "exact_copy",
+      "source_sha256": "2fb8d287c990214013938c63b8bd4ad30498bb7c1c9d92366b3c3d9691ff7917",
+      "bytes": 6847,
+      "sha256": "2fb8d287c990214013938c63b8bd4ad30498bb7c1c9d92366b3c3d9691ff7917"
+    },
+    {
+      "path": "scripts/register_g1b.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/register_g1b.py",
+      "transform": "exact_copy",
+      "source_sha256": "3a62effbd1b146f5db57ba2d170f099d6dfbf0e9de3877644a3e588a35008cde",
+      "bytes": 7103,
+      "sha256": "3a62effbd1b146f5db57ba2d170f099d6dfbf0e9de3877644a3e588a35008cde"
+    },
+    {
+      "path": "scripts/register_logical_ring.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/register_logical_ring.py",
+      "transform": "exact_copy",
+      "source_sha256": "fbe9643cef8a3d671e33100ba8ff148ef0af2fb16a37f85b4184910ef3e0ba41",
+      "bytes": 3244,
+      "sha256": "fbe9643cef8a3d671e33100ba8ff148ef0af2fb16a37f85b4184910ef3e0ba41"
+    },
+    {
+      "path": "scripts/review_g0_delivery.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/review_g0_delivery.py",
+      "transform": "exact_copy",
+      "source_sha256": "fe2255cd3d8bda32e2d6884cabecb23fe9e0dda2266e2b430cf98eb492dfae0a",
+      "bytes": 4118,
+      "sha256": "fe2255cd3d8bda32e2d6884cabecb23fe9e0dda2266e2b430cf98eb492dfae0a"
+    },
+    {
+      "path": "scripts/seal_g1a_delivery.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/seal_g1a_delivery.py",
+      "transform": "exact_copy",
+      "source_sha256": "793a1e221bfe36078bd178505d4ebd151b6edaf0efbcacfefcff0784acd1c571",
+      "bytes": 12198,
+      "sha256": "793a1e221bfe36078bd178505d4ebd151b6edaf0efbcacfefcff0784acd1c571"
+    },
+    {
+      "path": "scripts/seal_g1b_delivery.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/seal_g1b_delivery.py",
+      "transform": "exact_copy",
+      "source_sha256": "032d4de5ddcbb95b4b58926d1eaf963f7500a62beac9fe383e00af1a6a5cd6c4",
+      "bytes": 23080,
+      "sha256": "032d4de5ddcbb95b4b58926d1eaf963f7500a62beac9fe383e00af1a6a5cd6c4"
+    },
+    {
+      "path": "scripts/summarize_g1a.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/summarize_g1a.py",
+      "transform": "exact_copy",
+      "source_sha256": "ffd547107ae1e9562caba9c637960fbca105848754ab413ce006556539cf57a5",
+      "bytes": 39823,
+      "sha256": "ffd547107ae1e9562caba9c637960fbca105848754ab413ce006556539cf57a5"
+    },
+    {
+      "path": "scripts/summarize_g1b.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/summarize_g1b.py",
+      "transform": "exact_copy",
+      "source_sha256": "e1a185c75b36987a83e0597d84b8b6e466346ffbac0e74d9c3d601f3bd1fcd17",
+      "bytes": 47647,
+      "sha256": "e1a185c75b36987a83e0597d84b8b6e466346ffbac0e74d9c3d601f3bd1fcd17"
+    },
+    {
+      "path": "scripts/summarize_toolchain_v2.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/summarize_toolchain_v2.py",
+      "transform": "exact_copy",
+      "source_sha256": "9d5c4f80a8d7baead0d067a1a16f47c4fee06f720507405b92ef34c6775826ad",
+      "bytes": 9198,
+      "sha256": "9d5c4f80a8d7baead0d067a1a16f47c4fee06f720507405b92ef34c6775826ad"
+    },
+    {
+      "path": "scripts/verify_logical_ring_delivery.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/verify_logical_ring_delivery.py",
+      "transform": "exact_copy",
+      "source_sha256": "e1aec0dfea0baace0d70d37a6d9d1b5d1c9b2e9a3b700279fd7d4a98bb0ffd49",
+      "bytes": 4731,
+      "sha256": "e1aec0dfea0baace0d70d37a6d9d1b5d1c9b2e9a3b700279fd7d4a98bb0ffd49"
+    },
+    {
+      "path": "scripts/write_g1a_report.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/write_g1a_report.py",
+      "transform": "exact_copy",
+      "source_sha256": "bcdd67156535efd9d73bf98835a823c3d0b5f6fc5476fe5f72df16670e0c4ecb",
+      "bytes": 39836,
+      "sha256": "bcdd67156535efd9d73bf98835a823c3d0b5f6fc5476fe5f72df16670e0c4ecb"
+    },
+    {
+      "path": "scripts/write_g1b_report.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/scripts/write_g1b_report.py",
+      "transform": "exact_copy",
+      "source_sha256": "696d9c4d84f2fcb234cca73c4c6483a1fec12cc82b3f83c3435d110ec7c0752c",
+      "bytes": 33245,
+      "sha256": "696d9c4d84f2fcb234cca73c4c6483a1fec12cc82b3f83c3435d110ec7c0752c"
+    },
+    {
+      "path": "configs/g1b_correctness_cases.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/configs/g1b_correctness_cases.json",
+      "transform": "exact_copy",
+      "source_sha256": "44801f8265ee01d63e265426868ec7f6dbe0cbb859bdb72fcbc1846abbcdc76d",
+      "bytes": 26103,
+      "sha256": "44801f8265ee01d63e265426868ec7f6dbe0cbb859bdb72fcbc1846abbcdc76d"
+    },
+    {
+      "path": "tests/test_cuda_codec.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/tests/test_cuda_codec.py",
+      "transform": "exact_copy",
+      "source_sha256": "26698f4d1e05a5c044e9f2f3286d41fb72fd77f65b5f9bfdec35600dc584ed51",
+      "bytes": 7078,
+      "sha256": "26698f4d1e05a5c044e9f2f3286d41fb72fd77f65b5f9bfdec35600dc584ed51"
+    },
+    {
+      "path": "tests/test_torch_codec.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/tests/test_torch_codec.py",
+      "transform": "exact_copy",
+      "source_sha256": "a610c38a57a9fab7b527835fca03da6c096afc23a7e418bf95e8c74b6b30db70",
+      "bytes": 4898,
+      "sha256": "a610c38a57a9fab7b527835fca03da6c096afc23a7e418bf95e8c74b6b30db70"
+    },
+    {
+      "path": "plans/bounded_discovery_v1/DELIVERY_FORMAT.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/plans/bounded_discovery_v1/DELIVERY_FORMAT.md",
+      "transform": "exact_copy",
+      "source_sha256": "0eac9bc1dd52adeb2171738b026664b4f76a4fc09bd092e46cbd835dd1c7feb1",
+      "bytes": 10008,
+      "sha256": "0eac9bc1dd52adeb2171738b026664b4f76a4fc09bd092e46cbd835dd1c7feb1"
+    },
+    {
+      "path": "plans/bounded_discovery_v1/PLAN.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/plans/bounded_discovery_v1/PLAN.md",
+      "transform": "exact_copy",
+      "source_sha256": "24d94c31a6cb6047f2b055ee046458b4871ab62c792e412db97d869f6447cf97",
+      "bytes": 18998,
+      "sha256": "24d94c31a6cb6047f2b055ee046458b4871ab62c792e412db97d869f6447cf97"
+    },
+    {
+      "path": "plans/bounded_discovery_v1/REPORT_TEMPLATE.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/plans/bounded_discovery_v1/REPORT_TEMPLATE.md",
+      "transform": "exact_copy",
+      "source_sha256": "c97607b23a82f71f61a4a9ad9aef0f09a0c6a0b641578330e1d08ece002c046a",
+      "bytes": 2240,
+      "sha256": "c97607b23a82f71f61a4a9ad9aef0f09a0c6a0b641578330e1d08ece002c046a"
+    },
+    {
+      "path": "plans/bounded_discovery_v1/summary.template.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/plans/bounded_discovery_v1/summary.template.json",
+      "transform": "exact_copy",
+      "source_sha256": "f43db027828f6bd9123d96873acc4db598b607e919eec7e32f1c7743aa7da962",
+      "bytes": 2092,
+      "sha256": "f43db027828f6bd9123d96873acc4db598b607e919eec7e32f1c7743aa7da962"
+    },
+    {
+      "path": "plans/epsilon_diagnostic_v1/DELIVERY_FORMAT.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/plans/epsilon_diagnostic_v1/DELIVERY_FORMAT.md",
+      "transform": "exact_copy",
+      "source_sha256": "22ef2cf5447717adc07aed55cef49f60afc5d8f1f9964cc8b0b4d7213a7fee28",
+      "bytes": 6270,
+      "sha256": "22ef2cf5447717adc07aed55cef49f60afc5d8f1f9964cc8b0b4d7213a7fee28"
+    },
+    {
+      "path": "plans/epsilon_diagnostic_v1/PLAN.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/plans/epsilon_diagnostic_v1/PLAN.md",
+      "transform": "exact_copy",
+      "source_sha256": "c85f93b5b2fac452e71c504e724cdf1d48f30c76260f477a4dc6b78e06442ef6",
+      "bytes": 12884,
+      "sha256": "c85f93b5b2fac452e71c504e724cdf1d48f30c76260f477a4dc6b78e06442ef6"
+    },
+    {
+      "path": "plans/epsilon_diagnostic_v1/REPORT_TEMPLATE.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/plans/epsilon_diagnostic_v1/REPORT_TEMPLATE.md",
+      "transform": "exact_copy",
+      "source_sha256": "ad5e18a555a71ddd22309064685cd32aba35f9b1a8120c8de8495f187feef789",
+      "bytes": 1519,
+      "sha256": "ad5e18a555a71ddd22309064685cd32aba35f9b1a8120c8de8495f187feef789"
+    },
+    {
+      "path": "plans/epsilon_diagnostic_v1/summary.template.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/plans/epsilon_diagnostic_v1/summary.template.json",
+      "transform": "exact_copy",
+      "source_sha256": "9e0a6b2f4820c69a8dc9f9f7567f77cfc415f947c37bb1cf6d29ed74f2fe4d11",
+      "bytes": 2257,
+      "sha256": "9e0a6b2f4820c69a8dc9f9f7567f77cfc415f947c37bb1cf6d29ed74f2fe4d11"
+    },
+    {
+      "path": "reports/spl_positioning_20261104_001/CONTRIBUTION.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/spl_positioning_20261104_001/CONTRIBUTION.md",
+      "transform": "exact_copy",
+      "source_sha256": "4eda6a65802daa6e08b2fb9666a7a355c9957ce1a11d2138cdf0bb29144fb2c9",
+      "bytes": 2825,
+      "sha256": "4eda6a65802daa6e08b2fb9666a7a355c9957ce1a11d2138cdf0bb29144fb2c9"
+    },
+    {
+      "path": "reports/spl_positioning_20261104_001/delivery_verification.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/spl_positioning_20261104_001/delivery_verification.json",
+      "transform": "exact_copy",
+      "source_sha256": "9dd348841ecfb247d4cd0ae20a54192fec0f428e47c6425dc31bc35f9fe4e963",
+      "bytes": 1344,
+      "sha256": "9dd348841ecfb247d4cd0ae20a54192fec0f428e47c6425dc31bc35f9fe4e963"
+    },
+    {
+      "path": "reports/spl_positioning_20261104_001/EVIDENCE_AND_GATES.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/spl_positioning_20261104_001/EVIDENCE_AND_GATES.md",
+      "transform": "exact_copy",
+      "source_sha256": "16d9f9c383f5ce508799fe34bee9ea4451f5b29941ce03a6eb4ddb89877744ef",
+      "bytes": 15585,
+      "sha256": "16d9f9c383f5ce508799fe34bee9ea4451f5b29941ce03a6eb4ddb89877744ef"
+    },
+    {
+      "path": "reports/spl_positioning_20261104_001/PAPER_OUTLINE.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/spl_positioning_20261104_001/PAPER_OUTLINE.md",
+      "transform": "exact_copy",
+      "source_sha256": "a83836a1b695462ab034a3fb83382db0d49be10461dd480e8f37dd0ec70090ce",
+      "bytes": 5563,
+      "sha256": "a83836a1b695462ab034a3fb83382db0d49be10461dd480e8f37dd0ec70090ce"
+    },
+    {
+      "path": "reports/spl_positioning_20261104_001/source_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/spl_positioning_20261104_001/source_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "a3e3cfe01de889a5c3d16c43cf0d7ec3de81b1245e0cd0afeb57ae8d7224ca57",
+      "bytes": 2462,
+      "sha256": "a3e3cfe01de889a5c3d16c43cf0d7ec3de81b1245e0cd0afeb57ae8d7224ca57"
+    },
+    {
+      "path": "reports/spl_positioning_20261104_001/summary.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/spl_positioning_20261104_001/summary.json",
+      "transform": "exact_copy",
+      "source_sha256": "0bd74baaa214aed26af683f885927692dbd6ef4b12d5c49041e58ed1e804c977",
+      "bytes": 1215,
+      "sha256": "0bd74baaa214aed26af683f885927692dbd6ef4b12d5c49041e58ed1e804c977"
+    },
+    {
+      "path": "reports/spl_positioning_20261104_002/CONTRIBUTION.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/spl_positioning_20261104_002/CONTRIBUTION.md",
+      "transform": "exact_copy",
+      "source_sha256": "9a4b5b6da5ec407d3c5b8d31ca419cde087a4f11f71c64b3a1e7ba27ce64d80c",
+      "bytes": 2745,
+      "sha256": "9a4b5b6da5ec407d3c5b8d31ca419cde087a4f11f71c64b3a1e7ba27ce64d80c"
+    },
+    {
+      "path": "reports/spl_positioning_20261104_002/EVIDENCE_AND_GATES.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/spl_positioning_20261104_002/EVIDENCE_AND_GATES.md",
+      "transform": "exact_copy",
+      "source_sha256": "ef91edc27e22104a7e290d0d7f8f42050d8c5cee1cdb0da37576f6894aefa8d4",
+      "bytes": 8571,
+      "sha256": "ef91edc27e22104a7e290d0d7f8f42050d8c5cee1cdb0da37576f6894aefa8d4"
+    },
+    {
+      "path": "reports/spl_positioning_20261104_002/PAPER_OUTLINE.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/spl_positioning_20261104_002/PAPER_OUTLINE.md",
+      "transform": "exact_copy",
+      "source_sha256": "1a8866469628069bf40fa5a4b8c691bb2b5563565b131589bdf267d5505ed4eb",
+      "bytes": 5640,
+      "sha256": "1a8866469628069bf40fa5a4b8c691bb2b5563565b131589bdf267d5505ed4eb"
+    },
+    {
+      "path": "reports/spl_positioning_20261104_002/summary.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/spl_positioning_20261104_002/summary.json",
+      "transform": "exact_copy",
+      "source_sha256": "08c6b43849cb1e5aa20357ce3922618045e17ba1a447ec2ed1bceaf6c4c2022a",
+      "bytes": 969,
+      "sha256": "08c6b43849cb1e5aa20357ce3922618045e17ba1a447ec2ed1bceaf6c4c2022a"
+    },
+    {
+      "path": "reports/t0_theory_20261104_001/REPORT.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/t0_theory_20261104_001/REPORT.md",
+      "transform": "exact_copy",
+      "source_sha256": "d99fb491357a220e749421628f0bfcbe7eb656d723adb948440da28d09d3e5a5",
+      "bytes": 10019,
+      "sha256": "d99fb491357a220e749421628f0bfcbe7eb656d723adb948440da28d09d3e5a5"
+    },
+    {
+      "path": "reports/t0_theory_20261104_001/summary.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/t0_theory_20261104_001/summary.json",
+      "transform": "exact_copy",
+      "source_sha256": "ec1e753868f37ef30bce000c7a11308bd2995d25075060f7fa805430615e84d4",
+      "bytes": 1269,
+      "sha256": "ec1e753868f37ef30bce000c7a11308bd2995d25075060f7fa805430615e84d4"
+    },
+    {
+      "path": "reports/t0_theory_20261104_001/THEORY.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/t0_theory_20261104_001/THEORY.md",
+      "transform": "exact_copy",
+      "source_sha256": "b8e1391091725809798d01c2316879ff4ddf70625fd23ba49d132b51a79f73b2",
+      "bytes": 14753,
+      "sha256": "b8e1391091725809798d01c2316879ff4ddf70625fd23ba49d132b51a79f73b2"
+    },
+    {
+      "path": "reports/topic_screen_20261104_001/CANDIDATE_REVIEWS.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/topic_screen_20261104_001/CANDIDATE_REVIEWS.md",
+      "transform": "exact_copy",
+      "source_sha256": "e81c5a1f183285bd56bc6189d566827bdeb3e0e920bc6a6df06463621e334e05",
+      "bytes": 10045,
+      "sha256": "e81c5a1f183285bd56bc6189d566827bdeb3e0e920bc6a6df06463621e334e05"
+    },
+    {
+      "path": "reports/topic_screen_20261104_001/REPORT.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/topic_screen_20261104_001/REPORT.md",
+      "transform": "exact_copy",
+      "source_sha256": "6690b85a3d951ab85f3fcb5e8d2a738bdcf7b8e0ff0441007211b10c34f10a4d",
+      "bytes": 5930,
+      "sha256": "6690b85a3d951ab85f3fcb5e8d2a738bdcf7b8e0ff0441007211b10c34f10a4d"
+    },
+    {
+      "path": "reports/topic_screen_20261104_001/summary.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reports/topic_screen_20261104_001/summary.json",
+      "transform": "exact_copy",
+      "source_sha256": "a6f5d8c362d654ea173c38cdeda05f47e1f4af0442eafc10c2b250eb63ce2c49",
+      "bytes": 1446,
+      "sha256": "a6f5d8c362d654ea173c38cdeda05f47e1f4af0442eafc10c2b250eb63ce2c49"
+    },
+    {
+      "path": "reviews/bounded_discovery_v1_20261104_001_audit/analyze_saved_blocks.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reviews/bounded_discovery_v1_20261104_001_audit/analyze_saved_blocks.py",
+      "transform": "exact_copy",
+      "source_sha256": "57c0595c9ba7931166cbb84407f2d65c1114341f3987e7d079702a1eba4546e8",
+      "bytes": 6037,
+      "sha256": "57c0595c9ba7931166cbb84407f2d65c1114341f3987e7d079702a1eba4546e8"
+    },
+    {
+      "path": "reviews/bounded_discovery_v1_20261104_001_audit/saved_block_analysis.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reviews/bounded_discovery_v1_20261104_001_audit/saved_block_analysis.json",
+      "transform": "exact_copy",
+      "source_sha256": "6a4104fb256d20920af6b3c3864a975d46d4f8c4c86b26f3163a05841882bcda",
+      "bytes": 31795,
+      "sha256": "6a4104fb256d20920af6b3c3864a975d46d4f8c4c86b26f3163a05841882bcda"
+    },
+    {
+      "path": "reviews/bounded_discovery_v1_20261104_001_review.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reviews/bounded_discovery_v1_20261104_001_review.md",
+      "transform": "exact_copy",
+      "source_sha256": "2ea56cc43a804eaa8394534b61172e16d0b1b715d89c11e2d420fe1c8418cd95",
+      "bytes": 9255,
+      "sha256": "2ea56cc43a804eaa8394534b61172e16d0b1b715d89c11e2d420fe1c8418cd95"
+    },
+    {
+      "path": "reviews/gpu_codec_v1_20261101_001_review.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reviews/gpu_codec_v1_20261101_001_review.md",
+      "transform": "exact_copy",
+      "source_sha256": "f95775da2f645d6ea54866d402adcf95f890ad20d5dd180b128fccfcfb2b7b5a",
+      "bytes": 7030,
+      "sha256": "f95775da2f645d6ea54866d402adcf95f890ad20d5dd180b128fccfcfb2b7b5a"
+    },
+    {
+      "path": "reviews/gpu_codec_v1_20261101_002_review_and_g1b_plan.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reviews/gpu_codec_v1_20261101_002_review_and_g1b_plan.md",
+      "transform": "exact_copy",
+      "source_sha256": "3f9a0caa47c195b34c4049a63ec9cd19c63f5d3cb6537c819dcdb2219e8e7741",
+      "bytes": 11122,
+      "sha256": "3f9a0caa47c195b34c4049a63ec9cd19c63f5d3cb6537c819dcdb2219e8e7741"
+    },
+    {
+      "path": "reviews/gpu_codec_v1_20261104_001_review_and_g2a_plan.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reviews/gpu_codec_v1_20261104_001_review_and_g2a_plan.md",
+      "transform": "exact_copy",
+      "source_sha256": "c02aaee51854d4546f2c3283fa164b9e647480e63cdc42b36c78f92ec8561bd0",
+      "bytes": 15553,
+      "sha256": "c02aaee51854d4546f2c3283fa164b9e647480e63cdc42b36c78f92ec8561bd0"
+    },
+    {
+      "path": "reviews/logical_ring_v1_20261104_001_review.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/reviews/logical_ring_v1_20261104_001_review.md",
+      "transform": "exact_copy",
+      "source_sha256": "9efed70072bb8118e64af8898a0134d8b16d5a0ec66151b16c14f195b83c0ff2",
+      "bytes": 7550,
+      "sha256": "9efed70072bb8118e64af8898a0134d8b16d5a0ec66151b16c14f195b83c0ff2"
+    },
+    {
+      "path": "handoff_templates/benchmark_config.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/handoff_templates/benchmark_config.json",
+      "transform": "exact_copy",
+      "source_sha256": "0abbb53326705a369a24725f89e9ed3e043586e62f4b9f4b2cda864e87be2a14",
+      "bytes": 1630,
+      "sha256": "0abbb53326705a369a24725f89e9ed3e043586e62f4b9f4b2cda864e87be2a14"
+    },
+    {
+      "path": "handoff_templates/codec_contract.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/handoff_templates/codec_contract.json",
+      "transform": "exact_copy",
+      "source_sha256": "2563cd4a6ac52e358e3ff69bafded516ec7f2b5c81890ae5ba3fb773e6f757de",
+      "bytes": 2265,
+      "sha256": "2563cd4a6ac52e358e3ff69bafded516ec7f2b5c81890ae5ba3fb773e6f757de"
+    },
+    {
+      "path": "handoff_templates/environment.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/handoff_templates/environment.json",
+      "transform": "exact_copy",
+      "source_sha256": "c4eefef08de84cdd721ef7c6e30523f7574c5f6048d8af97715865576d2395c7",
+      "bytes": 921,
+      "sha256": "c4eefef08de84cdd721ef7c6e30523f7574c5f6048d8af97715865576d2395c7"
+    },
+    {
+      "path": "handoff_templates/REPORT.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/handoff_templates/REPORT.md",
+      "transform": "exact_copy",
+      "source_sha256": "dd5147702c01f8e0a322770adbaf886541417fb61aff4c9e80d34219cd3f85ef",
+      "bytes": 3761,
+      "sha256": "dd5147702c01f8e0a322770adbaf886541417fb61aff4c9e80d34219cd3f85ef"
+    },
+    {
+      "path": "handoff_templates/REPRODUCE.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/handoff_templates/REPRODUCE.md",
+      "transform": "exact_copy",
+      "source_sha256": "a7efb9ecffc75ed958fe7604141df96f6424576a828f3bba378364806ca01837",
+      "bytes": 1241,
+      "sha256": "a7efb9ecffc75ed958fe7604141df96f6424576a828f3bba378364806ca01837"
+    },
+    {
+      "path": "handoff_templates/summary.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/handoff_templates/summary.json",
+      "transform": "exact_copy",
+      "source_sha256": "cf6cb3149201a29af56fa4171f0121ab1043a108400938fbd88581a5890ac1bd",
+      "bytes": 1517,
+      "sha256": "cf6cb3149201a29af56fa4171f0121ab1043a108400938fbd88581a5890ac1bd"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/documentation/environments.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/documentation/environments.md",
+      "transform": "exact_copy",
+      "source_sha256": "f676a91c08a5f461400bf762d854392c4889fe5e74da0c5b6a5402c391c823ea",
+      "bytes": 566,
+      "sha256": "f676a91c08a5f461400bf762d854392c4889fe5e74da0c5b6a5402c391c823ea"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/documentation/scaling_quantization_algorithm.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/documentation/scaling_quantization_algorithm.md",
+      "transform": "exact_copy",
+      "source_sha256": "0c7f1ef01061a9ebbebfb57cd11408d0d6cd227b5c77fce12097917262fd0dcd",
+      "bytes": 11516,
+      "sha256": "0c7f1ef01061a9ebbebfb57cd11408d0d6cd227b5c77fce12097917262fd0dcd"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/README.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/README.md",
+      "transform": "exact_copy",
+      "source_sha256": "8d01247121c1316d7abbafff30fa08910b3fd1249386739b78b358883bc81601",
+      "bytes": 264,
+      "sha256": "8d01247121c1316d7abbafff30fa08910b3fd1249386739b78b358883bc81601"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/setup.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/setup.py",
+      "transform": "exact_copy",
+      "source_sha256": "d4917dc314725065fa5c74e9f1255c6fab8572cc0cf03bca63315ffb51c64615",
+      "bytes": 1786,
+      "sha256": "d4917dc314725065fa5c74e9f1255c6fab8572cc0cf03bca63315ffb51c64615"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/__init__.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/__init__.py",
+      "transform": "exact_copy",
+      "source_sha256": "31c11edd6fe494d7b20c2d5ba4b494a10629e9fdb9fbf3561bc49da7cf8a4b98",
+      "bytes": 96,
+      "sha256": "31c11edd6fe494d7b20c2d5ba4b494a10629e9fdb9fbf3561bc49da7cf8a4b98"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/.vscode/c_cpp_properties.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/.vscode/c_cpp_properties.json",
+      "transform": "exact_copy",
+      "source_sha256": "7715b59898d8fca32b59e2d553ac2a616d860aa02bba096dfeb86910b582acb3",
+      "bytes": 423,
+      "sha256": "7715b59898d8fca32b59e2d553ac2a616d860aa02bba096dfeb86910b582acb3"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/a.cpp",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/a.cpp",
+      "transform": "exact_copy",
+      "source_sha256": "344d05b1a6117a61319c45a6a5c6be3180e692efe8a7fdae570950402823df7c",
+      "bytes": 25,
+      "sha256": "344d05b1a6117a61319c45a6a5c6be3180e692efe8a7fdae570950402823df7c"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hadamard.cu",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hadamard.cu",
+      "transform": "exact_copy",
+      "source_sha256": "4f26fba59d03372501a39fd2e1c046d0774c1f3a722104697b8eee8b57e94055",
+      "bytes": 64352,
+      "sha256": "4f26fba59d03372501a39fd2e1c046d0774c1f3a722104697b8eee8b57e94055"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hadamard.h",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hadamard.h",
+      "transform": "exact_copy",
+      "source_sha256": "0691f1f7e6a25fc6ecff13b717d502330c1fab419309056de1b91a0394ea1db2",
+      "bytes": 2128,
+      "sha256": "0691f1f7e6a25fc6ecff13b717d502330c1fab419309056de1b91a0394ea1db2"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hierarchical_mee.cu",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hierarchical_mee.cu",
+      "transform": "exact_copy",
+      "source_sha256": "0217fa4680a218633d22ff0a177c468e6b40da8f8274b8b92609dcb4419620a8",
+      "bytes": 65728,
+      "sha256": "0217fa4680a218633d22ff0a177c468e6b40da8f8274b8b92609dcb4419620a8"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hierarchical_mee.h",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_hierarchical_mee.h",
+      "transform": "exact_copy",
+      "source_sha256": "38787be245c286b05eee2500555e46a495738304d5d69b8da2fc6f9773c341a8",
+      "bytes": 3577,
+      "sha256": "38787be245c286b05eee2500555e46a495738304d5d69b8da2fc6f9773c341a8"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_packing.cu",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_packing.cu",
+      "transform": "exact_copy",
+      "source_sha256": "b57daafee5eb51a2152ae8892165e205da4451a4dbd61f8d002f4be3fd89d2ed",
+      "bytes": 3229,
+      "sha256": "b57daafee5eb51a2152ae8892165e205da4451a4dbd61f8d002f4be3fd89d2ed"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_packing.h",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/cuda_packing.h",
+      "transform": "exact_copy",
+      "source_sha256": "791938fd31072b1ef5059f95e2aef55a1347df2a5f5199c24748dbc18ac8e977",
+      "bytes": 323,
+      "sha256": "791938fd31072b1ef5059f95e2aef55a1347df2a5f5199c24748dbc18ac8e977"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/defs.h",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/defs.h",
+      "transform": "exact_copy",
+      "source_sha256": "eecfa2d21817cbbdf3fe94702c0b85ba5c94096753fd35015bdcaada7e5aa21a",
+      "bytes": 1044,
+      "sha256": "eecfa2d21817cbbdf3fe94702c0b85ba5c94096753fd35015bdcaada7e5aa21a"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/logic.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/csrc/logic.py",
+      "transform": "exact_copy",
+      "source_sha256": "df7a3fd481c8a5ba1cf9e7a0f0e0fd6a99fb939bd04fa17bb2964f3d9824ce37",
+      "bytes": 15802,
+      "sha256": "df7a3fd481c8a5ba1cf9e7a0f0e0fd6a99fb939bd04fa17bb2964f3d9824ce37"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/eden_utils.cpp",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/eden_utils/eden_utils.cpp",
+      "transform": "exact_copy",
+      "source_sha256": "bf84955aa924fbc4e7b49ea94d003b0e45ad9f4e9b2b9caeabdf6dcc65255dd8",
+      "bytes": 22733,
+      "sha256": "bf84955aa924fbc4e7b49ea94d003b0e45ad9f4e9b2b9caeabdf6dcc65255dd8"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/srrcomp.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/src/srrcomp/srrcomp.py",
+      "transform": "exact_copy",
+      "source_sha256": "d353e5a1dbe12abc31d3729ed4be477d8ddf62086c62dd358eef8ae9577e69a6",
+      "bytes": 19638,
+      "sha256": "d353e5a1dbe12abc31d3729ed4be477d8ddf62086c62dd358eef8ae9577e69a6"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/test.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/test.py",
+      "transform": "exact_copy",
+      "source_sha256": "d7c275e515812ddb689261f4081bff8c2c0a94977f71f553454f75f3852e358b",
+      "bytes": 580,
+      "sha256": "d7c275e515812ddb689261f4081bff8c2c0a94977f71f553454f75f3852e358b"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/tests/basic_test.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/tests/basic_test.py",
+      "transform": "exact_copy",
+      "source_sha256": "12218c7ae4a2b45bfb6fb034bba089af52c680a220c8a9971b89348029bab27d",
+      "bytes": 1125,
+      "sha256": "12218c7ae4a2b45bfb6fb034bba089af52c680a220c8a9971b89348029bab27d"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/tests/benchmark_scaling_quantization.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/tests/benchmark_scaling_quantization.py",
+      "transform": "exact_copy",
+      "source_sha256": "71e3bac28b65cdd515c3ccb6495e266a74908de2a663b5660f7e21ec51597ade",
+      "bytes": 4405,
+      "sha256": "71e3bac28b65cdd515c3ccb6495e266a74908de2a663b5660f7e21ec51597ade"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/tests/dme_test.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/tests/dme_test.py",
+      "transform": "exact_copy",
+      "source_sha256": "a6d67bc41fbaab663321b11d6518a8d1d8f3ff5a3064140be5defccc7043c17c",
+      "bytes": 5955,
+      "sha256": "a6d67bc41fbaab663321b11d6518a8d1d8f3ff5a3064140be5defccc7043c17c"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/cuda_kernels/tests/test_scaling_quantization_functional.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/cuda_kernels/tests/test_scaling_quantization_functional.py",
+      "transform": "exact_copy",
+      "source_sha256": "f57e40a11f1ca66b11d6cfcfb59e519860bf90e1abaec0bdefcce290e4fa1781",
+      "bytes": 15813,
+      "sha256": "f57e40a11f1ca66b11d6cfcfb59e519860bf90e1abaec0bdefcce290e4fa1781"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/ENVIRONMENT_REQUIREMENTS.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/ENVIRONMENT_REQUIREMENTS.md",
+      "transform": "exact_copy",
+      "source_sha256": "85a03588d156b2ce7c1599fdded9d2f319dbdabd6c36f7db9dfd6bec46acebf7",
+      "bytes": 2700,
+      "sha256": "85a03588d156b2ce7c1599fdded9d2f319dbdabd6c36f7db9dfd6bec46acebf7"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/LICENSE",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/LICENSE",
+      "transform": "exact_copy",
+      "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/README.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/README.md",
+      "transform": "exact_copy",
+      "source_sha256": "2b92e749f09c68885a49f84b8eed73bcc2cb62bb50bd2a3c19c423a794d4a8a9",
+      "bytes": 16751,
+      "sha256": "2b92e749f09c68885a49f84b8eed73bcc2cb62bb50bd2a3c19c423a794d4a8a9"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/requirements.txt",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/requirements.txt",
+      "transform": "exact_copy",
+      "source_sha256": "7645b0fcf71542caa08721d5f7b896bad6d832d4601d989c1ba5f80c50dfe5ab",
+      "bytes": 788,
+      "sha256": "7645b0fcf71542caa08721d5f7b896bad6d832d4601d989c1ba5f80c50dfe5ab"
+    },
+    {
+      "path": "upstream/bounded_discovery_v1/dynamiq/testbed_evaluation/new_comm_hooks/comm_hooks.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/upstream/bounded_discovery_v1/dynamiq/testbed_evaluation/new_comm_hooks/comm_hooks.py",
+      "transform": "exact_copy",
+      "source_sha256": "5ac812c9ecd84d8d3af64ca4fb87f111bc12ad244cfc94a7b4daeaebc6cf1c80",
+      "bytes": 43981,
+      "sha256": "5ac812c9ecd84d8d3af64ca4fb87f111bc12ad244cfc94a7b4daeaebc6cf1c80"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_001/artifact_integrity.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_001/artifact_integrity.json",
+      "transform": "exact_copy",
+      "source_sha256": "2deae33fc35ce318dbee111bdd755fcd35826f293f8d053b5c52b3baff067fd0",
+      "bytes": 8533,
+      "sha256": "2deae33fc35ce318dbee111bdd755fcd35826f293f8d053b5c52b3baff067fd0"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_001/benchmark_config.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_001/benchmark_config.json",
+      "transform": "exact_copy",
+      "source_sha256": "93a6194dbd7d9b7e2275a11d8bfc0e8ef3d8f937aedbe9c6d2f41ea7c028c73a",
+      "bytes": 2232,
+      "sha256": "93a6194dbd7d9b7e2275a11d8bfc0e8ef3d8f937aedbe9c6d2f41ea7c028c73a"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_001/codec_contract.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_001/codec_contract.json",
+      "transform": "exact_copy",
+      "source_sha256": "e71f17d5c989bcb94422964c34c53497e14fc4ddfe10a9d64895f409d6d4546a",
+      "bytes": 6799,
+      "sha256": "e71f17d5c989bcb94422964c34c53497e14fc4ddfe10a9d64895f409d6d4546a"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_001/cpu_reference_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_001/cpu_reference_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "9e81249045f1746bbc5315bae177679b48017f5ab8e95f52900e29b01ec0ab3c",
+      "bytes": 2867,
+      "sha256": "9e81249045f1746bbc5315bae177679b48017f5ab8e95f52900e29b01ec0ab3c"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_001/environment.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_001/environment.json",
+      "transform": "exact_copy",
+      "source_sha256": "9892b675a94e76cb856f64d6a2d9f75c6f09d1c05cd365a40bebd30d1dcb4a87",
+      "bytes": 7093,
+      "sha256": "9892b675a94e76cb856f64d6a2d9f75c6f09d1c05cd365a40bebd30d1dcb4a87"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_001/fixtures_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_001/fixtures_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "4cd8239e9db970d1a30ee4858b444a164daccc119565987ec41994d9271c9048",
+      "bytes": 4578,
+      "sha256": "4cd8239e9db970d1a30ee4858b444a164daccc119565987ec41994d9271c9048"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_001/input_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_001/input_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "1ae6b27cfa6c87412d3acca33afca2cc3dddb3b8eace64a91e7f78e2f6d9e531",
+      "bytes": 43517,
+      "sha256": "1ae6b27cfa6c87412d3acca33afca2cc3dddb3b8eace64a91e7f78e2f6d9e531"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_001/issues.jsonl",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_001/issues.jsonl",
+      "transform": "exact_copy",
+      "source_sha256": "2b5fb34ca36762328eff784dc05f0e22d7ac5ce71e9a957506cb0c2855b46428",
+      "bytes": 2427,
+      "sha256": "2b5fb34ca36762328eff784dc05f0e22d7ac5ce71e9a957506cb0c2855b46428"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_001/REPORT.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_001/REPORT.md",
+      "transform": "exact_copy",
+      "source_sha256": "706ec9b12de7e0c107566b2c604180633ad482b01d03cf429affd9d12bdb8458",
+      "bytes": 7604,
+      "sha256": "706ec9b12de7e0c107566b2c604180633ad482b01d03cf429affd9d12bdb8458"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_001/REPRODUCE.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_001/REPRODUCE.md",
+      "transform": "exact_copy",
+      "source_sha256": "cd7fd274d8590aa394d2b393bfa4377e569f8c249b3cff49d4350d3c4f75fb04",
+      "bytes": 2955,
+      "sha256": "cd7fd274d8590aa394d2b393bfa4377e569f8c249b3cff49d4350d3c4f75fb04"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_001/source_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_001/source_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "a4a1ac7364645bd92e32c8175f069cb20cfccc87c1c796a3771a15a48653bd05",
+      "bytes": 6241,
+      "sha256": "a4a1ac7364645bd92e32c8175f069cb20cfccc87c1c796a3771a15a48653bd05"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_001/summary.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_001/summary.json",
+      "transform": "exact_copy",
+      "source_sha256": "ecd61b8998422fc152b5c3ce2d53d118ab5b7a0f0dafa28bdcc193cdd453c58d",
+      "bytes": 3819,
+      "sha256": "ecd61b8998422fc152b5c3ce2d53d118ab5b7a0f0dafa28bdcc193cdd453c58d"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/analysis.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/analysis.json",
+      "transform": "exact_copy",
+      "source_sha256": "60bba92133167bac77bcfe4353bceec30c5cd32fc85980b7796f68edfa983f18",
+      "bytes": 309873,
+      "sha256": "60bba92133167bac77bcfe4353bceec30c5cd32fc85980b7796f68edfa983f18"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/artifact_integrity.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/artifact_integrity.json",
+      "transform": "exact_copy",
+      "source_sha256": "7fdeca71bbe9302dc1a8e1d7bee8cf8f1b329ad7b0d3265cc9224375419d424e",
+      "bytes": 36271,
+      "sha256": "7fdeca71bbe9302dc1a8e1d7bee8cf8f1b329ad7b0d3265cc9224375419d424e"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/benchmark_config.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/benchmark_config.json",
+      "transform": "exact_copy",
+      "source_sha256": "eaff856cfc09da42b1d32cb89c022886e41c24f8e6d16e683cad29c8195456e5",
+      "bytes": 29247,
+      "sha256": "eaff856cfc09da42b1d32cb89c022886e41c24f8e6d16e683cad29c8195456e5"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/benchmark_summary.jsonl",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/benchmark_summary.jsonl",
+      "transform": "exact_copy",
+      "source_sha256": "fe0d5dd5be7a165286a4e9338bf68a8f5fd3e4c7cf29d1ad3addb82437683309",
+      "bytes": 380800,
+      "sha256": "fe0d5dd5be7a165286a4e9338bf68a8f5fd3e4c7cf29d1ad3addb82437683309"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/codec_contract.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/codec_contract.json",
+      "transform": "exact_copy",
+      "source_sha256": "068400a4067849390aec27a01d9f46811e395f0765f63ccb67fdeda82e470e7d",
+      "bytes": 9514,
+      "sha256": "068400a4067849390aec27a01d9f46811e395f0765f63ccb67fdeda82e470e7d"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/environment.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/environment.json",
+      "transform": "exact_copy",
+      "source_sha256": "4081c4a6d26983e2c5a58811be129cbe9c78d793bae2b08a7abdb1661d910f22",
+      "bytes": 18314,
+      "sha256": "4081c4a6d26983e2c5a58811be129cbe9c78d793bae2b08a7abdb1661d910f22"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/fixtures_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/fixtures_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "c95e4775d00fd1418836b5d6a0acdf2ba887a855f1245dbda6935a0322b200ab",
+      "bytes": 26935,
+      "sha256": "c95e4775d00fd1418836b5d6a0acdf2ba887a855f1245dbda6935a0322b200ab"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/input_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/input_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "075c12889f00bf5f3b86b4522e76cf13bfc778e6a9db94f96d06e875accedab1",
+      "bytes": 264489,
+      "sha256": "075c12889f00bf5f3b86b4522e76cf13bfc778e6a9db94f96d06e875accedab1"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/issues.jsonl",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/issues.jsonl",
+      "transform": "exact_copy",
+      "source_sha256": "c310e82adafc4603c0805668f24af34305dfcc3929675d4fe4d538c69d1b20f3",
+      "bytes": 4154,
+      "sha256": "c310e82adafc4603c0805668f24af34305dfcc3929675d4fe4d538c69d1b20f3"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/REPORT.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/REPORT.md",
+      "transform": "exact_copy",
+      "source_sha256": "6bec12ad0fc10e5aa0f392230b554f1ed7a3bbd8e5c2a72a8abd2235e4eeee9e",
+      "bytes": 22283,
+      "sha256": "6bec12ad0fc10e5aa0f392230b554f1ed7a3bbd8e5c2a72a8abd2235e4eeee9e"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/REPRODUCE.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/REPRODUCE.md",
+      "transform": "exact_copy",
+      "source_sha256": "cb1841532d5aa5e56400b6e634fa80a3f49994f197202ec135d9188fc4ffbcaf",
+      "bytes": 9573,
+      "sha256": "cb1841532d5aa5e56400b6e634fa80a3f49994f197202ec135d9188fc4ffbcaf"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/source_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/source_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "808e1ffdb2c190127a13e70259b7628cac3f1990bbefe617cdd02e50b6d6c667",
+      "bytes": 19729,
+      "sha256": "808e1ffdb2c190127a13e70259b7628cac3f1990bbefe617cdd02e50b6d6c667"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/summary.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/summary.json",
+      "transform": "exact_copy",
+      "source_sha256": "ac63baa3d2f82e6a222490446532d8efa07bd189631b49de81bfb24e18a1ee7f",
+      "bytes": 6433,
+      "sha256": "ac63baa3d2f82e6a222490446532d8efa07bd189631b49de81bfb24e18a1ee7f"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/figures/latency_vs_numel.png",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/figures/latency_vs_numel.png",
+      "transform": "exact_copy",
+      "source_sha256": "f717517c7e330514f82511537fa01da94bbcb37177e83028bc4db7257b16e4c0",
+      "bytes": 127885,
+      "sha256": "f717517c7e330514f82511537fa01da94bbcb37177e83028bc4db7257b16e4c0"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/figures/memory_vs_numel.png",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/figures/memory_vs_numel.png",
+      "transform": "exact_copy",
+      "source_sha256": "1f09bedebde656deccf9b4e35434398706028ab2cbabc0b4dbccd742c76e25a6",
+      "bytes": 106870,
+      "sha256": "1f09bedebde656deccf9b4e35434398706028ab2cbabc0b4dbccd742c76e25a6"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/figures/quantization_distortion.png",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/figures/quantization_distortion.png",
+      "transform": "exact_copy",
+      "source_sha256": "dd37622574102b2910b7db52e191bf2209d6632a249f9d57b9e4a9c9621bbe42",
+      "bytes": 34021,
+      "sha256": "dd37622574102b2910b7db52e191bf2209d6632a249f9d57b9e4a9c9621bbe42"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261101_002/figures/wire_effective_bits.png",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261101_002/figures/wire_effective_bits.png",
+      "transform": "exact_copy",
+      "source_sha256": "198d22dd68db0c36baf82b10c2fb8abf00bc46b8e2d7fee6d83630139b826200",
+      "bytes": 31640,
+      "sha256": "198d22dd68db0c36baf82b10c2fb8abf00bc46b8e2d7fee6d83630139b826200"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/analysis.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/analysis.json",
+      "transform": "exact_copy",
+      "source_sha256": "65862fd84a00b20119c2bf0b581af7661e8281281428cedf7265b8521cf8778d",
+      "bytes": 911238,
+      "sha256": "65862fd84a00b20119c2bf0b581af7661e8281281428cedf7265b8521cf8778d"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/artifact_integrity.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/artifact_integrity.json",
+      "transform": "exact_copy",
+      "source_sha256": "ff69d7a584562b72fd64f14b0db480a013dd33f6d25cfe70843a1c073c747626",
+      "bytes": 62868,
+      "sha256": "ff69d7a584562b72fd64f14b0db480a013dd33f6d25cfe70843a1c073c747626"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/benchmark_config.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/benchmark_config.json",
+      "transform": "exact_copy",
+      "source_sha256": "4edb664e258bfa8d6389b0787d01ca34b4f9536d7a0c718775b03e45fb2778bf",
+      "bytes": 60058,
+      "sha256": "4edb664e258bfa8d6389b0787d01ca34b4f9536d7a0c718775b03e45fb2778bf"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/benchmark_summary.jsonl",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/benchmark_summary.jsonl",
+      "transform": "exact_copy",
+      "source_sha256": "6ae215a42a8907b60d1b9b4c296ab4d036883411bbb903b8305f01421d121909",
+      "bytes": 930208,
+      "sha256": "6ae215a42a8907b60d1b9b4c296ab4d036883411bbb903b8305f01421d121909"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/codec_contract.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/codec_contract.json",
+      "transform": "exact_copy",
+      "source_sha256": "3ba9895a4a22ab8d6c11f2838e9490b20d58d4fd7c5d7536129a12d9d9d51186",
+      "bytes": 11378,
+      "sha256": "3ba9895a4a22ab8d6c11f2838e9490b20d58d4fd7c5d7536129a12d9d9d51186"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/correctness_case_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/correctness_case_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "7952efad57df8725d13d576909243217cfeb0f07c5d2181169278df5daf4afa7",
+      "bytes": 279087,
+      "sha256": "7952efad57df8725d13d576909243217cfeb0f07c5d2181169278df5daf4afa7"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/environment.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/environment.json",
+      "transform": "exact_copy",
+      "source_sha256": "3f4781c5c8b0e8c2533e7a3d5191182069ccd744e99ea8427198c3c587e298ce",
+      "bytes": 18842,
+      "sha256": "3f4781c5c8b0e8c2533e7a3d5191182069ccd744e99ea8427198c3c587e298ce"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/fixtures_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/fixtures_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "eb25bc423b6ae2a9720bfad13aa081f701cf395c5c2696b4dc89502e1d71d7a1",
+      "bytes": 27222,
+      "sha256": "eb25bc423b6ae2a9720bfad13aa081f701cf395c5c2696b4dc89502e1d71d7a1"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/input_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/input_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "9e962d53cbe934fe9f4fd3c7b07c1160d7b3b8a6b4edd1139bfb92a3d4f2e261",
+      "bytes": 264773,
+      "sha256": "9e962d53cbe934fe9f4fd3c7b07c1160d7b3b8a6b4edd1139bfb92a3d4f2e261"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/issues.jsonl",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/issues.jsonl",
+      "transform": "exact_copy",
+      "source_sha256": "ee7949bffd2ca89aabffd3e29b1c01fb19383e6eca6049806daaefc75861b54c",
+      "bytes": 3635,
+      "sha256": "ee7949bffd2ca89aabffd3e29b1c01fb19383e6eca6049806daaefc75861b54c"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/pilot_protocol.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/pilot_protocol.json",
+      "transform": "exact_copy",
+      "source_sha256": "b26850da3ecf20eda5699648480c46a630e0b70f142dd6c6a8074e3e5fb8416c",
+      "bytes": 1636,
+      "sha256": "b26850da3ecf20eda5699648480c46a630e0b70f142dd6c6a8074e3e5fb8416c"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/REPORT.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/REPORT.md",
+      "transform": "exact_copy",
+      "source_sha256": "35eff1b776849a9fbaee3fded4befaa8cac510142ea170a6af72ef8e43767a60",
+      "bytes": 20275,
+      "sha256": "35eff1b776849a9fbaee3fded4befaa8cac510142ea170a6af72ef8e43767a60"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/REPRODUCE.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/REPRODUCE.md",
+      "transform": "exact_copy",
+      "source_sha256": "daceec07799101935d1fae7450dc42d7b255027948ffbebd78a1c8ae2be14014",
+      "bytes": 24434,
+      "sha256": "daceec07799101935d1fae7450dc42d7b255027948ffbebd78a1c8ae2be14014"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/source_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/source_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "3a003fa5461e5ccf04e0fac516bcb861e32b33cf346b5fca4ac2ff7b36d4373b",
+      "bytes": 24378,
+      "sha256": "3a003fa5461e5ccf04e0fac516bcb861e32b33cf346b5fca4ac2ff7b36d4373b"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/summary.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/summary.json",
+      "transform": "exact_copy",
+      "source_sha256": "8d371745ccc1eb4a69e8eb3bea5001a61395a75ce6f2b4ab2040a9e8d0000e2a",
+      "bytes": 6442,
+      "sha256": "8d371745ccc1eb4a69e8eb3bea5001a61395a75ce6f2b4ab2040a9e8d0000e2a"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/figures/latency_vs_numel.png",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/figures/latency_vs_numel.png",
+      "transform": "exact_copy",
+      "source_sha256": "998231dc070b8ca32bb5c4ea53ca282dc3a9cb3e470a2b93264d5ce6743cd9fc",
+      "bytes": 159193,
+      "sha256": "998231dc070b8ca32bb5c4ea53ca282dc3a9cb3e470a2b93264d5ce6743cd9fc"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/figures/memory_vs_numel.png",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/figures/memory_vs_numel.png",
+      "transform": "exact_copy",
+      "source_sha256": "5d284cbd05910662524275729c809e2c62e44b19a22dc484d73145326d1b8a1e",
+      "bytes": 142814,
+      "sha256": "5d284cbd05910662524275729c809e2c62e44b19a22dc484d73145326d1b8a1e"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/figures/paired_speedup_vs_numel.png",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/figures/paired_speedup_vs_numel.png",
+      "transform": "exact_copy",
+      "source_sha256": "69f278794038a1379751dfeb55ae75fa37cb216edebf3d4a242276afd0f8f534",
+      "bytes": 60560,
+      "sha256": "69f278794038a1379751dfeb55ae75fa37cb216edebf3d4a242276afd0f8f534"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/figures/quantization_distortion.png",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/figures/quantization_distortion.png",
+      "transform": "exact_copy",
+      "source_sha256": "dc0c3757b6efc278276b4cca1f7f1f78d0846bda18b19ac0a7da869aecbf8f44",
+      "bytes": 52307,
+      "sha256": "dc0c3757b6efc278276b4cca1f7f1f78d0846bda18b19ac0a7da869aecbf8f44"
+    },
+    {
+      "path": "results/gpu_codec_v1/gpu_codec_v1_20261104_001/figures/wire_effective_bits.png",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/gpu_codec_v1/gpu_codec_v1_20261104_001/figures/wire_effective_bits.png",
+      "transform": "exact_copy",
+      "source_sha256": "ab519e6bb9ddc67f03d5971a5dddedbae72e9b95a285c402c4ba2da3d9b1d673",
+      "bytes": 47016,
+      "sha256": "ab519e6bb9ddc67f03d5971a5dddedbae72e9b95a285c402c4ba2da3d9b1d673"
+    },
+    {
+      "path": "results/logical_ring_v1/logical_ring_v1_20261104_001/artifact_integrity.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/logical_ring_v1/logical_ring_v1_20261104_001/artifact_integrity.json",
+      "transform": "exact_copy",
+      "source_sha256": "c2cbb27b11124bdbe43fd3d21e7d51091d242881bf1462601e50fd6e9c2cc6f8",
+      "bytes": 47410,
+      "sha256": "c2cbb27b11124bdbe43fd3d21e7d51091d242881bf1462601e50fd6e9c2cc6f8"
+    },
+    {
+      "path": "results/logical_ring_v1/logical_ring_v1_20261104_001/BUFFER_OWNERSHIP.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/logical_ring_v1/logical_ring_v1_20261104_001/BUFFER_OWNERSHIP.md",
+      "transform": "exact_copy",
+      "source_sha256": "1e8b1cd711eaf49fb31dc29a5ee731a65498ec6b12361aa38e35522f955c9cbf",
+      "bytes": 5735,
+      "sha256": "1e8b1cd711eaf49fb31dc29a5ee731a65498ec6b12361aa38e35522f955c9cbf"
+    },
+    {
+      "path": "results/logical_ring_v1/logical_ring_v1_20261104_001/environment.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/logical_ring_v1/logical_ring_v1_20261104_001/environment.json",
+      "transform": "exact_copy",
+      "source_sha256": "714973b744cddf6e12a3e3c6e9179a41b7592d1d4da645b59266d3e82bead616",
+      "bytes": 700,
+      "sha256": "714973b744cddf6e12a3e3c6e9179a41b7592d1d4da645b59266d3e82bead616"
+    },
+    {
+      "path": "results/logical_ring_v1/logical_ring_v1_20261104_001/input_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/logical_ring_v1/logical_ring_v1_20261104_001/input_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "d84bc4288debcf71634b037d1f9128672bcd39e578372cbc9b0137fb165463dc",
+      "bytes": 575469,
+      "sha256": "d84bc4288debcf71634b037d1f9128672bcd39e578372cbc9b0137fb165463dc"
+    },
+    {
+      "path": "results/logical_ring_v1/logical_ring_v1_20261104_001/issues.jsonl",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/logical_ring_v1/logical_ring_v1_20261104_001/issues.jsonl",
+      "transform": "exact_copy",
+      "source_sha256": "a2c89e82c26e45922e7c9f6a223e4259a0b32969920adfea4f46153a409f5238",
+      "bytes": 730,
+      "sha256": "a2c89e82c26e45922e7c9f6a223e4259a0b32969920adfea4f46153a409f5238"
+    },
+    {
+      "path": "results/logical_ring_v1/logical_ring_v1_20261104_001/REPORT.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/logical_ring_v1/logical_ring_v1_20261104_001/REPORT.md",
+      "transform": "exact_copy",
+      "source_sha256": "73f5594e5283717567807f9084bf1db7fe501a1a78b9bf953719d640e496fd21",
+      "bytes": 4081,
+      "sha256": "73f5594e5283717567807f9084bf1db7fe501a1a78b9bf953719d640e496fd21"
+    },
+    {
+      "path": "results/logical_ring_v1/logical_ring_v1_20261104_001/REPRODUCE.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/logical_ring_v1/logical_ring_v1_20261104_001/REPRODUCE.md",
+      "transform": "exact_copy",
+      "source_sha256": "c21e7f75d7aa6aee423266952a293f269a57a080c214f9af5b1b3bfd7698f964",
+      "bytes": 3031,
+      "sha256": "c21e7f75d7aa6aee423266952a293f269a57a080c214f9af5b1b3bfd7698f964"
+    },
+    {
+      "path": "results/logical_ring_v1/logical_ring_v1_20261104_001/ring_contract.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/logical_ring_v1/logical_ring_v1_20261104_001/ring_contract.json",
+      "transform": "exact_copy",
+      "source_sha256": "e2c398d409d2a67fbd9e3d7074085e344d0c61d1193fb404800b588827defede",
+      "bytes": 2355,
+      "sha256": "e2c398d409d2a67fbd9e3d7074085e344d0c61d1193fb404800b588827defede"
+    },
+    {
+      "path": "results/logical_ring_v1/logical_ring_v1_20261104_001/source_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/logical_ring_v1/logical_ring_v1_20261104_001/source_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "b8770e36815ed819c5d0648b515f2f8c1bc98e4cbb4d761e108d4c0d0faca3d8",
+      "bytes": 10116,
+      "sha256": "b8770e36815ed819c5d0648b515f2f8c1bc98e4cbb4d761e108d4c0d0faca3d8"
+    },
+    {
+      "path": "results/logical_ring_v1/logical_ring_v1_20261104_001/summary.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/logical_ring_v1/logical_ring_v1_20261104_001/summary.json",
+      "transform": "exact_copy",
+      "source_sha256": "536a9b5ba02a8aefd07c9d89f701f002bf455afd7ce986417f782f11d42493e3",
+      "bytes": 4640,
+      "sha256": "536a9b5ba02a8aefd07c9d89f701f002bf455afd7ce986417f782f11d42493e3"
+    },
+    {
+      "path": "results/logical_ring_v1/logical_ring_v1_20261104_001/threshold_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/logical_ring_v1/logical_ring_v1_20261104_001/threshold_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "727cb083de7e7e624a1bafa3882c7bdb4e059cf1c2056035e8fb871d80e5f17d",
+      "bytes": 1199672,
+      "sha256": "727cb083de7e7e624a1bafa3882c7bdb4e059cf1c2056035e8fb871d80e5f17d"
+    },
+    {
+      "path": "results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/baseline_qualification.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/baseline_qualification.json",
+      "transform": "exact_copy",
+      "source_sha256": "b67e33eeaa6920601c2749e20febf2db31032a200bf6558d16507cb1d6388d6b",
+      "bytes": 20464,
+      "sha256": "b67e33eeaa6920601c2749e20febf2db31032a200bf6558d16507cb1d6388d6b"
+    },
+    {
+      "path": "results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/environment.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/environment.json",
+      "transform": "exact_copy",
+      "source_sha256": "28b4824e81f658e1880f2ffae399d97f60a2acf74b19b452f8661bc108831216",
+      "bytes": 13571,
+      "sha256": "28b4824e81f658e1880f2ffae399d97f60a2acf74b19b452f8661bc108831216"
+    },
+    {
+      "path": "results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/experiment_contract.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/experiment_contract.json",
+      "transform": "exact_copy",
+      "source_sha256": "97e8595532125d1fed44956c6a70da959031581884e753b449b64c1b3b195f47",
+      "bytes": 12666,
+      "sha256": "97e8595532125d1fed44956c6a70da959031581884e753b449b64c1b3b195f47"
+    },
+    {
+      "path": "results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/input_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/input_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "ce1ce96a30322b366f8e5bf584c9e1a04bb88bf1b4019eb8b7ff889076aa24cb",
+      "bytes": 21845,
+      "sha256": "ce1ce96a30322b366f8e5bf584c9e1a04bb88bf1b4019eb8b7ff889076aa24cb"
+    },
+    {
+      "path": "results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/integrity_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/integrity_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "0aba2301ef1ebba2573df58ae2a49e382ed6ef9737a7911b43b9699868b754f4",
+      "bytes": 807027,
+      "sha256": "0aba2301ef1ebba2573df58ae2a49e382ed6ef9737a7911b43b9699868b754f4"
+    },
+    {
+      "path": "results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/issues.jsonl",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/issues.jsonl",
+      "transform": "exact_copy",
+      "source_sha256": "c77807f5575b75c3ed22c27e02450b57fab0d5edd15229783d78a74b20eecd01",
+      "bytes": 1714,
+      "sha256": "c77807f5575b75c3ed22c27e02450b57fab0d5edd15229783d78a74b20eecd01"
+    },
+    {
+      "path": "results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/metrics_summary.jsonl",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/metrics_summary.jsonl",
+      "transform": "exact_copy",
+      "source_sha256": "d65630964ab52df78a52e44a5ccf625de3a624e535366cbd5380ec1096c5f2d0",
+      "bytes": 543294,
+      "sha256": "d65630964ab52df78a52e44a5ccf625de3a624e535366cbd5380ec1096c5f2d0"
+    },
+    {
+      "path": "results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/PER_INPUT_RESULTS.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/PER_INPUT_RESULTS.md",
+      "transform": "exact_copy",
+      "source_sha256": "1fb1e011723dfa1dc111c486053d77657b62018bee40ced1061b7e25571c4e2d",
+      "bytes": 20957,
+      "sha256": "1fb1e011723dfa1dc111c486053d77657b62018bee40ced1061b7e25571c4e2d"
+    },
+    {
+      "path": "results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/REPORT.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/REPORT.md",
+      "transform": "exact_copy",
+      "source_sha256": "b5f7c564988b84758302c94e534f728bbb63289a3015e0cd0769de5b1c6bf12a",
+      "bytes": 15069,
+      "sha256": "b5f7c564988b84758302c94e534f728bbb63289a3015e0cd0769de5b1c6bf12a"
+    },
+    {
+      "path": "results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/REPRODUCE.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/REPRODUCE.md",
+      "transform": "exact_copy",
+      "source_sha256": "d5289a84d613a3bbd15893a32dc71811f1077f394617b89ff8ed48e6110990ed",
+      "bytes": 8650,
+      "sha256": "d5289a84d613a3bbd15893a32dc71811f1077f394617b89ff8ed48e6110990ed"
+    },
+    {
+      "path": "results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/source_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/source_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "eea074fbdef0c92877a04d12b098a7462686ff1005c5f8a9e3ab750192def151",
+      "bytes": 23987,
+      "sha256": "eea074fbdef0c92877a04d12b098a7462686ff1005c5f8a9e3ab750192def151"
+    },
+    {
+      "path": "results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/summary.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/summary.json",
+      "transform": "exact_copy",
+      "source_sha256": "ba48b2f02013946dd8b87d37c6526463604e5a1c1de755a45f905a8ceec3469e",
+      "bytes": 4309,
+      "sha256": "ba48b2f02013946dd8b87d37c6526463604e5a1c1de755a45f905a8ceec3469e"
+    },
+    {
+      "path": "results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/figures/local_error_vs_actual_bytes.png",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/figures/local_error_vs_actual_bytes.png",
+      "transform": "exact_copy",
+      "source_sha256": "aab59d64af429198dde2dd1ddd5ef3fcbab73990bb7ff155f6f2b00520157c1c",
+      "bytes": 106895,
+      "sha256": "aab59d64af429198dde2dd1ddd5ef3fcbab73990bb7ff155f6f2b00520157c1c"
+    },
+    {
+      "path": "results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/figures/one_shot_error_vs_actual_bytes.png",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/figures/one_shot_error_vs_actual_bytes.png",
+      "transform": "exact_copy",
+      "source_sha256": "5e5bbb0e4e8c554d385522ad1ec2d17cdcf2fe1f0d6660b8471e324644476f2e",
+      "bytes": 109083,
+      "sha256": "5e5bbb0e4e8c554d385522ad1ec2d17cdcf2fe1f0d6660b8471e324644476f2e"
+    },
+    {
+      "path": "results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/logs/official_contract_review.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/bounded_discovery_v1/bounded_discovery_v1_20261104_001/logs/official_contract_review.json",
+      "transform": "exact_copy",
+      "source_sha256": "de8c97a04e7a9f28813e2bb05dc55129f0a38ec84f2b5492268d3f85a2eca0f5",
+      "bytes": 15820,
+      "sha256": "de8c97a04e7a9f28813e2bb05dc55129f0a38ec84f2b5492268d3f85a2eca0f5"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/environment.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/environment.json",
+      "transform": "exact_copy",
+      "source_sha256": "953e4eb38c86c9a490f1ca324a2a3e32d999379b9e3419cf67a5e8820bef8069",
+      "bytes": 13519,
+      "sha256": "953e4eb38c86c9a490f1ca324a2a3e32d999379b9e3419cf67a5e8820bef8069"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/experiment_contract.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/experiment_contract.json",
+      "transform": "exact_copy",
+      "source_sha256": "605fc2ec0fa14cea1f051199c46442bc84342b90bc2de31182b772197e53c4e1",
+      "bytes": 35640,
+      "sha256": "605fc2ec0fa14cea1f051199c46442bc84342b90bc2de31182b772197e53c4e1"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/input_randomness_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/input_randomness_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "4821879d00ad028db68dea2e181e8d232cca55001e715bd32c97939796c51be5",
+      "bytes": 371353,
+      "sha256": "4821879d00ad028db68dea2e181e8d232cca55001e715bd32c97939796c51be5"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/integrity_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/integrity_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "426145d8da291c3f002cb1315feb841585cc2b8a23aa44b98b6893833271c398",
+      "bytes": 304279,
+      "sha256": "426145d8da291c3f002cb1315feb841585cc2b8a23aa44b98b6893833271c398"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/issues.jsonl",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/issues.jsonl",
+      "transform": "exact_copy",
+      "source_sha256": "51e1ecf00347fd94f3b35444b8c234fc1fc058949d65962e70aca0a86a8c5e2c",
+      "bytes": 1131,
+      "sha256": "51e1ecf00347fd94f3b35444b8c234fc1fc058949d65962e70aca0a86a8c5e2c"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/paired_summary.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/paired_summary.json",
+      "transform": "exact_copy",
+      "source_sha256": "69a060fa1b045bd11fee844cf37cec2c1e99d1f1f1c0161c0cc303502063cf3f",
+      "bytes": 482378,
+      "sha256": "69a060fa1b045bd11fee844cf37cec2c1e99d1f1f1c0161c0cc303502063cf3f"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/region_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/region_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "26ba63c21d1676c73b77684b6021cba178c7a72669c8915ca543579531acbe64",
+      "bytes": 23447,
+      "sha256": "26ba63c21d1676c73b77684b6021cba178c7a72669c8915ca543579531acbe64"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/REPORT.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/REPORT.md",
+      "transform": "exact_copy",
+      "source_sha256": "825907a9930188a4597e3761f6aa0f2e6666a99a4177d3ea0dd79a32a3e65db7",
+      "bytes": 13152,
+      "sha256": "825907a9930188a4597e3761f6aa0f2e6666a99a4177d3ea0dd79a32a3e65db7"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/REPRODUCE.md",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/REPRODUCE.md",
+      "transform": "exact_copy",
+      "source_sha256": "d6e37ab3e4fa993656aefa72f6e0b4a9e92cb33dc65a658c6d3e8ea5110e025c",
+      "bytes": 6790,
+      "sha256": "d6e37ab3e4fa993656aefa72f6e0b4a9e92cb33dc65a658c6d3e8ea5110e025c"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/scale_precheck.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/scale_precheck.json",
+      "transform": "exact_copy",
+      "source_sha256": "be358b245d29602266b15c051418a408c59cea59b32bb60c1c9d4533e38dc474",
+      "bytes": 158536,
+      "sha256": "be358b245d29602266b15c051418a408c59cea59b32bb60c1c9d4533e38dc474"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/source_manifest.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/source_manifest.json",
+      "transform": "exact_copy",
+      "source_sha256": "6c396a9ce00ff7737450f074c45143cd4631aa6c7ae8ab9c5cbfe19c9a421d09",
+      "bytes": 18268,
+      "sha256": "6c396a9ce00ff7737450f074c45143cd4631aa6c7ae8ab9c5cbfe19c9a421d09"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/summary.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/summary.json",
+      "transform": "exact_copy",
+      "source_sha256": "ed6109b26a1b841646ed6086633be7e8e8b935b114e445c400920516c9602ca1",
+      "bytes": 4861,
+      "sha256": "ed6109b26a1b841646ed6086633be7e8e8b935b114e445c400920516c9602ca1"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/logs/independent_effect_audit.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/logs/independent_effect_audit.json",
+      "transform": "exact_copy",
+      "source_sha256": "a1758adeafdd61528f961c0390eac8a4346bb39b1053dd0ab0c8c427fa844ea8",
+      "bytes": 47709,
+      "sha256": "a1758adeafdd61528f961c0390eac8a4346bb39b1053dd0ab0c8c427fa844ea8"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/logs/build_pair_audit.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/logs/build_pair_audit.json",
+      "transform": "exact_copy",
+      "source_sha256": "a9c834e1e9cea73822e438437e091148e079e3f47c0e5249e759588120e1d49e",
+      "bytes": 2181,
+      "sha256": "a9c834e1e9cea73822e438437e091148e079e3f47c0e5249e759588120e1d49e"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/logs/source_path_qualification.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/logs/source_path_qualification.json",
+      "transform": "exact_copy",
+      "source_sha256": "6aa87df59a1fc9341444cb1acc9543c32fb37406ce96cc824df8c35814a20f75",
+      "bytes": 16698,
+      "sha256": "6aa87df59a1fc9341444cb1acc9543c32fb37406ce96cc824df8c35814a20f75"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/logs/recompute_verification.json",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/logs/recompute_verification.json",
+      "transform": "exact_copy",
+      "source_sha256": "b954f97af87be4698ced945ee82c58025656bbe278e44d9989ccb9bb4ba91576",
+      "bytes": 466,
+      "sha256": "b954f97af87be4698ced945ee82c58025656bbe278e44d9989ccb9bb4ba91576"
+    },
+    {
+      "path": "results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/metrics_raw.jsonl.gz",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/metrics_raw.jsonl",
+      "transform": "gzip_lossless_mtime0",
+      "source_sha256": "fc462cfc029f3d000952a90cdc9243b07f194167a8ac2d8ee4b571b4a45019bb",
+      "uncompressed_bytes": 2079543,
+      "bytes": 127313,
+      "sha256": "7e7a3cfa4886bf9847dbf821d9f387d6770c0b3f5817438c42fa0c3b8ff36314"
+    },
+    {
+      "path": "patches/epsilon_b8_scale_add.diff",
+      "origin": "E:/dacomp/research/gradient_comm_lab/results/epsilon_diagnostic_v1/epsilon_diagnostic_v1_20261105_001/build/diagnostic_add0/source_intervention.diff",
+      "transform": "exact_copy",
+      "source_sha256": "90d98a5ad3d578bb49ca3d9ecc7e03f3b6c901ef5d02888776bccd3fdc743978",
+      "bytes": 961,
+      "sha256": "90d98a5ad3d578bb49ca3d9ecc7e03f3b6c901ef5d02888776bccd3fdc743978"
+    },
+    {
+      "path": "tools/verify_epsilon_summary.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/publication_tools/verify_epsilon_summary.py",
+      "transform": "exact_copy",
+      "source_sha256": "386541dbb1bb31bcb2287dd72682f46b0040aaedb2e1802fcf60f6f6d0ab6a00",
+      "bytes": 11657,
+      "sha256": "386541dbb1bb31bcb2287dd72682f46b0040aaedb2e1802fcf60f6f6d0ab6a00"
+    },
+    {
+      "path": "tools/build_project_archive.py",
+      "origin": "E:/dacomp/research/gradient_comm_lab/publication_tools/build_project_archive.py",
+      "transform": "exact_copy",
+      "source_sha256": "7e5506ad89a49fca0254d1b96feb0cdc472e0cf6cf2844e654d18d7928a77803",
+      "bytes": 9603,
+      "sha256": "7e5506ad89a49fca0254d1b96feb0cdc472e0cf6cf2844e654d18d7928a77803"
+    },
+    {
+      "path": "LOCAL_DATA_CATALOG.json",
+      "origin": "archive_documentation",
+      "transform": "new_document",
+      "bytes": 2687891,
+      "sha256": "d3703b95651bc1e24096143e966b9091dc1cd6f54ad7d42948bec9c4353a564f"
+    },
+    {
+      "path": ".gitignore",
+      "origin": "archive_documentation",
+      "transform": "new_document",
+      "bytes": 123,
+      "sha256": "6e771c01a1ea9d6471db148ab3f7e305ee3da790804ca81c3e363aa5f8387678"
+    },
+    {
+      "path": ".gitattributes",
+      "origin": "archive_documentation",
+      "transform": "new_document",
+      "bytes": 61,
+      "sha256": "ea95416401f3dcda4479a4ffdfcb2cc5846cafd599d784ace48fa7e517875deb"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "origin": "archive_documentation",
+      "transform": "new_document",
+      "bytes": 714,
+      "sha256": "e367fc122987b3079fa97b5e3cd2462a934557590b956087278de77e248d6479"
+    },
+    {
+      "path": "patches/README.md",
+      "origin": "archive_documentation",
+      "transform": "new_document",
+      "bytes": 523,
+      "sha256": "131078ad3d9d73abce3036b98230817ce9a1f8416012fcdeb6aae7dc031c02a7"
+    },
+    {
+      "path": "ARCHIVE_CHECKS.json",
+      "origin": "archive_verification",
+      "transform": "new_document",
+      "bytes": 2032,
+      "sha256": "9ad9009b4b8cb093d170eb3d7a120c644037bfe7459db37aa0ddb5a1894bb2f6"
+    }
+  ],
+  "file_count_excluding_this_manifest": 254,
+  "total_bytes_excluding_this_manifest": 14231273,
+  "excluded": [
+    "raw tensors and packets",
+    "compiled binaries",
+    "toolchains and caches",
+    "full timing and message ledgers",
+    "all model/training datasets"
+  ],
+  "sealed_results_modified": false
+}

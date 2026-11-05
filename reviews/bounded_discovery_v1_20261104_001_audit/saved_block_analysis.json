@@ -1,0 +1,843 @@
+{
+  "scope": "posthoc_saved_outputs_only_no_new_quantization",
+  "raw_sha256": "7751dc16dc5c0cbf9778641c79ba6f90267841d328703e22ac777fe1cf480b09",
+  "block_size": 256,
+  "method_order": [
+    "official_dynamiq_fixed_codec_b8",
+    "uniform_g128_q8"
+  ],
+  "snapshots": [
+    {
+      "snapshot_id": "seed1101_update000100",
+      "worker_count": 4,
+      "workers": [
+        {
+          "worker_id": 0,
+          "zero_fraction": 3.0560553903927396e-05,
+          "methods": {
+            "official_dynamiq_fixed_codec_b8": {
+              "mean_sse": 4.390309862437938e-06,
+              "min_sse": 4.186722343729962e-06,
+              "max_sse": 4.640399127834853e-06
+            },
+            "uniform_g128_q8": {
+              "mean_sse": 3.301876710457585e-06,
+              "min_sse": 3.2225441110454506e-06,
+              "max_sse": 3.443757689018236e-06
+            }
+          },
+          "uniform_to_official_sse_ratio": 0.7520828401446941
+        },
+        {
+          "worker_id": 1,
+          "zero_fraction": 2.078117665467063e-05,
+          "methods": {
+            "official_dynamiq_fixed_codec_b8": {
+              "mean_sse": 3.4719794169250657e-06,
+              "min_sse": 3.322708610365783e-06,
+              "max_sse": 3.609437811881719e-06
+            },
+            "uniform_g128_q8": {
+              "mean_sse": 2.5541344450601035e-06,
+              "min_sse": 2.4655915400430055e-06,
+              "max_sse": 2.606091213677267e-06
+            }
+          },
+          "uniform_to_official_sse_ratio": 0.735642162107676
+        },
+        {
+          "worker_id": 2,
+          "zero_fraction": 3.0560553903927396e-05,
+          "methods": {
+            "official_dynamiq_fixed_codec_b8": {
+              "mean_sse": 3.484142273234124e-06,
+              "min_sse": 3.35241081022641e-06,
+              "max_sse": 3.663637772946762e-06
+            },
+            "uniform_g128_q8": {
+              "mean_sse": 2.893201091808734e-06,
+              "min_sse": 2.8364053414541632e-06,
+              "max_sse": 2.9493575491183163e-06
+            }
+          },
+          "uniform_to_official_sse_ratio": 0.8303912024588898
+        },
+        {
+          "worker_id": 3,
+          "zero_fraction": 4.156235330934126e-05,
+          "methods": {
+            "official_dynamiq_fixed_codec_b8": {
+              "mean_sse": 5.762273992032477e-06,
+              "min_sse": 5.575605850226196e-06,
+              "max_sse": 5.901621245301935e-06
+            },
+            "uniform_g128_q8": {
+              "mean_sse": 4.6212188833779324e-06,
+              "min_sse": 4.508841659675012e-06,
+              "max_sse": 4.695025688746614e-06
+            }
+          },
+          "uniform_to_official_sse_ratio": 0.8019783317779947
+        }
+      ],
+      "blocks": 3196,
+      "source_energy": 0.1878639450943238,
+      "mean_local_sse_sum": {
+        "official_dynamiq_fixed_codec_b8": 1.7108705544629603e-05,
+        "uniform_g128_q8": 1.3370431130704354e-05
+      },
+      "zero_input_sse_share": {
+        "official_dynamiq_fixed_codec_b8": 2.3156533661442782e-10,
+        "uniform_g128_q8": 0.0
+      },
+      "delta_total": 3.73827441392525e-06,
+      "positive_block_fraction": 0.7177722152690864,
+      "official_worse_contributors": {
+        "total": 4.062265624545359e-06,
+        "top_mass_shares": {
+          "1": 0.30669805047638027,
+          "10": 0.7983764214086579,
+          "32": 0.878202924036007,
+          "320": 0.9615839946065299
+        },
+        "top_blocks": [
+          {
+            "block_id": 0,
+            "first_coordinate": 0,
+            "delta_official_minus_uniform": 1.2458889475652768e-06,
+            "input_energy": 0.03658536326086992,
+            "official_sse": 3.1711537600287443e-06,
+            "uniform_sse": 1.9252648124634675e-06
+          },
+          {
+            "block_id": 21,
+            "first_coordinate": 5376,
+            "delta_official_minus_uniform": 8.757415601579055e-07,
+            "input_energy": 0.021130148386352687,
+            "official_sse": 1.9690875759370563e-06,
+            "uniform_sse": 1.0933460157791508e-06
+          },
+          {
+            "block_id": 355,
+            "first_coordinate": 90880,
+            "delta_official_minus_uniform": 3.7823536046949213e-07,
+            "input_energy": 0.01993865576855275,
+            "official_sse": 1.6964650901771239e-06,
+            "uniform_sse": 1.3182297297076317e-06
+          },
+          {
+            "block_id": 28,
+            "first_coordinate": 7168,
+            "delta_official_minus_uniform": 1.7897292892143923e-07,
+            "input_energy": 0.005254174373124698,
+            "official_sse": 4.926451797615528e-07,
+            "uniform_sse": 3.136722508401135e-07
+          },
+          {
+            "block_id": 29,
+            "first_coordinate": 7424,
+            "delta_official_minus_uniform": 1.6764927474044455e-07,
+            "input_energy": 0.005734030068719476,
+            "official_sse": 5.384494200511014e-07,
+            "uniform_sse": 3.7080014531065686e-07
+          },
+          {
+            "block_id": 26,
+            "first_coordinate": 6656,
+            "delta_official_minus_uniform": 1.545535633917794e-07,
+            "input_energy": 0.006254429520204052,
+            "official_sse": 5.986839265448296e-07,
+            "uniform_sse": 4.441303631530502e-07
+          },
+          {
+            "block_id": 19,
+            "first_coordinate": 4864,
+            "delta_official_minus_uniform": 7.254692854785638e-08,
+            "input_energy": 0.00263645724692374,
+            "official_sse": 2.3289772829726552e-07,
+            "uniform_sse": 1.6035079974940913e-07
+          },
+          {
+            "block_id": 23,
+            "first_coordinate": 5888,
+            "delta_official_minus_uniform": 6.82521369421707e-08,
+            "input_energy": 0.0035830397070757414,
+            "official_sse": 3.2604096011912276e-07,
+            "uniform_sse": 2.5778882317695206e-07
+          },
+          {
+            "block_id": 25,
+            "first_coordinate": 6400,
+            "delta_official_minus_uniform": 5.946802633660653e-08,
+            "input_energy": 0.0022680605743952698,
+            "official_sse": 2.161266555722463e-07,
+            "uniform_sse": 1.5665862923563978e-07
+          },
+          {
+            "block_id": 3194,
+            "first_coordinate": 817664,
+            "delta_official_minus_uniform": 4.190836506295925e-08,
+            "input_energy": 0.0008648722020943578,
+            "official_sse": 8.007806962667674e-08,
+            "uniform_sse": 3.816970456371749e-08
+          }
+        ]
+      },
+      "uniform_worse_contributors": {
+        "total": 3.2399121062010845e-07,
+        "top_mass_shares": {
+          "1": 0.04183962218353839,
+          "10": 0.15473021914975615,
+          "32": 0.2770944136981289,
+          "320": 0.8054452080874853
+        },
+        "top_blocks": [
+          {
+            "block_id": 290,
+            "first_coordinate": 74240,
+            "delta_official_minus_uniform": -1.3555669843132549e-08,
+            "input_energy": 0.00020580219677546197,
+            "official_sse": 1.8391110267071028e-08,
+            "uniform_sse": 3.1946780110203576e-08
+          },
+          {
+            "block_id": 717,
+            "first_coordinate": 183552,
+            "delta_official_minus_uniform": -7.577780347656216e-09,
+            "input_energy": 0.00019767472642420736,
+            "official_sse": 1.8436443344205244e-08,
+            "uniform_sse": 2.601422369186146e-08
+          },
+          {
+            "block_id": 335,
+            "first_coordinate": 85760,
+            "delta_official_minus_uniform": -7.268847870833817e-09,
+            "input_energy": 0.0002763363112810377,
+            "official_sse": 2.7909553036720158e-08,
+            "uniform_sse": 3.5178400907553975e-08
+          },
+          {
+            "block_id": 308,
+            "first_coordinate": 78848,
+            "delta_official_minus_uniform": -5.357237514713731e-09,
+            "input_energy": 0.00017943332961916817,
+            "official_sse": 1.696614579010187e-08,
+            "uniform_sse": 2.23233833048156e-08
+          },
+          {
+            "block_id": 1461,
+            "first_coordinate": 374016,
+            "delta_official_minus_uniform": -3.168872993869476e-09,
+            "input_energy": 3.321500942239051e-05,
+            "official_sse": 3.241425625361092e-09,
+            "uniform_sse": 6.410298619230568e-09
+          },
+          {
+            "block_id": 807,
+            "first_coordinate": 206592,
+            "delta_official_minus_uniform": -2.9890124611520186e-09,
+            "input_energy": 0.0001405267167955901,
+            "official_sse": 1.2868877061200656e-08,
+            "uniform_sse": 1.5857889522352675e-08
+          },
+          {
+            "block_id": 1475,
+            "first_coordinate": 377600,
+            "delta_official_minus_uniform": -2.884384224521863e-09,
+            "input_energy": 3.37308177358088e-05,
+            "official_sse": 3.1223330691776408e-09,
+            "uniform_sse": 6.006717293699504e-09
+          },
+          {
+            "block_id": 338,
+            "first_coordinate": 86528,
+            "delta_official_minus_uniform": -2.5625623359393224e-09,
+            "input_energy": 0.00012292112105589687,
+            "official_sse": 1.1497137468625962e-08,
+            "uniform_sse": 1.4059699804565284e-08
+          },
+          {
+            "block_id": 1395,
+            "first_coordinate": 357120,
+            "delta_official_minus_uniform": -2.3883963053833446e-09,
+            "input_energy": 5.80361941916515e-05,
+            "official_sse": 5.673642174131022e-09,
+            "uniform_sse": 8.062038479514366e-09
+          },
+          {
+            "block_id": 843,
+            "first_coordinate": 215808,
+            "delta_official_minus_uniform": -2.3784671246418476e-09,
+            "input_energy": 0.00012842242490160305,
+            "official_sse": 1.180045210852354e-08,
+            "uniform_sse": 1.4178919233165388e-08
+          }
+        ]
+      },
+      "top_1pct_energy_blocks": {
+        "count": 32,
+        "input_energy_share": 0.6634884984344027,
+        "official_sse_share": 0.6539415130554528,
+        "uniform_sse_share": 0.5728269500229517,
+        "delta": 3.529149505181997e-06
+      }
+    },
+    {
+      "snapshot_id": "seed1101_update000500",
+      "worker_count": 4,
+      "workers": [
+        {
+          "worker_id": 0,
+          "zero_fraction": 5.134173055859803e-05,
+          "methods": {
+            "official_dynamiq_fixed_codec_b8": {
+              "mean_sse": 9.577782783534776e-06,
+              "min_sse": 9.476965373554227e-06,
+              "max_sse": 9.663753805475246e-06
+            },
+            "uniform_g128_q8": {
+              "mean_sse": 1.1977737918897874e-05,
+              "min_sse": 1.1877009903921092e-05,
+              "max_sse": 1.2069643723233652e-05
+            }
+          },
+          "uniform_to_official_sse_ratio": 1.2505752311995293
+        },
+        {
+          "worker_id": 1,
+          "zero_fraction": 3.911750899702707e-05,
+          "methods": {
+            "official_dynamiq_fixed_codec_b8": {
+              "mean_sse": 9.880471283793346e-06,
+              "min_sse": 9.766967503285391e-06,
+              "max_sse": 1.0057209315394572e-05
+            },
+            "uniform_g128_q8": {
+              "mean_sse": 1.0434807906901417e-05,
+              "min_sse": 1.0308226357477277e-05,
+              "max_sse": 1.0558135750637137e-05
+            }
+          },
+          "uniform_to_official_sse_ratio": 1.0561042694408043
+        },
+        {
+          "worker_id": 2,
+          "zero_fraction": 4.156235330934126e-05,
+          "methods": {
+            "official_dynamiq_fixed_codec_b8": {
+              "mean_sse": 9.318472861237262e-06,
+              "min_sse": 9.190218779694924e-06,
+              "max_sse": 9.443600166070502e-06
+            },
+            "uniform_g128_q8": {
+              "mean_sse": 1.2100208211880953e-05,
+              "min_sse": 1.2032118816639744e-05,
+              "max_sse": 1.2251414689641982e-05
+            }
+          },
+          "uniform_to_official_sse_ratio": 1.2985183722769726
+        },
+        {
+          "worker_id": 3,
+          "zero_fraction": 3.7895086840869974e-05,
+          "methods": {
+            "official_dynamiq_fixed_codec_b8": {
+              "mean_sse": 8.968850971360926e-06,
+              "min_sse": 8.821652033252317e-06,
+              "max_sse": 9.214015508341312e-06
+            },
+            "uniform_g128_q8": {
+              "mean_sse": 9.584886329527845e-06,
+              "min_sse": 9.55431803735724e-06,
+              "max_sse": 9.637132618466067e-06
+            }
+          },
+          "uniform_to_official_sse_ratio": 1.0686860959262257
+        }
+      ],
+      "blocks": 3196,
+      "source_energy": 0.40293978377488016,
+      "mean_local_sse_sum": {
+        "official_dynamiq_fixed_codec_b8": 3.7745577899926316e-05,
+        "uniform_g128_q8": 4.409764036720809e-05
+      },
+      "zero_input_sse_share": {
+        "official_dynamiq_fixed_codec_b8": 3.4126927518376725e-11,
+        "uniform_g128_q8": 0.0
+      },
+      "delta_total": -6.352062467281778e-06,
+      "positive_block_fraction": 0.5904255319148937,
+      "official_worse_contributors": {
+        "total": 3.0325137748757816e-06,
+        "top_mass_shares": {
+          "1": 0.08638649741950113,
+          "10": 0.4043053519412854,
+          "32": 0.4810312871842165,
+          "320": 0.7551076342576196
+        },
+        "top_blocks": [
+          {
+            "block_id": 355,
+            "first_coordinate": 90880,
+            "delta_official_minus_uniform": 2.6196824338790836e-07,
+            "input_energy": 0.01665063748452282,
+            "official_sse": 1.6713203340170887e-06,
+            "uniform_sse": 1.4093520906291804e-06
+          },
+          {
+            "block_id": 2419,
+            "first_coordinate": 619264,
+            "delta_official_minus_uniform": 1.560186483548498e-07,
+            "input_energy": 0.004428180778516699,
+            "official_sse": 4.1306975142457736e-07,
+            "uniform_sse": 2.5705110306972756e-07
+          },
+          {
+            "block_id": 29,
+            "first_coordinate": 7424,
+            "delta_official_minus_uniform": 1.351553473583067e-07,
+            "input_energy": 0.004729718101740055,
+            "official_sse": 4.376442408471348e-07,
+            "uniform_sse": 3.024888934888281e-07
+          },
+          {
+            "block_id": 1645,
+            "first_coordinate": 421120,
+            "delta_official_minus_uniform": 1.3088996192456293e-07,
+            "input_energy": 0.005872100368528532,
+            "official_sse": 5.825247130220035e-07,
+            "uniform_sse": 4.5163475109744056e-07
+          },
+          {
+            "block_id": 1129,
+            "first_coordinate": 289024,
+            "delta_official_minus_uniform": 1.2354418668647504e-07,
+            "input_energy": 0.00745504975142957,
+            "official_sse": 7.376956384291367e-07,
+            "uniform_sse": 6.141514517426617e-07
+          },
+          {
+            "block_id": 1904,
+            "first_coordinate": 487424,
+            "delta_official_minus_uniform": 1.1313924478187354e-07,
+            "input_energy": 0.005664628113892081,
+            "official_sse": 5.888789039072695e-07,
+            "uniform_sse": 4.7573965912539595e-07
+          },
+          {
+            "block_id": 870,
+            "first_coordinate": 222720,
+            "delta_official_minus_uniform": 1.1136758126806257e-07,
+            "input_energy": 0.009659486947081908,
+            "official_sse": 9.277729139944846e-07,
+            "uniform_sse": 8.16405332726422e-07
+          },
+          {
+            "block_id": 2678,
+            "first_coordinate": 685568,
+            "delta_official_minus_uniform": 8.03002048865159e-08,
+            "input_energy": 0.0027524358147265407,
+            "official_sse": 2.6839642224517346e-07,
+            "uniform_sse": 1.8809621735865756e-07
+          },
+          {
+            "block_id": 28,
+            "first_coordinate": 7168,
+            "delta_official_minus_uniform": 7.632314458216882e-08,
+            "input_energy": 0.003927766542786371,
+            "official_sse": 3.7911341810303867e-07,
+            "uniform_sse": 3.0279027352086985e-07
+          },
+          {
+            "block_id": 19,
+            "first_coordinate": 4864,
+            "delta_official_minus_uniform": 3.7354985787225146e-08,
+            "input_energy": 0.0019313926695845559,
+            "official_sse": 1.675631259001045e-07,
+            "uniform_sse": 1.3020814011287934e-07
+          }
+        ]
+      },
+      "uniform_worse_contributors": {
+        "total": 9.38457624215756e-06,
+        "top_mass_shares": {
+          "1": 0.03263481964281756,
+          "10": 0.17817999295693768,
+          "32": 0.3283735348614415,
+          "320": 0.7876171651618076
+        },
+        "top_blocks": [
+          {
+            "block_id": 665,
+            "first_coordinate": 170240,
+            "delta_official_minus_uniform": -3.0626395308708254e-07,
+            "input_energy": 0.0013016070498149271,
+            "official_sse": 1.2881791818051408e-07,
+            "uniform_sse": 4.350818712675966e-07
+          },
+          {
+            "block_id": 831,
+            "first_coordinate": 212736,
+            "delta_official_minus_uniform": -2.95270658590141e-07,
+            "input_energy": 0.0017196329119427284,
+            "official_sse": 1.8732416402766905e-07,
+            "uniform_sse": 4.825948226178101e-07
+          },
+          {
+            "block_id": 819,
+            "first_coordinate": 209664,
+            "delta_official_minus_uniform": -1.9073160800742173e-07,
+            "input_energy": 0.000985372121581729,
+            "official_sse": 8.859835087804413e-08,
+            "uniform_sse": 2.7932995888546586e-07
+          },
+          {
+            "block_id": 787,
+            "first_coordinate": 201472,
+            "delta_official_minus_uniform": -1.4000097786626142e-07,
+            "input_energy": 0.0007876940101457924,
+            "official_sse": 7.632208483265845e-08,
+            "uniform_sse": 2.1632306269891988e-07
+          },
+          {
+            "block_id": 1605,
+            "first_coordinate": 410880,
+            "delta_official_minus_uniform": -1.2966906626221686e-07,
+            "input_energy": 0.000629208461890518,
+            "official_sse": 6.289682774607286e-08,
+            "uniform_sse": 1.9256589400828972e-07
+          },
+          {
+            "block_id": 0,
+            "first_coordinate": 0,
+            "delta_official_minus_uniform": -1.2476705713027059e-07,
+            "input_energy": 0.010769712718419255,
+            "official_sse": 1.0817889624648025e-06,
+            "uniform_sse": 1.206556019595073e-06
+          },
+          {
+            "block_id": 615,
+            "first_coordinate": 157440,
+            "delta_official_minus_uniform": -1.2292078438447263e-07,
+            "input_energy": 0.0009580181455834075,
+            "official_sse": 9.291043664598009e-08,
+            "uniform_sse": 2.1583122103045272e-07
+          },
+          {
+            "block_id": 837,
+            "first_coordinate": 214272,
+            "delta_official_minus_uniform": -1.2277256505877077e-07,
+            "input_energy": 0.0006590561350343638,
+            "official_sse": 6.301170180078586e-08,
+            "uniform_sse": 1.8578426685955662e-07
+          },
+          {
+            "block_id": 847,
+            "first_coordinate": 216832,
+            "delta_official_minus_uniform": -1.204660285691883e-07,
+            "input_energy": 0.0007482045124096311,
+            "official_sse": 7.541923653675044e-08,
+            "uniform_sse": 1.9588526510593875e-07
+          },
+          {
+            "block_id": 651,
+            "first_coordinate": 166656,
+            "delta_official_minus_uniform": -1.1928102977565302e-07,
+            "input_energy": 0.0007487009124045874,
+            "official_sse": 7.50866897547553e-08,
+            "uniform_sse": 1.9436771953040832e-07
+          }
+        ]
+      },
+      "top_1pct_energy_blocks": {
+        "count": 32,
+        "input_energy_share": 0.25215111242792365,
+        "official_sse_share": 0.26106429262817626,
+        "uniform_sse_share": 0.23234574318154627,
+        "delta": -3.918764293855308e-07
+      }
+    },
+    {
+      "snapshot_id": "seed1101_update002500",
+      "worker_count": 4,
+      "workers": [
+        {
+          "worker_id": 0,
+          "zero_fraction": 3.300539821624159e-05,
+          "methods": {
+            "official_dynamiq_fixed_codec_b8": {
+              "mean_sse": 2.8478187760562544e-05,
+              "min_sse": 2.828569627494474e-05,
+              "max_sse": 2.865580862065709e-05
+            },
+            "uniform_g128_q8": {
+              "mean_sse": 3.0197112791408818e-05,
+              "min_sse": 3.000411761816037e-05,
+              "max_sse": 3.0317498992564914e-05
+            }
+          },
+          "uniform_to_official_sse_ratio": 1.0603593545101453
+        },
+        {
+          "worker_id": 1,
+          "zero_fraction": 3.4227820372398685e-05,
+          "methods": {
+            "official_dynamiq_fixed_codec_b8": {
+              "mean_sse": 3.134179963122081e-05,
+              "min_sse": 3.1082305643535734e-05,
+              "max_sse": 3.1614367809750036e-05
+            },
+            "uniform_g128_q8": {
+              "mean_sse": 3.4192349435923e-05,
+              "min_sse": 3.4047021763805806e-05,
+              "max_sse": 3.427269514119559e-05
+            }
+          },
+          "uniform_to_official_sse_ratio": 1.090950418873288
+        },
+        {
+          "worker_id": 2,
+          "zero_fraction": 3.300539821624159e-05,
+          "methods": {
+            "official_dynamiq_fixed_codec_b8": {
+              "mean_sse": 3.59610052536889e-05,
+              "min_sse": 3.5576478670232425e-05,
+              "max_sse": 3.626213025084941e-05
+            },
+            "uniform_g128_q8": {
+              "mean_sse": 3.986512836737488e-05,
+              "min_sse": 3.9553417658851025e-05,
+              "max_sse": 4.015622840777469e-05
+            }
+          },
+          "uniform_to_official_sse_ratio": 1.1085654610082263
+        },
+        {
+          "worker_id": 3,
+          "zero_fraction": 3.911750899702707e-05,
+          "methods": {
+            "official_dynamiq_fixed_codec_b8": {
+              "mean_sse": 3.3022437869923666e-05,
+              "min_sse": 3.267894507008771e-05,
+              "max_sse": 3.334264234247134e-05
+            },
+            "uniform_g128_q8": {
+              "mean_sse": 3.603927969255909e-05,
+              "min_sse": 3.596397633336476e-05,
+              "max_sse": 3.6204681555518316e-05
+            }
+          },
+          "uniform_to_official_sse_ratio": 1.0913573320818666
+        }
+      ],
+      "blocks": 3196,
+      "source_energy": 1.4007527163431834,
+      "mean_local_sse_sum": {
+        "official_dynamiq_fixed_codec_b8": 0.00012880343051539594,
+        "uniform_g128_q8": 0.00014029387028726575
+      },
+      "zero_input_sse_share": {
+        "official_dynamiq_fixed_codec_b8": 3.419312542638805e-11,
+        "uniform_g128_q8": 0.0
+      },
+      "delta_total": -1.1490439771869853e-05,
+      "positive_block_fraction": 0.5857321652065082,
+      "official_worse_contributors": {
+        "total": 5.899276382548535e-06,
+        "top_mass_shares": {
+          "1": 0.0606649423809136,
+          "10": 0.1622147460960045,
+          "32": 0.23238701360701883,
+          "320": 0.574158784558342
+        },
+        "top_blocks": [
+          {
+            "block_id": 355,
+            "first_coordinate": 90880,
+            "delta_official_minus_uniform": 3.578792618363913e-07,
+            "input_energy": 0.019451380179333233,
+            "official_sse": 1.6675040881986014e-06,
+            "uniform_sse": 1.3096248263622101e-06
+          },
+          {
+            "block_id": 1904,
+            "first_coordinate": 487424,
+            "delta_official_minus_uniform": 1.518533060129723e-07,
+            "input_energy": 0.011092736112857993,
+            "official_sse": 1.0212683659582833e-06,
+            "uniform_sse": 8.69415059945311e-07
+          },
+          {
+            "block_id": 0,
+            "first_coordinate": 0,
+            "delta_official_minus_uniform": 9.70746513173637e-08,
+            "input_energy": 0.006252410549575149,
+            "official_sse": 6.344334279040353e-07,
+            "uniform_sse": 5.373587765866716e-07
+          },
+          {
+            "block_id": 1645,
+            "first_coordinate": 421120,
+            "delta_official_minus_uniform": 8.32619800328338e-08,
+            "input_energy": 0.019885511702324277,
+            "official_sse": 1.7800277560819922e-06,
+            "uniform_sse": 1.6967657760491583e-06
+          },
+          {
+            "block_id": 23,
+            "first_coordinate": 5888,
+            "delta_official_minus_uniform": 6.681296227384337e-08,
+            "input_energy": 0.0041469928990579,
+            "official_sse": 3.972822036346635e-07,
+            "uniform_sse": 3.304692413608201e-07
+          },
+          {
+            "block_id": 28,
+            "first_coordinate": 7168,
+            "delta_official_minus_uniform": 5.5117583275254844e-08,
+            "input_energy": 0.0037548022239443793,
+            "official_sse": 3.6250620579023757e-07,
+            "uniform_sse": 3.073886225149827e-07
+          },
+          {
+            "block_id": 1055,
+            "first_coordinate": 270080,
+            "delta_official_minus_uniform": 5.144435719084406e-08,
+            "input_energy": 0.0016266720818914338,
+            "official_sse": 1.5752302764959758e-07,
+            "uniform_sse": 1.0607867045875352e-07
+          },
+          {
+            "block_id": 25,
+            "first_coordinate": 6400,
+            "delta_official_minus_uniform": 3.61230484968722e-08,
+            "input_energy": 0.001994401134247481,
+            "official_sse": 1.8526151746023345e-07,
+            "uniform_sse": 1.4913846896336125e-07
+          },
+          {
+            "block_id": 1004,
+            "first_coordinate": 257024,
+            "delta_official_minus_uniform": 2.9047492494660432e-08,
+            "input_energy": 0.0012307434797791568,
+            "official_sse": 1.142849483833086e-07,
+            "uniform_sse": 8.523745588864817e-08
+          },
+          {
+            "block_id": 1827,
+            "first_coordinate": 467712,
+            "delta_official_minus_uniform": 2.833497761423054e-08,
+            "input_energy": 0.0012026499381656043,
+            "official_sse": 1.1394237162468124e-07,
+            "uniform_sse": 8.56073940104507e-08
+          }
+        ]
+      },
+      "uniform_worse_contributors": {
+        "total": 1.7389716154418386e-05,
+        "top_mass_shares": {
+          "1": 0.020224989278341897,
+          "10": 0.10364570280903675,
+          "32": 0.21513356271631878,
+          "320": 0.6804428713157121
+        },
+        "top_blocks": [
+          {
+            "block_id": 1522,
+            "first_coordinate": 389632,
+            "delta_official_minus_uniform": -3.5170682277652077e-07,
+            "input_energy": 0.006209019348397682,
+            "official_sse": 6.301034947142625e-07,
+            "uniform_sse": 9.818103174907833e-07
+          },
+          {
+            "block_id": 1129,
+            "first_coordinate": 289024,
+            "delta_official_minus_uniform": -2.4563849936043436e-07,
+            "input_energy": 0.014159588108525679,
+            "official_sse": 1.440157158364569e-06,
+            "uniform_sse": 1.6857956577250033e-06
+          },
+          {
+            "block_id": 819,
+            "first_coordinate": 209664,
+            "delta_official_minus_uniform": -1.896933615741503e-07,
+            "input_energy": 0.002262307800388774,
+            "official_sse": 2.2753583989176818e-07,
+            "uniform_sse": 4.1722920146591846e-07
+          },
+          {
+            "block_id": 1622,
+            "first_coordinate": 415232,
+            "delta_official_minus_uniform": -1.6524866264244764e-07,
+            "input_energy": 0.004527235165323662,
+            "official_sse": 4.427991650568508e-07,
+            "uniform_sse": 6.080478276992984e-07
+          },
+          {
+            "block_id": 666,
+            "first_coordinate": 170496,
+            "delta_official_minus_uniform": -1.6088357618349036e-07,
+            "input_energy": 0.0019726079761721166,
+            "official_sse": 1.8770550870572666e-07,
+            "uniform_sse": 3.4858908488921703e-07
+          },
+          {
+            "block_id": 769,
+            "first_coordinate": 196864,
+            "delta_official_minus_uniform": -1.4750403354302222e-07,
+            "input_energy": 0.0021600727591308136,
+            "official_sse": 2.027251904549235e-07,
+            "uniform_sse": 3.502292239979457e-07
+          },
+          {
+            "block_id": 831,
+            "first_coordinate": 212736,
+            "delta_official_minus_uniform": -1.47076398171464e-07,
+            "input_energy": 0.005666565360514575,
+            "official_sse": 5.848828035226461e-07,
+            "uniform_sse": 7.319592016941101e-07
+          },
+          {
+            "block_id": 1621,
+            "first_coordinate": 414976,
+            "delta_official_minus_uniform": -1.3402818022090202e-07,
+            "input_energy": 0.004478395898456,
+            "official_sse": 3.928970361277706e-07,
+            "uniform_sse": 5.269252163486726e-07
+          },
+          {
+            "block_id": 681,
+            "first_coordinate": 174336,
+            "delta_official_minus_uniform": -1.3061300269123777e-07,
+            "input_energy": 0.002470587642312283,
+            "official_sse": 2.3588529740603548e-07,
+            "uniform_sse": 3.6649830009727324e-07
+          },
+          {
+            "block_id": 747,
+            "first_coordinate": 191232,
+            "delta_official_minus_uniform": -1.2997681531068395e-07,
+            "input_energy": 0.002355056794998811,
+            "official_sse": 2.307287427782967e-07,
+            "uniform_sse": 3.6070555808898064e-07
+          }
+        ]
+      },
+      "top_1pct_energy_blocks": {
+        "count": 32,
+        "input_energy_share": 0.15258753767874256,
+        "official_sse_share": 0.1566274506014953,
+        "uniform_sse_share": 0.15203716219278282,
+        "delta": -1.155728961164948e-06
+      }
+    }
+  ],
+  "limitations": [
+    "Exploratory decomposition on development inputs, not independent confirmation.",
+    "Blocks are shared coordinate ranges of 256; padding contributes zero to the cropped error.",
+    "A block error difference compares averages of independent RNG runs, not matched random draws.",
+    "Error concentration or input energy association is not a causal mechanism.",
+    "Exact-zero input attribution does not cover nonzero integer-lattice RNG endpoints."
+  ]
+}
